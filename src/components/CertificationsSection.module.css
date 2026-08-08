@@ -20,9 +20,10 @@
   background-color: var(--text-bright);
 }
 
+/* Cert cards grid - 2 columns side by side */
 .grid {
   display: grid;
-  grid-template-cols: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-cols: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -199,5 +200,11 @@
     padding: 2rem;
     border-left: none;
     border-top: 1px solid var(--border-dim);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-cols: 1fr;
   }
 }

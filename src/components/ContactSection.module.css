@@ -217,6 +217,55 @@
   color: var(--text);
 }
 
+/* Admin Controls styling */
+.actionBtn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  border: 1px solid var(--border-dim);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  color: var(--text-bright);
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.actionBtn:hover {
+  border-color: var(--border);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.deleteBtn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  border: 1px solid rgba(255, 95, 86, 0.3);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  color: #ff5f56;
+  cursor: pointer;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background-color: rgba(255, 95, 86, 0.1);
+  border-color: #ff5f56;
+}
+
+.adminReplyForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.replyActions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
 /* Admin Reply Box */
 .replyBox {
   margin-top: 1.25rem;

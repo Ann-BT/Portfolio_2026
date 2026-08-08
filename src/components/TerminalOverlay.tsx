@@ -18,20 +18,30 @@ interface Props {
   onClose: () => void;
 }
 
+// Compute SHA-256 hash using native Web Crypto API
+const sha256 = async (text: string): Promise<string> => {
+  const msgBuffer = new TextEncoder().encode(text);
+  const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
+};
+
 export default function TerminalOverlay({ isOpen, onClose }: Props) {
   const [input, setInput] = useState("");
   const [history, setHistory] = useState<HistoryItem[]>([]);
+  const [terminalMode, setTerminalMode] = useState<"command" | "login_username" | "login_password">("command");
+  const [tempUsername, setTempUsername] = useState("");
   const bodyRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Focus input when opened
+  // Focus input when opened or mode changed
   useEffect(() => {
     if (isOpen) {
       setTimeout(() => {
         inputRef.current?.focus();
       }, 100);
     }
-  }, [isOpen]);
+  }, [isOpen, terminalMode]);
 
   // Scroll to bottom on history change
   useEffect(() => {
@@ -40,20 +50,67 @@ export default function TerminalOverlay({ isOpen, onClose }: Props) {
     }
   }, [history, isOpen]);
 
-  const handleCommand = (cmd: string) => {
-    const trimmed = cmd.trim().toLowerCase();
+  const handleCommand = async (cmd: string) => {
+    const trimmed = cmd.trim();
     let response = "";
 
-    switch (trimmed) {
+    // 1. Username input mode
+    if (terminalMode === "login_username") {
+      setTempUsername(trimmed);
+      setHistory((prev) => [...prev, { command: `Username: ${cmd}`, output: "" }]);
+      setTerminalMode("login_password");
+      setInput("");
+      return;
+    }
+
+    // 2. Password input mode
+    if (terminalMode === "login_password") {
+      // Obfuscated password hash validation: "Vannhucu12"
+      const correctHash = "33d87d3ee5ec5210631a3a0f941c8b763cd7574443c9ce68d901899f0bad5155";
+      const inputHash = await sha256(trimmed);
+
+      if (tempUsername === "Merlin" && inputHash === correctHash) {
+        localStorage.setItem("merlin_admin_logged_in", "true");
+        window.dispatchEvent(new Event("admin-login-changed"));
+        response = "AUTHENTICATION SUCCESSFUL // Welcome Merlin. Admin privileges granted.";
+      } else {
+        response = "AUTHENTICATION FAILED // Invalid username or password.";
+      }
+
+      setHistory((prev) => [...prev, { command: "Password: ••••••••", output: response }]);
+      setTerminalMode("command");
+      setTempUsername("");
+      setInput("");
+      return;
+    }
+
+    // 3. Standard command mode
+    const lowerCmd = trimmed.toLowerCase();
+
+    switch (lowerCmd) {
       case "exit":
         onClose();
         return;
+
+      case "login":
+        setTerminalMode("login_username");
+        setHistory((prev) => [...prev, { command: cmd, output: "System login protocol initialized..." }]);
+        setInput("");
+        return;
+
+      case "logout":
+        localStorage.removeItem("merlin_admin_logged_in");
+        window.dispatchEvent(new Event("admin-login-changed"));
+        response = "Admin session terminated. Privileges revoked.";
+        break;
 
       case "help":
         response = `Available commands:
   whoami        Display user identity details.
   ls            List files in current directory.
   cat <file>    Display content of a file.
+  login         Enter administrative credentials.
+  logout        Terminate administrative session.
   clear         Clear the terminal screen.
   exit          Close this terminal window.
   sudo          Request root access credentials.
@@ -74,6 +131,7 @@ Objective: SOC Analyst / Defensive security engineering.`;
 
       case "clear":
         setHistory([]);
+        setInput("");
         return;
 
       case "sudo":
@@ -82,8 +140,8 @@ Objective: SOC Analyst / Defensive security engineering.`;
         break;
 
       default:
-        if (trimmed.startsWith("cat ")) {
-          const filename = trimmed.substring(4).trim();
+        if (lowerCmd.startsWith("cat ")) {
+          const filename = lowerCmd.substring(4).trim();
           if (filename === "skills.txt") {
             response = skills
               .map((s) => `[${s.name}]\n  Note: ${s.note}\n  Tools: ${s.tools.join(", ")}`)
@@ -114,13 +172,19 @@ Objective: SOC Analyst / Defensive security engineering.`;
     }
 
     setHistory((prev) => [...prev, { command: cmd, output: response }]);
+    setInput("");
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       handleCommand(input);
-      setInput("");
     }
+  };
+
+  const getPromptLabel = () => {
+    if (terminalMode === "login_username") return "Username:";
+    if (terminalMode === "login_password") return "Password:";
+    return "merlin@mage:~$";
   };
 
   return (
@@ -171,7 +235,11 @@ Objective: SOC Analyst / Defensive security engineering.`;
               {history.map((item, idx) => (
                 <div key={idx} className={styles.historyLine}>
                   <div>
-                    <span className={styles.prompt}>merlin@mage:~$</span>
+                    <span className={styles.prompt}>
+                      {item.command.startsWith("Username:") || item.command.startsWith("Password:") 
+                        ? "" 
+                        : "merlin@mage:~$ "}
+                    </span>
                     <span className={styles.commandText}>{item.command}</span>
                   </div>
                   {item.output && <pre className={styles.output}>{item.output}</pre>}
@@ -180,10 +248,10 @@ Objective: SOC Analyst / Defensive security engineering.`;
 
               {/* Input prompt line */}
               <div className={styles.inputRow}>
-                <span className={styles.prompt}>merlin@mage:~$</span>
+                <span className={styles.prompt}>{getPromptLabel()}</span>
                 <input
                   ref={inputRef}
-                  type="text"
+                  type={terminalMode === "login_password" ? "password" : "text"}
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyDown={handleKeyDown}

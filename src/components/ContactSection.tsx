@@ -3,7 +3,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiSend, FiMail, FiMessageSquare } from "react-icons/fi";
+import { FiSend, FiMail, FiMessageSquare, FiTrash2, FiCornerDownRight } from "react-icons/fi";
 import { config } from "@/data/config";
 import styles from "./ContactSection.module.css";
 
@@ -37,9 +37,24 @@ export default function ContactSection() {
   const [message, setMessage] = useState("");
   const [comments, setComments] = useState<Comment[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
+  
+  // Track which comment Merlin is currently replying to
+  const [replyTargetId, setReplyTargetId] = useState<string | null>(null);
+  const [replyText, setReplyText] = useState("");
 
-  // Load comments from localStorage or defaults
+  const checkAdminState = () => {
+    const logged = localStorage.getItem("merlin_admin_logged_in") === "true";
+    setIsAdmin(logged);
+  };
+
+  // Sync admin state and load comments
   useEffect(() => {
+    checkAdminState();
+    
+    // Listen to custom login/logout events from terminal
+    window.addEventListener("admin-login-changed", checkAdminState);
+
     const saved = localStorage.getItem("merlin_guestbook_comments");
     if (saved) {
       try {
@@ -51,6 +66,8 @@ export default function ContactSection() {
       setComments(mockComments);
       localStorage.setItem("merlin_guestbook_comments", JSON.stringify(mockComments));
     }
+
+    return () => window.removeEventListener("admin-login-changed", checkAdminState);
   }, []);
 
   const handlePostComment = (e: React.FormEvent) => {
@@ -74,6 +91,30 @@ export default function ContactSection() {
       setMessage("");
       setIsSubmitting(false);
     }, 600);
+  };
+
+  // Admin delete comment
+  const handleDeleteComment = (id: string) => {
+    const updated = comments.filter((c) => c.id !== id);
+    setComments(updated);
+    localStorage.setItem("merlin_guestbook_comments", JSON.stringify(updated));
+  };
+
+  // Admin post reply
+  const handlePostReply = (id: string) => {
+    if (!replyText.trim()) return;
+
+    const updated = comments.map((c) => {
+      if (c.id === id) {
+        return { ...c, reply: replyText.trim() };
+      }
+      return c;
+    });
+
+    setComments(updated);
+    localStorage.setItem("merlin_guestbook_comments", JSON.stringify(updated));
+    setReplyText("");
+    setReplyTargetId(null);
   };
 
   return (
@@ -151,7 +192,7 @@ export default function ContactSection() {
         <div className={styles.boardWrapper}>
           <h3 className={styles.boardTitle}>
             <FiMessageSquare />
-            <span>GUESTBOOK STREAM // {comments.length} NOTES</span>
+            <span>Messages // {comments.length} NOTES {isAdmin && "(ADMIN SESSION ACTIVE)"}</span>
           </h3>
 
           <div className={styles.commentsList}>
@@ -167,12 +208,69 @@ export default function ContactSection() {
                   {/* User Note */}
                   <div className={styles.commentHeader}>
                     <span className={styles.commentAuthor}>{comment.name}</span>
-                    <span className={styles.commentDate}>{comment.created_at}</span>
+                    <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+                      <span className={styles.commentDate}>{comment.created_at}</span>
+                      
+                      {/* Admin Actions */}
+                      {isAdmin && (
+                        <div style={{ display: "flex", gap: "0.5rem" }}>
+                          <button
+                            onClick={() => {
+                              setReplyTargetId(comment.id);
+                              setReplyText(comment.reply || "");
+                            }}
+                            className={styles.actionBtn}
+                            title="Reply to message"
+                          >
+                            Reply
+                          </button>
+                          <button
+                            onClick={() => handleDeleteComment(comment.id)}
+                            className={styles.deleteBtn}
+                            title="Delete message"
+                          >
+                            <FiTrash2 />
+                          </button>
+                        </div>
+                      )}
+                    </div>
                   </div>
                   <p className={styles.commentText}>{comment.message}</p>
 
-                  {/* Admin Reply */}
-                  {comment.reply && (
+                  {/* Admin Reply Input Field */}
+                  {isAdmin && replyTargetId === comment.id && (
+                    <div className={styles.adminReplyForm}>
+                      <textarea
+                        value={replyText}
+                        onChange={(e) => setReplyText(e.target.value)}
+                        placeholder="Write admin reply..."
+                        rows={2}
+                        className={styles.textarea}
+                        style={{ marginTop: "1rem" }}
+                      />
+                      <div className={styles.replyActions}>
+                        <button
+                          onClick={() => handlePostReply(comment.id)}
+                          className={styles.actionBtn}
+                        >
+                          Submit Reply
+                        </button>
+                        <button
+                          onClick={() => {
+                            setReplyTargetId(null);
+                            setReplyText("");
+                          }}
+                          className={styles.actionBtn}
+                          style={{ borderColor: "rgba(255,255,255,0.15)" }}
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Admin Reply View */}
+                  {comment.reply && replyTargetId !== comment.id && (
                     <div className={styles.replyBox}>
                       <div className={styles.replyHeader}>
                         <span>REPLY FROM // MERLIN</span>

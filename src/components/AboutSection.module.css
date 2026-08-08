@@ -220,7 +220,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .skillsGrid {
     grid-template-cols: 1fr;
     max-width: 480px;
