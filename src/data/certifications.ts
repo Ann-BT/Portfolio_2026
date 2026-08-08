@@ -3,7 +3,7 @@ export interface Cert {
   issuer: string;
   date: string; // YYYY-MM
   thumbnail: string; // filename in public/certs/
-  description: string; // Detailed industry description
+  description: string; // Detailed description of cert content
   verifyUrl?: string;
 }
 
@@ -118,6 +118,35 @@ export const certifications: Cert[] = [
     thumbnail: "Coursera_CISO.png",
     description: "Covers high-level information security governance models, compliance auditing, strategic security planning, and security team organization.",
     verifyUrl: "https://coursera.org"
+  },
+  {
+    name: "Technical Support Fundamentals",
+    issuer: "Google / Coursera",
+    date: "2023-08",
+    thumbnail: "cert_coursera.png",
+    description: "Covers troubleshooting methodologies, customer service protocols, operating systems settings, system administration fundamentals, and network protocols.",
+    verifyUrl: "https://coursera.org"
+  },
+  {
+    name: "Ubuntu with WSL",
+    issuer: "F8",
+    date: "2023-02-28",
+    thumbnail: "cert_wsl.png",
+    description: "Expertise in managing Linux terminal commands, configuring development environments on Ubuntu via WSL, shell scripting, and systems administration tools."
+  },
+  {
+    name: "Frontend Development (HTML & CSS)",
+    issuer: "F8",
+    date: "2022-10-12",
+    thumbnail: "cert_html.png",
+    description: "Advanced front-end development skills including responsive design, modern CSS techniques, and HTML5 best practices."
+  },
+  {
+    name: "Information Technology Onboarding",
+    issuer: "F8",
+    date: "2022-04-17",
+    thumbnail: "cert_ITO.jpg",
+    description: "Comprehensive IT onboarding covering computer components assembly, operating systems configurations, basic networking protocols, and technical support fundamentals."
   },
   {
     name: "NSE 1 Network Security Associate",
