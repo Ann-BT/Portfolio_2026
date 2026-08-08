@@ -86,7 +86,7 @@ export default function AboutSection() {
         <hr className={styles.divider} />
 
         {/* Skills Subtitle */}
-        <h3 className={styles.skillsSubtitle}>Security & Engineering Skills</h3>
+        <h3 className={styles.skillsSubtitle}>My Inventory</h3>
 
         {/* Bulletproof Dynamic Inline Grid - Forces 2 Columns on Desktop */}
         <div 

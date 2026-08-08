@@ -8,31 +8,31 @@ export interface SkillCategory {
 
 export const skills: SkillCategory[] = [
   {
-    id: "def-sec",
-    name: "Defensive Security",
-    iconName: "Shield",
-    tools: ["SOC Operations", "Log Analysis", "Malware Triage", "SIEM Tools", "Snort", "Suricata", "YARA Rules"],
-    note: "Focusing on Blue Team engineering and behavioral analysis."
-  },
-  {
-    id: "off-sec",
-    name: "Offensive Security",
+    id: "os-tools",
+    name: "OS & Tools",
     iconName: "Terminal",
-    tools: ["Web App Testing", "Burp Suite", "OWASP ZAP", "Nmap", "Metasploit", "PEStudio", "IDA Pro"],
-    note: "Hands-on experience in vulnerability assessment and static binary triage."
+    tools: ["Linux (daily user)", "Windows", "Virtual Machines", "Docker", "Git / GitHub", "Redis"],
+    note: "Comfortable working across Linux and Windows environments, including VM-based lab setups."
   },
   {
-    id: "net-prot",
-    name: "Networking & Protocols",
-    iconName: "Radio",
-    tools: ["Wireshark", "TCP/IP Suite", "DNS Security", "HTTP/HTTPS Analysis", "VPNs", "Packet Analysis"],
-    note: "Analyzing deep-level traffic captures to reconstruct attack vectors."
-  },
-  {
-    id: "prog",
-    name: "Programming & Systems",
+    id: "programming",
+    name: "Programming & Web",
     iconName: "Code",
-    tools: ["Python", "JavaScript", "C / C++", "Bash Scripting", "Linux Systems", "Git & Docker"],
-    note: "Building custom automation scripts, sidecars, and small security tools."
+    tools: ["JavaScript", "Python (basic)", "Node.js", "React", "Express.js", "REST APIs"],
+    note: "Building web tools, automation scripts, and full-stack security utilities."
+  },
+  {
+    id: "networking",
+    name: "Networking",
+    iconName: "Radio",
+    tools: ["TCP/IP fundamentals", "HTTP / HTTPS", "DNS", "Wireshark", "Common network protocols", "Packet Analysis"],
+    note: "Solid grasp of core network protocols and traffic analysis techniques."
+  },
+  {
+    id: "security",
+    name: "Security",
+    iconName: "Shield",
+    tools: ["Burp Suite", "OWASP ZAP", "Splunk", "IDA Pro", "Process Monitor", "PEStudio", "Web Security", "Malware Analysis", "Digital Forensics"],
+    note: "Hands-on experience with security tooling, malware triage, and forensic investigation."
   }
 ];

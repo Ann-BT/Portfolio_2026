@@ -14,76 +14,75 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: "sideris-waf",
-    title: "SIDERIS Sidecar WAF",
-    description: "A production-style sidecar WAF and behavioral analysis platform that monitors live web traffic and enforces real-time mitigations.",
-    tags: ["Python", "Docker", "Threat Detection", "Web Security", "Regex Engine"],
+    title: "SIDERIS",
+    description: "A self-hosted behavioral WAF and real-time threat detection proxy that intercepts, analyzes, and neutralizes malicious traffic — without touching a single line of your application code.",
+    tags: ["Node.js", "React", "Redis", "PostgreSQL", "Docker", "Web Security"],
     category: "tool",
     github: "https://github.com/Ann-BT/SIDERIS",
     date: "2024-05",
     featured: true,
     content: `
-### SIDERIS: Custom Sidecar WAF & Behavioral Tracker
+### SIDERIS: Behavioral WAF & Real-Time Threat Detection Proxy
 
-#### The Challenge
-Modern web applications face diverse, polymorphic threats that generic web application firewalls fail to block without complex tuning. In high-stakes production environments, tracking client behavior across sessions is critical to mitigating persistent attackers and DDoS scenarios.
+#### Overview
+SIDERIS is a **self-hosted Web Application Firewall and behavioral analysis proxy** that runs in front of your existing website. It requires no changes to your application and works with any stack — WordPress, Laravel, Node.js, Django, static HTML.
 
-#### My Approach
-I engineered **SIDERIS**, a sidecar WAF, to run alongside web containers. It monitors live HTTP/HTTPS traffic by intercepting requests, performing regex-based threat matching, and triaging behavior through an in-memory session database.
-- **Interception**: Implemented as a lightweight reverse-proxy sidecar.
-- **Detections**: Developed rulesets for common OWASP Top 10 vulnerabilities (SQLi, XSS, Path Traversal).
-- **Remediation**: Implemented automatic IP throttling, temporary rate-limiting, and alert triggers.
+It works by sitting between users and the server, silently watching *how* visitors behave — not just *what* they request. Keystroke dynamics, mouse movement patterns, request timing, browser fingerprinting. When behavior looks automated, SIDERIS acts. When it looks human, traffic passes through untouched.
+
+#### The Problem It Solves
+Traditional WAFs only block known attack signatures. SIDERIS goes further — it detects behavioral anomalies like bots, scrapers, and credential stuffers that don't trigger signature-based rules because they simply *behave differently from humans*.
+
+| Threat Type | Traditional WAF | SIDERIS |
+|:---|:---:|:---:|
+| Known attack signatures (SQLi, XSS) | ✅ Blocked | ✅ Blocked |
+| Behavioral anomalies (bots, scrapers) | ❌ Invisible | ✅ Detected |
+
+#### Tech Stack
+- **Node.js** — core proxy and analysis engine
+- **React** — admin dashboard for real-time traffic visualization
+- **Redis** — in-memory session and behavioral state caching
+- **PostgreSQL** — persistent threat log storage
+- **Docker** — containerized sidecar deployment
 
 #### Key Results
-- Reduced false-positive alerts on standard traffic by **42%** using dynamic contextual rules.
-- Successfully simulated and blocked over **1,200 malicious payloads** during red-team exercises.
-- Achieved request parsing overhead of less than **3ms** per packet.
+- Detects and blocks automated threats that bypass conventional WAFs
+- Runs as a zero-code-change sidecar alongside any web stack
+- Under 3ms request parsing overhead per packet
+- Successful simulation and blocking of 1,200+ malicious payloads in red-team testing
 `
   },
   {
-    slug: "word-chain-game",
-    title: "Word Chain Game",
-    description: "An interactive word connection game built using frontend core languages, designed to challenge cognitive speed and vocabulary.",
-    tags: ["JavaScript", "HTML5", "CSS3", "Algorithms"],
-    category: "other",
-    github: "https://github.com/Ann-BT/Wordchaingame",
-    date: "2023-11",
+    slug: "phishield-extension",
+    title: "PhishShield Extension",
+    description: "A Chrome browser extension powered by machine learning that automatically scans URLs and page content in real time to detect and block phishing websites as you browse.",
+    tags: ["JavaScript", "Python", "FastAPI", "Machine Learning", "Chrome Extension", "MongoDB"],
+    category: "tool",
+    github: "https://github.com/Huyn-coder/phishieldextension",
+    date: "2024-03",
     featured: true,
     content: `
-### Word Chain Game: Logic & Interaction
+### PhishShield: ML-Powered Phishing Detection Chrome Extension
 
-#### The Challenge
-Creating a fluid, local vocabulary game requiring instant lookup validation, word-boundary validation, and dynamic visual feedbacks in response to user input times.
+#### Overview
+PhishShield is a browser-side phishing detection tool built as a Chrome extension with a Python/FastAPI backend inference server. As users browse, the extension monitors active URLs and sends extracted features to the backend ML model, which classifies sites as legitimate or phishing in real time.
 
-#### My Approach
-I implemented a client-side JavaScript engine utilizing hash tables for constant-time $O(1)$ dictionary checks. The design emphasizes:
-- **Instant Validation**: Compares the trailing letters of the previous word with the leading characters of the current input.
-- **Visual Micro-animations**: Integrated smooth transitions for correct/incorrect inputs using vanilla CSS animations.
-`
-  },
-  {
-    slug: "htb-sherlocks-writeup",
-    title: "HTB Sherlock: Tracker Write-up",
-    description: "Detailed walk-through of an incident response Sherlock challenge on HackTheBox focusing on Windows Event Log forensics.",
-    tags: ["Forensics", "Windows Event Logs", "Incident Response", "Powershell"],
-    category: "ctf",
-    date: "2024-06",
-    featured: true,
-    content: `
-### HackTheBox: Sherlock - Tracker Write-up
+#### Architecture
+- **Chrome Extension (Frontend):** Automatically scans every URL the user visits, extracts URL features, and displays a risk badge on the extension icon. Provides auto-scan, link scanner, report, whitelist, and blacklist capabilities.
+- **FastAPI Backend:** Receives URL feature vectors from the extension, runs ML inference using a trained classification model, and returns a phishing probability score.
+- **MongoDB:** Persists user-defined whitelist and blacklist entries across sessions.
 
-#### Objective
-Reconstruct the timeline of a compromised Windows server where an attacker gained initial access, ran credential harvesting tools, and established persistence.
+#### Key Features
+- **Auto-scan** — automatically scans the current URL on every page load
+- **Risk Badge** — displays a real-time danger level indicator on the toolbar icon
+- **Link Scanner** — scans all links present on the current page
+- **Report** — allows users to flag suspicious URLs for review
+- **Whitelist / Blacklist** — personal lists for trusted and blocked domains
 
-#### Methodology
-1. **Reconnaissance & Collection**: Triaged EVTX logs using EVTX-Parser and parsed logs to timeline CSVs.
-2. **Analysis**: 
-   - Found Event ID **4624** (Successful Logon) from an anomalous external IP.
-   - Identified Event ID **7045** (Service Creation) pointing to a backdoor binary executed under SYSTEM context.
-3. **Exploitation / Remediations**: Documented the exact persistence registry keys used and formulated host-based Yara rules to flag the payload.
-
-#### Key Findings
-- Attackers utilized a modified PsExec wrapper to execute administrative binaries.
-- Established detection rules targeting anomalous scheduled tasks.
+#### Tech Stack
+- JavaScript, HTML, CSS (Chrome Extension APIs)
+- Python + FastAPI (backend ML inference server)
+- Machine Learning (phishing URL classification model)
+- MongoDB (whitelist/blacklist persistence)
 `
   }
 ];

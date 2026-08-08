@@ -10,10 +10,9 @@ import { config } from "@/data/config";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/#about" },
   { label: "Projects", href: "/projects" },
   { label: "Research", href: "/research" },
-  { label: "The Vault", href: "/interests" },
+  { label: "Interests", href: "/interests" },
   { label: "Contact", href: "/#contact" }
 ];
 
