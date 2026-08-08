@@ -151,7 +151,7 @@ export default function InterestsPage() {
                 <div className={styles.videoAuthorRow}>
                   <div className={styles.authorBadge}>{currentTrack?.artist}</div>
                   
-                  {/* Quick Player Bar (Seek, Loop Mode & Audio Volume) */}
+                  {/* Quick Player Controls (Prev, Play/Pause, Next, Loop Mode) */}
                   <div className={styles.quickControls}>
                     <button onClick={prevTrack} className={styles.iconBtn} title="Previous Track">
                       <FiSkipBack />
@@ -172,25 +172,6 @@ export default function InterestsPage() {
                       <FiRepeat />
                       {loopMode === "one" && <span className={styles.loopOneBadge}>1</span>}
                     </button>
-
-                    <div className={styles.timeDisplay}>
-                      {formatTime(currentTime)} / {formatTime(duration)}
-                    </div>
-
-                    <div className={styles.volumeBlock}>
-                      <button onClick={toggleMute} className={styles.iconBtn} title={isMuted ? "Unmute" : "Mute"}>
-                        {isMuted ? <FiVolumeX /> : <FiVolume2 />}
-                      </button>
-                      <input
-                        type="range"
-                        min="0"
-                        max="100"
-                        value={isMuted ? 0 : volume}
-                        onChange={(e) => setVolume(Number(e.target.value))}
-                        className={styles.volumeRange}
-                        aria-label="Volume Control (Default 25%)"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>

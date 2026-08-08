@@ -78,7 +78,7 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
   const [currentTrackIndex, setCurrentTrackIndex] = useState<number>(0);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isMuted, setIsMuted] = useState<boolean>(false);
-  const [volume, setVolumeState] = useState<number>(25); // Default 25% lower volume
+  const [volume, setVolumeState] = useState<number>(5); // Default 5% volume
   const [loopMode, setLoopMode] = useState<LoopMode>("all");
   const [currentTime, setCurrentTime] = useState<number>(0);
   const [duration, setDuration] = useState<number>(0);
