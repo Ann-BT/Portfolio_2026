@@ -138,7 +138,7 @@ export default function TerminalOverlay({ isOpen, onClose }: Props) {
   const getPromptLabel = () => {
     if (terminalMode === "login_username") return "Username:";
     if (terminalMode === "login_password") return "Password:";
-    return "merlin@mage:~$";
+    return "merlin@magicpot:~$";
   };
 
   return (
@@ -174,17 +174,12 @@ export default function TerminalOverlay({ isOpen, onClose }: Props) {
                 <span className={`${styles.dot} ${styles.minimizeDot}`} />
                 <span className={`${styles.dot} ${styles.zoomDot}`} />
               </div>
-              <div className={styles.windowTitle}>merlin@mage: ~</div>
+              <div className={styles.windowTitle}>merlin@magicpot: ~</div>
               <div className={styles.exitLabel}>type 'exit' to close</div>
             </div>
 
             {/* Display screen */}
             <div ref={bodyRef} className={styles.windowBody}>
-              <div className={styles.introText}>
-                <div>PEICHANGANN SYSTEM TERMINAL [Version 2.0.4]</div>
-                <div>Authorized access only.</div>
-              </div>
-
               {/* History stream */}
               {history.map((item, idx) => (
                 <div key={idx} className={styles.historyLine}>
@@ -192,7 +187,7 @@ export default function TerminalOverlay({ isOpen, onClose }: Props) {
                     <span className={styles.prompt}>
                       {item.command.startsWith("Username:") || item.command.startsWith("Password:") 
                         ? "" 
-                        : "merlin@mage:~$ "}
+                        : "merlin@magicpot:~$ "}
                     </span>
                     <span className={styles.commandText}>{item.command}</span>
                   </div>
