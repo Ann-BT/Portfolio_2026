@@ -4,7 +4,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiX, FiExternalLink } from "react-icons/fi";
+import { FiX } from "react-icons/fi";
 import { certifications, Cert } from "@/data/certifications";
 import styles from "./CertificationsSection.module.css";
 
@@ -71,7 +71,6 @@ export default function CertificationsSection() {
               <div className={styles.info}>
                 <h3 className={styles.name}>{cert.name}</h3>
                 <span className={styles.issuer}>{cert.issuer}</span>
-                <span className={styles.date}>{cert.date}</span>
               </div>
             </motion.div>
           ))}
@@ -129,23 +128,11 @@ export default function CertificationsSection() {
                 <div className={styles.lightboxDetails}>
                   <h3 className={styles.lightboxTitle}>{activeCert.name}</h3>
                   <div className={styles.lightboxIssuer}>
-                    ISSUED BY // {activeCert.issuer.toUpperCase()} · {activeCert.date}
+                    ISSUED BY // {activeCert.issuer.toUpperCase()}
                   </div>
                   <p className={styles.lightboxDesc}>
                     {activeCert.description}
                   </p>
-                  
-                  {activeCert.verifyUrl && (
-                    <a
-                      href={activeCert.verifyUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={styles.verifyBtn}
-                    >
-                      <span>Verify Credential</span>
-                      <FiExternalLink />
-                    </a>
-                  )}
                 </div>
               </motion.div>
             </motion.div>
