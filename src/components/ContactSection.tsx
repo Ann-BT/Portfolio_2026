@@ -5,43 +5,15 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiSend, FiMail, FiMessageSquare, FiTrash2, FiRefreshCw } from "react-icons/fi";
 import { config } from "@/data/config";
+import { supabase } from "@/lib/supabase";
 import styles from "./ContactSection.module.css";
 
 interface Comment {
   id: string;
   name: string;
   message: string;
+  reply: string | null;
   created_at: string;
-  reply?: string;
-}
-
-// JSONBlob endpoint — free persistent cross-device JSON storage
-const BLOB_ID = "019fe0b4-b46f-7f02-bc3b-5c65c6d5d33e";
-const BLOB_URL = `https://jsonblob.com/api/jsonBlob/${BLOB_ID}`;
-
-async function fetchComments(): Promise<Comment[]> {
-  try {
-    const res = await fetch(BLOB_URL, {
-      headers: { Accept: "application/json" }
-    });
-    if (!res.ok) throw new Error("Failed to fetch");
-    const data = await res.json();
-    return Array.isArray(data.comments) ? data.comments : [];
-  } catch {
-    return [];
-  }
-}
-
-async function saveComments(comments: Comment[]): Promise<void> {
-  try {
-    await fetch(BLOB_URL, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json", Accept: "application/json" },
-      body: JSON.stringify({ comments })
-    });
-  } catch {
-    // silently fail — data still visible locally
-  }
 }
 
 export default function ContactSection() {
@@ -51,81 +23,80 @@ export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isAdmin, setIsAdmin] = useState(false);
-  
   const [replyTargetId, setReplyTargetId] = useState<string | null>(null);
   const [replyText, setReplyText] = useState("");
 
   const checkAdminState = () => {
-    const logged = localStorage.getItem("merlin_admin_logged_in") === "true";
-    setIsAdmin(logged);
+    setIsAdmin(localStorage.getItem("merlin_admin_logged_in") === "true");
+  };
+
+  const loadComments = async () => {
+    setIsLoading(true);
+    const { data, error } = await supabase
+      .from("messages")
+      .select("*")
+      .order("created_at", { ascending: false });
+    if (!error && data) setComments(data);
+    setIsLoading(false);
   };
 
   useEffect(() => {
     checkAdminState();
     window.addEventListener("admin-login-changed", checkAdminState);
+    loadComments();
 
-    // Load from cross-device store
-    fetchComments().then((data) => {
-      setComments(data);
-      setIsLoading(false);
-    });
+    // Realtime subscription — messages sync instantly across all devices
+    const channel = supabase
+      .channel("messages-realtime")
+      .on("postgres_changes", { event: "*", schema: "public", table: "messages" }, () => {
+        loadComments();
+      })
+      .subscribe();
 
-    return () => window.removeEventListener("admin-login-changed", checkAdminState);
+    return () => {
+      window.removeEventListener("admin-login-changed", checkAdminState);
+      supabase.removeChannel(channel);
+    };
   }, []);
 
   const handlePostComment = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !message.trim()) return;
-
     setIsSubmitting(true);
 
-    const newComment: Comment = {
-      id: `comment-${Date.now()}`,
+    const { error } = await supabase.from("messages").insert({
       name: name.trim(),
       message: message.trim(),
-      created_at: new Date().toISOString().split("T")[0]
-    };
+    });
 
-    const updated = [newComment, ...comments];
-    setComments(updated);
-    await saveComments(updated);
-    setName("");
-    setMessage("");
+    if (!error) {
+      setName("");
+      setMessage("");
+      // Realtime will reload, but manually refresh for immediacy
+      await loadComments();
+    }
     setIsSubmitting(false);
   };
 
   const handleDeleteComment = async (id: string) => {
-    const updated = comments.filter((c) => c.id !== id);
-    setComments(updated);
-    await saveComments(updated);
+    await supabase.from("messages").delete().eq("id", id);
+    setComments((prev) => prev.filter((c) => c.id !== id));
   };
 
   const handlePostReply = async (id: string) => {
     if (!replyText.trim()) return;
-
-    const updated = comments.map((c) => {
-      if (c.id === id) return { ...c, reply: replyText.trim() };
-      return c;
-    });
-
-    setComments(updated);
-    await saveComments(updated);
+    await supabase.from("messages").update({ reply: replyText.trim() }).eq("id", id);
+    setComments((prev) =>
+      prev.map((c) => (c.id === id ? { ...c, reply: replyText.trim() } : c))
+    );
     setReplyText("");
     setReplyTargetId(null);
-  };
-
-  const handleRefresh = () => {
-    setIsLoading(true);
-    fetchComments().then((data) => {
-      setComments(data);
-      setIsLoading(false);
-    });
   };
 
   return (
     <section id="contact" className={styles.contact}>
       <div className="swiss-container">
-        
+
         {/* Section Header */}
         <h2 className={styles.heading}>
           <span className={styles.headingDot} />
@@ -133,25 +104,22 @@ export default function ContactSection() {
         </h2>
 
         <div className={styles.grid}>
-          {/* Left Panel: Direct Work Inquiry Email Card */}
+          {/* Left: Email */}
           <div className={styles.left}>
-            <div>
-              <h3 className={styles.subtitle}>Direct Inquiries</h3>
-              <p className={styles.text}>
-                For professional work contracts, freelance availability, or academic collaborations, please transmit a direct email.
-              </p>
-              
-              <a href={`mailto:${config.email}`} className={styles.emailCtaCard}>
-                <FiMail className={styles.emailIcon} />
-                <div className={styles.emailCardTexts}>
-                  <span className={styles.emailLabel}>SEND WORK EMAIL //</span>
-                  <span className={styles.emailValue}>{config.email}</span>
-                </div>
-              </a>
-            </div>
+            <h3 className={styles.subtitle}>Direct Inquiries</h3>
+            <p className={styles.text}>
+              For professional work contracts, freelance availability, or academic collaborations, please transmit a direct email.
+            </p>
+            <a href={`mailto:${config.email}`} className={styles.emailCtaCard}>
+              <FiMail className={styles.emailIcon} />
+              <div className={styles.emailCardTexts}>
+                <span className={styles.emailLabel}>SEND WORK EMAIL //</span>
+                <span className={styles.emailValue}>{config.email}</span>
+              </div>
+            </a>
           </div>
 
-          {/* Right Panel: Leaving a comment / note */}
+          {/* Right: Post form */}
           <div>
             <h3 className={styles.subtitle}>Leave a Note</h3>
             <form onSubmit={handlePostComment} className={styles.form}>
@@ -167,7 +135,6 @@ export default function ContactSection() {
                   className={styles.input}
                 />
               </div>
-
               <div className={styles.formGroup}>
                 <label htmlFor="comment-msg" className={styles.label}>Message //</label>
                 <textarea
@@ -176,16 +143,11 @@ export default function ContactSection() {
                   onChange={(e) => setMessage(e.target.value)}
                   required
                   rows={4}
-                  placeholder="Leave a comment or question on my board..."
+                  placeholder="Leave a comment or question..."
                   className={styles.textarea}
                 />
               </div>
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className={styles.submitBtn}
-              >
+              <button type="submit" disabled={isSubmitting} className={styles.submitBtn}>
                 <span>{isSubmitting ? "TRANSMITTING..." : "POST NOTE"}</span>
                 <FiSend />
               </button>
@@ -193,14 +155,14 @@ export default function ContactSection() {
           </div>
         </div>
 
-        {/* Comment Section Board */}
+        {/* Messages Board */}
         <div className={styles.boardWrapper}>
           <h3 className={styles.boardTitle}>
             <FiMessageSquare />
-            <span>Messages // {comments.length} NOTES {isAdmin && "(ADMIN SESSION ACTIVE)"}</span>
+            <span>Messages // {comments.length} NOTES {isAdmin && "(ADMIN)"}</span>
             <button
-              onClick={handleRefresh}
-              title="Refresh messages"
+              onClick={loadComments}
+              title="Refresh"
               style={{ marginLeft: "auto", background: "none", border: "none", cursor: "pointer", color: "var(--muted)", display: "flex", alignItems: "center" }}
             >
               <FiRefreshCw size={14} />
@@ -227,76 +189,50 @@ export default function ContactSection() {
                       exit={{ opacity: 0, y: -10 }}
                       className={styles.commentItem}
                     >
-                      {/* User Note */}
                       <div className={styles.commentHeader}>
                         <span className={styles.commentAuthor}>{comment.name}</span>
                         <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-                          <span className={styles.commentDate}>{comment.created_at}</span>
-                          
-                          {/* Admin Actions */}
+                          <span className={styles.commentDate}>
+                            {new Date(comment.created_at).toLocaleDateString()}
+                          </span>
                           {isAdmin && (
                             <div style={{ display: "flex", gap: "0.5rem" }}>
                               <button
-                                onClick={() => {
-                                  setReplyTargetId(comment.id);
-                                  setReplyText(comment.reply || "");
-                                }}
+                                onClick={() => { setReplyTargetId(comment.id); setReplyText(comment.reply || ""); }}
                                 className={styles.actionBtn}
-                                title="Reply to message"
                               >
                                 Reply
                               </button>
-                              <button
-                                onClick={() => handleDeleteComment(comment.id)}
-                                className={styles.deleteBtn}
-                                title="Delete message"
-                              >
+                              <button onClick={() => handleDeleteComment(comment.id)} className={styles.deleteBtn}>
                                 <FiTrash2 />
                               </button>
                             </div>
                           )}
                         </div>
                       </div>
+
                       <p className={styles.commentText}>{comment.message}</p>
 
-                      {/* Admin Reply Input Field */}
                       {isAdmin && replyTargetId === comment.id && (
                         <div className={styles.adminReplyForm}>
                           <textarea
                             value={replyText}
                             onChange={(e) => setReplyText(e.target.value)}
-                            placeholder="Write admin reply..."
+                            placeholder="Write reply..."
                             rows={2}
                             className={styles.textarea}
                             style={{ marginTop: "1rem" }}
                           />
                           <div className={styles.replyActions}>
-                            <button
-                              onClick={() => handlePostReply(comment.id)}
-                              className={styles.actionBtn}
-                            >
-                              Submit Reply
-                            </button>
-                            <button
-                              onClick={() => {
-                                setReplyTargetId(null);
-                                setReplyText("");
-                              }}
-                              className={styles.actionBtn}
-                              style={{ borderColor: "rgba(255,255,255,0.15)" }}
-                            >
-                              Cancel
-                            </button>
+                            <button onClick={() => handlePostReply(comment.id)} className={styles.actionBtn}>Submit Reply</button>
+                            <button onClick={() => { setReplyTargetId(null); setReplyText(""); }} className={styles.actionBtn} style={{ borderColor: "rgba(255,255,255,0.15)" }}>Cancel</button>
                           </div>
                         </div>
                       )}
 
-                      {/* Reply View */}
                       {comment.reply && replyTargetId !== comment.id && (
                         <div className={styles.replyBox}>
-                          <div className={styles.replyHeader}>
-                            <span>REPLY FROM // MERLIN</span>
-                          </div>
+                          <div className={styles.replyHeader}><span>REPLY FROM // MERLIN</span></div>
                           <p className={styles.replyText}>{comment.reply}</p>
                         </div>
                       )}
