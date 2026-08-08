@@ -27,7 +27,6 @@ export default function HeroSection() {
   const [isAdmin, setIsAdmin] = useState(false);
   const [isManagerOpen, setIsManagerOpen] = useState(false);
   const [photoStack, setPhotoStack] = useState<string[]>([]);
-  const [topIndex, setTopIndex] = useState(0);
 
   const checkAdminState = () => {
     setIsAdmin(localStorage.getItem("merlin_admin_logged_in") === "true");
@@ -49,13 +48,11 @@ export default function HeroSection() {
         const parsed = JSON.parse(saved);
         if (parsed.length > 0) {
           setPhotoStack(parsed);
-          setTopIndex(parsed.length - 1);
           return;
         }
       } catch (e) {}
     }
     setPhotoStack(photos.slice(0, 5));
-    setTopIndex(4);
 
     return () => {
       window.removeEventListener("admin-login-changed", checkAdminState);
@@ -105,12 +102,13 @@ export default function HeroSection() {
     if (photoStack.length <= 1) return;
     setPhotoStack((prevStack) => {
       const nextStack = [...prevStack];
-      const first = nextStack.shift();
-      if (first) nextStack.push(first);
+      const last = nextStack.pop();
+      if (last !== undefined) {
+        nextStack.unshift(last);
+      }
       localStorage.setItem("merlin_hero_photos", JSON.stringify(nextStack));
       return nextStack;
     });
-    setTopIndex((prev) => (prev === 0 ? photoStack.length - 1 : prev - 1));
   };
 
   const handleDragEnd = (event: any, info: any) => {
@@ -160,7 +158,6 @@ export default function HeroSection() {
     nextStack[idx - 1] = temp;
     setPhotoStack(nextStack);
     localStorage.setItem("merlin_hero_photos", JSON.stringify(nextStack));
-    setTopIndex(nextStack.length - 1);
   };
 
   const handleMoveDown = (idx: number) => {
@@ -171,14 +168,12 @@ export default function HeroSection() {
     nextStack[idx + 1] = temp;
     setPhotoStack(nextStack);
     localStorage.setItem("merlin_hero_photos", JSON.stringify(nextStack));
-    setTopIndex(nextStack.length - 1);
   };
 
   const handleRemovePhoto = (idx: number) => {
     const nextStack = photoStack.filter((_, i) => i !== idx);
     setPhotoStack(nextStack);
     localStorage.setItem("merlin_hero_photos", JSON.stringify(nextStack));
-    setTopIndex(nextStack.length - 1);
   };
 
   const handlePresetSelect = (picName: string) => {
@@ -186,7 +181,6 @@ export default function HeroSection() {
     const nextStack = [...photoStack, picName];
     setPhotoStack(nextStack);
     localStorage.setItem("merlin_hero_photos", JSON.stringify(nextStack));
-    setTopIndex(nextStack.length - 1);
   };
 
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -200,7 +194,6 @@ export default function HeroSection() {
         const nextStack = [...photoStack, result];
         setPhotoStack(nextStack);
         localStorage.setItem("merlin_hero_photos", JSON.stringify(nextStack));
-        setTopIndex(nextStack.length - 1);
       }
     };
     reader.readAsDataURL(file);
@@ -209,7 +202,6 @@ export default function HeroSection() {
   const handleResetPhotos = () => {
     localStorage.removeItem("merlin_hero_photos");
     setPhotoStack(photos.slice(0, 5));
-    setTopIndex(4);
     setIsManagerOpen(false);
   };
 
@@ -321,7 +313,8 @@ export default function HeroSection() {
               {photoStack.map((pic, idx) => {
                 const rotateOffsets = [-6, -3, 0, 3, 6];
                 const rotateDeg = rotateOffsets[idx % rotateOffsets.length];
-                const isTop = idx === topIndex;
+                const topIdxVal = photoStack.length - 1;
+                const isTop = idx === topIdxVal;
 
                 return (
                   <motion.div
@@ -330,13 +323,17 @@ export default function HeroSection() {
                     dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
                     dragElastic={0.7}
                     onDragEnd={handleDragEnd}
+                    onTap={isTop ? cyclePhotos : undefined}
+                    onClick={() => {
+                      if (isTop) cyclePhotos();
+                    }}
                     className={styles.photoCard}
                     style={{
                       zIndex: isTop ? 100 : idx,
                       rotate: isTop ? 0 : rotateDeg,
-                      scale: isTop ? 1 : 0.95 - (topIndex - idx) * 0.02,
-                      x: isTop ? 0 : (idx - topIndex) * 8,
-                      y: isTop ? 0 : (idx - topIndex) * 4,
+                      scale: isTop ? 1 : 0.95 - (topIdxVal - idx) * 0.02,
+                      x: isTop ? 0 : (idx - topIdxVal) * 8,
+                      y: isTop ? 0 : (idx - topIdxVal) * 4,
                       cursor: isTop ? "grab" : "default"
                     }}
                     whileTap={isTop ? { scale: 1.02 } : {}}
@@ -353,7 +350,7 @@ export default function HeroSection() {
                 );
               })}
               <div className={styles.counter}>
-                {photoStack.length > 0 ? topIndex + 1 : 0} / {photoStack.length} IMAGES
+                TAP OR DRAG PHOTO TO CYCLE //
               </div>
             </div>
           ) : (
