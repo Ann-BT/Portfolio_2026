@@ -1,0 +1,106 @@
+.terminalPage {
+  min-height: calc(100vh - 80px);
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: var(--font-mono);
+}
+
+.terminalWindow {
+  width: 100%;
+  max-width: 800px;
+  height: 520px;
+  border: 1px solid var(--border-dim);
+  border-radius: 6px;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+/* Header bar */
+.windowHeader {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--border-dim);
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.windowButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.closeDot { background-color: #ff5f56; }
+.minimizeDot { background-color: #ffbd2e; }
+.zoomDot { background-color: #27c93f; }
+
+.windowTitle {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Terminal Body */
+.windowBody {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-bright);
+}
+
+.introText {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.historyLine {
+  margin-bottom: 0.75rem;
+}
+
+.prompt {
+  color: #27c93f;
+  margin-right: 0.5rem;
+}
+
+.commandText {
+  color: var(--text-bright);
+}
+
+.output {
+  margin-top: 0.25rem;
+  color: var(--text);
+  white-space: pre-wrap;
+}
+
+/* Input line styling */
+.inputRow {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.inputField {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-bright);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  flex-grow: 1;
+  padding: 0;
+}

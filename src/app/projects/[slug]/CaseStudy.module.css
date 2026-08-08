@@ -1,0 +1,155 @@
+.casePage {
+  padding: 6rem 0 8rem 0;
+  min-height: 100vh;
+}
+
+.backBtn {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 3.5rem;
+  transition: color 0.2s ease;
+}
+
+.backBtn:hover {
+  color: var(--text-bright);
+}
+
+.header {
+  border-bottom: 1px solid var(--border-dim);
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: var(--text-bright);
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-cols: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.metaLabel {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.metaVal {
+  font-size: 0.95rem;
+  color: var(--text-bright);
+  font-weight: 500;
+}
+
+.tagsRow {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  background-color: var(--surface);
+  border: 1px solid var(--border-dim);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+}
+
+.githubBtn {
+  border: 1px solid var(--border);
+  background-color: var(--text-bright);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.githubBtn:hover {
+  background-color: transparent;
+  color: var(--text-bright);
+}
+
+/* Markdown styling inside case study body */
+.body {
+  max-width: 800px;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.body h3 {
+  font-size: 1.75rem;
+  color: var(--text-bright);
+  margin-top: 3.5rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.body h4 {
+  font-size: 1.25rem;
+  color: var(--text-bright);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.body p {
+  margin-bottom: 1.5rem;
+}
+
+.body ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  padding-left: 1.25rem;
+}
+
+.body li {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.body li::before {
+  content: "//";
+  position: absolute;
+  left: -1.25rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+
+.body strong {
+  color: var(--text-bright);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .metaGrid {
+    grid-template-cols: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .metaGrid {
+    grid-template-cols: 1fr;
+  }
+}

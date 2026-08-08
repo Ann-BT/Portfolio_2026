@@ -1,0 +1,142 @@
+.skills {
+  padding: 8rem 0;
+  border-top: 1px solid var(--border-dim);
+}
+
+.heading {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.headingDot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--text-bright);
+}
+
+.grid {
+  display: grid;
+  grid-template-cols: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Card 3D Flip Container */
+.card {
+  background-color: transparent;
+  height: 320px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.cardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.2, 0.85, 0.4, 1.2);
+  transform-style: preserve-3d;
+}
+
+/* Flip state triggers on hover */
+.card:hover .cardInner, .flipped {
+  transform: rotateY(180deg);
+}
+
+/* Front & Back Faces */
+.faceFront, .faceBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 4px;
+  border: 1px solid var(--border-dim);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.faceFront {
+  background-color: var(--surface);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.faceBack {
+  background-color: var(--surface-2);
+  transform: rotateY(180deg);
+  justify-content: space-between;
+}
+
+/* Front styling */
+.iconWrapper {
+  font-size: 3rem;
+  color: var(--text-bright);
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 0.75rem;
+}
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  border: 1px solid var(--border-dim);
+  padding: 0.25rem 0.6rem;
+  border-radius: 100px;
+}
+
+/* Back styling */
+.backHeader {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-dim);
+  padding-bottom: 0.5rem;
+}
+
+.toolsList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.toolTag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-dim);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  color: var(--text);
+}
+
+.note {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text);
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 0.75rem;
+}
+
+@media (max-width: 576px) {
+  .card {
+    height: 280px;
+  }
+}

@@ -1,0 +1,200 @@
+.researchPage {
+  padding: 6rem 0 8rem 0;
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 4.5rem;
+  border-bottom: 1px solid var(--border-dim);
+  padding-bottom: 3rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: var(--text-bright);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: var(--text);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-bright);
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.titleDot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--text-bright);
+}
+
+/* Interests Grid */
+.interestsGrid {
+  display: grid;
+  grid-template-cols: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.interestCard {
+  border: 1px solid var(--border-dim);
+  background-color: var(--surface);
+  padding: 2.25rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.interestCard:hover {
+  border-color: var(--border);
+  transform: translateY(-4px);
+}
+
+.interestTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 0.75rem;
+}
+
+.interestDesc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* Papers List */
+.papersList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.paperCard {
+  border: 1px solid var(--border-dim);
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: 4px;
+  display: grid;
+  grid-template-cols: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.paperHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.paperTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  line-height: 1.2;
+}
+
+.paperMeta {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.statusBadge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  border: 1px solid var(--border-dim);
+  padding: 0.15rem 0.5rem;
+  border-radius: 100px;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--text-bright);
+}
+
+.paperAbstract {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* Notes List */
+.notesGrid {
+  display: grid;
+  grid-template-cols: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.noteCard {
+  border: 1px solid var(--border-dim);
+  background-color: var(--surface);
+  padding: 2rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 220px;
+}
+
+.noteTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 0.5rem;
+}
+
+.noteSummary {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.noteFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.noteDate {
+  color: var(--muted);
+}
+
+.noteTags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.noteTag {
+  color: var(--muted);
+}
+
+@media (max-width: 992px) {
+  .paperCard {
+    grid-template-cols: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .notesGrid {
+    grid-template-cols: 1fr;
+  }
+}

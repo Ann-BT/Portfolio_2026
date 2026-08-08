@@ -1,0 +1,23 @@
+export const photos: string[] = [
+  "055151dfdd465c18055716.jpg",
+  "0dad2008ac912dcf74809.jpg",
+  "11cd2a93a60a27547e1b10.jpg",
+  "22cbd3ab5f32de6c87235.jpg",
+  "2e2a1b3797ae16f04fbf1.jpg",
+  "30d3a83d24a4a5fafcb518.jpg",
+  "34277a78f6e177bf2ef011.jpg",
+  "3c2ffd7471edf0b3a9fc8.jpg",
+  "45d7de5b52c2d39c8ad317.jpg",
+  "54e137d3ba4a3b14625b19.jpg",
+  "56fed595590cd852811d6.jpg",
+  "69c046c9ca504b0e12412.jpg",
+  "b229bf7733eeb2b0ebff12.jpg",
+  "b4645141dcd85d8604c920.jpg",
+  "b5d182a30f3a8e64d72b21.jpg",
+  "c6594c26c0bf41e118ae3.jpg",
+  "dd89a9182581a4dffd9013.jpg",
+  "df58c82244bbc5e59caa4.jpg",
+  "e0844bdac743461d1f527.jpg",
+  "e5c3156299fb18a541ea14.jpg",
+  "f1277488f811794f200015.jpg"
+];

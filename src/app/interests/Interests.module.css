@@ -1,0 +1,320 @@
+.interestsPage {
+  padding: 6rem 0 8rem 0;
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 4.5rem;
+  border-bottom: 1px solid var(--border-dim);
+  padding-bottom: 3rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: var(--text-bright);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: var(--text);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-bright);
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.titleDot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--text-bright);
+}
+
+/* Read Grid */
+.readGrid {
+  display: grid;
+  grid-template-cols: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.readCard {
+  height: 220px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.cardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.2, 0.85, 0.3, 1);
+  transform-style: preserve-3d;
+}
+
+.readCard:hover .cardInner, .flipped {
+  transform: rotateY(180deg);
+}
+
+.faceFront, .faceBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border: 1px solid var(--border-dim);
+  border-radius: 4px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.faceFront {
+  background-color: var(--surface);
+  justify-content: space-between;
+}
+
+.faceBack {
+  background-color: var(--surface-2);
+  transform: rotateY(180deg);
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  line-height: 1.25;
+}
+
+.author {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+.statusRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  border: 1px solid var(--border-dim);
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+  color: var(--text-bright);
+}
+
+.progressText {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* Listen / Music Styles */
+.musicGrid {
+  display: grid;
+  grid-template-cols: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.trackList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trackRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border-dim);
+  border-radius: 4px;
+  padding: 1.25rem 2rem;
+  background-color: var(--surface);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.trackRow:hover, .activeTrack {
+  border-color: var(--border);
+  background-color: var(--surface-2);
+}
+
+.trackInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.trackTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-bright);
+}
+
+.artist {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+.playIcon {
+  font-size: 1.25rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+}
+
+.trackRow:hover .playIcon {
+  color: var(--text-bright);
+}
+
+.playerBox {
+  border: 1px solid var(--border-dim);
+  border-radius: 4px;
+  background-color: var(--surface);
+  overflow: hidden;
+  height: 300px;
+  position: sticky;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iframeWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+/* Visuals / Gallery Styles */
+.galleryGrid {
+  display: grid;
+  grid-template-cols: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.galleryCard {
+  border: 1px solid var(--border-dim);
+  background-color: var(--surface);
+  border-radius: 4px;
+  overflow: hidden;
+  height: 240px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  position: relative;
+}
+
+.galleryCard:hover {
+  transform: scale(1.03);
+  border-color: var(--border);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.galleryImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Modal Lightbox styling */
+.lightboxOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.98);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightboxWrapper {
+  position: relative;
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightboxImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: var(--text);
+  background: none;
+  cursor: pointer;
+  z-index: 100000;
+}
+
+.closeBtn:hover {
+  color: var(--text-bright);
+}
+
+.navArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: var(--text);
+  background: none;
+  cursor: pointer;
+  z-index: 100000;
+  transition: color 0.2s;
+  padding: 1rem;
+}
+
+.navArrow:hover {
+  color: var(--text-bright);
+}
+
+.arrowLeft {
+  left: 1rem;
+}
+
+.arrowRight {
+  right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .musicGrid {
+    grid-template-cols: 1fr;
+    gap: 2rem;
+  }
+  .playerBox {
+    position: relative;
+    top: 0;
+    height: 240px;
+  }
+}
