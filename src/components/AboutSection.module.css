@@ -94,11 +94,11 @@
 
 /* 2x2 Skills Grid Styles */
 .skillsGrid {
-  display: grid;
-  grid-template-cols: repeat(2, 1fr);
-  gap: 2rem;
-  max-width: 960px;
-  margin: 0 auto;
+  display: grid !important;
+  grid-template-cols: repeat(2, 1fr) !important;
+  gap: 2rem !important;
+  max-width: 960px !important;
+  margin: 0 auto !important;
 }
 
 /* 3D Flip Card Styles - Compact Height */
@@ -222,8 +222,8 @@
 
 @media (max-width: 480px) {
   .skillsGrid {
-    grid-template-cols: 1fr;
-    max-width: 480px;
+    grid-template-cols: 1fr !important;
+    max-width: 480px !important;
   }
   .card {
     height: 230px;
