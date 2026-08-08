@@ -10,6 +10,7 @@ import styles from "./CertificationsSection.module.css";
 
 export default function CertificationsSection() {
   const [activeCert, setActiveCert] = useState<Cert | null>(null);
+  const [showAll, setShowAll] = useState(false);
 
   // Close lightbox on Escape key press
   useEffect(() => {
@@ -22,6 +23,8 @@ export default function CertificationsSection() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
+  const visibleCerts = showAll ? certifications : certifications.slice(0, 6);
+
   return (
     <section id="certifications" className={styles.certs}>
       <div className="swiss-container">
@@ -32,9 +35,9 @@ export default function CertificationsSection() {
           <span>Certifications</span>
         </h2>
 
-        {/* Cert Cards Grid */}
+        {/* Cert Cards Grid - 2 columns side by side */}
         <div className={styles.grid}>
-          {certifications.map((cert) => (
+          {visibleCerts.map((cert) => (
             <motion.div
               key={cert.name}
               layoutId={`cert-card-${cert.name}`}
@@ -58,6 +61,18 @@ export default function CertificationsSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* Toggle Button for View All */}
+        {certifications.length > 6 && (
+          <div className={styles.toggleBtnContainer}>
+            <button 
+              className={styles.viewAllBtn} 
+              onClick={() => setShowAll(!showAll)}
+            >
+              {showAll ? "SHOW LESS //" : "VIEW ALL CERTIFICATIONS //"}
+            </button>
+          </div>
+        )}
 
         {/* Expanded Lightbox Modal Overlay */}
         <AnimatePresence>
@@ -101,9 +116,8 @@ export default function CertificationsSection() {
                   <div className={styles.lightboxIssuer}>
                     ISSUED BY // {activeCert.issuer.toUpperCase()} · {activeCert.date}
                   </div>
-                  <p style={{ fontSize: "0.95rem", lineHeight: 1.6, color: "var(--text)" }}>
-                    This credential verifies hands-on security training, lab exercises, and certification exam credentials completed. 
-                    Adding verification helps confirm analytical capabilities for defensive or offensive workflows.
+                  <p className={styles.lightboxDesc}>
+                    {activeCert.description}
                   </p>
                   
                   {activeCert.verifyUrl && (

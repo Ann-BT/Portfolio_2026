@@ -208,3 +208,36 @@
     grid-template-cols: 1fr;
   }
 }
+
+.toggleBtnContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5rem;
+}
+
+.viewAllBtn {
+  border: 1px solid var(--border-dim);
+  background-color: transparent;
+  color: var(--text-bright);
+  padding: 0.85rem 2.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.05em;
+}
+
+.viewAllBtn:hover {
+  background-color: var(--text-bright);
+  color: var(--bg);
+  border-color: var(--border);
+}
+
+.lightboxDesc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
