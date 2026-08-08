@@ -19,7 +19,7 @@ export const projects: Project[] = [
     tags: ["Node.js", "React", "Redis", "PostgreSQL", "Docker", "Web Security"],
     category: "tool",
     github: "https://github.com/Ann-BT/SIDERIS",
-    date: "2024-05",
+    date: "2026-06",
     featured: true,
     content: `
 ### SIDERIS — Behavioral WAF & Real-Time Threat Detection Proxy
@@ -144,7 +144,7 @@ A **1GB VPS** is sufficient for low-to-medium traffic. Handles ~10,000 concurren
     tags: ["JavaScript", "Python", "FastAPI", "Machine Learning", "Chrome Extension", "MongoDB"],
     category: "tool",
     github: "https://github.com/Huyn-coder/phishieldextension",
-    date: "2024-03",
+    date: "2026-01",
     featured: true,
     content: `
 ### PhishShield: ML-Powered Phishing Detection Chrome Extension
