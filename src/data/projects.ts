@@ -22,33 +22,119 @@ export const projects: Project[] = [
     date: "2024-05",
     featured: true,
     content: `
-### SIDERIS: Behavioral WAF & Real-Time Threat Detection Proxy
+### SIDERIS — Behavioral WAF & Real-Time Threat Detection Proxy
 
-#### Overview
-SIDERIS is a **self-hosted Web Application Firewall and behavioral analysis proxy** that runs in front of your existing website. It requires no changes to your application and works with any stack — WordPress, Laravel, Node.js, Django, static HTML.
-
-It works by sitting between users and the server, silently watching *how* visitors behave — not just *what* they request. Keystroke dynamics, mouse movement patterns, request timing, browser fingerprinting. When behavior looks automated, SIDERIS acts. When it looks human, traffic passes through untouched.
+A sidecar security layer that intercepts, analyzes, and neutralizes malicious traffic — without touching a single line of your application code.
 
 #### The Problem It Solves
-Traditional WAFs only block known attack signatures. SIDERIS goes further — it detects behavioral anomalies like bots, scrapers, and credential stuffers that don't trigger signature-based rules because they simply *behave differently from humans*.
+
+Your application is being probed right now. Credential stuffers, content scrapers, endpoint fuzzers — most of them don't trigger traditional WAF signatures because they don't use known payloads. They just **behave differently from humans**. SIDERIS measures that difference.
 
 | Threat Type | Traditional WAF | SIDERIS |
-|:---|:---:|:---:|
+|---|---|---|
 | Known attack signatures (SQLi, XSS) | ✅ Blocked | ✅ Blocked |
 | Behavioral anomalies (bots, scrapers) | ❌ Invisible | ✅ Detected |
+| Credential stuffing | ❌ Invisible | ✅ Detected |
+| Headless browser automation | ❌ Invisible | ✅ Detected |
+| Legitimate human users | ✅ Pass | ✅ Pass |
 
-#### Tech Stack
-- **Node.js** — core proxy and analysis engine
-- **React** — admin dashboard for real-time traffic visualization
-- **Redis** — in-memory session and behavioral state caching
-- **PostgreSQL** — persistent threat log storage
-- **Docker** — containerized sidecar deployment
+#### Zero Application Changes Required
 
-#### Key Results
-- Detects and blocks automated threats that bypass conventional WAFs
-- Runs as a zero-code-change sidecar alongside any web stack
-- Under 3ms request parsing overhead per packet
-- Successful simulation and blocking of 1,200+ malicious payloads in red-team testing
+SIDERIS is a sidecar. Your application keeps running exactly as-is. You point traffic through SIDERIS first. That's the entire integration.
+
+~~~
+Before SIDERIS:   [Users] ──────────────────────────────── [Your App :8080]
+
+After  SIDERIS:   [Users] ── [SIDERIS :4000] ──────────── [Your App :8080]
+                                    ↑
+                        security happens here
+~~~
+
+#### Architecture
+
+SIDERIS runs as **three Docker containers**: \`sideris-redis\` for live state, \`sideris-postgres\` for event archiving, and \`sideris-app\` housing the core microservices running concurrently.
+
+~~~
+[ Visitor Browser ]
+       │
+       ▼  :4000  ◄── the only port your users ever see
+┌─────────────────────────────────┐
+│         SIDERIS WAF PROXY       │
+│  • Enforces blocks at edge      │
+│  • Injects agent.js into HTML   │
+│  • Drops confirmed threats      │
+└──────────────┬──────────────────┘
+               │  clean traffic only
+               ▼  :8080
+   [ Your Web Application ]
+   (untouched, unaware, unbothered)
+
+   agent.js (in browser)          Collects silently:
+   ─────────────────────          • Keystroke timing intervals
+   Injected into every page        • Mouse movement vectors
+   Zero visible UI changes         • Browser fingerprint
+                                   • Request cadence + patterns
+               │  telemetry stream
+               ▼  :5000
+   [ INGEST COLLECTOR ]  →  Redis Streams
+               │
+               ▼
+   [ SCORING ENGINE ]   Score = Impact × Confidence × Persistence
+               │
+   Tier 1 ──► Monitor    Tier 4 ──► Soft Block
+   Tier 2 ──► Rate Limit Tier 5 ──► Hard Block
+   Tier 3 ──► CAPTCHA
+               │
+               ▼  :6001
+   [ SOC DASHBOARD ]  — Real-time session monitor, IP-gated
+~~~
+
+#### Threat Detection — 5 Families
+
+- **Injection Attacks** — SQLi pattern matching, XSS vectors, SSRF probes, command injection, Log4Shell / Log4j patterns
+- **Authentication Abuse** — Credential stuffing (high-frequency auth attempts, single IP, varied usernames), password spraying across distinct usernames
+- **Fuzzing & Reconnaissance** — Known scanner user-agents (\`sqlmap\`, \`nikto\`, \`burpsuite\`, \`nmap\`, \`ffuf\`, \`nuclei\`), sensitive file exposure (\`.env\`, \`.git/config\`, \`wp-config.php\`), CMS admin portal scans, directory traversal (\`../\`), HTTP method abuse (TRACE, CONNECT, PROPFIND), Recon 404 storms
+- **Bot Automation** — Headless browser detection (\`navigator.webdriver\`), rapid navigation (10+ pages in 5s), instant form submission (< 800ms), inhuman keystroke dynamics, zero mouse interaction on forms
+- **Volumetric Abuse** — Request floods (> 50 req/min), endpoint hammering (> 20 hits on single endpoint in 60s)
+
+#### Mitigation Tiers
+
+When thresholds are breached, the Guard executes real-time mitigation using **Redis-backed atomic Lua scripts**:
+
+| Score | Action | Duration |
+|---|---|---|
+| ≥ 10 | Rate Limit | 300s decay |
+| ≥ 20 | CAPTCHA Challenge | 600s, 5-min human grace period |
+| ≥ 30 | Soft Block | 1,800s — doubles per offense |
+| ≥ 50 | Hard Block | Immediate connection termination + global IP ban |
+
+#### Performance
+
+Tested against OWASP Juice Shop on a single-machine Docker setup:
+
+| Request Condition | Added Latency | Note |
+|---|---|---|
+| Clean request, session in Redis | ~2–4ms | Typical for returning visitors |
+| First request, cold session | ~8–12ms | One-time cost per new visitor |
+| Blocked session | < 1ms | Dropped at proxy, never reaches app |
+
+| Container | Idle RAM |
+|---|---|
+| sideris-proxy | ~60 MB |
+| sideris-ingest | ~50 MB |
+| sideris-dashboard | ~80 MB |
+| Redis | ~30 MB |
+| PostgreSQL | ~90 MB |
+| **Total** | **~310 MB** |
+
+A **1GB VPS** is sufficient for low-to-medium traffic. Handles ~10,000 concurrent tracked sessions before Redis memory pressure becomes a factor.
+
+#### Key Design Decisions
+
+- **Fail-open safe mode** — If Redis goes down, SIDERIS falls back to pass-through. Your site stays online even if security telemetry fails temporarily
+- **Horizontal scaling** — State lives in Redis, allowing multiple WAF Proxy instances behind a load balancer. Detector Worker uses a Redis Consumer Group (\`sideris_group\`) to distribute scoring
+- **Static scoring thresholds, not ML** — Eliminates warm-up delays, makes scoring fully predictable and auditable. Tune sensitivity directly in \`.env\`
+- **MIT Licensed** — Free to use, modify, and deploy on personal projects or commercial sites
 `
   },
   {
