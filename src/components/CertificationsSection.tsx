@@ -43,7 +43,7 @@ export default function CertificationsSection() {
             >
               <div className={styles.thumbWrapper}>
                 <Image
-                  src={`/pics/${cert.thumbnail}`}
+                  src={`/certs/${cert.thumbnail}`}
                   alt={cert.name}
                   className={styles.thumb}
                   width={320}
@@ -87,7 +87,7 @@ export default function CertificationsSection() {
                 {/* Visual Preview */}
                 <div className={styles.lightboxImageWrapper}>
                   <Image
-                    src={`/pics/${activeCert.thumbnail}`}
+                    src={`/certs/${activeCert.thumbnail}`}
                     alt={activeCert.name}
                     className={styles.lightboxImage}
                     width={540}

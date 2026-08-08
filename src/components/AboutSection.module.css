@@ -1,5 +1,5 @@
 .about {
-  padding: 8rem 0;
+  padding: 6rem 0;
   border-top: 1px solid var(--border-dim);
 }
 
@@ -22,8 +22,9 @@
 
 .grid {
   display: grid;
-  grid-template-cols: 1.1fr 0.9fr;
+  grid-template-cols: 1.2fr 0.8fr;
   gap: 5rem;
+  margin-bottom: 4rem;
 }
 
 .story {
@@ -38,39 +39,9 @@
   color: var(--text);
 }
 
-.statsGrid {
-  display: grid;
-  grid-template-cols: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin-bottom: 3rem;
-}
-
-.statBox {
-  border: 1px solid var(--border-dim);
-  border-radius: 4px;
-  padding: 1.5rem;
-  background-color: var(--surface);
-  transition: border-color 0.2s ease;
-}
-
-.statBox:hover {
-  border-color: var(--border);
-}
-
-.statNum {
-  font-family: var(--font-mono);
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--text-bright);
-  line-height: 1;
-  margin-bottom: 0.5rem;
-}
-
-.statLabel {
-  font-size: 0.8rem;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+.rightColumn {
+  display: flex;
+  flex-direction: column;
 }
 
 .languagesBox {
@@ -104,15 +75,157 @@
   background-color: var(--surface-2);
 }
 
+/* Divider & Subtitle */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border-dim);
+  margin: 4rem 0;
+}
+
+.skillsSubtitle {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-bright);
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+/* 2x2 Skills Grid Styles */
+.skillsGrid {
+  display: grid;
+  grid-template-cols: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* 3D Flip Card Styles - Compact Height */
+.card {
+  background-color: transparent;
+  height: 250px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.cardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform-style: preserve-3d;
+}
+
+/* Flip state */
+.card:hover .cardInner, .flipped {
+  transform: rotateY(180deg);
+}
+
+/* Faces */
+.faceFront, .faceBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 4px;
+  border: 1px solid var(--border-dim);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.faceFront {
+  background-color: var(--surface);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: border-color 0.2s ease;
+}
+
+.card:hover .faceFront {
+  border-color: var(--border);
+}
+
+.faceBack {
+  background-color: var(--surface-2);
+  transform: rotateY(180deg);
+  justify-content: space-between;
+}
+
+.iconWrapper {
+  color: var(--text-bright);
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 0.5rem;
+}
+
+.badgeCount {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  border: 1px solid var(--border-dim);
+  padding: 0.2rem 0.5rem;
+  border-radius: 100px;
+}
+
+/* Back styling */
+.backHeader {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-dim);
+  padding-bottom: 0.35rem;
+}
+
+.toolsList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.toolTag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-dim);
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  color: var(--text);
+}
+
+.note {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--text);
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 0.5rem;
+}
+
 @media (max-width: 992px) {
   .grid {
     grid-template-cols: 1fr;
-    gap: 4rem;
+    gap: 3rem;
   }
 }
 
-@media (max-width: 576px) {
-  .statsGrid {
+@media (max-width: 768px) {
+  .skillsGrid {
     grid-template-cols: 1fr;
+    max-width: 480px;
+  }
+  .card {
+    height: 230px;
   }
 }

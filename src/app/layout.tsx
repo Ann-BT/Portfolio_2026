@@ -2,9 +2,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import CustomCursor from "@/components/CustomCursor";
 import LoadingScreen from "@/components/LoadingScreen";
+import LayoutWrapper from "@/components/LayoutWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,17 +31,13 @@ export default function RootLayout({
         {/* Global Noise Overlay */}
         <div className="noise-overlay" />
 
-        {/* Global Interactive Elements */}
-        <CustomCursor />
+        {/* Global Loading Preloader */}
         <LoadingScreen />
-        
-        {/* Global Navigation */}
-        <Navbar />
 
-        {/* Page Content */}
-        <main style={{ paddingTop: "80px", minHeight: "calc(100vh - 80px)" }}>
+        {/* Global Layout (Nav, Cursor, Terminal Dropdown) */}
+        <LayoutWrapper>
           {children}
-        </main>
+        </LayoutWrapper>
       </body>
     </html>
   );

@@ -1,18 +1,31 @@
 // src/components/AboutSection.tsx
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
+import { Shield, Terminal, Radio, Code } from "lucide-react";
 import { config } from "@/data/config";
+import { skills, SkillCategory } from "@/data/skills";
 import styles from "./AboutSection.module.css";
 
-const stats = [
-  { value: "10+", label: "Projects Completed" },
-  { value: "03", label: "Certifications" },
-  { value: "40+", label: "CTF Challenges" },
-  { value: "3rd Yr", label: "USTH Student" }
-];
+const iconMap = {
+  Shield: Shield,
+  Terminal: Terminal,
+  Radio: Radio,
+  Code: Code
+};
 
 export default function AboutSection() {
+  const [activeFlippedCard, setActiveFlippedCard] = useState<string | null>(null);
+
+  const toggleCard = (id: string) => {
+    if (activeFlippedCard === id) {
+      setActiveFlippedCard(null);
+    } else {
+      setActiveFlippedCard(id);
+    }
+  };
+
   return (
     <section id="about" className={styles.about}>
       <div className="swiss-container">
@@ -23,8 +36,8 @@ export default function AboutSection() {
           <span>About Me</span>
         </h2>
 
+        {/* Narrative and Languages Grid */}
         <div className={styles.grid}>
-          {/* Left: Detailed Story */}
           <div className={styles.story}>
             <p>
               I am a third-year Cyber Security student at the <strong>University of Science and Technology of Hanoi (USTH)</strong>. 
@@ -40,34 +53,16 @@ export default function AboutSection() {
             </p>
           </div>
 
-          {/* Right: Stats & Language Proficiency */}
-          <div>
-            {/* Stats grid */}
-            <div className={styles.statsGrid}>
-              {stats.map((stat, idx) => (
-                <motion.div
-                  key={stat.label}
-                  className={styles.statBox}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1, duration: 0.5 }}
-                >
-                  <div className={styles.statNum}>{stat.value}</div>
-                  <div className={styles.statLabel}>{stat.label}</div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Language Box */}
+          <div className={styles.rightColumn}>
+            {/* Decrypted Languages Box */}
             <motion.div 
               className={styles.languagesBox}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.3, duration: 0.5 }}
+              transition={{ duration: 0.5 }}
             >
-              <div className={styles.languagesTitle}>Decrypted Languages:</div>
+              <div className={styles.languagesTitle}>Decrypted Languages //</div>
               <div className={styles.langsList}>
                 {config.languages.map((lang) => (
                   <span key={lang.name} className={lang.name === "Chinese" ? `${styles.langBadge} clickable` : styles.langBadge}>
@@ -77,6 +72,62 @@ export default function AboutSection() {
               </div>
             </motion.div>
           </div>
+        </div>
+
+        {/* Horizontal Divider */}
+        <hr className={styles.divider} />
+
+        {/* Skills Subtitle */}
+        <h3 className={styles.skillsSubtitle}>Security & Engineering Skills</h3>
+
+        {/* 2x2 Skills Flip Cards Grid */}
+        <div className={styles.skillsGrid}>
+          {skills.map((skill: SkillCategory, idx: number) => {
+            const IconComponent = iconMap[skill.iconName] || Shield;
+            const isFlippedMobile = activeFlippedCard === skill.id;
+
+            return (
+              <motion.div
+                key={skill.id}
+                className={styles.card}
+                onClick={() => toggleCard(skill.id)}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.08, duration: 0.5 }}
+              >
+                <div className={`${styles.cardInner} ${isFlippedMobile ? styles.flipped : ""}`}>
+                  {/* Front Side */}
+                  <div className={styles.faceFront}>
+                    <div className={styles.iconWrapper}>
+                      <IconComponent size={34} strokeWidth={1.2} />
+                    </div>
+                    <h4 className={styles.cardTitle}>{skill.name}</h4>
+                    <span className={styles.badgeCount}>
+                      {skill.tools.length} MODULES
+                    </span>
+                  </div>
+
+                  {/* Back Side */}
+                  <div className={styles.faceBack}>
+                    <div>
+                      <div className={styles.backHeader}>
+                        {skill.id.toUpperCase()} // TOOLS
+                      </div>
+                      <ul className={styles.toolsList}>
+                        {skill.tools.map((tool) => (
+                          <li key={tool} className={styles.toolTag}>
+                            {tool}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className={styles.note}>{skill.note}</div>
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
 
       </div>

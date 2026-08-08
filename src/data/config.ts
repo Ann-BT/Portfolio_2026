@@ -11,7 +11,7 @@ export const config = {
     github: "https://github.com/Ann-BT",
     linkedin: "https://www.linkedin.com/in/ann-bt/",
     facebook: "https://www.facebook.com/merlinthegreatmage",
-    instagram: "https://www.instagram.com/peichangann/",
+    instagram: "https://www.instagram.com/merlin.themage/",
     discord: "https://discord.com/users/700193463655727134",
     youtube: "https://www.youtube.com/channel/UCxxEezUKH5b57XOwSyciVoQ"
   },
@@ -25,5 +25,11 @@ export const config = {
     { name: "English", level: "B2 / Fluent" },
     { name: "French", level: "TCF A2" },
     { name: "Chinese", level: "Learning" }
-  ]
+  ],
+  // Supabase Configuration for Comments Guestbook (Optional)
+  // Get these free from supabase.com to make comments persist globally!
+  supabase: {
+    url: process.env.NEXT_PUBLIC_SUPABASE_URL || "",
+    anonKey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ""
+  }
 };

@@ -17,7 +17,11 @@ const navLinks = [
   { label: "Contact", href: "/#contact" }
 ];
 
-export default function Navbar() {
+interface NavbarProps {
+  onTerminalToggle: () => void;
+}
+
+export default function Navbar({ onTerminalToggle }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
@@ -91,11 +95,11 @@ export default function Navbar() {
           })}
         </ul>
 
-        {/* Right Section / Terminal Launcher */}
+        {/* Right Section / Terminal Launcher Overlay */}
         <div className={styles.rightSection}>
-          <Link href="/terminal" className={styles.terminalBtn}>
+          <button onClick={onTerminalToggle} className={styles.terminalBtn}>
             [/terminal]
-          </Link>
+          </button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -148,14 +152,16 @@ export default function Navbar() {
                 </li>
               ))}
               <li className={styles.mobileLinkItem} style={{ marginTop: "1rem" }}>
-                <Link
-                  href="/terminal"
-                  onClick={() => setIsOpen(false)}
+                <button
+                  onClick={() => {
+                    setIsOpen(false);
+                    onTerminalToggle();
+                  }}
                   className={styles.terminalBtn}
                   style={{ display: "inline-block" }}
                 >
                   [/terminal]
-                </Link>
+                </button>
               </li>
             </ul>
           </motion.div>

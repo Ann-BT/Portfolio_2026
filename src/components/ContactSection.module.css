@@ -1,12 +1,12 @@
 .contact {
-  padding: 8rem 0;
+  padding: 6rem 0;
   border-top: 1px solid var(--border-dim);
 }
 
 .heading {
   font-size: 2.25rem;
   font-weight: 800;
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
   text-transform: uppercase;
   letter-spacing: -0.02em;
   display: flex;
@@ -22,8 +22,9 @@
 
 .grid {
   display: grid;
-  grid-template-cols: 1fr 1.2fr;
-  gap: 6rem;
+  grid-template-cols: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
 }
 
 .left {
@@ -34,55 +35,68 @@
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-bright);
   margin-bottom: 1.5rem;
-  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
 }
 
 .text {
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: var(--text);
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
-.details {
+/* Email Card Link Styles */
+.emailCtaCard {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
-  margin-bottom: 3rem;
+  border: 1px solid var(--border-dim);
+  border-radius: 4px;
+  padding: 1.5rem;
+  background-color: var(--surface);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  width: 100%;
 }
 
-.detailItem {
+.emailCtaCard:hover {
+  border-color: var(--border);
+  background-color: var(--surface-2);
+}
+
+.emailIcon {
+  font-size: 2rem;
+  color: var(--text-bright);
+}
+
+.emailCardTexts {
   display: flex;
   flex-direction: column;
 }
 
-.detailLabel {
+.emailLabel {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--muted);
-  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.detailValue {
+.emailValue {
   font-size: 1.1rem;
+  font-weight: 600;
   color: var(--text-bright);
-  font-weight: 500;
+  margin-top: 0.25rem;
 }
 
-/* Form Styling */
+/* Form Styles */
 .form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-}
-
-.row {
-  display: grid;
-  grid-template-cols: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -94,54 +108,43 @@
 
 .label {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: var(--muted);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
-.input, .select, .textarea {
+.input, .textarea {
   background-color: var(--surface);
   border: 1px solid var(--border-dim);
   border-radius: 4px;
   color: var(--text-bright);
-  padding: 0.85rem 1rem;
-  font-family: var(--font-sans);
+  padding: 0.75rem 1rem;
   font-size: 0.95rem;
-  transition: border-color 0.25s ease, background-color 0.25s ease;
-  width: 100%;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus, .textarea:focus {
+  border-color: var(--border);
   outline: none;
 }
 
-.select {
-  appearance: none;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  background-size: 1.25rem;
-  padding-right: 2.5rem;
-}
-
-.input:focus, .select:focus, .textarea:focus {
-  border-color: var(--border);
-  background-color: var(--surface-2);
-}
-
 .submitBtn {
-  border: 1px solid var(--border);
-  background-color: var(--text-bright);
-  color: var(--bg);
-  padding: 1rem 2rem;
-  font-weight: 700;
-  font-size: 0.95rem;
-  border-radius: 4px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  transition: all 0.3s ease;
+  background-color: var(--text-bright);
+  color: #000000;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.85rem 2rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   cursor: pointer;
-  margin-top: 1rem;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
 }
 
 .submitBtn:hover {
@@ -149,37 +152,96 @@
   color: var(--text-bright);
 }
 
-.successMsg {
-  border: 1px solid var(--border);
-  padding: 2.5rem;
-  background-color: var(--surface);
-  border-radius: 4px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
-.successTitle {
-  font-size: 1.5rem;
+/* Comment Stream Board styling */
+.boardWrapper {
+  margin-top: 6rem;
+  border-top: 1px solid var(--border-dim);
+  padding-top: 4rem;
+}
+
+.boardTitle {
+  font-size: 1.1rem;
   font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+}
+
+.commentsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+}
+
+.commentItem {
+  border: 1px solid var(--border-dim);
+  border-radius: 4px;
+  padding: 1.5rem;
+  background-color: var(--surface);
+}
+
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+  padding-bottom: 0.5rem;
+}
+
+.commentAuthor {
+  font-weight: 700;
+  color: var(--text-bright);
+  font-size: 0.95rem;
+}
+
+.commentDate {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.commentText {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+/* Admin Reply Box */
+.replyBox {
+  margin-top: 1.25rem;
+  background-color: var(--surface-2);
+  border-left: 2px solid var(--border);
+  padding: 1rem 1.25rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.replyHeader {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.replyText {
+  font-size: 0.9rem;
+  line-height: 1.5;
   color: var(--text-bright);
 }
 
 @media (max-width: 992px) {
   .grid {
     grid-template-cols: 1fr;
-    gap: 4rem;
-  }
-  .left {
-    height: auto;
-  }
-}
-
-@media (max-width: 576px) {
-  .row {
-    grid-template-cols: 1fr;
+    gap: 3rem;
   }
 }

@@ -12,6 +12,7 @@
   grid-template-cols: 1.2fr 0.8fr;
   gap: 4rem;
   align-items: center;
+  width: 100%;
 }
 
 .left {

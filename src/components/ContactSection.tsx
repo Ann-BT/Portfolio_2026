@@ -1,51 +1,79 @@
 // src/components/ContactSection.tsx
 "use client";
 
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { FiSend } from "react-icons/fi";
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { FiSend, FiMail, FiMessageSquare } from "react-icons/fi";
 import { config } from "@/data/config";
 import styles from "./ContactSection.module.css";
 
+interface Comment {
+  id: string;
+  name: string;
+  message: string;
+  created_at: string;
+  reply?: string;
+}
+
+const mockComments: Comment[] = [
+  {
+    id: "mock-1",
+    name: "Alex Security",
+    message: "The custom WAF sidecar implementation in SIDERIS is very interesting. Are you planning to release details on the packet latency results?",
+    created_at: "2026-08-05",
+    reply: "Thanks Alex! Yes, the detailed results will be published in my upcoming research paper. Standard latency is under 3ms."
+  },
+  {
+    id: "mock-2",
+    name: "HackerOne Member",
+    message: "Love the terminal drop-down easter egg! Found the flag in the inspect panel as well. Clean design.",
+    created_at: "2026-08-07",
+    reply: "Glad you found the easter egg! Security recons pay off."
+  }
+];
+
 export default function ContactSection() {
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [comments, setComments] = useState<Comment[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  const [errorMsg, setErrorMsg] = useState("");
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setErrorMsg("");
-
-    const formData = new FormData(e.currentTarget);
-    const formObject = Object.fromEntries(formData.entries());
-
-    try {
-      const response = await fetch(`https://formspree.io/f/xknpndda`, {
-        method: "POST",
-        body: JSON.stringify(formObject),
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json"
-        }
-      });
-
-      if (response.ok) {
-        setIsSuccess(true);
-        e.currentTarget.reset();
-      } else {
-        const data = await response.json();
-        if (data.errors) {
-          setErrorMsg(data.errors.map((err: any) => err.message).join(", "));
-        } else {
-          setErrorMsg("Something went wrong. Please try again later.");
-        }
+  // Load comments from localStorage or defaults
+  useEffect(() => {
+    const saved = localStorage.getItem("merlin_guestbook_comments");
+    if (saved) {
+      try {
+        setComments(JSON.parse(saved));
+      } catch (e) {
+        setComments(mockComments);
       }
-    } catch (err) {
-      setErrorMsg("Network error. Please verify your connection.");
-    } finally {
-      setIsSubmitting(false);
+    } else {
+      setComments(mockComments);
+      localStorage.setItem("merlin_guestbook_comments", JSON.stringify(mockComments));
     }
+  }, []);
+
+  const handlePostComment = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!name.trim() || !message.trim()) return;
+
+    setIsSubmitting(true);
+
+    const newComment: Comment = {
+      id: `comment-${Date.now()}`,
+      name: name.trim(),
+      message: message.trim(),
+      created_at: new Date().toISOString().split("T")[0]
+    };
+
+    setTimeout(() => {
+      const updated = [newComment, ...comments];
+      setComments(updated);
+      localStorage.setItem("merlin_guestbook_comments", JSON.stringify(updated));
+      setName("");
+      setMessage("");
+      setIsSubmitting(false);
+    }, 600);
   };
 
   return (
@@ -55,129 +83,106 @@ export default function ContactSection() {
         {/* Section Header */}
         <h2 className={styles.heading}>
           <span className={styles.headingDot} />
-          <span>Contact</span>
+          <span>Contact & Guestbook</span>
         </h2>
 
         <div className={styles.grid}>
-          {/* Left Panel: Social & General Info */}
+          {/* Left Panel: Direct Work Inquiry Email Card */}
           <div className={styles.left}>
             <div>
-              <h3 className={styles.subtitle}>Let's secure something together.</h3>
+              <h3 className={styles.subtitle}>Direct Inquiries</h3>
               <p className={styles.text}>
-                I am currently open to freelance opportunities, academic research collaborations, and part-time positions in defensive security / SOC engineering.
+                For professional work contracts, freelance availability, or academic collaborations, please transmit a direct email.
               </p>
-            </div>
-
-            <div className={styles.details}>
-              <div className={styles.detailItem}>
-                <span className={styles.detailLabel}>Direct Line //</span>
-                <a href={`mailto:${config.email}`} className={styles.detailValue}>
-                  {config.email}
-                </a>
-              </div>
-              <div className={styles.detailItem}>
-                <span className={styles.detailLabel}>Location //</span>
-                <span className={styles.detailValue}>{config.location}</span>
-              </div>
+              
+              <a href={`mailto:${config.email}`} className={styles.emailCtaCard}>
+                <FiMail className={styles.emailIcon} />
+                <div className={styles.emailCardTexts}>
+                  <span className={styles.emailLabel}>SEND WORK EMAIL //</span>
+                  <span className={styles.emailValue}>{config.email}</span>
+                </div>
+              </a>
             </div>
           </div>
 
-          {/* Right Panel: Formspree Contact Form */}
+          {/* Right Panel: Leaving a comment / note */}
           <div>
-            {isSuccess ? (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className={styles.successMsg}
+            <h3 className={styles.subtitle}>Leave a Note</h3>
+            <form onSubmit={handlePostComment} className={styles.form}>
+              <div className={styles.formGroup}>
+                <label htmlFor="comment-name" className={styles.label}>Name //</label>
+                <input
+                  type="text"
+                  id="comment-name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                  placeholder="e.g. Guest Researcher"
+                  className={styles.input}
+                />
+              </div>
+
+              <div className={styles.formGroup}>
+                <label htmlFor="comment-msg" className={styles.label}>Message //</label>
+                <textarea
+                  id="comment-msg"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
+                  rows={4}
+                  placeholder="Leave a comment or question on my board..."
+                  className={styles.textarea}
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className={styles.submitBtn}
               >
-                <h3 className={styles.successTitle}>MESSAGE RECEIVED</h3>
-                <p style={{ color: "var(--text)" }}>
-                  Thank you for reaching out. Your transmission has been decrypted and queued. I will get back to you shortly.
-                </p>
-                <button 
-                  onClick={() => setIsSuccess(false)}
-                  className={styles.submitBtn}
-                  style={{ marginTop: "1rem" }}
+                <span>{isSubmitting ? "TRANSMITTING..." : "POST NOTE"}</span>
+                <FiSend />
+              </button>
+            </form>
+          </div>
+        </div>
+
+        {/* Comment Section Board */}
+        <div className={styles.boardWrapper}>
+          <h3 className={styles.boardTitle}>
+            <FiMessageSquare />
+            <span>GUESTBOOK STREAM // {comments.length} NOTES</span>
+          </h3>
+
+          <div className={styles.commentsList}>
+            <AnimatePresence initial={false}>
+              {comments.map((comment) => (
+                <motion.div
+                  key={comment.id}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className={styles.commentItem}
                 >
-                  Send another message
-                </button>
-              </motion.div>
-            ) : (
-              <form onSubmit={handleSubmit} className={styles.form}>
-                
-                {/* Name & Email Row */}
-                <div className={styles.row}>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="name" className={styles.label}>Name //</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      placeholder="e.g. Merlin"
-                      className={styles.input}
-                    />
+                  {/* User Note */}
+                  <div className={styles.commentHeader}>
+                    <span className={styles.commentAuthor}>{comment.name}</span>
+                    <span className={styles.commentDate}>{comment.created_at}</span>
                   </div>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="email" className={styles.label}>Email //</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      placeholder="name@domain.com"
-                      className={styles.input}
-                    />
-                  </div>
-                </div>
+                  <p className={styles.commentText}>{comment.message}</p>
 
-                {/* Subject Dropdown */}
-                <div className={styles.formGroup}>
-                  <label htmlFor="subject" className={styles.label}>Subject //</label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    required
-                    className={styles.select}
-                  >
-                    <option value="Freelance Work">Freelance Work / Contract</option>
-                    <option value="Collaboration">Research Collaboration</option>
-                    <option value="Academic">Academic / Master's Discussion</option>
-                    <option value="General Inquiry">General Inquiry</option>
-                  </select>
-                </div>
-
-                {/* Message Body */}
-                <div className={styles.formGroup}>
-                  <label htmlFor="message" className={styles.label}>Message //</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows={5}
-                    placeholder="Describe your security requirements or project goals..."
-                    className={styles.textarea}
-                  />
-                </div>
-
-                {errorMsg && (
-                  <p style={{ color: "#ff4444", fontSize: "0.85rem", fontFamily: "var(--font-mono)" }}>
-                    ERROR: {errorMsg}
-                  </p>
-                )}
-
-                {/* Submit Action */}
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className={styles.submitBtn}
-                >
-                  <span>{isSubmitting ? "TRANSMITTING..." : "SEND TRANSMISSION"}</span>
-                  <FiSend />
-                </button>
-
-              </form>
-            )}
+                  {/* Admin Reply */}
+                  {comment.reply && (
+                    <div className={styles.replyBox}>
+                      <div className={styles.replyHeader}>
+                        <span>REPLY FROM // MERLIN</span>
+                      </div>
+                      <p className={styles.replyText}>{comment.reply}</p>
+                    </div>
+                  )}
+                </motion.div>
+              ))}
+            </AnimatePresence>
           </div>
         </div>
 

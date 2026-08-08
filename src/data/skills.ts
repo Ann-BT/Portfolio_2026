@@ -1,7 +1,7 @@
 export interface SkillCategory {
   id: string;
   name: string;
-  iconName: "Shield" | "Terminal" | "Radio" | "Code" | "BookOpen";
+  iconName: "Shield" | "Terminal" | "Radio" | "Code";
   tools: string[];
   note: string;
 }
@@ -34,12 +34,5 @@ export const skills: SkillCategory[] = [
     iconName: "Code",
     tools: ["Python", "JavaScript", "C / C++", "Bash Scripting", "Linux Systems", "Git & Docker"],
     note: "Building custom automation scripts, sidecars, and small security tools."
-  },
-  {
-    id: "research-tools",
-    name: "Academic & Research",
-    iconName: "BookOpen",
-    tools: ["Threat Modeling", "Scientific Writing", "Latex", "Academic Research", "Reverse Engineering"],
-    note: "Aspirations to study Masters in Cybersecurity and work in academia."
   }
 ];

@@ -123,12 +123,7 @@ export default function HeroSection() {
         
         {/* Left Info Column */}
         <div className={styles.left}>
-          {/* Availability Status Badge */}
-          <div className={styles.badge}>
-            <span className={styles.badgeDot} />
-            <span>{config.status} · {config.location.toUpperCase()}</span>
-          </div>
-
+          
           {/* Typewriter Display Name */}
           <div className={styles.titleContainer}>
             <h1 className={styles.title}>

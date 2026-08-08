@@ -3,7 +3,6 @@
 
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import SkillsSection from "@/components/SkillsSection";
 import ProjectsPreview from "@/components/ProjectsPreview";
 import CertificationsSection from "@/components/CertificationsSection";
 import ContactSection from "@/components/ContactSection";
@@ -15,22 +14,19 @@ export default function Home() {
       {/* 1. Hero Landing Block */}
       <HeroSection />
 
-      {/* 2. Professional Bio Story */}
+      {/* 2. Professional Bio Story & Skills Grid */}
       <AboutSection />
 
-      {/* 3. Skill Cards 3D Grid */}
-      <SkillsSection />
-
-      {/* 4. Highlighted Projects */}
+      {/* 3. Highlighted Projects */}
       <ProjectsPreview />
 
-      {/* 5. Credentials Lightbox Grid */}
+      {/* 4. Credentials Lightbox Grid */}
       <CertificationsSection />
 
-      {/* 6. Contact Transmission Form */}
+      {/* 5. Contact Transmission Form */}
       <ContactSection />
 
-      {/* 7. Monospace Footer */}
+      {/* 6. Monospace Footer */}
       <Footer />
     </>
   );
