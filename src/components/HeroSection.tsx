@@ -323,10 +323,6 @@ export default function HeroSection() {
                     dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
                     dragElastic={0.7}
                     onDragEnd={handleDragEnd}
-                    onTap={isTop ? cyclePhotos : undefined}
-                    onClick={() => {
-                      if (isTop) cyclePhotos();
-                    }}
                     className={styles.photoCard}
                     style={{
                       zIndex: isTop ? 100 : idx,
@@ -350,7 +346,7 @@ export default function HeroSection() {
                 );
               })}
               <div className={styles.counter}>
-                TAP OR DRAG PHOTO TO CYCLE //
+                DRAG PHOTO TO CYCLE //
               </div>
             </div>
           ) : (
