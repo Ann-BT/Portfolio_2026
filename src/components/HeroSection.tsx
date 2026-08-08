@@ -279,13 +279,14 @@ export default function HeroSection() {
                 <span>Manage Photos</span>
               </button>
             ) : (
-              <button 
-                className={styles.btnSecondary} 
-                onClick={() => alert("CV PDF file will be uploaded here shortly.")}
+              <a 
+                href="/CV_Bui_Truong_An_IT_Engineer.pdf"
+                download="CV_Bui_Truong_An_IT_Engineer.pdf"
+                className={styles.btnSecondary}
               >
                 <FaDownload />
                 <span>Download CV</span>
-              </button>
+              </a>
             )}
           </div>
 
