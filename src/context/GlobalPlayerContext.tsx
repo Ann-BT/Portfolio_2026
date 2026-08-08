@@ -2,6 +2,7 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,8 +11,6 @@ import {
   FiPause, 
   FiSkipBack, 
   FiSkipForward, 
-  FiVolume2, 
-  FiVolumeX, 
   FiRepeat, 
   FiMaximize2,
   FiX
@@ -83,6 +82,7 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
   const [currentTime, setCurrentTime] = useState<number>(0);
   const [duration, setDuration] = useState<number>(0);
   const [isMiniDismissed, setIsMiniDismissed] = useState<boolean>(false);
+  const [portalTarget, setPortalTarget] = useState<HTMLElement | null>(null);
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
@@ -100,6 +100,16 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
       }
     }
   }, []);
+
+  // Update portal target when navigating to /interests
+  useEffect(() => {
+    if (pathname === "/interests") {
+      const anchor = document.getElementById("player-frame-anchor");
+      setPortalTarget(anchor);
+    } else {
+      setPortalTarget(null);
+    }
+  }, [pathname]);
 
   const saveTracks = (newTracks: VideoTrack[]) => {
     setTracks(newTracks);
@@ -199,9 +209,22 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
     }
   };
 
-  // Show floating mini-player if NOT on /interests page AND music/video is playing
   const isInterestsPage = pathname === "/interests";
   const showMiniPlayer = !isInterestsPage && isPlaying && !isMiniDismissed;
+
+  // Single persistent video node definition
+  const videoElement = currentTrack ? (
+    <video
+      ref={videoRef}
+      key={currentTrack.id}
+      src={currentTrack.src}
+      onTimeUpdate={handleTimeUpdate}
+      onEnded={handleVideoEnded}
+      controls={isInterestsPage}
+      preload="auto"
+      className={styles.globalVideo}
+    />
+  ) : null;
 
   return (
     <GlobalPlayerContext.Provider
@@ -230,28 +253,12 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
     >
       {children}
 
-      {/* Hidden Global Video Node — strictly maintained across routes */}
-      <div 
-        style={{ 
-          position: "fixed", 
-          top: -9999, 
-          left: -9999, 
-          width: 1, 
-          height: 1, 
-          opacity: 0, 
-          pointerEvents: "none" 
-        }}
-      >
-        {currentTrack && (
-          <video
-            ref={videoRef}
-            src={currentTrack.src}
-            onTimeUpdate={handleTimeUpdate}
-            onEnded={handleVideoEnded}
-            preload="auto"
-          />
-        )}
-      </div>
+      {/* Render Video Node inside /interests anchor when on /interests, else render off-screen */}
+      {portalTarget ? (
+        createPortal(videoElement, portalTarget)
+      ) : (
+        <div className={styles.hiddenVideoWrapper}>{videoElement}</div>
+      )}
 
       {/* Floating Persistent Mini Player when navigating to other pages */}
       <AnimatePresence>

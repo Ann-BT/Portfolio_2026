@@ -1,3 +1,28 @@
+/* Video Wrapper Styles for Route Persistence */
+.interestsVideoWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hiddenVideoWrapper {
+  position: fixed;
+  top: -9999px;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.globalVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000000;
+}
+
+/* Floating Persistent Mini Player when navigating away */
 .miniPlayerBar {
   position: fixed;
   bottom: 24px;

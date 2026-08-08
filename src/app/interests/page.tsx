@@ -132,17 +132,8 @@ export default function InterestsPage() {
               
               {/* 16:9 Video Player Container */}
               <div className={styles.playerFrame}>
-                {currentTrack ? (
-                  <video
-                    ref={videoRef}
-                    key={currentTrack.id}
-                    src={currentTrack.src}
-                    controls
-                    className={styles.videoPlayer}
-                  />
-                ) : (
-                  <div className={styles.emptyScreen}>No Video Selected</div>
-                )}
+                <div id="player-frame-anchor" className={styles.playerAnchor} />
+                {!currentTrack && <div className={styles.emptyScreen}>No Video Selected</div>}
               </div>
 
               {/* Video Title & Author Row */}
