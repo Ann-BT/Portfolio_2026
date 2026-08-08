@@ -18,12 +18,20 @@ interface Props {
   onClose: () => void;
 }
 
-// Compute SHA-256 hash using native Web Crypto API
-const sha256 = async (text: string): Promise<string> => {
-  const msgBuffer = new TextEncoder().encode(text);
-  const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
-  const hashArray = Array.from(new Uint8Array(hashBuffer));
-  return hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
+// Compute synchronous hash for compatibility across HTTP and HTTPS contexts
+const secureObfuscate = (str: string): string => {
+  let h1 = 0xdeadbeef;
+  let h2 = 0x41c64e6d;
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charCodeAt(i);
+    h1 = Math.imul(h1 ^ char, 2654435761);
+    h2 = Math.imul(h2 ^ char, 1597334677);
+  }
+  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507);
+  h2 = Math.imul(h2 ^ (h2 >>> 15), 3266489909);
+  const part1 = (h1 >>> 0).toString(16).padStart(8, "0");
+  const part2 = (h2 >>> 0).toString(16).padStart(8, "0");
+  return part1 + part2 + part1.split("").reverse().join("") + part2.split("").reverse().join("");
 };
 
 export default function TerminalOverlay({ isOpen, onClose }: Props) {
@@ -65,9 +73,9 @@ export default function TerminalOverlay({ isOpen, onClose }: Props) {
 
     // 2. Password input mode
     if (terminalMode === "login_password") {
-      // Obfuscated password hash validation: "Vannhucu12"
-      const correctHash = "33d87d3ee5ec5210631a3a0f941c8b763cd7574443c9ce68d901899f0bad5155";
-      const inputHash = await sha256(trimmed);
+      // Obfuscated password hash validation for "Vannhucu12"
+      const correctHash = "a9ab342e78ab2c27e243ba9a72c2ba87";
+      const inputHash = secureObfuscate(trimmed);
 
       if (tempUsername === "Merlin" && inputHash === correctHash) {
         localStorage.setItem("merlin_admin_logged_in", "true");
