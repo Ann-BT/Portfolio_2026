@@ -318,7 +318,7 @@ export default function HeroSection() {
 
                 return (
                   <motion.div
-                    key={idx}
+                    key={pic}
                     drag={isTop}
                     dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
                     dragElastic={0.7}
