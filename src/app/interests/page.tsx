@@ -10,12 +10,11 @@ import {
   FiSkipForward, 
   FiVolume2, 
   FiVolumeX, 
-  FiRepeat, 
   FiPlus, 
   FiTrash2, 
-  FiVideo, 
+  FiX,
   FiUploadCloud,
-  FiX 
+  FiMoreVertical
 } from "react-icons/fi";
 import Footer from "@/components/Footer";
 import styles from "./Interests.module.css";
@@ -26,6 +25,7 @@ export interface VideoTrack {
   artist: string;
   src: string;
   duration?: string;
+  thumbnail?: string;
   isCustom?: boolean;
 }
 
@@ -52,7 +52,6 @@ export default function InterestsPage() {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isMuted, setIsMuted] = useState<boolean>(false);
   const [volume, setVolume] = useState<number>(80);
-  const [isLooping, setIsLooping] = useState<boolean>(true);
 
   // Time & Duration tracking
   const [currentTime, setCurrentTime] = useState<number>(0);
@@ -114,11 +113,7 @@ export default function InterestsPage() {
   };
 
   const handleVideoEnded = () => {
-    if (isLooping) {
-      handleNextTrack();
-    } else {
-      setIsPlaying(false);
-    }
+    handleNextTrack();
   };
 
   const handleNextTrack = () => {
@@ -231,40 +226,16 @@ export default function InterestsPage() {
   return (
     <>
       <section className={styles.interestsPage}>
-        <div className="swiss-container">
+        <div className={styles.youtubeContainer}>
           
-          {/* Section Header */}
-          <header className={styles.header}>
-            <h1 className={styles.title}>Interests</h1>
-            <p className={styles.subtitle}>
-              Local media deck, native video playback, and custom playlist collection.
-            </p>
-          </header>
-
-          {/* Section Subtitle */}
-          <div className={styles.sectionHeaderRow}>
-            <h2 className={styles.sectionTitle}>
-              <span className={styles.titleDot} />
-              <span>Media Player // Local Stream</span>
-            </h2>
-
-            <button 
-              onClick={() => setIsAddModalOpen(true)}
-              className={styles.addTrackBtn}
-            >
-              <FiUploadCloud />
-              <span>UPLOAD VIDEO</span>
-            </button>
-          </div>
-
-          {/* Main Music Grid: Video Left | Playlist Right */}
-          <div className={styles.musicGrid}>
+          {/* Main YouTube Layout: Video Player (Left) | Playlist Drawer (Right) */}
+          <div className={styles.youtubeLayout}>
             
-            {/* Left Column: Native HTML5 Video Viewport & Controls Bar */}
-            <div className={styles.playerColumn}>
+            {/* LEFT COLUMN: Main Video Player & Title */}
+            <div className={styles.mainVideoArea}>
               
-              {/* Native Video Screen Frame */}
-              <div className={styles.videoScreen}>
+              {/* 16:9 Video Player Container */}
+              <div className={styles.playerFrame}>
                 {currentTrack ? (
                   <video
                     ref={videoRef}
@@ -273,135 +244,84 @@ export default function InterestsPage() {
                     onTimeUpdate={handleTimeUpdate}
                     onEnded={handleVideoEnded}
                     controls
-                    className={styles.videoElement}
+                    className={styles.videoPlayer}
                   />
                 ) : (
-                  <div className={styles.emptyScreen}>NO MEDIA SELECTED</div>
+                  <div className={styles.emptyScreen}>No Video Selected</div>
                 )}
               </div>
 
-              {/* Deck Info Banner */}
-              <div className={styles.trackBanner}>
-                <div className={styles.bannerInfo}>
-                  <div className={styles.bannerHeader}>
-                    <span className={styles.nowPlayingTag}>NOW PLAYING //</span>
-                    <span className={styles.trackIndexBadge}>
-                      TRACK {(currentTrackIndex + 1).toString().padStart(2, "0")}/{tracks.length.toString().padStart(2, "0")}
-                    </span>
+              {/* Video Title & Author Row */}
+              <div className={styles.videoMetaInfo}>
+                <h1 className={styles.videoMainTitle}>{currentTrack?.title}</h1>
+                <div className={styles.videoAuthorRow}>
+                  <div className={styles.authorBadge}>{currentTrack?.artist}</div>
+                  
+                  {/* Quick Player Bar (Seek & Audio Volume) */}
+                  <div className={styles.quickControls}>
+                    <button onClick={handlePrevTrack} className={styles.iconBtn} title="Previous">
+                      <FiSkipBack />
+                    </button>
+                    <button onClick={handleTogglePlay} className={`${styles.iconBtn} ${styles.playAccentBtn}`} title={isPlaying ? "Pause" : "Play"}>
+                      {isPlaying ? <FiPause /> : <FiPlay />}
+                    </button>
+                    <button onClick={handleNextTrack} className={styles.iconBtn} title="Next">
+                      <FiSkipForward />
+                    </button>
+
+                    <div className={styles.timeDisplay}>
+                      {formatTime(currentTime)} / {formatTime(duration)}
+                    </div>
+
+                    <div className={styles.volumeBlock}>
+                      <button onClick={handleToggleMute} className={styles.iconBtn}>
+                        {isMuted ? <FiVolumeX /> : <FiVolume2 />}
+                      </button>
+                      <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        value={isMuted ? 0 : volume}
+                        onChange={(e) => {
+                          const val = Number(e.target.value);
+                          setVolume(val);
+                          if (val > 0 && isMuted) setIsMuted(false);
+                        }}
+                        className={styles.volumeRange}
+                      />
+                    </div>
                   </div>
-                  <h3 className={styles.bannerTitle}>{currentTrack?.title}</h3>
-                  <div className={styles.bannerArtist}>{currentTrack?.artist}</div>
                 </div>
-
-                {/* Animated Equalizer Visualizer */}
-                {isPlaying && (
-                  <div className={styles.equalizer}>
-                    <span className={styles.eqBar} style={{ animationDelay: "0s" }} />
-                    <span className={styles.eqBar} style={{ animationDelay: "0.2s" }} />
-                    <span className={styles.eqBar} style={{ animationDelay: "0.4s" }} />
-                    <span className={styles.eqBar} style={{ animationDelay: "0.1s" }} />
-                  </div>
-                )}
-              </div>
-
-              {/* Progress Seek Bar */}
-              <div className={styles.seekerRow}>
-                <span className={styles.timeText}>{formatTime(currentTime)}</span>
-                <input
-                  type="range"
-                  min="0"
-                  max={duration || 100}
-                  value={currentTime}
-                  onChange={handleSeek}
-                  className={styles.timeSeeker}
-                  aria-label="Video seek bar"
-                />
-                <span className={styles.timeText}>{formatTime(duration)}</span>
-              </div>
-
-              {/* Interactive Audio Controls Bar */}
-              <div className={styles.controlsBar}>
-                
-                {/* Prev / Play / Next */}
-                <div className={styles.mainControls}>
-                  <button 
-                    onClick={handlePrevTrack}
-                    className={styles.controlBtn}
-                    title="Previous Track"
-                    aria-label="Previous Track"
-                  >
-                    <FiSkipBack />
-                  </button>
-
-                  <button 
-                    onClick={handleTogglePlay}
-                    className={`${styles.controlBtn} ${styles.playBtn}`}
-                    title={isPlaying ? "Pause" : "Play"}
-                    aria-label={isPlaying ? "Pause" : "Play"}
-                  >
-                    {isPlaying ? <FiPause /> : <FiPlay />}
-                  </button>
-
-                  <button 
-                    onClick={handleNextTrack}
-                    className={styles.controlBtn}
-                    title="Next Track"
-                    aria-label="Next Track"
-                  >
-                    <FiSkipForward />
-                  </button>
-                </div>
-
-                {/* Loop toggle */}
-                <button
-                  onClick={() => setIsLooping(!isLooping)}
-                  className={`${styles.controlBtn} ${isLooping ? styles.activeControl : ""}`}
-                  title={isLooping ? "Auto-Next Enabled" : "Auto-Next Disabled"}
-                  aria-label="Toggle Auto-Next"
-                >
-                  <FiRepeat />
-                </button>
-
-                {/* Mute & Volume Slider */}
-                <div className={styles.volumeControl}>
-                  <button
-                    onClick={handleToggleMute}
-                    className={styles.controlBtn}
-                    title={isMuted ? "Unmute" : "Mute"}
-                    aria-label={isMuted ? "Unmute" : "Mute"}
-                  >
-                    {isMuted ? <FiVolumeX /> : <FiVolume2 />}
-                  </button>
-                  <input
-                    type="range"
-                    min="0"
-                    max="100"
-                    value={isMuted ? 0 : volume}
-                    onChange={(e) => {
-                      const val = Number(e.target.value);
-                      setVolume(val);
-                      if (val > 0 && isMuted) setIsMuted(false);
-                    }}
-                    className={styles.volumeSlider}
-                    aria-label="Volume Slider"
-                  />
-                </div>
-
               </div>
 
             </div>
 
-            {/* Right Column: Playlist Manager List */}
-            <div className={styles.playlistColumn}>
+            {/* RIGHT COLUMN: YouTube Style Playlist Panel */}
+            <div className={styles.playlistDrawer}>
+              
+              {/* Playlist Header */}
               <div className={styles.playlistHeader}>
-                <span className={styles.playlistTitle}>
-                  <FiVideo />
-                  <span>PLAYLIST // {tracks.length} VIDEOS</span>
-                </span>
-                <span className={styles.playlistNote}>SELECT TO PLAY</span>
+                <div className={styles.playlistTitleGroup}>
+                  <h2 className={styles.playlistHeading}>Merlin&apos;s Media Playlist</h2>
+                  <span className={styles.playlistSubtext}>
+                    {tracks.length} videos • Playing {(currentTrackIndex + 1)} of {tracks.length}
+                  </span>
+                </div>
+
+                <div className={styles.headerActions}>
+                  <button 
+                    onClick={() => setIsAddModalOpen(true)}
+                    className={styles.addVideoIconBtn}
+                    title="Add Video to Playlist"
+                  >
+                    <FiPlus size={18} />
+                  </button>
+                  <FiMoreVertical className={styles.moreIcon} />
+                </div>
               </div>
 
-              <div className={styles.playlistScroll}>
+              {/* Scrollable Playlist Items */}
+              <div className={styles.playlistItemsList}>
                 {tracks.map((track, idx) => {
                   const isActive = idx === currentTrackIndex;
                   return (
@@ -411,42 +331,46 @@ export default function InterestsPage() {
                         setCurrentTrackIndex(idx);
                         setIsPlaying(true);
                       }}
-                      className={`${styles.playlistRow} ${isActive ? styles.activeRow : ""}`}
+                      className={`${styles.ytPlaylistItem} ${isActive ? styles.ytActiveItem : ""}`}
                     >
-                      {/* Track index / Play state */}
-                      <span className={styles.rowIdx}>
-                        {isActive ? (
-                          <FiPlay className={styles.activePlayIcon} />
-                        ) : (
-                          (idx + 1).toString().padStart(2, "0")
+                      {/* Video Thumbnail Box */}
+                      <div className={styles.thumbWrapper}>
+                        <video src={track.src} className={styles.thumbVideoPreview} preload="metadata" />
+                        
+                        {/* Play overlay / Icon */}
+                        {isActive && (
+                          <div className={styles.thumbOverlay}>
+                            <FiPlay size={14} className={styles.playingIndicator} />
+                          </div>
                         )}
-                      </span>
 
-                      {/* Title & Artist */}
-                      <div className={styles.rowMeta}>
-                        <h4 className={styles.rowTitle}>{track.title}</h4>
-                        <span className={styles.rowArtist}>{track.artist}</span>
+                        {/* Duration Badge */}
+                        <span className={styles.durationBadge}>
+                          {track.duration || "0:00"}
+                        </span>
                       </div>
 
-                      {/* Duration & Delete */}
-                      <div className={styles.rowRight}>
-                        {track.duration && (
-                          <span className={styles.rowDuration}>{track.duration}</span>
-                        )}
-                        {tracks.length > 1 && (
-                          <button
-                            onClick={(e) => handleDeleteTrack(track.id, e)}
-                            className={styles.deleteTrackBtn}
-                            title="Remove video from playlist"
-                          >
-                            <FiTrash2 />
-                          </button>
-                        )}
+                      {/* Video Info (Title & Author) */}
+                      <div className={styles.itemMeta}>
+                        <h4 className={styles.itemTitle}>{track.title}</h4>
+                        <span className={styles.itemAuthor}>{track.artist}</span>
                       </div>
+
+                      {/* Delete Action */}
+                      {tracks.length > 1 && (
+                        <button
+                          onClick={(e) => handleDeleteTrack(track.id, e)}
+                          className={styles.itemDeleteBtn}
+                          title="Remove from playlist"
+                        >
+                          <FiTrash2 size={14} />
+                        </button>
+                      )}
                     </div>
                   );
                 })}
               </div>
+
             </div>
 
           </div>
@@ -466,7 +390,7 @@ export default function InterestsPage() {
               className={styles.modalCard}
             >
               <div className={styles.modalHeader}>
-                <h3>UPLOAD VIDEO TO PLAYLIST</h3>
+                <h3>ADD VIDEO TO PLAYLIST</h3>
                 <button onClick={() => setIsAddModalOpen(false)} className={styles.modalClose}>
                   <FiX />
                 </button>
