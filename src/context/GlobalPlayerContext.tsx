@@ -10,6 +10,8 @@ import {
   FiPause, 
   FiSkipBack, 
   FiSkipForward, 
+  FiVolume2,
+  FiVolumeX,
   FiRepeat, 
   FiMaximize2,
   FiX
@@ -253,7 +255,7 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
         )}
       </div>
 
-      {/* Floating Persistent Mini Player when navigating to other pages */}
+      {/* Floating Persistent Mini Player with Volume Control when navigating to other pages */}
       <AnimatePresence>
         {showMiniPlayer && (
           <motion.div
@@ -293,6 +295,22 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
                 <FiRepeat />
                 {loopMode === "one" && <span className={styles.miniBadge}>1</span>}
               </button>
+            </div>
+
+            {/* Cross-Page Music Playback Volume Control */}
+            <div className={styles.miniVolumeGroup}>
+              <button onClick={toggleMute} className={styles.miniBtn} title={isMuted ? "Unmute" : "Mute"}>
+                {isMuted ? <FiVolumeX /> : <FiVolume2 />}
+              </button>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value={isMuted ? 0 : volume}
+                onChange={(e) => setVolume(Number(e.target.value))}
+                className={styles.miniVolumeSlider}
+                aria-label="Cross-page Volume Slider"
+              />
             </div>
 
             <div className={styles.miniRightActions}>

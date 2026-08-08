@@ -140,6 +140,7 @@ export default function InterestsPage() {
                     src={currentTrack.src}
                     muted
                     controls
+                    controlsList="novolume"
                     onClick={togglePlay}
                     className={styles.videoPlayer}
                   />
