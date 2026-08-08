@@ -84,5 +84,38 @@ PhishShield is a browser-side phishing detection tool built as a Chrome extensio
 - Machine Learning (phishing URL classification model)
 - MongoDB (whitelist/blacklist persistence)
 `
+  },
+  {
+    slug: "portfolio-site",
+    title: "This Portfolio",
+    description: "A custom-built cybersecurity portfolio site with a hacker terminal, real-time guestbook, admin photo manager, and Swiss-minimal design aesthetic.",
+    tags: ["Next.js", "TypeScript", "Supabase", "Framer Motion", "CSS Modules", "GitHub Pages"],
+    category: "other",
+    github: "https://github.com/Ann-BT/Portfolio_2026",
+    demo: "http://merlinthemage.me",
+    date: "2026-08",
+    featured: true,
+    content: `
+### Portfolio Site: Full-Stack Static Portfolio with Hacker Aesthetic
+
+#### Overview
+A fully custom portfolio site built with **Next.js 16 (Turbopack)** and deployed as a static site on **GitHub Pages**. Designed with a Swiss-minimal dark aesthetic, animated with **Framer Motion**, and backed by **Supabase** for real-time cross-device data sync.
+
+#### Key Features
+- **Hacker Terminal Overlay** — drop-down terminal with working commands, admin login via \`login\` → \`Merlin\` → password flow, and Easter egg flags
+- **Admin Photo Manager** — when logged in as Merlin, drag-and-drop photo reordering, preset selection, and image uploads to the Hero section
+- **Real-time Guestbook** — cross-device message board powered by Supabase Realtime (Postgres \`postgres_changes\` subscription). Messages appear instantly on all devices
+- **Fanned Photo Stack** — interactive drag-to-cycle photo stack in the hero section using Framer Motion gestures
+- **Certifications Gallery** — image lightbox with expand/collapse, 3-column grid, no placeholder data
+- **Dynamic Skills Cards** — flip-card interactions showing tool inventory across 4 categories
+
+#### Tech Stack
+- **Next.js 16 + TypeScript** — static export, App Router, Turbopack
+- **React + Framer Motion** — animations, drag gestures, layout transitions
+- **Supabase** — Postgres database + Realtime subscriptions + Storage
+- **CSS Modules** — scoped component styles, Swiss-grid layout system
+- **GitHub Pages + gh-pages** — automated static deploy pipeline
+`
   }
 ];
+
