@@ -14,10 +14,14 @@ import {
   FiVideo, 
   FiUploadCloud,
   FiX,
-  FiMoreVertical
+  FiMoreVertical,
+  FiBookOpen,
+  FiStar,
+  FiBookmark
 } from "react-icons/fi";
 import Footer from "@/components/Footer";
 import { useGlobalPlayer, VideoTrack } from "@/context/GlobalPlayerContext";
+import { bookRecommendations, BookRecommendation } from "@/data/interests";
 import styles from "./Interests.module.css";
 
 export default function InterestsPage() {
@@ -65,6 +69,18 @@ export default function InterestsPage() {
   const [newUrl, setNewUrl] = useState<string>("");
   const [newTitle, setNewTitle] = useState<string>("");
   const [newArtist, setNewArtist] = useState<string>("");
+
+  // Book Category Filter state
+  const [bookFilter, setBookFilter] = useState<string>("ALL");
+
+  const filteredBooks = bookRecommendations.filter((book) => {
+    if (bookFilter === "ALL") return true;
+    if (bookFilter === "NOVELS") return book.category === "Novel";
+    if (bookFilter === "MANHWA") return book.category === "Manhwa";
+    if (bookFilter === "MANGA") return book.category === "Manga";
+    if (bookFilter === "MANHUA") return book.category === "Manhua";
+    return true;
+  });
 
   // Add / Upload video handler
   const handleAddTrackSubmit = (e: React.FormEvent) => {
@@ -125,6 +141,15 @@ export default function InterestsPage() {
       <section className={styles.interestsPage}>
         <div className={styles.youtubeContainer}>
           
+          {/* Main Top Title Text requested by user */}
+          <header className={styles.topHeader}>
+            <span className={styles.topHeaderTag}>// AUDIO STREAM & EXPLORATION</span>
+            <h1 className={styles.mainTitleText}>Play some music and explore my page</h1>
+            <p className={styles.headerSubtitle}>
+              Curated local media deck, persistent background audio streams, and personal reading recommendations.
+            </p>
+          </header>
+
           {/* Main YouTube Layout: Video Player (Left) | Playlist Drawer (Right) */}
           <div className={styles.youtubeLayout}>
             
@@ -151,7 +176,7 @@ export default function InterestsPage() {
 
               {/* Video Title & Author Row */}
               <div className={styles.videoMetaInfo}>
-                <h1 className={styles.videoMainTitle}>{currentTrack?.title}</h1>
+                <h2 className={styles.videoMainTitle}>{currentTrack?.title}</h2>
                 <div className={styles.videoAuthorRow}>
                   <div className={styles.authorBadge}>{currentTrack?.artist}</div>
                   
@@ -188,7 +213,7 @@ export default function InterestsPage() {
               {/* Playlist Header */}
               <div className={styles.playlistHeader}>
                 <div className={styles.playlistTitleGroup}>
-                  <h2 className={styles.playlistHeading}>Merlin&apos;s Media Playlist</h2>
+                  <h3 className={styles.playlistHeading}>Merlin&apos;s Media Playlist</h3>
                   <span className={styles.playlistSubtext}>
                     {tracks.length} videos • Playing {(currentTrackIndex + 1)} of {tracks.length} ({getLoopModeLabel()})
                   </span>
@@ -260,6 +285,96 @@ export default function InterestsPage() {
             </div>
 
           </div>
+
+          {/* ========================================================= */}
+          {/* NOVEL & MANGA / MANHWA / MANHUA RECOMMENDATIONS SHOWCASE  */}
+          {/* ========================================================= */}
+          <section className={styles.booksSection}>
+            
+            {/* Section Heading & Filter Bar */}
+            <div className={styles.booksHeaderRow}>
+              <div>
+                <span className={styles.booksSectionTag}>// READING SHELF & RECOMMENDATIONS</span>
+                <h2 className={styles.booksSectionTitle}>Light Novels & Manga / Manhwa / Manhua</h2>
+              </div>
+
+              {/* Filter Tabs */}
+              <div className={styles.booksFilterBar}>
+                {["ALL", "NOVELS", "MANHWA", "MANGA", "MANHUA"].map((filter) => (
+                  <button
+                    key={filter}
+                    onClick={() => setBookFilter(filter)}
+                    className={`${styles.booksFilterBtn} ${bookFilter === filter ? styles.activeBooksFilter : ""}`}
+                  >
+                    {filter}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Book Covers List Grid Showcase */}
+            <div className={styles.booksGrid}>
+              {filteredBooks.map((book) => (
+                <motion.div
+                  key={book.id}
+                  layout
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 20 }}
+                  className={styles.bookCard}
+                >
+                  {/* Book Cover Image Container */}
+                  <div className={styles.coverFrame}>
+                    <img 
+                      src={book.coverImage} 
+                      alt={book.title} 
+                      className={styles.coverImage}
+                    />
+                    
+                    {/* Category Badge */}
+                    <span className={styles.categoryBadge}>
+                      {book.category.toUpperCase()}
+                    </span>
+
+                    {/* Rating Badge */}
+                    <span className={styles.ratingBadge}>
+                      <FiStar className={styles.starIcon} />
+                      <span>{book.rating}</span>
+                    </span>
+
+                    {/* Overlay info on hover */}
+                    <div className={styles.coverOverlay}>
+                      <div className={styles.overlayText}>{book.description}</div>
+                      {book.chapters && (
+                        <span className={styles.chaptersBadge}>
+                          <FiBookmark /> {book.chapters}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Book Details */}
+                  <div className={styles.bookDetails}>
+                    <h3 className={styles.bookTitle}>{book.title}</h3>
+                    <div className={styles.bookAuthor}>{book.author}</div>
+
+                    {/* Status Badge & Tags */}
+                    <div className={styles.bookFooter}>
+                      <span className={`${styles.statusBadge} ${book.status === "Completed" ? styles.statusCompleted : styles.statusReading}`}>
+                        {book.status}
+                      </span>
+                      <div className={styles.tagsGroup}>
+                        {book.tags.slice(0, 2).map((tag) => (
+                          <span key={tag} className={styles.bookTag}>#{tag}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+
+          </section>
 
         </div>
       </section>
