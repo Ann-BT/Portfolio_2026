@@ -9,6 +9,8 @@ import {
   FiSkipBack, 
   FiSkipForward, 
   FiRepeat, 
+  FiVolume2,
+  FiVolumeX,
   FiPlus, 
   FiTrash2, 
   FiVideo, 
@@ -30,9 +32,13 @@ export default function InterestsPage() {
     currentTrackIndex,
     currentTrack,
     isPlaying,
+    isMuted,
+    volume,
     loopMode,
     masterMediaRef,
     togglePlay,
+    toggleMute,
+    setVolume,
     cycleLoopMode,
     nextTrack,
     prevTrack,
@@ -156,7 +162,7 @@ export default function InterestsPage() {
             {/* LEFT COLUMN: Main Video Player & Title */}
             <div className={styles.mainVideoArea}>
               
-              {/* 16:9 Video Player Container (Perfect Native Resolution) */}
+              {/* 16:9 Video Player Container (Clean without default browser control bar) */}
               <div className={styles.playerFrame}>
                 {currentTrack ? (
                   <video
@@ -178,7 +184,7 @@ export default function InterestsPage() {
                 <div className={styles.videoAuthorRow}>
                   <div className={styles.authorBadge}>{currentTrack?.artist}</div>
                   
-                  {/* Quick Player Controls (Prev, Play/Pause, Next, Loop Mode) */}
+                  {/* Quick Player Controls (Prev, Play/Pause, Next, Loop Mode & Volume Slider) */}
                   <div className={styles.quickControls}>
                     <button onClick={prevTrack} className={styles.iconBtn} title="Previous Track">
                       <FiSkipBack />
@@ -199,6 +205,22 @@ export default function InterestsPage() {
                       <FiRepeat />
                       {loopMode === "one" && <span className={styles.loopOneBadge}>1</span>}
                     </button>
+
+                    {/* Volume Mute & Slider */}
+                    <div className={styles.volumeBlock}>
+                      <button onClick={toggleMute} className={styles.iconBtn} title={isMuted ? "Unmute" : "Mute"}>
+                        {isMuted ? <FiVolumeX /> : <FiVolume2 />}
+                      </button>
+                      <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        value={isMuted ? 0 : volume}
+                        onChange={(e) => setVolume(Number(e.target.value))}
+                        className={styles.volumeRange}
+                        aria-label="Volume Slider"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

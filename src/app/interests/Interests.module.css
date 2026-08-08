@@ -196,6 +196,21 @@
   color: var(--bg);
 }
 
+.volumeBlock {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-left: 1px solid var(--border-dim);
+  padding-left: 0.75rem;
+  margin-left: 0.25rem;
+}
+
+.volumeRange {
+  width: 75px;
+  accent-color: var(--text-bright);
+  cursor: pointer;
+}
+
 /* RIGHT COLUMN: YouTube Playlist Drawer */
 .playlistDrawer {
   width: 380px !important;
