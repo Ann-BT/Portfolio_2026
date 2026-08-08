@@ -37,6 +37,19 @@
   gap: 0.5rem;
 }
 
+.logoImg {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-dim);
+  transition: transform 0.2s ease;
+}
+
+.logoImg:hover {
+  transform: scale(1.08);
+}
+
 .logoDot {
   width: 4px;
   height: 4px;

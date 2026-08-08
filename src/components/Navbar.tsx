@@ -67,6 +67,11 @@ export default function Navbar({ onTerminalToggle }: NavbarProps) {
       <div className={styles.container} style={{ height: "100%" }}>
         {/* Logo */}
         <Link href="/" className={styles.logo}>
+          <img 
+            src="/logo.png" 
+            alt="Avatar" 
+            className={styles.logoImg}
+          />
           <span>{config.nickname.toUpperCase()}</span>
           <span className={styles.logoDot} />
         </Link>
