@@ -12,12 +12,16 @@ import styles from "./Projects.module.css";
 
 const categories = [
   { id: "all", label: "All Work" },
-  { id: "tool", label: "Tools" },
-  { id: "ctf", label: "CTF Write-ups" },
-  { id: "research", label: "Research" },
-  { id: "script", label: "Scripts" },
-  { id: "other", label: "Other" }
+  { id: "security", label: "Cybersecurity" },
+  { id: "webdev", label: "Web Development" }
 ];
+
+const categoryLabels: Record<string, string> = {
+  security: "CYBERSECURITY",
+  webdev: "WEB DEVELOPMENT",
+  tools: "TOOLS & AUTOMATION",
+  other: "OTHER"
+};
 
 export default function ProjectsPage() {
   const router = useRouter();
@@ -37,7 +41,7 @@ export default function ProjectsPage() {
           <div className={styles.header}>
             <h1 className={styles.title}>Engineering Archive</h1>
             <p className={styles.subtitle}>
-              A registry of my cybersecurity tools, penetration testing labs, incident write-ups, and custom coding scripts.
+              A registry of my cybersecurity tools, penetration testing labs, incident write-ups, and web development projects.
             </p>
           </div>
 
@@ -73,7 +77,7 @@ export default function ProjectsPage() {
                   {/* Card Top */}
                   <div className={styles.cardTop}>
                     <span className={styles.categoryTag}>
-                      {project.category.toUpperCase()} //
+                      {(categoryLabels[project.category] || project.category.toUpperCase())} //
                     </span>
                     <div className={styles.iconLinks}>
                       {project.github && (

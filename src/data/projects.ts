@@ -1,9 +1,11 @@
+export type ProjectCategory = "security" | "webdev" | "tools" | "other";
+
 export interface Project {
   slug: string;
   title: string;
   description: string;
   tags: string[];
-  category: "ctf" | "tool" | "research" | "script" | "other";
+  category: ProjectCategory;
   github?: string;
   demo?: string;
   date: string; // YYYY-MM
@@ -17,7 +19,7 @@ export const projects: Project[] = [
     title: "SIDERIS",
     description: "A self-hosted behavioral WAF and real-time threat detection proxy that intercepts, analyzes, and neutralizes malicious traffic — without touching a single line of your application code.",
     tags: ["Node.js", "React", "Redis", "PostgreSQL", "Docker", "Web Security"],
-    category: "tool",
+    category: "security",
     github: "https://github.com/Ann-BT/SIDERIS",
     date: "2026-06",
     featured: true,
@@ -142,7 +144,7 @@ A **1GB VPS** is sufficient for low-to-medium traffic. Handles ~10,000 concurren
     title: "PhishShield Extension",
     description: "A Chrome browser extension powered by machine learning that automatically scans URLs and page content in real time to detect and block phishing websites as you browse.",
     tags: ["JavaScript", "Python", "FastAPI", "Machine Learning", "Chrome Extension", "MongoDB"],
-    category: "tool",
+    category: "security",
     github: "https://github.com/Huyn-coder/phishieldextension",
     date: "2026-01",
     featured: true,
@@ -176,7 +178,7 @@ PhishShield is a browser-side phishing detection tool built as a Chrome extensio
     title: "This Portfolio",
     description: "A custom-built cybersecurity portfolio site with a hacker terminal, real-time guestbook, admin photo manager, and Swiss-minimal design aesthetic.",
     tags: ["Next.js", "TypeScript", "Supabase", "Framer Motion", "CSS Modules", "GitHub Pages"],
-    category: "other",
+    category: "webdev",
     github: "https://github.com/Ann-BT/Portfolio_2026",
     demo: "http://merlinthemage.me",
     date: "2026-08",
