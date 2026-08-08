@@ -290,3 +290,225 @@
     gap: 1rem;
   }
 }
+
+/* Photo Manager Overlay */
+.managerOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.managerModal {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+}
+
+.managerHeader {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--border-dim);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.managerHeader h3 {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.managerBody {
+  padding: 2rem;
+  overflow-y: auto;
+  display: grid;
+  grid-template-cols: 1fr 1fr;
+  gap: 3rem;
+}
+
+.managerSection h4 {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding-bottom: 0.5rem;
+}
+
+.managerList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.managerItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--border-dim);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: var(--surface-2);
+}
+
+.managerThumb {
+  width: 40px;
+  height: 50px;
+  overflow: hidden;
+  border: 1px solid var(--border-dim);
+}
+
+.managerThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.managerLabel {
+  flex-grow: 1;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.managerActions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.managerActions button {
+  border: 1px solid var(--border-dim);
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  color: var(--text-bright);
+}
+
+.managerActions button:hover:not(:disabled) {
+  border-color: var(--border);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.uploadBtn {
+  border: 1px solid var(--border);
+  background-color: var(--text-bright);
+  color: var(--bg);
+  padding: 0.65rem 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+
+.uploadBtn:hover {
+  background-color: transparent;
+  color: var(--text-bright);
+}
+
+.resetBtn {
+  border: 1px solid var(--border-dim);
+  padding: 0.65rem 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  color: var(--text-bright);
+}
+
+.resetBtn:hover {
+  border-color: var(--border);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.presetsGrid {
+  display: grid;
+  grid-template-cols: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 0.75rem;
+}
+
+.presetThumb {
+  height: 80px;
+  border: 1px solid var(--border-dim);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.presetThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.presetThumb:hover {
+  border-color: var(--border);
+}
+
+.presetOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-bright);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.presetThumb:hover .presetOverlay {
+  opacity: 1;
+}
+
+.presetActive {
+  border-color: var(--border);
+  opacity: 0.5;
+  cursor: default;
+}
+
+.presetActive .presetOverlay {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .managerBody {
+    grid-template-cols: 1fr;
+    gap: 2rem;
+  }
+}

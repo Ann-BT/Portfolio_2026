@@ -1,7 +1,7 @@
 // src/components/AboutSection.tsx
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Shield, Terminal, Radio, Code } from "lucide-react";
 import { config } from "@/data/config";
@@ -17,6 +17,14 @@ const iconMap = {
 
 export default function AboutSection() {
   const [activeFlippedCard, setActiveFlippedCard] = useState<string | null>(null);
+  const [windowWidth, setWindowWidth] = useState(1200);
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const toggleCard = (id: string) => {
     if (activeFlippedCard === id) {
@@ -80,8 +88,16 @@ export default function AboutSection() {
         {/* Skills Subtitle */}
         <h3 className={styles.skillsSubtitle}>Security & Engineering Skills</h3>
 
-        {/* 2x2 Skills Flip Cards Grid */}
-        <div className={styles.skillsGrid}>
+        {/* Bulletproof Dynamic Inline Grid - Forces 2 Columns on Desktop */}
+        <div 
+          style={{ 
+            display: "grid", 
+            gridTemplateColumns: windowWidth > 580 ? "1fr 1fr" : "1fr", 
+            gap: "2rem",
+            maxWidth: "960px",
+            margin: "0 auto"
+          }}
+        >
           {skills.map((skill: SkillCategory, idx: number) => {
             const IconComponent = iconMap[skill.iconName] || Shield;
             const isFlippedMobile = activeFlippedCard === skill.id;

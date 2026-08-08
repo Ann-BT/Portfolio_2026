@@ -11,16 +11,25 @@ import styles from "./CertificationsSection.module.css";
 export default function CertificationsSection() {
   const [activeCert, setActiveCert] = useState<Cert | null>(null);
   const [showAll, setShowAll] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(1200);
 
-  // Close lightbox on Escape key press
+  // Close lightbox on Escape key press & Sync window size
   useEffect(() => {
+    setWindowWidth(window.innerWidth);
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         setActiveCert(null);
       }
     };
     window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const visibleCerts = showAll ? certifications : certifications.slice(0, 6);
@@ -35,8 +44,14 @@ export default function CertificationsSection() {
           <span>Certifications</span>
         </h2>
 
-        {/* Cert Cards Grid - 2 columns side by side */}
-        <div className={styles.grid}>
+        {/* Bulletproof Dynamic Inline Grid - Forces 3 Columns on Desktop */}
+        <div 
+          style={{ 
+            display: "grid", 
+            gridTemplateColumns: windowWidth > 992 ? "repeat(3, 1fr)" : windowWidth > 640 ? "repeat(2, 1fr)" : "1fr", 
+            gap: "2rem" 
+          }}
+        >
           {visibleCerts.map((cert) => (
             <motion.div
               key={cert.name}
