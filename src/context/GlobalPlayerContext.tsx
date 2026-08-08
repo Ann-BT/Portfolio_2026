@@ -55,7 +55,7 @@ interface PlayerContextType {
   loopMode: LoopMode;
   currentTime: number;
   duration: number;
-  videoRef: React.RefObject<HTMLVideoElement | null>;
+  masterMediaRef: React.RefObject<HTMLVideoElement | null>;
   togglePlay: () => void;
   toggleMute: () => void;
   setVolume: (val: number) => void;
@@ -82,10 +82,7 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
   const [duration, setDuration] = useState<number>(0);
   const [isMiniDismissed, setIsMiniDismissed] = useState<boolean>(false);
 
-  // Bounds tracking for player frame on /interests
-  const [anchorBounds, setAnchorBounds] = useState<{ top: number; left: number; width: number; height: number } | null>(null);
-
-  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const masterMediaRef = useRef<HTMLVideoElement | null>(null);
 
   // Load custom playlist from localStorage
   useEffect(() => {
@@ -102,40 +99,6 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
     }
   }, []);
 
-  const isInterestsPage = pathname === "/interests";
-
-  // Track position of #player-frame-anchor when on /interests page
-  useEffect(() => {
-    if (!isInterestsPage) {
-      setAnchorBounds(null);
-      return;
-    }
-
-    const updatePosition = () => {
-      const anchor = document.getElementById("player-frame-anchor");
-      if (anchor) {
-        const rect = anchor.getBoundingClientRect();
-        setAnchorBounds({
-          top: rect.top,
-          left: rect.left,
-          width: rect.width,
-          height: rect.height
-        });
-      }
-    };
-
-    updatePosition();
-    const interval = setInterval(updatePosition, 100);
-    window.addEventListener("resize", updatePosition);
-    window.addEventListener("scroll", updatePosition);
-
-    return () => {
-      clearInterval(interval);
-      window.removeEventListener("resize", updatePosition);
-      window.removeEventListener("scroll", updatePosition);
-    };
-  }, [isInterestsPage, pathname]);
-
   const saveTracks = (newTracks: VideoTrack[]) => {
     setTracks(newTracks);
     localStorage.setItem("merlin_local_playlist", JSON.stringify(newTracks));
@@ -143,34 +106,34 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
 
   const currentTrack = tracks[currentTrackIndex] || tracks[0];
 
-  // Sync video element properties with React state
+  // Sync master media properties with React state
   useEffect(() => {
-    if (!videoRef.current) return;
-    videoRef.current.volume = volume / 100;
-    videoRef.current.muted = isMuted;
+    if (!masterMediaRef.current) return;
+    masterMediaRef.current.volume = volume / 100;
+    masterMediaRef.current.muted = isMuted;
 
     if (isPlaying) {
-      const playPromise = videoRef.current.play();
+      const playPromise = masterMediaRef.current.play();
       if (playPromise !== undefined) {
         playPromise.catch(() => setIsPlaying(false));
       }
     } else {
-      videoRef.current.pause();
+      masterMediaRef.current.pause();
     }
   }, [isPlaying, currentTrackIndex, volume, isMuted]);
 
   const handleTimeUpdate = () => {
-    if (videoRef.current) {
-      setCurrentTime(videoRef.current.currentTime);
-      setDuration(videoRef.current.duration || 0);
+    if (masterMediaRef.current) {
+      setCurrentTime(masterMediaRef.current.currentTime);
+      setDuration(masterMediaRef.current.duration || 0);
     }
   };
 
   const handleVideoEnded = () => {
     if (loopMode === "one") {
-      if (videoRef.current) {
-        videoRef.current.currentTime = 0;
-        videoRef.current.play();
+      if (masterMediaRef.current) {
+        masterMediaRef.current.currentTime = 0;
+        masterMediaRef.current.play();
       }
     } else if (loopMode === "all") {
       nextTrack();
@@ -228,35 +191,14 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
   };
 
   const seek = (time: number) => {
-    if (videoRef.current) {
-      videoRef.current.currentTime = time;
+    if (masterMediaRef.current) {
+      masterMediaRef.current.currentTime = time;
       setCurrentTime(time);
     }
   };
 
+  const isInterestsPage = pathname === "/interests";
   const showMiniPlayer = !isInterestsPage && isPlaying && !isMiniDismissed;
-
-  // Calculate dynamic inline styles for the video wrapper
-  const videoWrapperStyle: React.CSSProperties = isInterestsPage && anchorBounds ? {
-    position: "fixed",
-    top: `${anchorBounds.top}px`,
-    left: `${anchorBounds.left}px`,
-    width: `${anchorBounds.width}px`,
-    height: `${anchorBounds.height}px`,
-    zIndex: 20,
-    borderRadius: "12px",
-    overflow: "hidden",
-    pointerEvents: "auto",
-    opacity: 1
-  } : {
-    position: "fixed",
-    top: "-9999px",
-    left: "-9999px",
-    width: "1px",
-    height: "1px",
-    opacity: 0,
-    pointerEvents: "none"
-  };
 
   return (
     <GlobalPlayerContext.Provider
@@ -270,7 +212,7 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
         loopMode,
         currentTime,
         duration,
-        videoRef,
+        masterMediaRef,
         togglePlay,
         toggleMute,
         setVolume,
@@ -285,17 +227,28 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
     >
       {children}
 
-      {/* SINGLE UNMOUNT-FREE VIDEO NODE */}
-      <div style={videoWrapperStyle}>
+      {/* 
+        MASTER PERSISTENT MEDIA ENGINE (Hidden in App Root)
+        Plays audio/video continuously across ALL page transitions without unmounting!
+      */}
+      <div 
+        style={{
+          position: "fixed",
+          top: -9999,
+          left: -9999,
+          width: 1,
+          height: 1,
+          opacity: 0,
+          pointerEvents: "none"
+        }}
+      >
         {currentTrack && (
           <video
-            ref={videoRef}
+            ref={masterMediaRef}
             src={currentTrack.src}
             onTimeUpdate={handleTimeUpdate}
             onEnded={handleVideoEnded}
-            controls={isInterestsPage}
             preload="auto"
-            className={styles.globalVideoElement}
           />
         )}
       </div>

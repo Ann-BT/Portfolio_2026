@@ -1,15 +1,13 @@
 // src/app/interests/page.tsx
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   FiPlay, 
   FiPause, 
   FiSkipBack, 
   FiSkipForward, 
-  FiVolume2, 
-  FiVolumeX, 
   FiRepeat, 
   FiPlus, 
   FiTrash2, 
@@ -28,23 +26,37 @@ export default function InterestsPage() {
     currentTrackIndex,
     currentTrack,
     isPlaying,
-    isMuted,
-    volume,
     loopMode,
-    currentTime,
-    duration,
-    videoRef,
+    masterMediaRef,
     togglePlay,
-    toggleMute,
-    setVolume,
     cycleLoopMode,
     nextTrack,
     prevTrack,
     selectTrack,
     addTrack,
-    deleteTrack,
-    seek
+    deleteTrack
   } = useGlobalPlayer();
+
+  const visualVideoRef = useRef<HTMLVideoElement | null>(null);
+
+  // Sync visual video time & state with master background media engine
+  useEffect(() => {
+    const syncMedia = () => {
+      if (visualVideoRef.current && masterMediaRef.current) {
+        if (Math.abs(visualVideoRef.current.currentTime - masterMediaRef.current.currentTime) > 0.5) {
+          visualVideoRef.current.currentTime = masterMediaRef.current.currentTime;
+        }
+        if (isPlaying && visualVideoRef.current.paused) {
+          visualVideoRef.current.play().catch(() => {});
+        } else if (!isPlaying && !visualVideoRef.current.paused) {
+          visualVideoRef.current.pause();
+        }
+      }
+    };
+
+    const interval = setInterval(syncMedia, 250);
+    return () => clearInterval(interval);
+  }, [isPlaying, currentTrackIndex, masterMediaRef]);
 
   // Upload modal state
   const [isAddModalOpen, setIsAddModalOpen] = useState<boolean>(false);
@@ -53,17 +65,6 @@ export default function InterestsPage() {
   const [newUrl, setNewUrl] = useState<string>("");
   const [newTitle, setNewTitle] = useState<string>("");
   const [newArtist, setNewArtist] = useState<string>("");
-
-  const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
-    seek(Number(e.target.value));
-  };
-
-  const formatTime = (secs: number) => {
-    if (isNaN(secs)) return "0:00";
-    const mins = Math.floor(secs / 60);
-    const remainder = Math.floor(secs % 60);
-    return `${mins}:${remainder.toString().padStart(2, "0")}`;
-  };
 
   // Add / Upload video handler
   const handleAddTrackSubmit = (e: React.FormEvent) => {
@@ -130,10 +131,21 @@ export default function InterestsPage() {
             {/* LEFT COLUMN: Main Video Player & Title */}
             <div className={styles.mainVideoArea}>
               
-              {/* 16:9 Video Player Container */}
+              {/* 16:9 Video Player Container (Perfect Native Resolution) */}
               <div className={styles.playerFrame}>
-                <div id="player-frame-anchor" className={styles.playerAnchor} />
-                {!currentTrack && <div className={styles.emptyScreen}>No Video Selected</div>}
+                {currentTrack ? (
+                  <video
+                    ref={visualVideoRef}
+                    key={currentTrack.id}
+                    src={currentTrack.src}
+                    muted
+                    controls
+                    onClick={togglePlay}
+                    className={styles.videoPlayer}
+                  />
+                ) : (
+                  <div className={styles.emptyScreen}>No Video Selected</div>
+                )}
               </div>
 
               {/* Video Title & Author Row */}
