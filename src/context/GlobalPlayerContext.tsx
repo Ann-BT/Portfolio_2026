@@ -2,7 +2,6 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useRef, useState } from "react";
-import { createPortal } from "react-dom";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -82,7 +81,9 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
   const [currentTime, setCurrentTime] = useState<number>(0);
   const [duration, setDuration] = useState<number>(0);
   const [isMiniDismissed, setIsMiniDismissed] = useState<boolean>(false);
-  const [portalTarget, setPortalTarget] = useState<HTMLElement | null>(null);
+
+  // Bounds tracking for player frame on /interests
+  const [anchorBounds, setAnchorBounds] = useState<{ top: number; left: number; width: number; height: number } | null>(null);
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
@@ -101,15 +102,39 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
     }
   }, []);
 
-  // Update portal target when navigating to /interests
+  const isInterestsPage = pathname === "/interests";
+
+  // Track position of #player-frame-anchor when on /interests page
   useEffect(() => {
-    if (pathname === "/interests") {
-      const anchor = document.getElementById("player-frame-anchor");
-      setPortalTarget(anchor);
-    } else {
-      setPortalTarget(null);
+    if (!isInterestsPage) {
+      setAnchorBounds(null);
+      return;
     }
-  }, [pathname]);
+
+    const updatePosition = () => {
+      const anchor = document.getElementById("player-frame-anchor");
+      if (anchor) {
+        const rect = anchor.getBoundingClientRect();
+        setAnchorBounds({
+          top: rect.top,
+          left: rect.left,
+          width: rect.width,
+          height: rect.height
+        });
+      }
+    };
+
+    updatePosition();
+    const interval = setInterval(updatePosition, 100);
+    window.addEventListener("resize", updatePosition);
+    window.addEventListener("scroll", updatePosition);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener("resize", updatePosition);
+      window.removeEventListener("scroll", updatePosition);
+    };
+  }, [isInterestsPage, pathname]);
 
   const saveTracks = (newTracks: VideoTrack[]) => {
     setTracks(newTracks);
@@ -209,22 +234,29 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
     }
   };
 
-  const isInterestsPage = pathname === "/interests";
   const showMiniPlayer = !isInterestsPage && isPlaying && !isMiniDismissed;
 
-  // Single persistent video node definition
-  const videoElement = currentTrack ? (
-    <video
-      ref={videoRef}
-      key={currentTrack.id}
-      src={currentTrack.src}
-      onTimeUpdate={handleTimeUpdate}
-      onEnded={handleVideoEnded}
-      controls={isInterestsPage}
-      preload="auto"
-      className={styles.globalVideo}
-    />
-  ) : null;
+  // Calculate dynamic inline styles for the video wrapper
+  const videoWrapperStyle: React.CSSProperties = isInterestsPage && anchorBounds ? {
+    position: "fixed",
+    top: `${anchorBounds.top}px`,
+    left: `${anchorBounds.left}px`,
+    width: `${anchorBounds.width}px`,
+    height: `${anchorBounds.height}px`,
+    zIndex: 20,
+    borderRadius: "12px",
+    overflow: "hidden",
+    pointerEvents: "auto",
+    opacity: 1
+  } : {
+    position: "fixed",
+    top: "-9999px",
+    left: "-9999px",
+    width: "1px",
+    height: "1px",
+    opacity: 0,
+    pointerEvents: "none"
+  };
 
   return (
     <GlobalPlayerContext.Provider
@@ -253,12 +285,20 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
     >
       {children}
 
-      {/* Render Video Node inside /interests anchor when on /interests, else render off-screen */}
-      {portalTarget ? (
-        createPortal(videoElement, portalTarget)
-      ) : (
-        <div className={styles.hiddenVideoWrapper}>{videoElement}</div>
-      )}
+      {/* SINGLE UNMOUNT-FREE VIDEO NODE */}
+      <div style={videoWrapperStyle}>
+        {currentTrack && (
+          <video
+            ref={videoRef}
+            src={currentTrack.src}
+            onTimeUpdate={handleTimeUpdate}
+            onEnded={handleVideoEnded}
+            controls={isInterestsPage}
+            preload="auto"
+            className={styles.globalVideoElement}
+          />
+        )}
+      </div>
 
       {/* Floating Persistent Mini Player when navigating to other pages */}
       <AnimatePresence>
