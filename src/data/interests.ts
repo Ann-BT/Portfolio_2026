@@ -530,7 +530,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "title": "Shadow slave",
     "author": "Guiltythree",
     "category": "Novel",
-    "status": "Reading",
+    "status": "Ongoing",
     "rating": "5.0 / 5.0",
     "coverImage": "/covers/shadow_slave.jpg",
     "chapters": "1600+ Ch.",
