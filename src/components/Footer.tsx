@@ -28,10 +28,7 @@ export default function Footer() {
             RESEARCH
           </Link>
           <Link href="/interests" className={styles.linkItem}>
-            THE VAULT
-          </Link>
-          <Link href="/terminal" className={styles.linkItem}>
-            [/terminal]
+            INTERESTS
           </Link>
         </div>
       </div>

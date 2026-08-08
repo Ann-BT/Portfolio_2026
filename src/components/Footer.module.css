@@ -5,6 +5,9 @@
   font-family: var(--font-mono);
   font-size: 0.8rem;
   color: var(--muted);
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .container {
@@ -14,29 +17,49 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  box-sizing: border-box;
 }
 
 .copyright {
   letter-spacing: -0.01em;
+  font-size: 0.78rem;
 }
 
 .links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .linkItem {
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .linkItem:hover {
   color: var(--text-bright);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  .footer {
+    padding: 2.5rem 0;
+  }
   .container {
     flex-direction: column;
-    gap: 1.5rem;
     text-align: center;
+    justify-content: center;
+    padding: 0 1.25rem;
+    gap: 1.25rem;
+  }
+  .links {
+    justify-content: center;
+    gap: 0.8rem 1.25rem;
+  }
+  .copyright {
+    font-size: 0.72rem;
+    line-height: 1.5;
   }
 }

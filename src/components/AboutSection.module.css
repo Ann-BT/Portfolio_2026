@@ -92,21 +92,13 @@
   text-align: center;
 }
 
-/* 2x2 Skills Grid Styles */
-.skillsGrid {
-  display: grid !important;
-  grid-template-cols: repeat(2, 1fr) !important;
-  gap: 2rem !important;
-  max-width: 960px !important;
-  margin: 0 auto !important;
-}
-
-/* 3D Flip Card Styles - Compact Height */
+/* 3D Flip Card Styles - Responsive Heights */
 .card {
   background-color: transparent;
-  height: 250px;
+  height: 290px;
   perspective: 1000px;
   cursor: pointer;
+  width: 100%;
 }
 
 .cardInner {
@@ -118,22 +110,27 @@
 }
 
 /* Flip state */
-.card:hover .cardInner, .flipped {
+.card:hover .cardInner,
+.flipped {
   transform: rotateY(180deg);
 }
 
 /* Faces */
-.faceFront, .faceBack {
+.faceFront,
+.faceBack {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  border-radius: 4px;
+  border-radius: 6px;
   border: 1px solid var(--border-dim);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .faceFront {
@@ -152,6 +149,17 @@
   background-color: var(--surface-2);
   transform: rotateY(180deg);
   justify-content: space-between;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.faceBack::-webkit-scrollbar {
+  width: 4px;
+}
+
+.faceBack::-webkit-scrollbar-thumb {
+  background: var(--border-dim);
+  border-radius: 2px;
 }
 
 .iconWrapper {
@@ -202,11 +210,12 @@
   padding: 0.15rem 0.4rem;
   border-radius: 3px;
   color: var(--text);
+  line-height: 1.4;
 }
 
 .note {
   font-size: 0.8rem;
-  line-height: 1.4;
+  line-height: 1.45;
   color: var(--text);
   margin-top: auto;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -218,14 +227,31 @@
     grid-template-cols: 1fr;
     gap: 3rem;
   }
+  .card {
+    height: 320px;
+  }
+  .faceFront,
+  .faceBack {
+    padding: 1.25rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .skillsGrid {
-    grid-template-cols: 1fr !important;
-    max-width: 480px !important;
-  }
   .card {
-    height: 230px;
+    height: 340px;
+  }
+  .skillsSubtitle {
+    font-size: 1.4rem;
+  }
+  .faceFront,
+  .faceBack {
+    padding: 1rem;
+  }
+  .toolTag {
+    font-size: 0.68rem;
+    padding: 0.15rem 0.35rem;
+  }
+  .note {
+    font-size: 0.78rem;
   }
 }
