@@ -8,31 +8,60 @@ export interface SkillCategory {
 
 export const skills: SkillCategory[] = [
   {
-    id: "os-tools",
-    name: "OS & Tools",
+    id: "os-platforms",
+    name: "OS & Platforms",
     iconName: "Terminal",
-    tools: ["Linux (daily user)", "Windows", "Virtual Machines", "Docker", "Git / GitHub", "Redis"],
-    note: "Comfortable working across Linux and Windows environments, including VM-based lab setups."
+    tools: [
+      "Linux (Fedora/Cachy/Arch - daily user)",
+      "Windows & VMs",
+      "Docker & Kubernetes",
+      "Redis",
+      "Supabase & PostgreSQL",
+      "Git / GitHub"
+    ],
+    note: "Daily Linux user across Arch/Fedora/Cachy distros, managing VM labs, containerized microservices, and databases."
   },
   {
-    id: "programming",
+    id: "programming-web",
     name: "Programming & Web",
     iconName: "Code",
-    tools: ["JavaScript", "Python (basic)", "Node.js", "React", "Express.js", "REST APIs"],
-    note: "Building web tools, automation scripts, and full-stack security utilities."
+    tools: [
+      "JavaScript",
+      "TypeScript",
+      "Python (basic)",
+      "Node.js & Express.js",
+      "Next.js & React",
+      "REST APIs & WebSockets",
+      "CSS Modules"
+    ],
+    note: "Full-stack web engineering, building real-time dashboards, API backends, and browser extensions."
   },
   {
     id: "networking",
     name: "Networking",
     iconName: "Radio",
-    tools: ["TCP/IP fundamentals", "HTTP / HTTPS", "DNS", "Wireshark", "Common network protocols", "Packet Analysis"],
-    note: "Solid grasp of core network protocols and traffic analysis techniques."
+    tools: [
+      "TCP/IP Fundamentals",
+      "HTTP / HTTPS & DNS",
+      "Common Network Protocols",
+      "Packet Analysis (Wireshark)",
+      "Distributed Systems (RPC/MPI)"
+    ],
+    note: "Solid foundation in core network protocols, traffic packet analysis, and distributed system architectures."
   },
   {
-    id: "security",
-    name: "Security",
+    id: "security-forensics",
+    name: "Security & Forensics",
     iconName: "Shield",
-    tools: ["Burp Suite", "OWASP ZAP", "Splunk", "IDA Pro", "Process Monitor", "PEStudio", "Web Security", "Malware Analysis", "Digital Forensics"],
-    note: "Hands-on experience with security tooling, malware triage, and forensic investigation."
+    tools: [
+      "Web Security (OWASP Top 10)",
+      "Malware Analysis (REMnux)",
+      "Digital Forensics (CHFI)",
+      "Burp Suite & OWASP ZAP",
+      "Wazuh SIEM",
+      "IDA Pro & PEStudio",
+      "Process Monitor"
+    ],
+    note: "Defensive Blue Team operations, malware triage on REMnux, binary investigation, and forensic acquisition."
   }
 ];
