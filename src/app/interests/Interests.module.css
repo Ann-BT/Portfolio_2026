@@ -8,18 +8,23 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* YouTube Main 2-Column Layout */
+/* YouTube Main 2-Column Layout: Video on Left, Playlist on Right */
 .youtubeLayout {
-  display: grid;
-  grid-template-cols: 1fr 380px;
-  gap: 1.5rem;
-  align-items: start;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 1.5rem !important;
+  align-items: flex-start !important;
+  width: 100% !important;
 }
 
 /* LEFT COLUMN: Video Player & Meta */
 .mainVideoArea {
+  flex: 1 1 0% !important;
+  min-width: 0 !important;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -154,6 +159,8 @@
 
 /* RIGHT COLUMN: YouTube Playlist Drawer */
 .playlistDrawer {
+  width: 380px !important;
+  flex-shrink: 0 !important;
   background-color: #121212;
   border: 1px solid var(--border-dim);
   border-radius: 12px;
@@ -498,15 +505,21 @@
   border-color: var(--border);
 }
 
-/* Responsive breakpoint for mobile screens */
-@media (max-width: 1024px) {
+/* Responsive breakpoint for small laptop and mobile screens */
+@media (max-width: 900px) {
+  .playlistDrawer {
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 640px) {
   .youtubeLayout {
-    grid-template-cols: 1fr;
-    gap: 2rem;
+    flex-direction: column !important;
   }
   .playlistDrawer {
-    position: relative;
-    top: 0;
+    width: 100% !important;
+    position: relative !important;
+    top: 0 !important;
   }
   .playlistItemsList {
     max-height: 400px;
