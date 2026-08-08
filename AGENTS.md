@@ -7,3 +7,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 always follow the instruction or use skills that you installed when possible
+
+# Portfolio 2026 Project Instructions
+Refer to `.agents/rules/portfolio_rules.md` for all codebase architecture rules, navigation links, Supabase setup, terminal prompt conventions, and deployment procedures.
+
