@@ -95,15 +95,17 @@
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
   background-color: #000000;
+  overflow: hidden;
 }
 
-.iframe {
+.videoElement {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: none;
+  object-fit: contain;
+  background-color: #000000;
 }
 
 .emptyScreen {
@@ -189,6 +191,28 @@
   background-color: var(--text-bright);
   border-radius: 2px;
   animation: eqAnim 0.8s ease-in-out infinite;
+}
+
+/* Seeker Row */
+.seekerRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.015);
+  border-bottom: 1px solid var(--border-dim);
+}
+
+.timeText {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.timeSeeker {
+  flex: 1;
+  accent-color: var(--text-bright);
+  cursor: pointer;
 }
 
 /* Audio Controls Bar */
@@ -432,6 +456,29 @@
 }
 .modalClose:hover { color: var(--text-bright); }
 
+.tabBar {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border-dim);
+  padding-bottom: 0.75rem;
+}
+
+.tabBtn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-dim);
+  color: var(--muted);
+  background: var(--surface-2);
+}
+
+.activeTab {
+  border-color: var(--border);
+  color: var(--text-bright);
+  background: var(--surface);
+}
+
 .modalForm {
   display: flex;
   flex-direction: column;
@@ -451,7 +498,8 @@
   text-transform: uppercase;
 }
 
-.formInput {
+.formInput,
+.fileInput {
   background-color: var(--surface-2);
   border: 1px solid var(--border-dim);
   border-radius: 4px;
@@ -460,6 +508,10 @@
   font-size: 0.9rem;
   color: var(--text-bright);
   outline: none;
+}
+
+.fileInput {
+  padding: 0.5rem;
 }
 
 .formInput:focus {

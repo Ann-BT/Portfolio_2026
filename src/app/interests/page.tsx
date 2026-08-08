@@ -1,7 +1,7 @@
 // src/app/interests/page.tsx
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   FiPlay, 
@@ -13,70 +13,64 @@ import {
   FiRepeat, 
   FiPlus, 
   FiTrash2, 
-  FiMusic, 
+  FiVideo, 
+  FiUploadCloud,
   FiX 
 } from "react-icons/fi";
 import Footer from "@/components/Footer";
 import styles from "./Interests.module.css";
 
-export interface Track {
+export interface VideoTrack {
   id: string;
   title: string;
   artist: string;
-  youtubeUrl: string;
+  src: string;
   duration?: string;
   isCustom?: boolean;
 }
 
-const initialTracks: Track[] = [
+const initialVideoTracks: VideoTrack[] = [
   {
-    id: "t1",
-    title: "Neon Blade",
-    artist: "MoonDeity",
-    youtubeUrl: "https://www.youtube.com/watch?v=YT1Z1D8dO0o",
-    duration: "4:25"
+    id: "v1",
+    title: "Meaningful Love (Instrumental)",
+    artist: "Instrumental Collection",
+    src: "/media/meaningful_love.mp4",
+    duration: "3:42"
   },
   {
-    id: "t2",
-    title: "Metamorphosis",
-    artist: "INTERWORLD",
-    youtubeUrl: "https://www.youtube.com/watch?v=F0B7HDiY-10",
-    duration: "2:22"
-  },
-  {
-    id: "t3",
-    title: "RAVE",
-    artist: "Dxrk 🔥",
-    youtubeUrl: "https://www.youtube.com/watch?v=H74tN7eO138",
-    duration: "2:49"
-  },
-  {
-    id: "t4",
-    title: "I Really Want to Stay at Your House",
-    artist: "Rosa Walton & Hallie Coggins",
-    youtubeUrl: "https://www.youtube.com/watch?v=KvMY1XuhLwY",
-    duration: "4:06"
+    id: "v2",
+    title: "Shut Up My Moms Calling",
+    artist: "Hotel Ugly",
+    src: "/media/shutup_my_moms_calling.mp4",
+    duration: "2:45"
   }
 ];
 
 export default function InterestsPage() {
-  const [tracks, setTracks] = useState<Track[]>(initialTracks);
+  const [tracks, setTracks] = useState<VideoTrack[]>(initialVideoTracks);
   const [currentTrackIndex, setCurrentTrackIndex] = useState<number>(0);
-  const [isPlaying, setIsPlaying] = useState<boolean>(true);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isMuted, setIsMuted] = useState<boolean>(false);
   const [volume, setVolume] = useState<number>(80);
   const [isLooping, setIsLooping] = useState<boolean>(true);
 
-  // Add track modal state
+  // Time & Duration tracking
+  const [currentTime, setCurrentTime] = useState<number>(0);
+  const [duration, setDuration] = useState<number>(0);
+
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  // Upload modal state
   const [isAddModalOpen, setIsAddModalOpen] = useState<boolean>(false);
+  const [uploadType, setUploadType] = useState<"file" | "url">("file");
+  const [newFile, setNewFile] = useState<File | null>(null);
   const [newUrl, setNewUrl] = useState<string>("");
   const [newTitle, setNewTitle] = useState<string>("");
   const [newArtist, setNewArtist] = useState<string>("");
-  const [newDuration, setNewDuration] = useState<string>("");
 
   // Load custom playlist from localStorage
   useEffect(() => {
-    const saved = localStorage.getItem("merlin_playlist_tracks");
+    const saved = localStorage.getItem("merlin_local_playlist");
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
@@ -84,29 +78,48 @@ export default function InterestsPage() {
           setTracks(parsed);
         }
       } catch (e) {
-        // Fallback to default initialTracks
+        // Fallback to defaults
       }
     }
   }, []);
 
-  // Save playlist helper
-  const saveTracks = (newTracks: Track[]) => {
+  const saveTracks = (newTracks: VideoTrack[]) => {
     setTracks(newTracks);
-    localStorage.setItem("merlin_playlist_tracks", JSON.stringify(newTracks));
-  };
-
-  // Convert YouTube link to embed URL
-  const getEmbedUrl = (url: string, playing: boolean, muted: boolean) => {
-    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
-    const match = url.match(regExp);
-    const videoId = match && match[2].length === 11 ? match[2] : null;
-    if (!videoId) return "";
-    const autoplayParam = playing ? 1 : 0;
-    const muteParam = muted ? 1 : 0;
-    return `https://www.youtube.com/embed/${videoId}?autoplay=${autoplayParam}&mute=${muteParam}&enablejsapi=1&rel=0`;
+    localStorage.setItem("merlin_local_playlist", JSON.stringify(newTracks));
   };
 
   const currentTrack = tracks[currentTrackIndex] || tracks[0];
+
+  // Sync video play/pause and volume with state
+  useEffect(() => {
+    if (!videoRef.current) return;
+    videoRef.current.volume = volume / 100;
+    videoRef.current.muted = isMuted;
+
+    if (isPlaying) {
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => setIsPlaying(false));
+      }
+    } else {
+      videoRef.current.pause();
+    }
+  }, [isPlaying, currentTrackIndex, volume, isMuted]);
+
+  const handleTimeUpdate = () => {
+    if (videoRef.current) {
+      setCurrentTime(videoRef.current.currentTime);
+      setDuration(videoRef.current.duration || 0);
+    }
+  };
+
+  const handleVideoEnded = () => {
+    if (isLooping) {
+      handleNextTrack();
+    } else {
+      setIsPlaying(false);
+    }
+  };
 
   const handleNextTrack = () => {
     if (tracks.length === 0) return;
@@ -130,16 +143,63 @@ export default function InterestsPage() {
     setIsMuted((prev) => !prev);
   };
 
+  const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const targetTime = Number(e.target.value);
+    if (videoRef.current) {
+      videoRef.current.currentTime = targetTime;
+      setCurrentTime(targetTime);
+    }
+  };
+
+  const formatTime = (secs: number) => {
+    if (isNaN(secs)) return "0:00";
+    const mins = Math.floor(secs / 60);
+    const remainder = Math.floor(secs % 60);
+    return `${mins}:${remainder.toString().padStart(2, "0")}`;
+  };
+
+  // Add / Upload video handler
   const handleAddTrackSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newUrl.trim() || !newTitle.trim()) return;
+    if (!newTitle.trim()) return;
 
-    const newTrackItem: Track = {
+    let finalSrc = "";
+
+    if (uploadType === "file" && newFile) {
+      const reader = new FileReader();
+      reader.onload = (evt) => {
+        const dataUrl = evt.target?.result as string;
+        if (dataUrl) {
+          const newTrackItem: VideoTrack = {
+            id: `custom-${Date.now()}`,
+            title: newTitle.trim(),
+            artist: newArtist.trim() || "Uploaded Media",
+            src: dataUrl,
+            duration: "LOCAL",
+            isCustom: true
+          };
+
+          const updated = [...tracks, newTrackItem];
+          saveTracks(updated);
+          setCurrentTrackIndex(updated.length - 1);
+          setIsPlaying(true);
+          resetForm();
+        }
+      };
+      reader.readAsDataURL(newFile);
+      return;
+    } else if (uploadType === "url" && newUrl.trim()) {
+      finalSrc = newUrl.trim();
+    } else {
+      return;
+    }
+
+    const newTrackItem: VideoTrack = {
       id: `custom-${Date.now()}`,
       title: newTitle.trim(),
-      artist: newArtist.trim() || "Unknown Artist",
-      youtubeUrl: newUrl.trim(),
-      duration: newDuration.trim() || "VAR",
+      artist: newArtist.trim() || "Local Media",
+      src: finalSrc,
+      duration: "MEDIA",
       isCustom: true
     };
 
@@ -147,18 +207,20 @@ export default function InterestsPage() {
     saveTracks(updated);
     setCurrentTrackIndex(updated.length - 1);
     setIsPlaying(true);
+    resetForm();
+  };
 
-    // Reset form
+  const resetForm = () => {
+    setNewFile(null);
     setNewUrl("");
     setNewTitle("");
     setNewArtist("");
-    setNewDuration("");
     setIsAddModalOpen(false);
   };
 
   const handleDeleteTrack = (id: string, e: React.MouseEvent) => {
     e.stopPropagation();
-    if (tracks.length <= 1) return; // Keep at least 1 track
+    if (tracks.length <= 1) return;
     const updated = tracks.filter((t) => t.id !== id);
     saveTracks(updated);
     if (currentTrackIndex >= updated.length) {
@@ -175,7 +237,7 @@ export default function InterestsPage() {
           <header className={styles.header}>
             <h1 className={styles.title}>Interests</h1>
             <p className={styles.subtitle}>
-              Personal audio-visual deck, custom music playlists, and curated video streams.
+              Local media deck, native video playback, and custom playlist collection.
             </p>
           </header>
 
@@ -183,37 +245,38 @@ export default function InterestsPage() {
           <div className={styles.sectionHeaderRow}>
             <h2 className={styles.sectionTitle}>
               <span className={styles.titleDot} />
-              <span>Audio Deck // Video Stream</span>
+              <span>Media Player // Local Stream</span>
             </h2>
 
             <button 
               onClick={() => setIsAddModalOpen(true)}
               className={styles.addTrackBtn}
             >
-              <FiPlus />
-              <span>ADD VIDEO TO PLAYLIST</span>
+              <FiUploadCloud />
+              <span>UPLOAD VIDEO</span>
             </button>
           </div>
 
           {/* Main Music Grid: Video Left | Playlist Right */}
           <div className={styles.musicGrid}>
             
-            {/* Left Column: Video Viewport & Controls Bar */}
+            {/* Left Column: Native HTML5 Video Viewport & Controls Bar */}
             <div className={styles.playerColumn}>
               
-              {/* Screen Display Frame */}
+              {/* Native Video Screen Frame */}
               <div className={styles.videoScreen}>
                 {currentTrack ? (
-                  <iframe
-                    key={`${currentTrack.id}-${isPlaying}-${isMuted}`}
-                    src={getEmbedUrl(currentTrack.youtubeUrl, isPlaying, isMuted)}
-                    title={`Video Player - ${currentTrack.title}`}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className={styles.iframe}
+                  <video
+                    ref={videoRef}
+                    key={currentTrack.id}
+                    src={currentTrack.src}
+                    onTimeUpdate={handleTimeUpdate}
+                    onEnded={handleVideoEnded}
+                    controls
+                    className={styles.videoElement}
                   />
                 ) : (
-                  <div className={styles.emptyScreen}>NO VIDEO STREAM SELECTED</div>
+                  <div className={styles.emptyScreen}>NO MEDIA SELECTED</div>
                 )}
               </div>
 
@@ -239,6 +302,21 @@ export default function InterestsPage() {
                     <span className={styles.eqBar} style={{ animationDelay: "0.1s" }} />
                   </div>
                 )}
+              </div>
+
+              {/* Progress Seek Bar */}
+              <div className={styles.seekerRow}>
+                <span className={styles.timeText}>{formatTime(currentTime)}</span>
+                <input
+                  type="range"
+                  min="0"
+                  max={duration || 100}
+                  value={currentTime}
+                  onChange={handleSeek}
+                  className={styles.timeSeeker}
+                  aria-label="Video seek bar"
+                />
+                <span className={styles.timeText}>{formatTime(duration)}</span>
               </div>
 
               {/* Interactive Audio Controls Bar */}
@@ -278,8 +356,8 @@ export default function InterestsPage() {
                 <button
                   onClick={() => setIsLooping(!isLooping)}
                   className={`${styles.controlBtn} ${isLooping ? styles.activeControl : ""}`}
-                  title={isLooping ? "Loop Enabled" : "Loop Disabled"}
-                  aria-label="Toggle Loop"
+                  title={isLooping ? "Auto-Next Enabled" : "Auto-Next Disabled"}
+                  aria-label="Toggle Auto-Next"
                 >
                   <FiRepeat />
                 </button>
@@ -317,8 +395,8 @@ export default function InterestsPage() {
             <div className={styles.playlistColumn}>
               <div className={styles.playlistHeader}>
                 <span className={styles.playlistTitle}>
-                  <FiMusic />
-                  <span>PLAYLIST // {tracks.length} ITEMS</span>
+                  <FiVideo />
+                  <span>PLAYLIST // {tracks.length} VIDEOS</span>
                 </span>
                 <span className={styles.playlistNote}>SELECT TO PLAY</span>
               </div>
@@ -376,7 +454,7 @@ export default function InterestsPage() {
         </div>
       </section>
 
-      {/* Add Track / Upload Modal */}
+      {/* Upload Video Modal */}
       <AnimatePresence>
         {isAddModalOpen && (
           <div className={styles.modalOverlay} onClick={() => setIsAddModalOpen(false)}>
@@ -388,33 +466,70 @@ export default function InterestsPage() {
               className={styles.modalCard}
             >
               <div className={styles.modalHeader}>
-                <h3>UPLOAD / ADD VIDEO TO PLAYLIST</h3>
+                <h3>UPLOAD VIDEO TO PLAYLIST</h3>
                 <button onClick={() => setIsAddModalOpen(false)} className={styles.modalClose}>
                   <FiX />
                 </button>
               </div>
 
+              {/* Upload Type Switcher */}
+              <div className={styles.tabBar}>
+                <button
+                  type="button"
+                  onClick={() => setUploadType("file")}
+                  className={`${styles.tabBtn} ${uploadType === "file" ? styles.activeTab : ""}`}
+                >
+                  Upload File (.mp4 / .webm)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setUploadType("url")}
+                  className={`${styles.tabBtn} ${uploadType === "url" ? styles.activeTab : ""}`}
+                >
+                  Media Direct URL
+                </button>
+              </div>
+
               <form onSubmit={handleAddTrackSubmit} className={styles.modalForm}>
-                <div className={styles.formGroup}>
-                  <label className={styles.formLabel}>YouTube Video URL *</label>
-                  <input
-                    type="url"
-                    value={newUrl}
-                    onChange={(e) => setNewUrl(e.target.value)}
-                    required
-                    placeholder="e.g. https://www.youtube.com/watch?v=..."
-                    className={styles.formInput}
-                  />
-                </div>
+                {uploadType === "file" ? (
+                  <div className={styles.formGroup}>
+                    <label className={styles.formLabel}>Choose Video File *</label>
+                    <input
+                      type="file"
+                      accept="video/*"
+                      onChange={(e) => {
+                        const file = e.target.files?.[0] || null;
+                        setNewFile(file);
+                        if (file && !newTitle) {
+                          setNewTitle(file.name.replace(/\.[^/.]+$/, ""));
+                        }
+                      }}
+                      required
+                      className={styles.fileInput}
+                    />
+                  </div>
+                ) : (
+                  <div className={styles.formGroup}>
+                    <label className={styles.formLabel}>Direct Video URL *</label>
+                    <input
+                      type="url"
+                      value={newUrl}
+                      onChange={(e) => setNewUrl(e.target.value)}
+                      required
+                      placeholder="https://example.com/video.mp4"
+                      className={styles.formInput}
+                    />
+                  </div>
+                )}
 
                 <div className={styles.formGroup}>
-                  <label className={styles.formLabel}>Song / Video Title *</label>
+                  <label className={styles.formLabel}>Video Title *</label>
                   <input
                     type="text"
                     value={newTitle}
                     onChange={(e) => setNewTitle(e.target.value)}
                     required
-                    placeholder="e.g. Cyberpunk Synthwave"
+                    placeholder="e.g. My Favorite Track"
                     className={styles.formInput}
                   />
                 </div>
@@ -425,18 +540,7 @@ export default function InterestsPage() {
                     type="text"
                     value={newArtist}
                     onChange={(e) => setNewArtist(e.target.value)}
-                    placeholder="e.g. Lofi Beats"
-                    className={styles.formInput}
-                  />
-                </div>
-
-                <div className={styles.formGroup}>
-                  <label className={styles.formLabel}>Duration (Optional)</label>
-                  <input
-                    type="text"
-                    value={newDuration}
-                    onChange={(e) => setNewDuration(e.target.value)}
-                    placeholder="e.g. 3:45"
+                    placeholder="e.g. Artist Name"
                     className={styles.formInput}
                   />
                 </div>
