@@ -10,7 +10,7 @@ import { config } from "@/data/config";
 import { photos } from "@/data/photos";
 import styles from "./HeroSection.module.css";
 
-const subtitleRoles = ["Cybersecurity Student", "Future Professor", "Developer", "Blue Teamer"];
+const subtitleRoles = ["Cybersecurity Analyst", "Developer", "IT Engineer"];
 
 export default function HeroSection() {
   const names = [config.name, config.nickname];

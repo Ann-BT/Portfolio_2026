@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bùi Trường An | Cybersecurity",
-  description: "Personal portfolio of Bùi Trường An (Merlin), Cyber Security major at USTH. Aspiring SOC Analyst and Blue Team operations engineer.",
+  title: "Merlin's Portfolio",
+  description: "Personal portfolio of Bùi Trường An (Merlin)",
 };
 
 export default function RootLayout({

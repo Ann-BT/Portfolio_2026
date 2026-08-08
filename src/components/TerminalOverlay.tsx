@@ -112,70 +112,16 @@ export default function TerminalOverlay({ isOpen, onClose }: Props) {
         response = "Admin session terminated. Privileges revoked.";
         break;
 
-      case "help":
-        response = `Available commands:
-  whoami        Display user identity details.
-  ls            List files in current directory.
-  cat <file>    Display content of a file.
-  login         Enter administrative credentials.
-  logout        Terminate administrative session.
-  clear         Clear the terminal screen.
-  exit          Close this terminal window.
-  sudo          Request root access credentials.
-  help          Display this menu.`;
-        break;
-
-      case "whoami":
-        response = `User: Bùi Trường An (Merlin)
-Major: Cyber Security
-Affiliation: University of Science and Technology of Hanoi (USTH)
-Aspirations: Master's Degree Candidate & Future Professor
-Objective: SOC Analyst / Defensive security engineering.`;
-        break;
-
-      case "ls":
-        response = `skills.txt      projects.json      contact.json`;
-        break;
-
       case "clear":
         setHistory([]);
         setInput("");
         return;
 
-      case "sudo":
-      case "sudo su":
-        response = `Permission denied. Incident has been reported to the root administrator. Nice try 😏`;
-        break;
-
       default:
-        if (lowerCmd.startsWith("cat ")) {
-          const filename = lowerCmd.substring(4).trim();
-          if (filename === "skills.txt") {
-            response = skills
-              .map((s) => `[${s.name}]\n  Note: ${s.note}\n  Tools: ${s.tools.join(", ")}`)
-              .join("\n\n");
-          } else if (filename === "projects.json") {
-            response = JSON.stringify(
-              projects.map((p) => ({ title: p.title, tags: p.tags, date: p.date })),
-              null,
-              2
-            );
-          } else if (filename === "contact.json") {
-            response = JSON.stringify(
-              {
-                email: config.email,
-                socials: config.socials
-              },
-              null,
-              2
-            );
-          } else {
-            response = `cat: ${filename}: No such file or directory.`;
-          }
-        } else if (trimmed === "") {
+        if (trimmed === "") {
           response = "";
         } else {
-          response = `command not found: ${cmd}. Type 'help' for options.`;
+          response = `command not found: ${cmd}`;
         }
     }
 
@@ -236,7 +182,7 @@ Objective: SOC Analyst / Defensive security engineering.`;
             <div ref={bodyRef} className={styles.windowBody}>
               <div className={styles.introText}>
                 <div>PEICHANGANN SYSTEM TERMINAL [Version 2.0.4]</div>
-                <div>Authorized access only. Type 'help' for instructions.</div>
+                <div>Authorized access only.</div>
               </div>
 
               {/* History stream */}
