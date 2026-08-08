@@ -3,7 +3,7 @@ export interface BookRecommendation {
   title: string;
   author: string;
   category: "Novel" | "Manhwa" | "Manga" | "Manhua";
-  status: "Completed" | "Reading" | "Plan to Read" | "Highly Recommended";
+  status: "Completed" | "Ongoing" | "Reading" | "Plan to Read" | "Highly Recommended";
   rating: string;
   coverImage: string;
   chapters?: string;
@@ -15,1377 +15,1539 @@ export const bookRecommendations: BookRecommendation[] = [
   {
     "id": "b_1",
     "title": "A Returner's Magic Should Be Special",
-    "author": "Featured Creator",
+    "author": "Usonan / Wookjakga",
     "category": "Manhwa",
     "status": "Completed",
-    "rating": "4.7 / 5.0",
+    "rating": "4.8 / 5.0",
     "coverImage": "/covers/a_returners_magic_should_be_special.jpg",
-    "chapters": "Ch. 50",
-    "description": "A Returner's Magic Should Be Special \u2014 Highly recommended reading choice in Manhwa.",
+    "chapters": "270 Ch.",
+    "description": "Desir Arman travels 13 years into the past after humanity's annihilation in the Shadow Labyrinth, reforming his academy allies to prevent apocalyptic doom.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Regression",
+      "Magic",
+      "Strategy"
     ]
   },
   {
     "id": "b_2",
     "title": "Above Ten Thousand People",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Reading",
-    "rating": "4.8 / 5.0",
+    "author": "Yeyu / Boyi",
+    "category": "Manhua",
+    "status": "Ongoing",
+    "rating": "4.7 / 5.0",
     "coverImage": "/covers/above_ten_thousand_people.jpg",
-    "chapters": "Ch. 63",
-    "description": "Above Ten Thousand People \u2014 Highly recommended reading choice in Manhwa.",
+    "chapters": "260+ Ch.",
+    "description": "Yi Feng believes he is an ordinary mortal with no cultivation talent, completely oblivious to the fact that his casual chores and pets awe supreme immortal lords.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Comedy",
+      "Misunderstanding",
+      "Cultivation"
     ]
   },
   {
     "id": "b_3",
     "title": "Archmage Transcending Through Regression",
-    "author": "Featured Creator",
+    "author": "Nodou / Kim Hyeong-jun",
     "category": "Manhwa",
-    "status": "Highly Recommended",
-    "rating": "4.9 / 5.0",
+    "status": "Ongoing",
+    "rating": "4.6 / 5.0",
     "coverImage": "/covers/archmage_transcending_through_regression.jpg",
-    "chapters": "Ch. 76",
-    "description": "Archmage Transcending Through Regression \u2014 Highly recommended reading choice in Manhwa.",
+    "chapters": "90+ Ch.",
+    "description": "Mikhail, the realm's strongest archmage, regresses to his youth to rectify past magical mistakes and rebuild his mana core from scratch.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Regression",
+      "Magic Academy",
+      "Overpowered"
     ]
   },
   {
     "id": "b_4",
     "title": "Astral Pet Store",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Completed",
-    "rating": "5.0 / 5.0",
+    "author": "Ancient Gu / Yuewen",
+    "category": "Manhua",
+    "status": "Ongoing",
+    "rating": "4.7 / 5.0",
     "coverImage": "/covers/astral_pet_store.jpg",
-    "chapters": "Ch. 89",
-    "description": "Astral Pet Store \u2014 Highly recommended reading choice in Manhwa.",
+    "chapters": "140+ Ch.",
+    "description": "Su Ping inherits a modest pet shop paired with a divine breeding system, raising ordinary beasts into terrifying cosmic titans.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Pet Breeding",
+      "System",
+      "Action"
     ]
   },
   {
     "id": "b_5",
     "title": "Battle Game in 5 Seconds",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Reading",
+    "author": "Saizou Harawata / Kashiwa Miyako",
+    "category": "Manga",
+    "status": "Ongoing",
     "rating": "4.7 / 5.0",
     "coverImage": "/covers/battle_game_in_5_seconds.jpg",
-    "chapters": "Ch. 102",
-    "description": "Battle Game in 5 Seconds \u2014 Highly recommended reading choice in Manhwa.",
+    "chapters": "200+ Ch.",
+    "description": "Akira Shiroyanagi uses his unique psychological ability \u2014 'the power the opponent thinks you have' \u2014 to outsmart lethal battle royale contenders.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Mind Games",
+      "Battle Royale",
+      "Superpowers"
     ]
   },
   {
     "id": "b_6",
     "title": "Becoming a Magic School Mage",
-    "author": "Featured Creator",
+    "author": "Gladiator / Studio Lico",
     "category": "Manhwa",
-    "status": "Highly Recommended",
-    "rating": "4.8 / 5.0",
+    "status": "Ongoing",
+    "rating": "4.6 / 5.0",
     "coverImage": "/covers/becoming_a_magic_school_mage.jpg",
-    "chapters": "Ch. 115",
-    "description": "Becoming a Magic School Mage \u2014 Highly recommended reading choice in Manhwa.",
+    "chapters": "75+ Ch.",
+    "description": "An overworked modern academic is transmigrated into a harsh magic academy, using empirical scientific logic to revolutionize arcane spells.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Magic Academy",
+      "Transmigration",
+      "Fantasy"
     ]
   },
   {
     "id": "b_7",
     "title": "Bizarre Restaurant",
-    "author": "Featured Creator",
+    "author": "Red-A",
     "category": "Manhwa",
-    "status": "Completed",
-    "rating": "4.9 / 5.0",
+    "status": "Ongoing",
+    "rating": "4.5 / 5.0",
     "coverImage": "/covers/bizarre_restaurant.jpg",
-    "chapters": "Ch. 128",
-    "description": "Bizarre Restaurant \u2014 Highly recommended reading choice in Manhwa.",
+    "chapters": "60+ Ch.",
+    "description": "Hunter Kang Seung-woo opens an otherworldly diner, serving magical cuisine prepared from high-tier dungeon monster ingredients.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Cooking",
+      "Dungeon",
+      "Slice of Life"
     ]
   },
   {
     "id": "b_8",
-    "title": "Enrolling in the Transcendent Academy",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Reading",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/enrolling_in_the_transcendent_academy.jpg",
-    "chapters": "Ch. 141",
-    "description": "Enrolling in the Transcendent Academy \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "City Evil King",
+    "author": "Fei Fan",
+    "category": "Manhua",
+    "status": "Ongoing",
+    "rating": "4.4 / 5.0",
+    "coverImage": "/covers/city_evil_king.jpg",
+    "chapters": "180+ Ch.",
+    "description": "A former demonic monarch reincarnates into a modern metropolis, crushing corrupt urban syndicates with ancient martial techniques.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Urban Cultivation",
+      "Reincarnation",
+      "Action"
     ]
   },
   {
     "id": "b_9",
-    "title": "I Became a Renowned Family's Sword Prodigy",
-    "author": "Featured Creator",
+    "title": "Enrolling in the Transcendent Academy",
+    "author": "Chungdae",
     "category": "Manhwa",
-    "status": "Highly Recommended",
+    "status": "Ongoing",
     "rating": "4.7 / 5.0",
-    "coverImage": "/covers/i_became_a_renowned_familys_sword_prodigy.jpg",
-    "chapters": "Ch. 154",
-    "description": "I Became a Renowned Family's Sword Prodigy \u2014 Highly recommended reading choice in Manhwa.",
+    "coverImage": "/covers/enrolling_in_the_transcendent_academy.jpg",
+    "chapters": "110+ Ch.",
+    "description": "Drowning in debt, hunter Seo-jun receives a mysterious scholarship to an academy attended by gods, celestial immortals, and mythical heroes.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Academy",
+      "Gods System",
+      "Hunter"
     ]
   },
   {
     "id": "b_10",
-    "title": "I'll Be Taking a Break for Personal Reasons",
-    "author": "Featured Creator",
+    "title": "I Became a Renowned Family's Sword Prodigy",
+    "author": "Jigyeong / Redice Studio",
     "category": "Manhwa",
-    "status": "Completed",
+    "status": "Ongoing",
     "rating": "4.8 / 5.0",
-    "coverImage": "/covers/ill_be_taking_a_break_for_personal_reasons.jpg",
-    "chapters": "Ch. 167",
-    "description": "I'll Be Taking a Break for Personal Reasons \u2014 Highly recommended reading choice in Manhwa.",
+    "coverImage": "/covers/i_became_a_renowned_familys_sword_prodigy.jpg",
+    "chapters": "105+ Ch.",
+    "description": "Baek Yu-seol enters a fantasy game as a discarded noble with a broken mana system, mastering pure swordsmanship to stop world destruction.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Swordsmanship",
+      "Academy",
+      "Game World"
     ]
   },
   {
     "id": "b_11",
-    "title": "I'm An Evil God",
-    "author": "Featured Creator",
-    "category": "Manhua",
-    "status": "Reading",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/im_an_evil_god.jpg",
-    "chapters": "Ch. 180",
-    "description": "I'm An Evil God \u2014 Highly recommended reading choice in Manhua.",
+    "title": "I Grow Stronger By Eating",
+    "author": "Chalguksu",
+    "category": "Manhwa",
+    "status": "Completed",
+    "rating": "4.6 / 5.0",
+    "coverImage": "/covers/i_grow_stronger_by_eating.jpg",
+    "chapters": "91 Ch.",
+    "description": "Petros possesses the 'Predator' ability, devouring monster flesh to absorb their physical traits, magic abilities, and biological advantages.",
     "tags": [
-      "Manhua",
-      "Action",
-      "Supernatural"
+      "Monster Evolution",
+      "Dark Hero",
+      "Action"
     ]
   },
   {
     "id": "b_12",
-    "title": "Juujika no Rokunin",
-    "author": "Featured Creator",
-    "category": "Manga",
-    "status": "Highly Recommended",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/juujika_no_rokunin.jpg",
-    "chapters": "Ch. 193",
-    "description": "Juujika no Rokunin \u2014 Highly recommended reading choice in Manga.",
+    "title": "I'll Be Taking a Break for Personal Reasons",
+    "author": "Yoo Il-sin",
+    "category": "Manhwa",
+    "status": "Ongoing",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/ill_be_taking_a_break_for_personal_reasons.jpg",
+    "chapters": "85+ Ch.",
+    "description": "An exhausted web novel author awakens a god-like administrative authority interface, gaining absolute control over real-world dungeon stats.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "System",
+      "Dungeon",
+      "Comedy"
     ]
   },
   {
     "id": "b_13",
-    "title": "Karada Sagashi",
-    "author": "Featured Creator",
-    "category": "Manga",
-    "status": "Completed",
-    "rating": "4.7 / 5.0",
-    "coverImage": "/covers/karada_sagashi.jpg",
-    "chapters": "Ch. 206",
-    "description": "Karada Sagashi \u2014 Highly recommended reading choice in Manga.",
+    "title": "I'm An Evil God",
+    "author": "Shiyanjia",
+    "category": "Manhua",
+    "status": "Ongoing",
+    "rating": "4.9 / 5.0",
+    "coverImage": "/covers/im_an_evil_god.jpg",
+    "chapters": "450+ Ch.",
+    "description": "Xie Yan transmigrates across multiple martial and demonic worlds, accumulating emotion points to upgrade martial arts techniques.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "World Hopping",
+      "Cultivation",
+      "Demonic Path"
     ]
   },
   {
     "id": "b_14",
-    "title": "Legend of Star General",
-    "author": "Featured Creator",
-    "category": "Manhua",
-    "status": "Reading",
-    "rating": "4.8 / 5.0",
-    "coverImage": "/covers/legend_of_star_general.jpg",
-    "chapters": "Ch. 219",
-    "description": "Legend of Star General \u2014 Highly recommended reading choice in Manhua.",
+    "title": "Juujika no Rokunin",
+    "author": "Shiryu Nakatake",
+    "category": "Manga",
+    "status": "Ongoing",
+    "rating": "4.6 / 5.0",
+    "coverImage": "/covers/juujika_no_rokunin.jpg",
+    "chapters": "160+ Ch.",
+    "description": "After his family is brutally murdered by five sadistic bullies, Shun Uruma undergoes secret WW2 military training to exact ruthless revenge.",
     "tags": [
-      "Manhua",
-      "Action",
-      "Supernatural"
+      "Psychological",
+      "Revenge",
+      "Tragedy"
     ]
   },
   {
     "id": "b_15",
-    "title": "Level up with the Gods",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Highly Recommended",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/level_up_with_the_gods.jpg",
-    "chapters": "Ch. 232",
-    "description": "Level up with the Gods \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "Karada Sagashi",
+    "author": "Welzard / Katsutoshi Murase",
+    "category": "Manga",
+    "status": "Completed",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/karada_sagashi.jpg",
+    "chapters": "153 Ch.",
+    "description": "Six high school students are trapped in a deadly midnight time loop, forced to search for the dismembered body parts of a Red Person victim.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Horror",
+      "Time Loop",
+      "Survival"
     ]
   },
   {
     "id": "b_16",
-    "title": "Leveling Beyond the Max",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Completed",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/leveling_beyond_the_max.jpg",
-    "chapters": "Ch. 245",
-    "description": "Leveling Beyond the Max \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "Legend of Star General",
+    "author": "HangMan / FanFan",
+    "category": "Manhua",
+    "status": "Ongoing",
+    "rating": "4.8 / 5.0",
+    "coverImage": "/covers/legend_of_star_general.jpg",
+    "chapters": "220+ Ch.",
+    "description": "Song Yunfeng commands high-tech mech suits and cosmic star power, defending intergalactic human bastions against alien swarms.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Mecha",
+      "Sci-Fi",
+      "Cultivation"
     ]
   },
   {
     "id": "b_17",
-    "title": "My Wife Came from a Thousand Years Ago",
-    "author": "Featured Creator",
+    "title": "Level up with the Gods",
+    "author": "Blackajin / Oh Hyun-jun",
     "category": "Manhwa",
-    "status": "Reading",
-    "rating": "4.7 / 5.0",
-    "coverImage": "/covers/my_wife_came_from_a_thousand_years_ago.jpg",
-    "chapters": "Ch. 258",
-    "description": "My Wife Came from a Thousand Years Ago \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "4.8 / 5.0",
+    "coverImage": "/covers/level_up_with_the_gods.jpg",
+    "chapters": "110+ Ch.",
+    "description": "Kim Yu-won regresses back to the bottom of the Tower after the Outer Gods defeat the High Gods, climbing at breaking speed to avert cosmic extinction.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Regression",
+      "Tower Climbing",
+      "Mythology"
     ]
   },
   {
     "id": "b_18",
-    "title": "Mythic_Item_Obtained",
-    "author": "Featured Creator",
+    "title": "Leveling Beyond the Max",
+    "author": "Kyung-ho",
     "category": "Manhwa",
-    "status": "Highly Recommended",
-    "rating": "4.8 / 5.0",
-    "coverImage": "/covers/mythic_item_obtained.jpg",
-    "chapters": "Ch. 271",
-    "description": "Mythic_Item_Obtained \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "4.6 / 5.0",
+    "coverImage": "/covers/leveling_beyond_the_max.jpg",
+    "chapters": "95+ Ch.",
+    "description": "Trapped in the Void for millennia, Cha Shin-hyun breaks past maximum level caps, returning to Earth to effortlessly annihilate rank-S gates.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Overpowered",
+      "Dungeon",
+      "Action"
     ]
   },
   {
     "id": "b_19",
-    "title": "Necromancer Academy's Genius Summoner",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Completed",
+    "title": "My Wife Came from a Thousand Years Ago",
+    "author": "Xiang Tang / Jiu Lu",
+    "category": "Manhua",
+    "status": "Ongoing",
     "rating": "4.9 / 5.0",
-    "coverImage": "/covers/necromancer_academys_genius_summoner.jpg",
-    "chapters": "Ch. 284",
-    "description": "Necromancer Academy's Genius Summoner \u2014 Highly recommended reading choice in Manhwa.",
+    "coverImage": "/covers/my_wife_came_from_a_thousand_years_ago.jpg",
+    "chapters": "240+ Ch.",
+    "description": "Tang Ruowei, a skilled female sword master from ancient China, suddenly teleports into modern Shanghai, learning modern life under Xu Qing.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Romance",
+      "Slice of Life",
+      "Reverse Isekai"
     ]
   },
   {
     "id": "b_20",
-    "title": "Necromancer, the Ultimate Scourge!",
-    "author": "Featured Creator",
+    "title": "Mythic_Item_Obtained",
+    "author": "Jung Seon-yul",
     "category": "Manhwa",
-    "status": "Reading",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/necromancer_the_ultimate_scourge.jpeg",
-    "chapters": "Ch. 297",
-    "description": "Necromancer, the Ultimate Scourge! \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/mythic_item_obtained.jpg",
+    "chapters": "100+ Ch.",
+    "description": "Jae-hyun stumbles upon Odin's lost eye artifact, unlocking mythic Norse magic spellbooks and instant stat growth.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Norse Mythology",
+      "Magic",
+      "System"
     ]
   },
   {
     "id": "b_21",
-    "title": "Omniscient Reader's Viewpoint",
-    "author": "Featured Creator",
+    "title": "Necromancer Academy's Genius Summoner",
+    "author": "Sora / Redice Studio",
     "category": "Manhwa",
-    "status": "Highly Recommended",
+    "status": "Ongoing",
     "rating": "4.7 / 5.0",
-    "coverImage": "/covers/omniscient_readers_viewpoint.jpg",
-    "chapters": "Ch. 310",
-    "description": "Omniscient Reader's Viewpoint \u2014 Highly recommended reading choice in Manhwa.",
+    "coverImage": "/covers/necromancer_academys_genius_summoner.jpg",
+    "chapters": "85+ Ch.",
+    "description": "Simon Polentia, born with immense natural dark mana, enters Kizen Necromancy Academy, commanding undead legions with brilliant strategy.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Necromancy",
+      "Academy",
+      "Dark Magic"
     ]
   },
   {
     "id": "b_22",
-    "title": "Pick Me Up Infinite Gacha",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Completed",
-    "rating": "4.8 / 5.0",
-    "coverImage": "/covers/pick_me_up_infinite_gacha.jpg",
-    "chapters": "Ch. 323",
-    "description": "Pick Me Up Infinite Gacha \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "Necromancer, the Ultimate Scourge!",
+    "author": "Moxian / FanFan",
+    "category": "Manhua",
+    "status": "Ongoing",
+    "rating": "4.6 / 5.0",
+    "coverImage": "/covers/necromancer_the_ultimate_scourge.jpeg",
+    "chapters": "130+ Ch.",
+    "description": "Lin Mo shifts to a hidden SSS-tier Necromancer class, summoning endless skeleton armies that gain passive infinite stack buffs.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Necromancy",
+      "System",
+      "Overpowered"
     ]
   },
   {
     "id": "b_23",
-    "title": "Player can't level up",
-    "author": "Featured Creator",
+    "title": "Omniscient Reader's Viewpoint",
+    "author": "Sing Shong / Sleepy-C (REDICE)",
     "category": "Manhwa",
-    "status": "Reading",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/player_cant_level_up.jpg",
-    "chapters": "Ch. 336",
-    "description": "Player can't level up \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "5.0 / 5.0",
+    "coverImage": "/covers/omniscient_readers_viewpoint.jpg",
+    "chapters": "220+ Ch.",
+    "description": "Kim Dokja, the sole reader of a 3,000-chapter web novel, uses his intimate plot knowledge to navigate a real-world scenario apocalypse alongside protagonist Yoo Joonghyuk.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Meta-Fantasy",
+      "Survival",
+      "Constellations",
+      "Masterpiece"
     ]
   },
   {
     "id": "b_24",
-    "title": "Regressor Instruction Manual",
-    "author": "Featured Creator",
+    "title": "Pick Me Up Infinite Gacha",
+    "author": "Hermod / WASABACK",
     "category": "Manhwa",
-    "status": "Highly Recommended",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/regressor_instruction_manual.jpg",
-    "chapters": "Ch. 349",
-    "description": "Regressor Instruction Manual \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "4.9 / 5.0",
+    "coverImage": "/covers/pick_me_up_infinite_gacha.jpg",
+    "chapters": "100+ Ch.",
+    "description": "Loki, a top 5 global mobile gacha player, is summoned into the game as a 1-star trash hero, leading low-rarity units through brutal dungeon floors.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Gacha Game",
+      "Dark Fantasy",
+      "Tactical Survival"
     ]
   },
   {
     "id": "b_25",
-    "title": "Reloaded into the Other World",
-    "author": "Featured Creator",
+    "title": "Player can't level up",
+    "author": "Avis / Redice Studio",
     "category": "Manhwa",
-    "status": "Completed",
+    "status": "Ongoing",
     "rating": "4.7 / 5.0",
-    "coverImage": "/covers/reloaded_into_the_other_world.jpg",
-    "chapters": "Ch. 362",
-    "description": "Reloaded into the Other World \u2014 Highly recommended reading choice in Manhwa.",
+    "coverImage": "/covers/player_cant_level_up.jpg",
+    "chapters": "150+ Ch.",
+    "description": "Kim Gi-gyu remains stuck at level 1 for 5 years until awakening the unique ability to link and evolve sentient ego weapons.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Ego Weapons",
+      "Tower Climbing",
+      "Action"
     ]
   },
   {
     "id": "b_26",
-    "title": "Return of the Frozen Player",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Reading",
-    "rating": "4.8 / 5.0",
-    "coverImage": "/covers/return_of_the_frozen_player.jpg",
-    "chapters": "Ch. 375",
-    "description": "Return of the Frozen Player \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "Redo of Healer Rolls for Vengeance",
+    "author": "Rui Tsukiyo",
+    "category": "Manga",
+    "status": "Ongoing",
+    "rating": "4.3 / 5.0",
+    "coverImage": "/covers/redo_of_healer_rolls_for_vengeance.jpg",
+    "chapters": "50+ Ch.",
+    "description": "Healer Keyaru rewinds time to exact brutal vengeance upon the heroes who exploited and abused his healing abilities.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Dark Fantasy",
+      "Revenge",
+      "Mature"
     ]
   },
   {
     "id": "b_27",
-    "title": "Second Life Ranker",
-    "author": "Featured Creator",
+    "title": "Regressor Instruction Manual",
+    "author": "Dramafire / Blue Catus",
     "category": "Manhwa",
-    "status": "Highly Recommended",
+    "status": "Ongoing",
     "rating": "4.9 / 5.0",
-    "coverImage": "/covers/second_life_ranker.jpg",
-    "chapters": "Ch. 388",
-    "description": "Second Life Ranker \u2014 Highly recommended reading choice in Manhwa.",
+    "coverImage": "/covers/regressor_instruction_manual.jpg",
+    "chapters": "120+ Ch.",
+    "description": "Lee Kiyoung uses his Mind's Eye skill to manipulate powerful regressor Kim Hyunsung, operating as the master strategist behind the scenes.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Mind Manipulation",
+      "Dark Hero",
+      "Strategy"
     ]
   },
   {
     "id": "b_28",
-    "title": "Shadow slave",
-    "author": "Featured Creator",
-    "category": "Novel",
-    "status": "Completed",
+    "title": "Reincarnation of the Suicidal Battle God",
+    "author": "Blue-Deep",
+    "category": "Manhwa",
+    "status": "Ongoing",
     "rating": "5.0 / 5.0",
-    "coverImage": "/covers/shadow_slave.jpg",
-    "chapters": "Ch. 401",
-    "description": "Shadow slave \u2014 Highly recommended reading choice in Novel.",
+    "coverImage": "/covers/reincarnation_of_the_suicidal_battle_god.jpg",
+    "chapters": "100+ Ch.",
+    "description": "Zephyr, the last surviving human in the war against the Demon God Tartaros, is granted a second chance by the gods to rewrite humanity's downfall.",
     "tags": [
-      "Novel",
-      "Action",
-      "Supernatural"
+      "Regression",
+      "High Fantasy",
+      "Masterpiece"
     ]
   },
   {
     "id": "b_29",
-    "title": "So I'm a Cultivation Big Shot",
-    "author": "Featured Creator",
-    "category": "Novel",
-    "status": "Reading",
-    "rating": "4.7 / 5.0",
-    "coverImage": "/covers/so_im_a_cultivation_big_shot.jpg",
-    "chapters": "Ch. 414",
-    "description": "So I'm a Cultivation Big Shot \u2014 Highly recommended reading choice in Novel.",
+    "title": "Reloaded into the Other World",
+    "author": "Hye-ju",
+    "category": "Manhwa",
+    "status": "Ongoing",
+    "rating": "4.5 / 5.0",
+    "coverImage": "/covers/reloaded_into_the_other_world.jpg",
+    "chapters": "70+ Ch.",
+    "description": "A veteran military sniper transmigrates into a magical kingdom, pairing firearms technology with mana enhancement.",
     "tags": [
-      "Novel",
-      "Action",
-      "Supernatural"
+      "Firearms",
+      "Isekai",
+      "Action"
     ]
   },
   {
     "id": "b_30",
-    "title": "Solo Max Level Newbie",
-    "author": "Featured Creator",
+    "title": "Return of the Frozen Player",
+    "author": "Silvaf / Redice Studio",
     "category": "Manhwa",
-    "status": "Highly Recommended",
+    "status": "Ongoing",
     "rating": "4.8 / 5.0",
-    "coverImage": "/covers/solo_max_level_newbie.jpg",
-    "chapters": "Ch. 427",
-    "description": "Solo Max Level Newbie \u2014 Highly recommended reading choice in Manhwa.",
+    "coverImage": "/covers/return_of_the_frozen_player.jpg",
+    "chapters": "115+ Ch.",
+    "description": "Seo Jun-ho awakens 25 years after sacrificing himself to freeze the Frost Queen, resuming his mission to thaw his frozen party members.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Ice Magic",
+      "Dungeon",
+      "Return"
     ]
   },
   {
     "id": "b_31",
-    "title": "Spare Me, Great Lord!",
-    "author": "Featured Creator",
-    "category": "Manhua",
-    "status": "Completed",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/spare_me_great_lord.jpg",
-    "chapters": "Ch. 440",
-    "description": "Spare Me, Great Lord! \u2014 Highly recommended reading choice in Manhua.",
+    "title": "Return of the Shattered Constellation",
+    "author": "Sadoyeon / Flex",
+    "category": "Manhwa",
+    "status": "Ongoing",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/return_of_the_shattered_constellation.jpg",
+    "chapters": "110+ Ch.",
+    "description": "Lee Chang-sun, a fallen divine constellation, descends into a mortal body to reclaim his divine throne and exact vengeance on betrayers.",
     "tags": [
-      "Manhua",
-      "Action",
-      "Supernatural"
+      "Constellation",
+      "Regression",
+      "Action"
     ]
   },
   {
     "id": "b_32",
-    "title": "Spirit Tamer",
-    "author": "Featured Creator",
+    "title": "Second Life Ranker",
+    "author": "Nong Nong / Sa Doo",
     "category": "Manhwa",
-    "status": "Reading",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/spirit_tamer.jpg",
-    "chapters": "Ch. 453",
-    "description": "Spirit Tamer \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "4.8 / 5.0",
+    "coverImage": "/covers/second_life_ranker.jpg",
+    "chapters": "170+ Ch.",
+    "description": "Yeon-woo inherits his twin brother's pocket watch and journal, entering the Obelisk tower to hunt down the teammates who betrayed his brother.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Tower Climbing",
+      "Revenge",
+      "Draconic Power"
     ]
   },
   {
     "id": "b_33",
-    "title": "Swordmaster's Youngest Son",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Highly Recommended",
-    "rating": "4.7 / 5.0",
-    "coverImage": "/covers/swordmasters_youngest_son.jpg",
-    "chapters": "Ch. 466",
-    "description": "Swordmaster's Youngest Son \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "Shadow slave",
+    "author": "Guiltythree",
+    "category": "Novel",
+    "status": "Reading",
+    "rating": "5.0 / 5.0",
+    "coverImage": "/covers/shadow_slave.jpg",
+    "chapters": "1600+ Ch.",
+    "description": "Sunless, a clever slum youth infected by the Nightmare Spell, navigates dark fantasy realms. Features incredible worldbuilding, smart tactical combat, and deep lore.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Dark Fantasy",
+      "Nightmare Spell",
+      "Tactical Combat",
+      "Masterpiece"
     ]
   },
   {
     "id": "b_34",
-    "title": "The 100th Regression of the Max-Level Player",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Completed",
-    "rating": "4.8 / 5.0",
-    "coverImage": "/covers/the_100th_regression_of_the_max_level_player.jpg",
-    "chapters": "Ch. 479",
-    "description": "The 100th Regression of the Max-Level Player \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "So I'm a Cultivation Big Shot",
+    "author": "Sike / Yuewen",
+    "category": "Manhua",
+    "status": "Ongoing",
+    "rating": "4.6 / 5.0",
+    "coverImage": "/covers/so_im_a_cultivation_big_shot.jpg",
+    "chapters": "210+ Ch.",
+    "description": "Li Nianfan lives as an ordinary man whose casual calligraphy, tea brewing, and poetry trigger heavenly tribulations and immortal awakenings.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Comedy",
+      "Cultivation",
+      "Overpowered"
     ]
   },
   {
     "id": "b_35",
-    "title": "The Dark Magician Transmigrates After 66666 Years",
-    "author": "Featured Creator",
+    "title": "Solo Max Level Newbie",
+    "author": "WAN.Z / Redice Studio",
     "category": "Manhwa",
-    "status": "Reading",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/the_dark_magician_transmigrates_after_66666_years.jpg",
-    "chapters": "Ch. 492",
-    "description": "The Dark Magician Transmigrates After 66666 Years \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "4.8 / 5.0",
+    "coverImage": "/covers/solo_max_level_newbie.jpg",
+    "chapters": "140+ Ch.",
+    "description": "Kang Jin-hyuk, the only gaming streamer who cleared the impossible 'Tower of Trials', uses hidden floor secrets to dominate when the tower becomes real.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Tower",
+      "Gaming Knowledge",
+      "Overpowered"
     ]
   },
   {
     "id": "b_36",
-    "title": "The Great Mage Returns After 4000 Years",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Highly Recommended",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/the_great_mage_returns_after_4000_years.jpg",
-    "chapters": "Ch. 505",
-    "description": "The Great Mage Returns After 4000 Years \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "Spare Me, Great Lord!",
+    "author": "The Reader That Loves Diving",
+    "category": "Manhua",
+    "status": "Completed",
+    "rating": "4.8 / 5.0",
+    "coverImage": "/covers/spare_me_great_lord.jpg",
+    "chapters": "500 Ch.",
+    "description": "Lu Shu gains a unique system powered by negative distress points, taunting rivals and enemies to convert their annoyance into supreme physical cultivation.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Comedy",
+      "System",
+      "Cultivation"
     ]
   },
   {
     "id": "b_37",
-    "title": "The Naming of the Night",
-    "author": "Featured Creator",
-    "category": "Novel",
-    "status": "Completed",
-    "rating": "4.7 / 5.0",
-    "coverImage": "/covers/the_naming_of_the_night.jpg",
-    "chapters": "Ch. 518",
-    "description": "The Naming of the Night \u2014 Highly recommended reading choice in Novel.",
+    "title": "Spirit Tamer",
+    "author": "Moxian",
+    "category": "Manhua",
+    "status": "Ongoing",
+    "rating": "4.5 / 5.0",
+    "coverImage": "/covers/spirit_tamer.jpg",
+    "chapters": "130+ Ch.",
+    "description": "A young spirit contractor binds rare elemental beasts, climbing regional tournaments to uncover ancient spirit secrets.",
     "tags": [
-      "Novel",
-      "Action",
-      "Supernatural"
+      "Spirit Beast",
+      "Tournament",
+      "Action"
     ]
   },
   {
     "id": "b_38",
-    "title": "The S-Ranks That I Raised",
-    "author": "Featured Creator",
+    "title": "Swordmaster's Youngest Son",
+    "author": "AZI / Redice Studio",
     "category": "Manhwa",
-    "status": "Reading",
-    "rating": "4.8 / 5.0",
-    "coverImage": "/covers/the_s_ranks_that_i_raised.jpg",
-    "chapters": "Ch. 531",
-    "description": "The S-Ranks That I Raised \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "4.9 / 5.0",
+    "coverImage": "/covers/swordmasters_youngest_son.jpg",
+    "chapters": "120+ Ch.",
+    "description": "Jin Runcandel, exiled trash son of the world's strongest sword clan, makes a pact with the Shadow God Solderet and regresses to master dual sword and magic.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Swordsmanship",
+      "Shadow Magic",
+      "Regression"
     ]
   },
   {
     "id": "b_39",
-    "title": "The Strongest Son-in-Law in History",
-    "author": "Featured Creator",
+    "title": "The 100th Regression of the Max-Level Player",
+    "author": "KingS",
     "category": "Manhwa",
-    "status": "Highly Recommended",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/the_strongest_son_in_law_in_history.jpg",
-    "chapters": "Ch. 544",
-    "description": "The Strongest Son-in-Law in History \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/the_100th_regression_of_the_max_level_player.jpg",
+    "chapters": "60+ Ch.",
+    "description": "Ryu Min reaches his final 100th regression attempt in a death game, using total future knowledge to clear divine death scenarios.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Regression",
+      "Death Game",
+      "Action"
     ]
   },
   {
     "id": "b_40",
-    "title": "The World After The End",
-    "author": "Featured Creator",
+    "title": "The Dark Magician Transmigrates After 66666 Years",
+    "author": "TARU / Pasol",
     "category": "Manhwa",
-    "status": "Completed",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/the_world_after_the_end.jpg",
-    "chapters": "Ch. 57",
-    "description": "The World After The End \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/the_dark_magician_transmigrates_after_66666_years.jpg",
+    "chapters": "110+ Ch.",
+    "description": "Diablo Volfir, the supreme dark archmage sealed by 12 corruption gods, awakens 66,666 years later as young noble Jamie Welton.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Reincarnation",
+      "Dark Magic",
+      "Nobility"
     ]
   },
   {
     "id": "b_41",
-    "title": "Tonikaku Kawaii",
-    "author": "Featured Creator",
-    "category": "Manga",
-    "status": "Reading",
+    "title": "The Great Mage Returns After 4000 Years",
+    "author": "Barnacle / Redice Studio",
+    "category": "Manhwa",
+    "status": "Ongoing",
     "rating": "4.7 / 5.0",
-    "coverImage": "/covers/tonikaku_kawaii.jpg",
-    "chapters": "Ch. 70",
-    "description": "Tonikaku Kawaii \u2014 Highly recommended reading choice in Manga.",
+    "coverImage": "/covers/the_great_mage_returns_after_4000_years.jpg",
+    "chapters": "180+ Ch.",
+    "description": "Lucas Trowman, history's greatest 9-star archmage, returns 4,000 years after being trapped by Demigods, taking over the body of suicidal student Frey Blake.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "Archmage",
+      "Demigods",
+      "Reincarnation"
     ]
   },
   {
     "id": "b_42",
-    "title": "Tyrant of the Tower Defense Game",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Highly Recommended",
-    "rating": "4.8 / 5.0",
-    "coverImage": "/covers/tyrant_of_the_tower_defense_game.jpg",
-    "chapters": "Ch. 83",
-    "description": "Tyrant of the Tower Defense Game \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "The Naming of the Night",
+    "author": "Cuttlefish / Yuewen",
+    "category": "Novel",
+    "status": "Completed",
+    "rating": "4.9 / 5.0",
+    "coverImage": "/covers/the_naming_of_the_night.jpg",
+    "chapters": "1000 Ch.",
+    "description": "Qing Chen discovers a cyberpunk world where transmigrators swap bodies between high-tech futuristic metropolises and modern Earth.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Cyberpunk",
+      "World Hopping",
+      "Masterpiece"
     ]
   },
   {
     "id": "b_43",
-    "title": "Youngest Scion of the Mages",
-    "author": "Featured Creator",
+    "title": "The S-Ranks That I Raised",
+    "author": "Geunseo / Serang",
     "category": "Manhwa",
-    "status": "Completed",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/youngest_scion_of_the_mages.jpg",
-    "chapters": "Ch. 96",
-    "description": "Youngest Scion of the Mages \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "4.8 / 5.0",
+    "coverImage": "/covers/the_s_ranks_that_i_raised.jpg",
+    "chapters": "120+ Ch.",
+    "description": "F-rank hunter Han Yo-jin sacrifices himself for his S-rank brother, regressing with the ability to nurture and buff S-rank hunters.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Support Skill",
+      "Regression",
+      "Brotherhood"
     ]
   },
   {
     "id": "b_44",
-    "title": "academy genius swordmaster",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Reading",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/academy_genius_swordmaster.jpg",
-    "chapters": "Ch. 109",
-    "description": "academy genius swordmaster \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "The Strongest Son-in-Law in History",
+    "author": "Silk Road",
+    "category": "Manhua",
+    "status": "Ongoing",
+    "rating": "4.5 / 5.0",
+    "coverImage": "/covers/the_strongest_son_in_law_in_history.jpg",
+    "chapters": "160+ Ch.",
+    "description": "Shen Lang transmigrates into a matriarchal noble estate, using modern chemistry and tactical military strategy to rise to supreme power.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Kingdom Building",
+      "Transmigration",
+      "Strategy"
     ]
   },
   {
     "id": "b_45",
-    "title": "berserk",
-    "author": "Featured Creator",
-    "category": "Manga",
-    "status": "Highly Recommended",
-    "rating": "4.7 / 5.0",
-    "coverImage": "/covers/berserk.jpg",
-    "chapters": "Ch. 122",
-    "description": "berserk \u2014 Highly recommended reading choice in Manga.",
+    "title": "The World After The End",
+    "author": "Sing Shong / Undead Gamja",
+    "category": "Manhwa",
+    "status": "Ongoing",
+    "rating": "4.9 / 5.0",
+    "coverImage": "/covers/the_world_after_the_end.jpg",
+    "chapters": "120+ Ch.",
+    "description": "Jae-hwan refuses to use the Regression Stone when humanity falls, thrusting his thrust skill through the illusion towers into the Abyss.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "Abyss",
+      "Existential Fantasy",
+      "Masterpiece"
     ]
   },
   {
     "id": "b_46",
-    "title": "btooom",
-    "author": "Featured Creator",
+    "title": "Tonikaku Kawaii",
+    "author": "Kenjiro Hata",
     "category": "Manga",
-    "status": "Completed",
+    "status": "Ongoing",
     "rating": "4.8 / 5.0",
-    "coverImage": "/covers/btooom.jpg",
-    "chapters": "Ch. 135",
-    "description": "btooom \u2014 Highly recommended reading choice in Manga.",
+    "coverImage": "/covers/tonikaku_kawaii.jpg",
+    "chapters": "250+ Ch.",
+    "description": "Nasa Yuzaki survives a traffic accident after being saved by Tsukasa, proposing marriage on the spot in a wholesome mystery romance.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "Romance",
+      "Wholesome",
+      "Slice of Life"
     ]
   },
   {
     "id": "b_47",
-    "title": "corpse party",
-    "author": "Featured Creator",
-    "category": "Manga",
-    "status": "Reading",
+    "title": "Tyrant of the Tower Defense Game",
+    "author": "Gyul-\ud53c / Haru",
+    "category": "Manhwa",
+    "status": "Ongoing",
     "rating": "4.9 / 5.0",
-    "coverImage": "/covers/corpse_party.jpg",
-    "chapters": "Ch. 148",
-    "description": "corpse party \u2014 Highly recommended reading choice in Manga.",
+    "coverImage": "/covers/tyrant_of_the_tower_defense_game.jpg",
+    "chapters": "95+ Ch.",
+    "description": "Ash, a hardcore gamer, transmigrates into Prince Ash of Stage 0 in an impossible tower defense strategy RPG, managing morale and brutal monster waves.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "Tower Defense",
+      "Strategy",
+      "Hardcore"
     ]
   },
   {
     "id": "b_48",
-    "title": "dark gathering",
-    "author": "Featured Creator",
-    "category": "Manga",
-    "status": "Highly Recommended",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/dark_gathering.jpg",
-    "chapters": "Ch. 161",
-    "description": "dark gathering \u2014 Highly recommended reading choice in Manga.",
+    "title": "Youngest Scion of the Mages",
+    "author": "Mage-K",
+    "category": "Manhwa",
+    "status": "Ongoing",
+    "rating": "4.6 / 5.0",
+    "coverImage": "/covers/youngest_scion_of_the_mages.jpg",
+    "chapters": "70+ Ch.",
+    "description": "Luan, born into a legendary archmage house with broken mana channels, uses ancient breathing techniques to forge a brand new mana core.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "Magic Clan",
+      "Cultivation",
+      "Action"
     ]
   },
   {
     "id": "b_49",
-    "title": "dead tube",
-    "author": "Featured Creator",
-    "category": "Manga",
-    "status": "Completed",
-    "rating": "4.7 / 5.0",
-    "coverImage": "/covers/dead_tube.jpg",
-    "chapters": "Ch. 174",
-    "description": "dead tube \u2014 Highly recommended reading choice in Manga.",
+    "title": "academy genius swordmaster",
+    "author": "Subin / Lico",
+    "category": "Manhwa",
+    "status": "Ongoing",
+    "rating": "4.8 / 5.0",
+    "coverImage": "/covers/academy_genius_swordmaster.jpg",
+    "chapters": "70+ Ch.",
+    "description": "Ronan, a disgraced frontline soldier, regresses to his academy days, using raw instincts and sword techniques to slay cosmic disasters.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "Swordsmanship",
+      "Academy",
+      "Regression"
     ]
   },
   {
     "id": "b_50",
-    "title": "demonic emperor",
-    "author": "Featured Creator",
-    "category": "Manhua",
-    "status": "Reading",
-    "rating": "4.8 / 5.0",
-    "coverImage": "/covers/demonic_emperor.jpg",
-    "chapters": "Ch. 187",
-    "description": "demonic emperor \u2014 Highly recommended reading choice in Manhua.",
+    "title": "berserk",
+    "author": "Kentaro Miura / Studio Gaga",
+    "category": "Manga",
+    "status": "Ongoing",
+    "rating": "5.0 / 5.0",
+    "coverImage": "/covers/berserk.jpg",
+    "chapters": "375+ Ch.",
+    "description": "Guts' dark, legendary journey as the Black Swordsman against fate, terrifying apostles, and the God Hand. The ultimate dark fantasy masterpiece.",
     "tags": [
-      "Manhua",
-      "Action",
-      "Supernatural"
+      "Dark Fantasy",
+      "Tragedy",
+      "Masterpiece"
     ]
   },
   {
     "id": "b_51",
-    "title": "devide pet evolution",
-    "author": "Featured Creator",
-    "category": "Manhua",
-    "status": "Highly Recommended",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/devide_pet_evolution.jpg",
-    "chapters": "Ch. 200",
-    "description": "devide pet evolution \u2014 Highly recommended reading choice in Manhua.",
+    "title": "boundless ascension",
+    "author": "2L",
+    "category": "Manhwa",
+    "status": "Ongoing",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/boundless_ascension.jpg",
+    "chapters": "80+ Ch.",
+    "description": "Sung Sung-hyun enters the Trial Tower, acquiring passive stat absorption and infinite technique fusion to surpass high rankers.",
     "tags": [
-      "Manhua",
-      "Action",
-      "Supernatural"
+      "Tower",
+      "Growth",
+      "Action"
     ]
   },
   {
     "id": "b_52",
-    "title": "dice",
-    "author": "Featured Creator",
-    "category": "Manhwa",
+    "title": "btooom",
+    "author": "Junya Inoue",
+    "category": "Manga",
     "status": "Completed",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/dice.jpg",
-    "chapters": "Ch. 213",
-    "description": "dice \u2014 Highly recommended reading choice in Manhwa.",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/btooom.jpg",
+    "chapters": "121 Ch.",
+    "description": "Top-ranked gamer Ryota Sakamoto wakes up trapped on a deserted island, forced to play a real-life death match using specialized BIM bombs.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Battle Royale",
+      "Survival",
+      "Action"
     ]
   },
   {
     "id": "b_53",
-    "title": "gokurakugai",
-    "author": "Featured Creator",
+    "title": "corpse party",
+    "author": "Makoto Kedouin / Toshimi Shinomiya",
     "category": "Manga",
-    "status": "Reading",
-    "rating": "4.7 / 5.0",
-    "coverImage": "/covers/gokurakugai.jpg",
-    "chapters": "Ch. 226",
-    "description": "gokurakugai \u2014 Highly recommended reading choice in Manga.",
+    "status": "Completed",
+    "rating": "4.5 / 5.0",
+    "coverImage": "/covers/corpse_party.jpg",
+    "chapters": "47 Ch.",
+    "description": "Students performing a ritual charm are transported to Heavenly Host Elementary School, an alternate dimensional haunt haunted by vengeful child ghosts.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "Horror",
+      "Gore",
+      "Psychological"
     ]
   },
   {
     "id": "b_54",
-    "title": "henna ie",
-    "author": "Featured Creator",
+    "title": "dark gathering",
+    "author": "Kenichi Kondo",
     "category": "Manga",
-    "status": "Highly Recommended",
+    "status": "Ongoing",
     "rating": "4.8 / 5.0",
-    "coverImage": "/covers/henna_ie.jpg",
-    "chapters": "Ch. 239",
-    "description": "henna ie \u2014 Highly recommended reading choice in Manga.",
+    "coverImage": "/covers/dark_gathering.jpg",
+    "chapters": "60+ Ch.",
+    "description": "Keitaro Gentoga, a spiritual medium magnetic to malevolent ghosts, assists child prodigy Yayoi Hozuki in capturing evil spirits to fight a god.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "Horror",
+      "Occult",
+      "Exorcism"
     ]
   },
   {
     "id": "b_55",
-    "title": "hero return",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Completed",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/hero_return.jpg",
-    "chapters": "Ch. 252",
-    "description": "hero return \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "dead tube",
+    "author": "Mikoto Yamaguchi / Touta Kitakawa",
+    "category": "Manga",
+    "status": "Ongoing",
+    "rating": "4.4 / 5.0",
+    "coverImage": "/covers/dead_tube.jpg",
+    "chapters": "90+ Ch.",
+    "description": "Cameraman Tomohiro Machiya is dragged into Dead Tube, a dark web video sharing platform where extreme violence and crime yield millions in cash.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Psychological",
+      "Thriller",
+      "Mature"
     ]
   },
   {
     "id": "b_56",
-    "title": "horimiya",
-    "author": "Featured Creator",
-    "category": "Manga",
-    "status": "Reading",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/horimiya.jpg",
-    "chapters": "Ch. 265",
-    "description": "horimiya \u2014 Highly recommended reading choice in Manga.",
+    "title": "demonic emperor",
+    "author": "Nightingale",
+    "category": "Manhua",
+    "status": "Ongoing",
+    "rating": "4.9 / 5.0",
+    "coverImage": "/covers/demonic_emperor.jpg",
+    "chapters": "520+ Ch.",
+    "description": "Zhuo Yifan, the formidable Demonic Emperor, is betrayed and reincarnated into a powerless house steward, using cunning dark arts to rise.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "Demonic Path",
+      "Reincarnation",
+      "Mastermind"
     ]
   },
   {
     "id": "b_57",
-    "title": "hunter x hunter",
-    "author": "Featured Creator",
-    "category": "Manga",
-    "status": "Highly Recommended",
-    "rating": "4.7 / 5.0",
-    "coverImage": "/covers/hunter_x_hunter.jpg",
-    "chapters": "Ch. 278",
-    "description": "hunter x hunter \u2014 Highly recommended reading choice in Manga.",
+    "title": "devide pet evolution",
+    "author": "Fei Fan",
+    "category": "Manhua",
+    "status": "Ongoing",
+    "rating": "4.6 / 5.0",
+    "coverImage": "/covers/devide_pet_evolution.jpg",
+    "chapters": "100+ Ch.",
+    "description": "Gao Peng awakens the Monster Data Eye, breeding mutated divine beasts through rare evolutionary paths.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "Monster Breeding",
+      "System",
+      "Action"
     ]
   },
   {
     "id": "b_58",
-    "title": "infinite mage",
-    "author": "Featured Creator",
+    "title": "dice",
+    "author": "Yun Hyun-seok",
     "category": "Manhwa",
     "status": "Completed",
-    "rating": "4.8 / 5.0",
-    "coverImage": "/covers/infinite_mage.jpg",
-    "chapters": "Ch. 291",
-    "description": "infinite mage \u2014 Highly recommended reading choice in Manhwa.",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/dice.jpg",
+    "chapters": "386 Ch.",
+    "description": "Bullied student Dongtae discovers mystery Dice that alter physical beauty, intelligence, and stats in exchange for completing ominous tasks.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Psychological",
+      "Supernatural",
+      "System"
     ]
   },
   {
     "id": "b_59",
-    "title": "jigokuraku",
-    "author": "Featured Creator",
+    "title": "fff trash hero",
+    "author": "Farnar",
     "category": "Manhwa",
-    "status": "Reading",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/jigokuraku.jpg",
-    "chapters": "Ch. 304",
-    "description": "jigokuraku \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Completed",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/fff_trash_hero.jpg",
+    "chapters": "145 Ch.",
+    "description": "Kang Han-soo slays the Demon King after 10 agonizing years, only to receive an 'F' in personality and get sent back to day 1 of summoning.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Anti-Hero",
+      "Comedy",
+      "Regression"
     ]
   },
   {
     "id": "b_60",
-    "title": "jinrou game",
-    "author": "Featured Creator",
+    "title": "gokurakugai",
+    "author": "Yuto Sano",
     "category": "Manga",
-    "status": "Highly Recommended",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/jinrou_game.jpg",
-    "chapters": "Ch. 317",
-    "description": "jinrou game \u2014 Highly recommended reading choice in Manga.",
+    "status": "Ongoing",
+    "rating": "4.8 / 5.0",
+    "coverImage": "/covers/gokurakugai.jpg",
+    "chapters": "20+ Ch.",
+    "description": "Tao and Alma run a troubleshooter office in a chaotic district, hunting grotesque monsters known as Magatsu born from human corpses.",
     "tags": [
-      "Manga",
       "Action",
-      "Supernatural"
+      "Supernatural",
+      "Stunning Art"
     ]
   },
   {
     "id": "b_61",
-    "title": "jujutsu kaisen modulo",
-    "author": "Featured Creator",
+    "title": "henna ie",
+    "author": "Uketsu / Kyo Muto",
     "category": "Manga",
     "status": "Completed",
-    "rating": "4.7 / 5.0",
-    "coverImage": "/covers/jujutsu_kaisen_modulo.jpg",
-    "chapters": "Ch. 330",
-    "description": "jujutsu kaisen modulo \u2014 Highly recommended reading choice in Manga.",
+    "rating": "4.6 / 5.0",
+    "coverImage": "/covers/henna_ie.jpg",
+    "chapters": "25 Ch.",
+    "description": "An architect analyzes a strange Tokyo house floor plan, uncovering hidden double walls, secret murder passages, and sinister rituals.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "Mystery",
+      "Psychological",
+      "Architectural Horror"
     ]
   },
   {
     "id": "b_62",
-    "title": "jujutsu kaisen",
-    "author": "Featured Creator",
-    "category": "Manga",
-    "status": "Reading",
-    "rating": "4.8 / 5.0",
-    "coverImage": "/covers/jujutsu_kaisen.jpg",
-    "chapters": "Ch. 343",
-    "description": "jujutsu kaisen \u2014 Highly recommended reading choice in Manga.",
+    "title": "hero return",
+    "author": "Kim Su-gon",
+    "category": "Manhwa",
+    "status": "Ongoing",
+    "rating": "4.6 / 5.0",
+    "coverImage": "/covers/hero_return.jpg",
+    "chapters": "90+ Ch.",
+    "description": "The world's strongest hero Kim Sung-bin dies in battle, waking up 20 years later to find corrupt guilds misusing his legacy.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "Return",
+      "Hero",
+      "Action"
     ]
   },
   {
     "id": "b_63",
-    "title": "junket bank",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Highly Recommended",
+    "title": "horimiya",
+    "author": "HERO / Daisuke Hagiwara",
+    "category": "Manga",
+    "status": "Completed",
     "rating": "4.9 / 5.0",
-    "coverImage": "/covers/junket_bank.jpg",
-    "chapters": "Ch. 356",
-    "description": "junket bank \u2014 Highly recommended reading choice in Manhwa.",
+    "coverImage": "/covers/horimiya.jpg",
+    "chapters": "125 Ch.",
+    "description": "Popular Kyoko Hori and quiet pierced Miyamura discover each other's secret home personalities, developing a sweet and genuine romance.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Romance",
+      "School Life",
+      "Masterpiece"
     ]
   },
   {
     "id": "b_64",
-    "title": "logging 10000 years into the future",
-    "author": "Featured Creator",
-    "category": "Manhua",
-    "status": "Completed",
+    "title": "hunter x hunter",
+    "author": "Yoshihiro Togashi",
+    "category": "Manga",
+    "status": "Ongoing",
     "rating": "5.0 / 5.0",
-    "coverImage": "/covers/logging_10000_years_into_the_future.jpg",
-    "chapters": "Ch. 369",
-    "description": "logging 10000 years into the future \u2014 Highly recommended reading choice in Manhua.",
+    "coverImage": "/covers/hunter_x_hunter.jpg",
+    "chapters": "400+ Ch.",
+    "description": "Gon Freecss embarks on a journey to become a Hunter and find his father, featuring complex Nen combat logic and incredible arcs.",
     "tags": [
-      "Manhua",
-      "Action",
-      "Supernatural"
+      "Adventure",
+      "Nen System",
+      "Masterpiece"
     ]
   },
   {
     "id": "b_65",
-    "title": "martial god regressed to level 2",
-    "author": "Featured Creator",
+    "title": "infinite mage",
+    "author": "Kim Chi-woo / Kirian",
     "category": "Manhwa",
-    "status": "Reading",
-    "rating": "4.7 / 5.0",
-    "coverImage": "/covers/martial_god_regressed_to_level_2.jpg",
-    "chapters": "Ch. 382",
-    "description": "martial god regressed to level 2 \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "4.8 / 5.0",
+    "coverImage": "/covers/infinite_mage.jpg",
+    "chapters": "80+ Ch.",
+    "description": "Shirone, a commoner boy abandoned in a stable, unlocks mathematical infinity comprehension to cast unprecedented spatial mana magic.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Magic",
+      "Infinity Mana",
+      "Academy"
     ]
   },
   {
     "id": "b_66",
-    "title": "martial peak",
-    "author": "Featured Creator",
-    "category": "Manhua",
-    "status": "Highly Recommended",
-    "rating": "4.8 / 5.0",
-    "coverImage": "/covers/martial_peak.jpg",
-    "chapters": "Ch. 395",
-    "description": "martial peak \u2014 Highly recommended reading choice in Manhua.",
+    "title": "jigokuraku",
+    "author": "Yuji Kaku",
+    "category": "Manga",
+    "status": "Completed",
+    "rating": "4.9 / 5.0",
+    "coverImage": "/covers/jigokuraku.jpg",
+    "chapters": "127 Ch.",
+    "description": "Ninja Gabimaru the Hollow is offered a pardon if he can retrieve the Elixir of Life from a terrifying, mutant-infested island paradise.",
     "tags": [
-      "Manhua",
-      "Action",
-      "Supernatural"
+      "Ninja",
+      "Supernatural",
+      "Masterpiece"
     ]
   },
   {
     "id": "b_67",
-    "title": "player hide his past",
-    "author": "Featured Creator",
-    "category": "Manhwa",
+    "title": "jinrou game",
+    "author": "Ryo Kawakami / Kouda 2000",
+    "category": "Manga",
     "status": "Completed",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/player_hide_his_past.jpg",
-    "chapters": "Ch. 408",
-    "description": "player hide his past \u2014 Highly recommended reading choice in Manhwa.",
+    "rating": "4.5 / 5.0",
+    "coverImage": "/covers/jinrou_game.jpg",
+    "chapters": "30 Ch.",
+    "description": "High school students are kidnapped into a real-life Werewolf Mafia game, forced to vote and execute classmates each night.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Death Game",
+      "Psychological",
+      "Suspense"
     ]
   },
   {
     "id": "b_68",
-    "title": "pygmalion",
+    "title": "jujutsu kaisen modulo",
     "author": "Featured Creator",
     "category": "Manga",
-    "status": "Reading",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/pygmalion.jpg",
-    "chapters": "Ch. 421",
-    "description": "pygmalion \u2014 Highly recommended reading choice in Manga.",
+    "status": "Ongoing",
+    "rating": "4.8 / 5.0",
+    "coverImage": "/covers/jujutsu_kaisen_modulo.jpg",
+    "chapters": "Featured",
+    "description": "jujutsu kaisen modulo \u2014 Highly compelling plot in Manga series.",
     "tags": [
       "Manga",
       "Action",
-      "Supernatural"
+      "Fantasy"
     ]
   },
   {
     "id": "b_69",
-    "title": "return of the 8th class magician",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Highly Recommended",
-    "rating": "4.7 / 5.0",
-    "coverImage": "/covers/return_of_the_8th_class_magician.jpg",
-    "chapters": "Ch. 434",
-    "description": "return of the 8th class magician \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "jujutsu kaisen",
+    "author": "Gege Akutami",
+    "category": "Manga",
+    "status": "Completed",
+    "rating": "4.9 / 5.0",
+    "coverImage": "/covers/jujutsu_kaisen.jpg",
+    "chapters": "271 Ch.",
+    "description": "Yuji Itadori swallows Ryomen Sukuna's cursed finger, joining Jujutsu High sorcerers to purge dangerous cursed spirits.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Sorcery",
+      "Curses",
+      "Action"
     ]
   },
   {
     "id": "b_70",
-    "title": "return survival",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Completed",
+    "title": "junket bank",
+    "author": "Tohru Tanaka",
+    "category": "Manga",
+    "status": "Ongoing",
     "rating": "4.8 / 5.0",
-    "coverImage": "/covers/return_survival.jpg",
-    "chapters": "Ch. 447",
-    "description": "return survival \u2014 Highly recommended reading choice in Manhwa.",
+    "coverImage": "/covers/junket_bank.jpg",
+    "chapters": "140+ Ch.",
+    "description": "Karasuma Bank operates high-stakes underground gambling rooms for VIPs, where debt equals organ harvesting and psychological warfare.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Gambling",
+      "Psychological",
+      "Mind Games"
     ]
   },
   {
     "id": "b_71",
-    "title": "shounen no abyss",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Reading",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/shounen_no_abyss.jpg",
-    "chapters": "Ch. 460",
-    "description": "shounen no abyss \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "logging 10000 years into the future",
+    "author": "Claw Studio",
+    "category": "Manhua",
+    "status": "Ongoing",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/logging_10000_years_into_the_future.jpg",
+    "chapters": "110+ Ch.",
+    "description": "Lu Sheng enters a dream world 10,000 years in the future, learning futuristic martial techniques and gene martial arts to dominate modern martial arts.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Future Knowledge",
+      "Martial Arts",
+      "Overpowered"
     ]
   },
   {
     "id": "b_72",
-    "title": "shuumatsu no valkyrie",
-    "author": "Featured Creator",
-    "category": "Manga",
-    "status": "Highly Recommended",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/shuumatsu_no_valkyrie.jpg",
-    "chapters": "Ch. 473",
-    "description": "shuumatsu no valkyrie \u2014 Highly recommended reading choice in Manga.",
+    "title": "martial god regressed to level 2",
+    "author": "Yoon Seok-hyun",
+    "category": "Manhwa",
+    "status": "Ongoing",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/martial_god_regressed_to_level_2.jpg",
+    "chapters": "60+ Ch.",
+    "description": "Seong Ji-han regresses to the tutorial stage of the Planetary League, utilizing ancient Korean martial arts to solo cosmic invaders.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "Regression",
+      "Martial Arts",
+      "System"
     ]
   },
   {
     "id": "b_73",
-    "title": "solo leveling",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Completed",
+    "title": "martial peak",
+    "author": "Momo / Pikapi",
+    "category": "Manhua",
+    "status": "Ongoing",
     "rating": "4.7 / 5.0",
-    "coverImage": "/covers/solo_leveling.jpg",
-    "chapters": "Ch. 486",
-    "description": "solo leveling \u2014 Highly recommended reading choice in Manhwa.",
+    "coverImage": "/covers/martial_peak.jpg",
+    "chapters": "3500+ Ch.",
+    "description": "Yang Kai, a lowly trial disciple at High Heaven Pavilion, discovers a mysterious Black Book, beginning a epic journey to the peak of martial dao.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Cultivation",
+      "Martial Dao",
+      "Epic Journey"
     ]
   },
   {
     "id": "b_74",
-    "title": "star embracing swordmaster",
-    "author": "Featured Creator",
+    "title": "overgeared",
+    "author": "Park Saenal / Team Argo",
     "category": "Manhwa",
-    "status": "Reading",
-    "rating": "4.8 / 5.0",
-    "coverImage": "/covers/star_embracing_swordmaster.jpg",
-    "chapters": "Ch. 499",
-    "description": "star embracing swordmaster \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "4.9 / 5.0",
+    "coverImage": "/covers/overgeared.jpg",
+    "chapters": "210+ Ch.",
+    "description": "Shin Young-woo (Grid) unlocks Pagma's Successor blacksmith class in VR game Satisfy, forging god-tier equipment to outgeared every raid boss.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Blacksmithing",
+      "VRMMO",
+      "Overpowered"
     ]
   },
   {
     "id": "b_75",
-    "title": "sweet home",
-    "author": "Featured Creator",
+    "title": "player hide his past",
+    "author": "Chungdae",
     "category": "Manhwa",
-    "status": "Highly Recommended",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/sweet_home.jpg",
-    "chapters": "Ch. 512",
-    "description": "sweet home \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "4.6 / 5.0",
+    "coverImage": "/covers/player_hide_his_past.jpg",
+    "chapters": "55+ Ch.",
+    "description": "Lee Hoyeol is transmigrated into his old embarrassing middle school chuunibyou game persona, Grand Duke Grandfell, wielding noble magic.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Chuunibyou",
+      "Comedy",
+      "Magic"
     ]
   },
   {
     "id": "b_76",
-    "title": "the novel extra",
-    "author": "Featured Creator",
-    "category": "Novel",
+    "title": "plunderer",
+    "author": "Suu Minazuki",
+    "category": "Manga",
     "status": "Completed",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/the_novel_extra.jpg",
-    "chapters": "Ch. 525",
-    "description": "the novel extra \u2014 Highly recommended reading choice in Novel.",
+    "rating": "4.6 / 5.0",
+    "coverImage": "/covers/plunderer.jpg",
+    "chapters": "82 Ch.",
+    "description": "In a post-apocalyptic world governed by numbers and counts, Licht Bach hides his identity as a legendary 300-year-old Ace soldier.",
     "tags": [
-      "Novel",
       "Action",
-      "Supernatural"
+      "Post-Apocalyptic",
+      "Mystery"
     ]
   },
   {
     "id": "b_77",
-    "title": "the scared ruins",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Reading",
-    "rating": "4.7 / 5.0",
-    "coverImage": "/covers/the_scared_ruins.jpg",
-    "chapters": "Ch. 538",
-    "description": "the scared ruins \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "pygmalion",
+    "author": "Chihiro Watanabe",
+    "category": "Manga",
+    "status": "Completed",
+    "rating": "4.4 / 5.0",
+    "coverImage": "/covers/pygmalion.jpg",
+    "chapters": "19 Ch.",
+    "description": "During a local mascot festival, life-sized plush mascots suddenly come to life, slaughtering attendees in a violent survival horror spree.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Horror",
+      "Mascot Gore",
+      "Survival"
     ]
   },
   {
     "id": "b_78",
-    "title": "the wererolf game: crazy fox",
-    "author": "Featured Creator",
+    "title": "return of the 8th class magician",
+    "author": "Ryu Yong / Tess",
     "category": "Manhwa",
-    "status": "Highly Recommended",
-    "rating": "4.8 / 5.0",
-    "coverImage": "/covers/the_wererolf_game_crazy_fox.jpg",
-    "chapters": "Ch. 51",
-    "description": "the wererolf game: crazy fox \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Completed",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/return_of_the_8th_class_magician.jpg",
+    "chapters": "81 Ch.",
+    "description": "Ian Page, the world's first 8th-class archmage, is poisoned by his greedy emperor friend, regressing 30 years to reshape the empire.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Archmage",
+      "Regression",
+      "Completed"
     ]
   },
   {
     "id": "b_79",
-    "title": "time limited genius dark knight",
-    "author": "Featured Creator",
+    "title": "return survival",
+    "author": "Kim Tae-woong",
     "category": "Manhwa",
     "status": "Completed",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/time_limited_genius_dark_knight.jpg",
-    "chapters": "Ch. 64",
-    "description": "time limited genius dark knight \u2014 Highly recommended reading choice in Manhwa.",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/return_survival.jpg",
+    "chapters": "136 Ch.",
+    "description": "Yoohan survives 3 years in a zombie apocalypse before dying, regressing to 6 months before the outbreak to build an impenetrable bunker compound.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Zombie Apocalypse",
+      "Regression",
+      "Survival"
     ]
   },
   {
     "id": "b_80",
-    "title": "tokyo ghoul",
-    "author": "Featured Creator",
+    "title": "shounen no abyss",
+    "author": "Ryo Minenami",
     "category": "Manga",
-    "status": "Reading",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/tokyo_ghoul.jpg",
-    "chapters": "Ch. 77",
-    "description": "tokyo ghoul \u2014 Highly recommended reading choice in Manga.",
+    "status": "Completed",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/shounen_no_abyss.jpg",
+    "chapters": "180 Ch.",
+    "description": "Reiji Kurose lives trapped in a hopeless rural town. A chance meeting with a retired idol drags him into a deep psychological abyss.",
     "tags": [
-      "Manga",
-      "Action",
-      "Supernatural"
+      "Psychological",
+      "Drama",
+      "Tragedy"
     ]
   },
   {
     "id": "b_81",
-    "title": "tokyo underworld",
-    "author": "Featured Creator",
-    "category": "Manhwa",
-    "status": "Highly Recommended",
-    "rating": "4.7 / 5.0",
-    "coverImage": "/covers/tokyo_underworld.jpg",
-    "chapters": "Ch. 90",
-    "description": "tokyo underworld \u2014 Highly recommended reading choice in Manhwa.",
+    "title": "shuumatsu no valkyrie",
+    "author": "Shinya Umemura / Ajichika",
+    "category": "Manga",
+    "status": "Ongoing",
+    "rating": "4.9 / 5.0",
+    "coverImage": "/covers/shuumatsu_no_valkyrie.jpg",
+    "chapters": "90+ Ch.",
+    "description": "13 grand 1-on-1 duels between gods and human historical legends determine whether humanity deserves survival or total extinction.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Gods vs Humans",
+      "Tournament",
+      "Epic Battles"
     ]
   },
   {
     "id": "b_82",
-    "title": "tomb raider king",
-    "author": "Featured Creator",
+    "title": "solo leveling",
+    "author": "Chugong / DUBU (REDICE)",
     "category": "Manhwa",
     "status": "Completed",
-    "rating": "4.8 / 5.0",
-    "coverImage": "/covers/tomb_raider_king.jpg",
-    "chapters": "Ch. 103",
-    "description": "tomb raider king \u2014 Highly recommended reading choice in Manhwa.",
+    "rating": "5.0 / 5.0",
+    "coverImage": "/covers/solo_leveling.jpg",
+    "chapters": "200 Ch.",
+    "description": "Sung Jin-woo, the weakest E-rank hunter, awakens a secret quest system after a double dungeon incident, rising as the Shadow Monarch.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Shadow Monarch",
+      "Hunter",
+      "Masterpiece"
     ]
   },
   {
     "id": "b_83",
-    "title": "tomodachi game",
-    "author": "Featured Creator",
+    "title": "star embracing swordmaster",
+    "author": "Q-T",
     "category": "Manhwa",
-    "status": "Reading",
-    "rating": "4.9 / 5.0",
-    "coverImage": "/covers/tomodachi_game.jpg",
-    "chapters": "Ch. 116",
-    "description": "tomodachi game \u2014 Highly recommended reading choice in Manhwa.",
+    "status": "Ongoing",
+    "rating": "4.8 / 5.0",
+    "coverImage": "/covers/star_embracing_swordmaster.jpg",
+    "chapters": "65+ Ch.",
+    "description": "Vlad, a street urchin in the slums, gains a star-blessed sword artifact, honing pure sword heart techniques to protect his comrades.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Swordsmanship",
+      "Growth",
+      "Fantasy"
     ]
   },
   {
     "id": "b_84",
-    "title": "versatile mage",
-    "author": "Featured Creator",
-    "category": "Manhua",
-    "status": "Highly Recommended",
-    "rating": "5.0 / 5.0",
-    "coverImage": "/covers/versatile_mage.jpg",
-    "chapters": "Ch. 129",
-    "description": "versatile mage \u2014 Highly recommended reading choice in Manhua.",
+    "title": "sweet home",
+    "author": "Carnby Kim / Youngchan Hwang",
+    "category": "Manhwa",
+    "status": "Completed",
+    "rating": "4.9 / 5.0",
+    "coverImage": "/covers/sweet_home.jpg",
+    "chapters": "140 Ch.",
+    "description": "Reclusive teenager Cha Hyun-soo and apartment residents fight to survive as humans transform into monsters based on their innermost desires.",
     "tags": [
-      "Manhua",
-      "Action",
-      "Supernatural"
+      "Horror",
+      "Monster Apocalypse",
+      "Masterpiece"
     ]
   },
   {
     "id": "b_85",
-    "title": "world's strongest troll",
-    "author": "Featured Creator",
+    "title": "the king of knight return with god",
+    "author": "Blue-Deep",
     "category": "Manhwa",
-    "status": "Completed",
+    "status": "Ongoing",
     "rating": "4.7 / 5.0",
-    "coverImage": "/covers/worlds_strongest_troll.jpg",
-    "chapters": "Ch. 142",
-    "description": "world's strongest troll \u2014 Highly recommended reading choice in Manhwa.",
+    "coverImage": "/covers/the_king_of_knight_return_with_god.jpg",
+    "chapters": "60+ Ch.",
+    "description": "King Leon, the last holy knight king of an otherworldly realm, transmigrates to modern Earth, hunting dimensional demons with holy aura.",
     "tags": [
-      "Manhwa",
-      "Action",
-      "Supernatural"
+      "Holy Knight",
+      "Reverse Isekai",
+      "Action"
     ]
   },
   {
     "id": "b_86",
-    "title": "yakushoku distpiari",
-    "author": "Featured Creator",
+    "title": "the novel extra",
+    "author": "Jee Gab-Song",
     "category": "Manhwa",
-    "status": "Reading",
+    "status": "Ongoing",
     "rating": "4.8 / 5.0",
-    "coverImage": "/covers/yakushoku_distpiari.jpg",
-    "chapters": "Ch. 155",
-    "description": "yakushoku distpiari \u2014 Highly recommended reading choice in Manhwa.",
+    "coverImage": "/covers/the_novel_extra.jpg",
+    "chapters": "100+ Ch.",
+    "description": "Kim Hajin is transmigrated as a extra mob character Kim Chundong into his own novel, surviving using precision sniper marksmanship.",
     "tags": [
-      "Manhwa",
+      "Transmigration",
+      "Sniper",
+      "Academy"
+    ]
+  },
+  {
+    "id": "b_87",
+    "title": "the scared ruins",
+    "author": "Chen Dong",
+    "category": "Manhua",
+    "status": "Ongoing",
+    "rating": "4.6 / 5.0",
+    "coverImage": "/covers/the_scared_ruins.jpg",
+    "chapters": "150+ Ch.",
+    "description": "Modern Earth undergoes a post-apocalyptic cosmic awakening, unlocking ancient ruins, mutated beasts, and divine martial fruits.",
+    "tags": [
+      "Post-Apocalyptic",
+      "Cultivation",
+      "Action"
+    ]
+  },
+  {
+    "id": "b_88",
+    "title": "the wererolf game: crazy fox",
+    "author": "Ryo Kawakami",
+    "category": "Manga",
+    "status": "Completed",
+    "rating": "4.5 / 5.0",
+    "coverImage": "/covers/the_wererolf_game_crazy_fox.jpg",
+    "chapters": "28 Ch.",
+    "description": "Ayaka Morii is assigned the 'Fox' role in the lethal Werewolf death game, aiming to survive alone while tricking both Villagers and Werewolves.",
+    "tags": [
+      "Death Game",
+      "Psychological",
+      "Fox Role"
+    ]
+  },
+  {
+    "id": "b_89",
+    "title": "time limited genius dark knight",
+    "author": "Jung Sun-yul",
+    "category": "Manhwa",
+    "status": "Ongoing",
+    "rating": "4.8 / 5.0",
+    "coverImage": "/covers/time_limited_genius_dark_knight.jpg",
+    "chapters": "70+ Ch.",
+    "description": "Yoo Seon-woo enters game 'Inner Fantasy' as incurable weak prince Nox von Reinherz, utilizing dark magic techniques before his timer runs out.",
+    "tags": [
+      "Dark Knight",
+      "Game World",
+      "Strategy"
+    ]
+  },
+  {
+    "id": "b_90",
+    "title": "tokyo ghoul",
+    "author": "Sui Ishida",
+    "category": "Manga",
+    "status": "Completed",
+    "rating": "4.9 / 5.0",
+    "coverImage": "/covers/tokyo_ghoul.jpg",
+    "chapters": "143 Ch.",
+    "description": "Ken Kaneki becomes a half-ghoul after a fatal encounter, forced to navigate the secret flesh-eating ghoul society hidden in Tokyo.",
+    "tags": [
+      "Dark Fantasy",
+      "Psychological",
+      "Masterpiece"
+    ]
+  },
+  {
+    "id": "b_91",
+    "title": "tokyo underworld",
+    "author": "Kousuke Asahi",
+    "category": "Manga",
+    "status": "Ongoing",
+    "rating": "4.6 / 5.0",
+    "coverImage": "/covers/tokyo_underworld.jpg",
+    "chapters": "80+ Ch.",
+    "description": "Rumors speak of a subterranean Tokyo execution ground beneath the city where criminals and monsters fight in lethal underground arenas.",
+    "tags": [
+      "Underground",
       "Action",
-      "Supernatural"
+      "Survival"
+    ]
+  },
+  {
+    "id": "b_92",
+    "title": "tomb raider king",
+    "author": "Yuns / Redice Studio",
+    "category": "Manhwa",
+    "status": "Completed",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/tomb_raider_king.jpg",
+    "chapters": "411 Ch.",
+    "description": "Seo Joo-heon regresses 15 years after being betrayed by his employer, stealing divine god relics from tomb dungeons worldwide.",
+    "tags": [
+      "Relic Heist",
+      "Regression",
+      "Action"
+    ]
+  },
+  {
+    "id": "b_93",
+    "title": "tomodachi game",
+    "author": "Mikoto Yamaguchi / Yuki Sato",
+    "category": "Manga",
+    "status": "Completed",
+    "rating": "4.9 / 5.0",
+    "coverImage": "/covers/tomodachi_game.jpg",
+    "chapters": "127 Ch.",
+    "description": "Yuuichi Katagiri and his friends are kidnapped into Tomodachi Game to pay off a 20-million-yen debt, revealing Yuuichi's dark mastermind intellect.",
+    "tags": [
+      "Psychological",
+      "Mastermind",
+      "Death Game"
+    ]
+  },
+  {
+    "id": "b_94",
+    "title": "versatile mage",
+    "author": "Chaos",
+    "category": "Manhua",
+    "status": "Ongoing",
+    "rating": "4.7 / 5.0",
+    "coverImage": "/covers/versatile_mage.jpg",
+    "chapters": "1000+ Ch.",
+    "description": "Mo Fan wakes up in a parallel modern Earth where magic is taught in school, awakening dual elements (Lightning and Fire) as a rare genius.",
+    "tags": [
+      "Dual Magic",
+      "Urban Fantasy",
+      "Action"
+    ]
+  },
+  {
+    "id": "b_95",
+    "title": "world's strongest troll",
+    "author": "Bung-gae",
+    "category": "Manhwa",
+    "status": "Ongoing",
+    "rating": "4.6 / 5.0",
+    "coverImage": "/covers/worlds_strongest_troll.jpg",
+    "chapters": "60+ Ch.",
+    "description": "F-rank player Jaegyu plays VR game 'Arcadia' with maximum chaotic creativity, out-trolling high-rank guild masters.",
+    "tags": [
+      "VRMMO",
+      "Comedy",
+      "Troll Player"
+    ]
+  },
+  {
+    "id": "b_96",
+    "title": "yakushoku distpiari",
+    "author": "Togo Subaru / Aguri Igarashi",
+    "category": "Manga",
+    "status": "Completed",
+    "rating": "4.5 / 5.0",
+    "coverImage": "/covers/yakushoku_distpiari.jpg",
+    "chapters": "25 Ch.",
+    "description": "In a dark fantasy kingdom where Sub-Classes exist solely to be sacrificed as EXP fodder, Class-Master Tolza rebels against divine fate.",
+    "tags": [
+      "Dark Fantasy",
+      "Class System",
+      "Anti-Hero"
     ]
   }
 ];

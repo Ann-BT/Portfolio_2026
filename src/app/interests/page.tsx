@@ -380,7 +380,13 @@ export default function InterestsPage() {
 
                     {/* Status Badge & Tags */}
                     <div className={styles.bookFooter}>
-                      <span className={`${styles.statusBadge} ${book.status === "Completed" ? styles.statusCompleted : styles.statusReading}`}>
+                      <span className={`${styles.statusBadge} ${
+                        book.status === "Completed" 
+                          ? styles.statusCompleted 
+                          : book.status === "Ongoing" || book.status === "Reading"
+                          ? styles.statusOngoing 
+                          : styles.statusRecommended
+                      }`}>
                         {book.status}
                       </span>
                       <div className={styles.tagsGroup}>
