@@ -48,16 +48,16 @@ export default function AboutSection() {
         <div className={styles.grid}>
           <div className={styles.story}>
             <p>
-              I am a third-year Cyber Security student at the <strong>University of Science and Technology of Hanoi (USTH)</strong>. 
-              My academic and professional journey is focused on defensive security operations, threat modeling, and network triage.
+              I hold a Bachelor&apos;s degree in Cyber Security from the <strong>University of Science and Technology of Hanoi (USTH)</strong> with a graduation <strong>Classification of Very Good</strong>. 
+              My expertise spans defensive security operations, threat modeling, log analysis, and full-stack web engineering.
             </p>
             <p>
-              I specialize in Blue Team operations, with hands-on practice analyzing system logs, triaging web application exploits, and writing incident reports. 
-              My primary research project is <strong>SIDERIS</strong>, a custom, production-style sidecar WAF that performs real-time traffic analysis and active mitigation blocking.
+              I am actively seeking professional opportunities in <strong>Blue Team Cybersecurity</strong> (SOC Analyst, Incident Response, Defensive Security), <strong>Web Development</strong> (Frontend / Full-stack), or roles across the broader Cyber &amp; IT domain. 
+              My hands-on experience includes engineering <strong>SIDERIS</strong> (a self-hosted behavioral WAF proxy), developing <strong>PhishShield</strong> (an ML-powered anti-phishing extension), and performing malware triage and web security audits.
             </p>
             <p>
-              Outside of academics, I study French and Chinese, write cybersecurity write-ups, and enjoy gaming. 
-              My aspiration is to pursue a Master's degree in Cybersecurity and eventually transition into an academic teaching and research role as a university professor.
+              Outside of cybersecurity and development, I study French and Chinese, author security write-ups, and enjoy gaming. 
+              In the future, I aim to pursue a Master&apos;s degree in Cybersecurity and transition into academic research and teaching.
             </p>
           </div>
 

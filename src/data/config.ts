@@ -1,10 +1,10 @@
 export const config = {
   name: "Bùi Trường An",
   nickname: "Merlin",
-  title: "Cybersecurity Student & Developer",
-  bio: "Cybersecurity student at USTH (University of Science and Technology of Hanoi) and aspiring SOC Analyst. Experienced in engineering custom threat detection systems (like SIDERIS WAF), blue team log analysis, malware triage, and web application security.",
+  title: "Cybersecurity Graduate & Developer",
+  bio: "Bachelor Graduate in Cyber Security from USTH (Classification: Very Good). Actively seeking opportunities in Blue Team Cybersecurity, Web Development, or roles across the Cyber & IT domain. Experienced in engineering threat detection proxies (SIDERIS WAF), blue team log analysis, malware triage, and full-stack web applications.",
   location: "Ha Noi, Viet Nam",
-  status: "Available Now",
+  status: "Open for Opportunities",
   cvUrl: "/cv.pdf", // Placeholder for later
   email: "anbt.personal@gmail.com",
   socials: {
@@ -17,7 +17,7 @@ export const config = {
   education: {
     school: "University of Science and Technology of Hanoi (USTH)",
     major: "Cyber Security",
-    year: "3rd Year"
+    year: "Graduated (Classification: Very Good)"
   },
   languages: [
     { name: "Vietnamese", level: "Native" },

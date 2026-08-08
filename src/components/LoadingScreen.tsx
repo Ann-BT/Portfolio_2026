@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function LoadingScreen() {
   const [loading, setLoading] = useState(true);
   const [text, setText] = useState("");
-  const fullText = "INITIALIZING SECURITY ARCHIVE...";
+  const fullText = "WELCOME TO MY PORTFOLIO ...";
 
   useEffect(() => {
     // Check if user already saw the loader in this session
