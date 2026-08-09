@@ -659,7 +659,7 @@
 }
 
 /* ========================================================= */
-/* ANKERGAMES EXACT MATCH STYLING                           */
+/* ANKERGAMES PURE POSTER CARDS SHOWCASE                     */
 /* ========================================================= */
 .gamesSection {
   border-top: 1px solid var(--border-dim);
@@ -775,11 +775,11 @@
   border-radius: 6px;
 }
 
-/* AnkerGames Grid Showcase (Exact 6-column grid) */
+/* AnkerGames Grid Showcase (7-column pure poster grid) */
 .ankerGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 1.25rem;
   margin-top: 1.5rem;
 }
 
@@ -787,15 +787,14 @@
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
   cursor: pointer;
 }
 
 .ankerCoverBox {
   position: relative;
   width: 100%;
-  padding-top: 150%; /* Exact AnkerGames 2:3 vertical poster frame */
-  background-color: #0e0f12;
+  padding-top: 150%; /* Exact 2:3 Vertical Poster Frame */
+  background-color: #0b0c0e;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -804,9 +803,9 @@
 }
 
 .ankerGameCard:hover .ankerCoverBox {
-  transform: translateY(-5px);
+  transform: translateY(-6px) scale(1.02);
   border-color: rgba(42, 169, 224, 0.7);
-  box-shadow: 0 10px 30px rgba(42, 169, 224, 0.25);
+  box-shadow: 0 12px 35px rgba(42, 169, 224, 0.3);
 }
 
 .ankerCoverImg {
@@ -820,42 +819,7 @@
 }
 
 .ankerGameCard:hover .ankerCoverImg {
-  transform: scale(1.06);
-}
-
-.ankerCatRibbon {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #2aa9e0;
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  font-weight: 700;
-  padding: 0.15rem 0.45rem;
-  border-radius: 4px;
-  z-index: 2;
-}
-
-.ankerStatusRibbon {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #4ade80;
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  font-weight: 700;
-  padding: 0.15rem 0.45rem;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  gap: 0.2rem;
-  z-index: 2;
+  transform: scale(1.05);
 }
 
 .ankerCardOverlay {
@@ -864,12 +828,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.94) 100%);
-  padding: 1rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.94) 100%);
+  padding: 1.1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 0.6rem;
+  gap: 0.5rem;
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 3;
@@ -879,10 +843,18 @@
   opacity: 1;
 }
 
+.ankerOverlayTitle {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.25;
+  margin: 0;
+}
+
 .ankerOverlayText {
   font-size: 0.78rem;
   color: #e2e8f0;
-  line-height: 1.45;
+  line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -890,50 +862,11 @@
   margin: 0;
 }
 
-.ankerOverlayMeta {
-  display: flex;
-  align-items: center;
-}
-
 .ankerGenrePill {
   font-family: var(--font-mono);
   font-size: 0.65rem;
-  color: #94a3b8;
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-}
-
-/* Details below cover box like AnkerGames */
-.ankerCardContent {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.ankerGameTitle {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 1.3;
-  margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: color 0.2s ease;
-}
-
-.ankerGameCard:hover .ankerGameTitle {
   color: #2aa9e0;
-}
-
-.ankerGameSub {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: #94a3b8;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-weight: 600;
 }
 
 /* Modal Upload Form Styling */
@@ -1094,7 +1027,7 @@
     width: 300px !important;
   }
   .ankerGrid {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   }
 }
 
@@ -1118,7 +1051,7 @@
     gap: 1.25rem;
   }
   .ankerGrid {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.85rem;
   }
 }

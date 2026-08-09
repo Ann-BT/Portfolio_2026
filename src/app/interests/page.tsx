@@ -13,19 +13,15 @@ import {
   FiVolumeX,
   FiPlus, 
   FiTrash2, 
-  FiVideo, 
   FiX,
   FiMoreVertical,
   FiBookmark,
-  FiTv,
-  FiSearch,
-  FiCheckCircle,
-  FiLayers
+  FiSearch
 } from "react-icons/fi";
 import Footer from "@/components/Footer";
 import { useGlobalPlayer, VideoTrack } from "@/context/GlobalPlayerContext";
-import { bookRecommendations, BookRecommendation } from "@/data/interests";
-import { gameShowcaseList, GameShowcase } from "@/data/games";
+import { bookRecommendations } from "@/data/interests";
+import { gameShowcaseList } from "@/data/games";
 import styles from "./Interests.module.css";
 
 export default function InterestsPage() {
@@ -81,7 +77,7 @@ export default function InterestsPage() {
   // Book Category Filter state
   const [bookFilter, setBookFilter] = useState<string>("ALL");
 
-  // Game Category Filter & Search state (AnkerGames Style)
+  // Game Category Filter & Search state (AnkerGames Pure Grid Style)
   const [gameFilter, setGameFilter] = useState<string>("ALL");
   const [gameSearchQuery, setGameSearchQuery] = useState<string>("");
 
@@ -418,17 +414,17 @@ export default function InterestsPage() {
           </section>
 
           {/* ========================================================= */}
-          {/* ANKERGAMES EXACT MATCH PC GAMES SHOWCASE                  */}
+          {/* ANKERGAMES EXACT MATCH PURE POSTER CARDS SHOWCASE         */}
           {/* ========================================================= */}
           <section className={`${styles.booksSection} ${styles.gamesSection}`}>
             
             {/* AnkerGames Header Banner */}
             <div className={styles.ankerHeaderBanner}>
               <div className={styles.ankerHeaderInfo}>
-                <span className={styles.ankerTag}>ANKERGAMES SHOWCASE // PC GAMES LIBRARY</span>
+                <span className={styles.ankerTag}>ANKERGAMES STYLE // PC GAMES LIBRARY</span>
                 <h2 className={styles.ankerTitle}>All PC Games & Favorite Collection ({filteredGames.length})</h2>
                 <p className={styles.ankerDesc}>
-                  Browse 100+ curated PC games with 2:3 vertical poster cards, live search, and genre tags.
+                  Clean, borderless 2:3 vertical poster cards matching AnkerGames design.
                 </p>
               </div>
 
@@ -466,7 +462,7 @@ export default function InterestsPage() {
               <span className={styles.gameCounterBadge}>Showing {filteredGames.length} of {gameShowcaseList.length} Games</span>
             </div>
 
-            {/* AnkerGames Exact Card Grid */}
+            {/* AnkerGames Exact Card Grid (Pure Clean Vertical Poster Cards) */}
             <div className={styles.ankerGrid}>
               {filteredGames.map((game) => (
                 <motion.div
@@ -476,8 +472,9 @@ export default function InterestsPage() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   className={styles.ankerGameCard}
+                  title={`${game.title} — ${game.genre}`}
                 >
-                  {/* AnkerGames 2:3 Poster Frame */}
+                  {/* AnkerGames Clean 2:3 Vertical Poster Card */}
                   <div className={styles.ankerCoverBox}>
                     <img 
                       src={game.coverImage} 
@@ -485,27 +482,12 @@ export default function InterestsPage() {
                       className={styles.ankerCoverImg}
                     />
 
-                    {/* Top-Left Category Ribbon */}
-                    <span className={styles.ankerCatRibbon}>{game.category.split(" / ")[0]}</span>
-
-                    {/* Top-Right Status Badge */}
-                    <span className={styles.ankerStatusRibbon}>
-                      <FiCheckCircle size={10} /> {game.status}
-                    </span>
-
-                    {/* AnkerGames Hover Overlay */}
+                    {/* Smooth Hover Overlay showing Game Title & Description */}
                     <div className={styles.ankerCardOverlay}>
+                      <h4 className={styles.ankerOverlayTitle}>{game.title}</h4>
                       <p className={styles.ankerOverlayText}>{game.description}</p>
-                      <div className={styles.ankerOverlayMeta}>
-                        <span className={styles.ankerGenrePill}><FiTv size={11} /> {game.genre}</span>
-                      </div>
+                      <span className={styles.ankerGenrePill}>{game.genre}</span>
                     </div>
-                  </div>
-
-                  {/* AnkerGames Details Below Poster */}
-                  <div className={styles.ankerCardContent}>
-                    <h3 className={styles.ankerGameTitle}>{game.title}</h3>
-                    <div className={styles.ankerGameSub}>{game.genre}</div>
                   </div>
                 </motion.div>
               ))}
