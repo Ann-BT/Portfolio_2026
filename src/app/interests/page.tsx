@@ -16,12 +16,11 @@ import {
   FiVideo, 
   FiX,
   FiMoreVertical,
-  FiBookOpen,
-  FiStar,
   FiBookmark,
   FiTv,
   FiSearch,
-  FiCheckCircle
+  FiCheckCircle,
+  FiLayers
 } from "react-icons/fi";
 import Footer from "@/components/Footer";
 import { useGlobalPlayer, VideoTrack } from "@/context/GlobalPlayerContext";
@@ -419,17 +418,17 @@ export default function InterestsPage() {
           </section>
 
           {/* ========================================================= */}
-          {/* ANKERGAMES STYLE PC GAMES LIBRARY SHOWCASE                */}
+          {/* ANKERGAMES EXACT MATCH PC GAMES SHOWCASE                  */}
           {/* ========================================================= */}
           <section className={`${styles.booksSection} ${styles.gamesSection}`}>
             
-            {/* AnkerGames Style Header Banner */}
+            {/* AnkerGames Header Banner */}
             <div className={styles.ankerHeaderBanner}>
               <div className={styles.ankerHeaderInfo}>
-                <span className={styles.ankerTag}>ANKERGAMES STYLE // PC GAMES LIBRARY</span>
-                <h2 className={styles.ankerTitle}>All PC Games & Favorite Library ({filteredGames.length})</h2>
+                <span className={styles.ankerTag}>ANKERGAMES SHOWCASE // PC GAMES LIBRARY</span>
+                <h2 className={styles.ankerTitle}>All PC Games & Favorite Collection ({filteredGames.length})</h2>
                 <p className={styles.ankerDesc}>
-                  Browse, filter by genre, or search through my curated collection of 100+ PC games.
+                  Browse 100+ curated PC games with 2:3 vertical poster cards, live search, and genre tags.
                 </p>
               </div>
 
@@ -467,7 +466,7 @@ export default function InterestsPage() {
               <span className={styles.gameCounterBadge}>Showing {filteredGames.length} of {gameShowcaseList.length} Games</span>
             </div>
 
-            {/* AnkerGames Responsive 6-Column Card Grid Showcase */}
+            {/* AnkerGames Exact Card Grid */}
             <div className={styles.ankerGrid}>
               {filteredGames.map((game) => (
                 <motion.div
@@ -478,7 +477,7 @@ export default function InterestsPage() {
                   exit={{ opacity: 0, scale: 0.95 }}
                   className={styles.ankerGameCard}
                 >
-                  {/* Poster Image Box */}
+                  {/* AnkerGames 2:3 Poster Frame */}
                   <div className={styles.ankerCoverBox}>
                     <img 
                       src={game.coverImage} 
@@ -486,29 +485,27 @@ export default function InterestsPage() {
                       className={styles.ankerCoverImg}
                     />
 
-                    {/* Category Ribbon */}
+                    {/* Top-Left Category Ribbon */}
                     <span className={styles.ankerCatRibbon}>{game.category.split(" / ")[0]}</span>
 
-                    {/* Hover Card Overlay */}
+                    {/* Top-Right Status Badge */}
+                    <span className={styles.ankerStatusRibbon}>
+                      <FiCheckCircle size={10} /> {game.status}
+                    </span>
+
+                    {/* AnkerGames Hover Overlay */}
                     <div className={styles.ankerCardOverlay}>
                       <p className={styles.ankerOverlayText}>{game.description}</p>
                       <div className={styles.ankerOverlayMeta}>
-                        <span className={styles.ankerGenrePill}>{game.genre}</span>
+                        <span className={styles.ankerGenrePill}><FiTv size={11} /> {game.genre}</span>
                       </div>
                     </div>
                   </div>
 
-                  {/* AnkerGames Card Content */}
+                  {/* AnkerGames Details Below Poster */}
                   <div className={styles.ankerCardContent}>
                     <h3 className={styles.ankerGameTitle}>{game.title}</h3>
                     <div className={styles.ankerGameSub}>{game.genre}</div>
-                    
-                    <div className={styles.ankerCardFooter}>
-                      <span className={styles.ankerStatusPill}>
-                        <FiCheckCircle size={11} /> {game.status}
-                      </span>
-                      <span className={styles.ankerTagPill}>#{game.tags[0]}</span>
-                    </div>
                   </div>
                 </motion.div>
               ))}
