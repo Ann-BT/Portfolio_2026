@@ -544,19 +544,6 @@ export const gameShowcaseList: GameShowcase[] = [
     ]
   },
   {
-    "id": "g_42",
-    "title": "Harvest Town",
-    "category": "INDIE / SURVIVAL",
-    "genre": "Pixel Life Sim",
-    "status": "Masterpiece",
-    "coverImage": "/games/harvest_town.jpg",
-    "description": "Pixel-art farming life sim featuring crop cultivation, fishing, exploration, and town relationship building.",
-    "tags": [
-      "INDIE",
-      "Pixel Life Sim"
-    ]
-  },
-  {
     "id": "g_43",
     "title": "Vampire Survivors",
     "category": "INDIE / SURVIVAL",
