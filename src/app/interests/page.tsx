@@ -356,12 +356,6 @@ export default function InterestsPage() {
                       {book.category.toUpperCase()}
                     </span>
 
-                    {/* Rating Badge */}
-                    <span className={styles.ratingBadge}>
-                      <FiStar className={styles.starIcon} />
-                      <span>{book.rating}</span>
-                    </span>
-
                     {/* Overlay info on hover */}
                     <div className={styles.coverOverlay}>
                       <div className={styles.overlayText}>{book.description}</div>

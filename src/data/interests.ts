@@ -78,7 +78,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_5",
-    "title": "Battle Game in 5 Seconds",
+    "title": "Battle Game In 5 Seconds",
     "author": "Saizou Harawata / Kashiwa Miyako",
     "category": "Manga",
     "status": "Ongoing",
@@ -94,7 +94,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_6",
-    "title": "Becoming a Magic School Mage",
+    "title": "Becoming A Magic School Mage",
     "author": "Gladiator / Studio Lico",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -142,7 +142,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_9",
-    "title": "Enrolling in the Transcendent Academy",
+    "title": "Enrolling In The Transcendent Academy",
     "author": "Chungdae",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -158,7 +158,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_10",
-    "title": "I Became a Renowned Family's Sword Prodigy",
+    "title": "I Became A Renowned Family's Sword Prodigy",
     "author": "Jigyeong / Redice Studio",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -190,7 +190,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_12",
-    "title": "I'll Be Taking a Break for Personal Reasons",
+    "title": "I'll Be Taking A Break For Personal Reasons",
     "author": "Yoo Il-sin",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -222,7 +222,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_14",
-    "title": "Juujika no Rokunin",
+    "title": "Juujika No Rokunin",
     "author": "Shiryu Nakatake",
     "category": "Manga",
     "status": "Ongoing",
@@ -254,7 +254,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_16",
-    "title": "Legend of Star General",
+    "title": "Legend Of Star General",
     "author": "HangMan / FanFan",
     "category": "Manhua",
     "status": "Ongoing",
@@ -270,7 +270,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_17",
-    "title": "Level up with the Gods",
+    "title": "Level Up With The Gods",
     "author": "Blackajin / Oh Hyun-jun",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -286,7 +286,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_18",
-    "title": "Leveling Beyond the Max",
+    "title": "Leveling Beyond The Max",
     "author": "Kyung-ho",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -302,7 +302,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_19",
-    "title": "My Wife Came from a Thousand Years Ago",
+    "title": "My Wife Came From A Thousand Years Ago",
     "author": "Xiang Tang / Jiu Lu",
     "category": "Manhua",
     "status": "Ongoing",
@@ -350,7 +350,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_22",
-    "title": "Necromancer, the Ultimate Scourge!",
+    "title": "Necromancer, The Ultimate Scourge!",
     "author": "Moxian / FanFan",
     "category": "Manhua",
     "status": "Ongoing",
@@ -399,7 +399,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_25",
-    "title": "Player can't level up",
+    "title": "Player Can't Level Up",
     "author": "Avis / Redice Studio",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -415,7 +415,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_26",
-    "title": "Redo of Healer Rolls for Vengeance",
+    "title": "Redo Of Healer Rolls For Vengeance",
     "author": "Rui Tsukiyo",
     "category": "Manga",
     "status": "Ongoing",
@@ -447,7 +447,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_28",
-    "title": "Reincarnation of the Suicidal Battle God",
+    "title": "Reincarnation Of The Suicidal Battle God",
     "author": "Blue-Deep",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -463,7 +463,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_29",
-    "title": "Reloaded into the Other World",
+    "title": "Reloaded Into The Other World",
     "author": "Hye-ju",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -479,7 +479,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_30",
-    "title": "Return of the Frozen Player",
+    "title": "Return Of The Frozen Player",
     "author": "Silvaf / Redice Studio",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -495,7 +495,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_31",
-    "title": "Return of the Shattered Constellation",
+    "title": "Return Of The Shattered Constellation",
     "author": "Sadoyeon / Flex",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -527,7 +527,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_33",
-    "title": "Shadow slave",
+    "title": "Shadow Slave",
     "author": "Guiltythree",
     "category": "Novel",
     "status": "Ongoing",
@@ -544,7 +544,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_34",
-    "title": "So I'm a Cultivation Big Shot",
+    "title": "So I'm A Cultivation Big Shot",
     "author": "Sike / Yuewen",
     "category": "Manhua",
     "status": "Ongoing",
@@ -624,7 +624,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_39",
-    "title": "The 100th Regression of the Max-Level Player",
+    "title": "The 100th Regression Of The Max-Level Player",
     "author": "KingS",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -672,7 +672,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_42",
-    "title": "The Naming of the Night",
+    "title": "The Naming Of The Night",
     "author": "Cuttlefish / Yuewen",
     "category": "Novel",
     "status": "Completed",
@@ -704,7 +704,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_44",
-    "title": "The Strongest Son-in-Law in History",
+    "title": "The Strongest Son-in-Law In History",
     "author": "Silk Road",
     "category": "Manhua",
     "status": "Ongoing",
@@ -752,7 +752,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_47",
-    "title": "Tyrant of the Tower Defense Game",
+    "title": "Tyrant Of The Tower Defense Game",
     "author": "Gyul-\ud53c / Haru",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -768,7 +768,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_48",
-    "title": "Youngest Scion of the Mages",
+    "title": "Youngest Scion Of The Mages",
     "author": "Mage-K",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -784,7 +784,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_49",
-    "title": "academy genius swordmaster",
+    "title": "Academy Genius Swordmaster",
     "author": "Subin / Lico",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -800,7 +800,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_50",
-    "title": "berserk",
+    "title": "Berserk",
     "author": "Kentaro Miura / Studio Gaga",
     "category": "Manga",
     "status": "Ongoing",
@@ -816,7 +816,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_51",
-    "title": "boundless ascension",
+    "title": "Boundless Ascension",
     "author": "2L",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -832,7 +832,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_52",
-    "title": "btooom",
+    "title": "Btooom",
     "author": "Junya Inoue",
     "category": "Manga",
     "status": "Completed",
@@ -848,7 +848,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_53",
-    "title": "corpse party",
+    "title": "Corpse Party",
     "author": "Makoto Kedouin / Toshimi Shinomiya",
     "category": "Manga",
     "status": "Completed",
@@ -864,7 +864,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_54",
-    "title": "dark gathering",
+    "title": "Dark Gathering",
     "author": "Kenichi Kondo",
     "category": "Manga",
     "status": "Ongoing",
@@ -880,7 +880,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_55",
-    "title": "dead tube",
+    "title": "Dead Tube",
     "author": "Mikoto Yamaguchi / Touta Kitakawa",
     "category": "Manga",
     "status": "Ongoing",
@@ -896,7 +896,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_56",
-    "title": "demonic emperor",
+    "title": "Demonic Emperor",
     "author": "Nightingale",
     "category": "Manhua",
     "status": "Ongoing",
@@ -912,7 +912,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_57",
-    "title": "devide pet evolution",
+    "title": "Devide Pet Evolution",
     "author": "Fei Fan",
     "category": "Manhua",
     "status": "Ongoing",
@@ -928,7 +928,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_58",
-    "title": "dice",
+    "title": "Dice",
     "author": "Yun Hyun-seok",
     "category": "Manhwa",
     "status": "Completed",
@@ -944,7 +944,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_59",
-    "title": "fff trash hero",
+    "title": "Fff Trash Hero",
     "author": "Farnar",
     "category": "Manhwa",
     "status": "Completed",
@@ -960,7 +960,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_60",
-    "title": "gokurakugai",
+    "title": "Gokurakugai",
     "author": "Yuto Sano",
     "category": "Manga",
     "status": "Ongoing",
@@ -976,7 +976,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_61",
-    "title": "henna ie",
+    "title": "Henna Ie",
     "author": "Uketsu / Kyo Muto",
     "category": "Manga",
     "status": "Completed",
@@ -992,7 +992,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_62",
-    "title": "hero return",
+    "title": "Hero Return",
     "author": "Kim Su-gon",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -1008,7 +1008,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_63",
-    "title": "horimiya",
+    "title": "Horimiya",
     "author": "HERO / Daisuke Hagiwara",
     "category": "Manga",
     "status": "Completed",
@@ -1024,7 +1024,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_64",
-    "title": "hunter x hunter",
+    "title": "Hunter X Hunter",
     "author": "Yoshihiro Togashi",
     "category": "Manga",
     "status": "Ongoing",
@@ -1040,7 +1040,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_65",
-    "title": "infinite mage",
+    "title": "Infinite Mage",
     "author": "Kim Chi-woo / Kirian",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -1056,7 +1056,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_66",
-    "title": "jigokuraku",
+    "title": "Jigokuraku",
     "author": "Yuji Kaku",
     "category": "Manga",
     "status": "Completed",
@@ -1072,7 +1072,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_67",
-    "title": "jinrou game",
+    "title": "Jinrou Game",
     "author": "Ryo Kawakami / Kouda 2000",
     "category": "Manga",
     "status": "Completed",
@@ -1088,7 +1088,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_68",
-    "title": "jujutsu kaisen modulo",
+    "title": "Jujutsu Kaisen Modulo",
     "author": "Featured Creator",
     "category": "Manga",
     "status": "Ongoing",
@@ -1104,7 +1104,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_69",
-    "title": "jujutsu kaisen",
+    "title": "Jujutsu Kaisen",
     "author": "Gege Akutami",
     "category": "Manga",
     "status": "Completed",
@@ -1120,7 +1120,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_70",
-    "title": "junket bank",
+    "title": "Junket Bank",
     "author": "Tohru Tanaka",
     "category": "Manga",
     "status": "Ongoing",
@@ -1136,7 +1136,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_71",
-    "title": "logging 10000 years into the future",
+    "title": "Logging 10000 Years Into The Future",
     "author": "Claw Studio",
     "category": "Manhua",
     "status": "Ongoing",
@@ -1152,7 +1152,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_72",
-    "title": "martial god regressed to level 2",
+    "title": "Martial God Regressed To Level 2",
     "author": "Yoon Seok-hyun",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -1168,7 +1168,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_73",
-    "title": "martial peak",
+    "title": "Martial Peak",
     "author": "Momo / Pikapi",
     "category": "Manhua",
     "status": "Ongoing",
@@ -1184,7 +1184,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_74",
-    "title": "overgeared",
+    "title": "Overgeared",
     "author": "Park Saenal / Team Argo",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -1200,7 +1200,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_75",
-    "title": "player hide his past",
+    "title": "Player Hide His Past",
     "author": "Chungdae",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -1216,7 +1216,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_76",
-    "title": "plunderer",
+    "title": "Plunderer",
     "author": "Suu Minazuki",
     "category": "Manga",
     "status": "Completed",
@@ -1232,7 +1232,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_77",
-    "title": "pygmalion",
+    "title": "Pygmalion",
     "author": "Chihiro Watanabe",
     "category": "Manga",
     "status": "Completed",
@@ -1248,7 +1248,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_78",
-    "title": "return of the 8th class magician",
+    "title": "Return Of The 8th Class Magician",
     "author": "Ryu Yong / Tess",
     "category": "Manhwa",
     "status": "Completed",
@@ -1264,7 +1264,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_79",
-    "title": "return survival",
+    "title": "Return Survival",
     "author": "Kim Tae-woong",
     "category": "Manhwa",
     "status": "Completed",
@@ -1280,7 +1280,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_80",
-    "title": "shounen no abyss",
+    "title": "Shounen No Abyss",
     "author": "Ryo Minenami",
     "category": "Manga",
     "status": "Completed",
@@ -1296,7 +1296,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_81",
-    "title": "shuumatsu no valkyrie",
+    "title": "Shuumatsu No Valkyrie",
     "author": "Shinya Umemura / Ajichika",
     "category": "Manga",
     "status": "Ongoing",
@@ -1312,7 +1312,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_82",
-    "title": "solo leveling",
+    "title": "Solo Leveling",
     "author": "Chugong / DUBU (REDICE)",
     "category": "Manhwa",
     "status": "Completed",
@@ -1328,7 +1328,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_83",
-    "title": "star embracing swordmaster",
+    "title": "Star Embracing Swordmaster",
     "author": "Q-T",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -1344,7 +1344,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_84",
-    "title": "sweet home",
+    "title": "Sweet Home",
     "author": "Carnby Kim / Youngchan Hwang",
     "category": "Manhwa",
     "status": "Completed",
@@ -1360,7 +1360,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_85",
-    "title": "the king of knight return with god",
+    "title": "The King Of Knight Return With God",
     "author": "Blue-Deep",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -1376,7 +1376,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_86",
-    "title": "the novel extra",
+    "title": "The Novel Extra",
     "author": "Jee Gab-Song",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -1392,7 +1392,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_87",
-    "title": "the scared ruins",
+    "title": "The Scared Ruins",
     "author": "Chen Dong",
     "category": "Manhua",
     "status": "Ongoing",
@@ -1408,7 +1408,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_88",
-    "title": "the wererolf game: crazy fox",
+    "title": "The Wererolf Game: Crazy Fox",
     "author": "Ryo Kawakami",
     "category": "Manga",
     "status": "Completed",
@@ -1424,7 +1424,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_89",
-    "title": "time limited genius dark knight",
+    "title": "Time Limited Genius Dark Knight",
     "author": "Jung Sun-yul",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -1440,7 +1440,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_90",
-    "title": "tokyo ghoul",
+    "title": "Tokyo Ghoul",
     "author": "Sui Ishida",
     "category": "Manga",
     "status": "Completed",
@@ -1456,7 +1456,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_91",
-    "title": "tokyo underworld",
+    "title": "Tokyo Underworld",
     "author": "Kousuke Asahi",
     "category": "Manga",
     "status": "Ongoing",
@@ -1472,7 +1472,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_92",
-    "title": "tomb raider king",
+    "title": "Tomb Raider King",
     "author": "Yuns / Redice Studio",
     "category": "Manhwa",
     "status": "Completed",
@@ -1488,7 +1488,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_93",
-    "title": "tomodachi game",
+    "title": "Tomodachi Game",
     "author": "Mikoto Yamaguchi / Yuki Sato",
     "category": "Manga",
     "status": "Completed",
@@ -1504,7 +1504,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_94",
-    "title": "versatile mage",
+    "title": "Versatile Mage",
     "author": "Chaos",
     "category": "Manhua",
     "status": "Ongoing",
@@ -1520,7 +1520,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_95",
-    "title": "world's strongest troll",
+    "title": "World's Strongest Troll",
     "author": "Bung-gae",
     "category": "Manhwa",
     "status": "Ongoing",
@@ -1536,7 +1536,7 @@ export const bookRecommendations: BookRecommendation[] = [
   },
   {
     "id": "b_96",
-    "title": "yakushoku distpiari",
+    "title": "Yakushoku Distpiari",
     "author": "Togo Subaru / Aguri Igarashi",
     "category": "Manga",
     "status": "Completed",
