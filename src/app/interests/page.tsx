@@ -19,11 +19,13 @@ import {
   FiMoreVertical,
   FiBookOpen,
   FiStar,
-  FiBookmark
+  FiBookmark,
+  FiTv
 } from "react-icons/fi";
 import Footer from "@/components/Footer";
 import { useGlobalPlayer, VideoTrack } from "@/context/GlobalPlayerContext";
 import { bookRecommendations, BookRecommendation } from "@/data/interests";
+import { gameShowcaseList, GameShowcase } from "@/data/games";
 import styles from "./Interests.module.css";
 
 export default function InterestsPage() {
@@ -79,12 +81,25 @@ export default function InterestsPage() {
   // Book Category Filter state
   const [bookFilter, setBookFilter] = useState<string>("ALL");
 
+  // Game Category Filter state
+  const [gameFilter, setGameFilter] = useState<string>("ALL");
+
   const filteredBooks = bookRecommendations.filter((book) => {
     if (bookFilter === "ALL") return true;
     if (bookFilter === "NOVELS") return book.category === "Novel";
     if (bookFilter === "MANHWA") return book.category === "Manhwa";
     if (bookFilter === "MANGA") return book.category === "Manga";
     if (bookFilter === "MANHUA") return book.category === "Manhua";
+    return true;
+  });
+
+  const filteredGames = gameShowcaseList.filter((game) => {
+    if (gameFilter === "ALL") return true;
+    if (gameFilter === "ACTION / RPG") return game.category.includes("ACTION");
+    if (gameFilter === "SOULSLIKE") return game.category.includes("SOULSLIKE");
+    if (gameFilter === "CO-OP") return game.category.includes("CO-OP");
+    if (gameFilter === "INDIE / SURVIVAL") return game.category.includes("INDIE");
+    if (gameFilter === "HORROR") return game.category.includes("HORROR");
     return true;
   });
 
@@ -152,7 +167,7 @@ export default function InterestsPage() {
             <span className={styles.topHeaderTag}>// AUDIO STREAM & EXPLORATION</span>
             <h1 className={styles.mainTitleText}>Play some music and explore my page</h1>
             <p className={styles.headerSubtitle}>
-              Curated local media deck, persistent background audio streams, and personal reading recommendations.
+              Curated local media deck, persistent background audio streams, reading recommendations, and personal game showcase.
             </p>
           </header>
 
@@ -385,6 +400,92 @@ export default function InterestsPage() {
                       </span>
                       <div className={styles.tagsGroup}>
                         {book.tags.slice(0, 2).map((tag) => (
+                          <span key={tag} className={styles.bookTag}>#{tag}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+
+          </section>
+
+          {/* ========================================================= */}
+          {/* FAVORITE GAMES & GAMING LIBRARY SHOWCASE                  */}
+          {/* ========================================================= */}
+          <section className={`${styles.booksSection} ${styles.gamesSection}`}>
+            
+            {/* Section Heading & Filter Bar */}
+            <div className={styles.booksHeaderRow}>
+              <div>
+                <span className={styles.booksSectionTag}>// GAMING CORNER & SHOWCASE</span>
+                <h2 className={styles.booksSectionTitle}>Favorite Games & Gaming Library</h2>
+              </div>
+
+              {/* Filter Tabs */}
+              <div className={styles.booksFilterBar}>
+                {["ALL", "ACTION / RPG", "SOULSLIKE", "CO-OP", "INDIE / SURVIVAL", "HORROR"].map((filter) => (
+                  <button
+                    key={filter}
+                    onClick={() => setGameFilter(filter)}
+                    className={`${styles.booksFilterBtn} ${gameFilter === filter ? styles.activeBooksFilter : ""}`}
+                  >
+                    {filter}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Game Covers List Grid Showcase */}
+            <div className={styles.booksGrid}>
+              {filteredGames.map((game) => (
+                <motion.div
+                  key={game.id}
+                  layout
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 20 }}
+                  className={styles.bookCard}
+                >
+                  {/* Game Cover Image Container */}
+                  <div className={styles.coverFrame}>
+                    <img 
+                      src={game.coverImage} 
+                      alt={game.title} 
+                      className={styles.coverImage}
+                    />
+                    
+                    {/* Category Badge */}
+                    <span className={styles.categoryBadge}>
+                      {game.category}
+                    </span>
+
+                    {/* Overlay info on hover */}
+                    <div className={styles.coverOverlay}>
+                      <div className={styles.overlayText}>{game.description}</div>
+                      <span className={styles.chaptersBadge}>
+                        <FiTv /> {game.genre}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Game Details */}
+                  <div className={styles.bookDetails}>
+                    <h3 className={styles.bookTitle}>{game.title}</h3>
+                    <div className={styles.bookAuthor}>{game.genre}</div>
+
+                    {/* Status Badge & Tags */}
+                    <div className={styles.bookFooter}>
+                      <span className={`${styles.statusBadge} ${
+                        game.status === "Masterpiece" 
+                          ? styles.statusCompleted 
+                          : styles.statusOngoing
+                      }`}>
+                        {game.status}
+                      </span>
+                      <div className={styles.tagsGroup}>
+                        {game.tags.slice(0, 2).map((tag) => (
                           <span key={tag} className={styles.bookTag}>#{tag}</span>
                         ))}
                       </div>
