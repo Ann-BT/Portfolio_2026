@@ -14,13 +14,14 @@ import {
   FiPlus, 
   FiTrash2, 
   FiVideo, 
-  FiUploadCloud,
   FiX,
   FiMoreVertical,
   FiBookOpen,
   FiStar,
   FiBookmark,
-  FiTv
+  FiTv,
+  FiSearch,
+  FiCheckCircle
 } from "react-icons/fi";
 import Footer from "@/components/Footer";
 import { useGlobalPlayer, VideoTrack } from "@/context/GlobalPlayerContext";
@@ -81,8 +82,9 @@ export default function InterestsPage() {
   // Book Category Filter state
   const [bookFilter, setBookFilter] = useState<string>("ALL");
 
-  // Game Category Filter state
+  // Game Category Filter & Search state (AnkerGames Style)
   const [gameFilter, setGameFilter] = useState<string>("ALL");
+  const [gameSearchQuery, setGameSearchQuery] = useState<string>("");
 
   const filteredBooks = bookRecommendations.filter((book) => {
     if (bookFilter === "ALL") return true;
@@ -94,6 +96,11 @@ export default function InterestsPage() {
   });
 
   const filteredGames = gameShowcaseList.filter((game) => {
+    const matchesSearch = game.title.toLowerCase().includes(gameSearchQuery.toLowerCase()) ||
+                          game.genre.toLowerCase().includes(gameSearchQuery.toLowerCase()) ||
+                          game.category.toLowerCase().includes(gameSearchQuery.toLowerCase());
+
+    if (!matchesSearch) return false;
     if (gameFilter === "ALL") return true;
     if (gameFilter === "ACTION / RPG") return game.category.includes("ACTION");
     if (gameFilter === "SOULSLIKE") return game.category.includes("SOULSLIKE");
@@ -167,7 +174,7 @@ export default function InterestsPage() {
             <span className={styles.topHeaderTag}>// AUDIO STREAM & EXPLORATION</span>
             <h1 className={styles.mainTitleText}>Play some music and explore my page</h1>
             <p className={styles.headerSubtitle}>
-              Curated local media deck, persistent background audio streams, reading recommendations, and personal game showcase.
+              Curated local media deck, persistent background audio streams, reading recommendations, and personal game library.
             </p>
           </header>
 
@@ -177,7 +184,7 @@ export default function InterestsPage() {
             {/* LEFT COLUMN: Main Video Player & Title */}
             <div className={styles.mainVideoArea}>
               
-              {/* 16:9 Video Player Container (Clean without default browser control bar) */}
+              {/* 16:9 Video Player Container */}
               <div className={styles.playerFrame}>
                 {currentTrack ? (
                   <video
@@ -199,7 +206,7 @@ export default function InterestsPage() {
                 <div className={styles.videoAuthorRow}>
                   <div className={styles.authorBadge}>{currentTrack?.artist}</div>
                   
-                  {/* Quick Player Controls (Prev, Play/Pause, Next, Loop Mode & Volume Slider) */}
+                  {/* Quick Player Controls */}
                   <div className={styles.quickControls}>
                     <button onClick={prevTrack} className={styles.iconBtn} title="Previous Track">
                       <FiSkipBack />
@@ -412,18 +419,40 @@ export default function InterestsPage() {
           </section>
 
           {/* ========================================================= */}
-          {/* FAVORITE GAMES & GAMING LIBRARY SHOWCASE                  */}
+          {/* ANKERGAMES STYLE PC GAMES LIBRARY SHOWCASE                */}
           {/* ========================================================= */}
           <section className={`${styles.booksSection} ${styles.gamesSection}`}>
             
-            {/* Section Heading & Filter Bar */}
-            <div className={styles.booksHeaderRow}>
-              <div>
-                <span className={styles.booksSectionTag}>// GAMING CORNER & SHOWCASE</span>
-                <h2 className={styles.booksSectionTitle}>Favorite Games & Gaming Library</h2>
+            {/* AnkerGames Style Header Banner */}
+            <div className={styles.ankerHeaderBanner}>
+              <div className={styles.ankerHeaderInfo}>
+                <span className={styles.ankerTag}>ANKERGAMES STYLE // PC GAMES LIBRARY</span>
+                <h2 className={styles.ankerTitle}>All PC Games & Favorite Library ({filteredGames.length})</h2>
+                <p className={styles.ankerDesc}>
+                  Browse, filter by genre, or search through my curated collection of 100+ PC games.
+                </p>
               </div>
 
-              {/* Filter Tabs */}
+              {/* AnkerGames Live Search Bar */}
+              <div className={styles.ankerSearchWrapper}>
+                <FiSearch className={styles.ankerSearchIcon} />
+                <input
+                  type="text"
+                  placeholder="Search 100+ games by title, genre, category..."
+                  value={gameSearchQuery}
+                  onChange={(e) => setGameSearchQuery(e.target.value)}
+                  className={styles.ankerSearchInput}
+                />
+                {gameSearchQuery && (
+                  <button onClick={() => setGameSearchQuery("")} className={styles.ankerClearSearch}>
+                    <FiX />
+                  </button>
+                )}
+              </div>
+            </div>
+
+            {/* AnkerGames Filter Tabs Bar */}
+            <div className={styles.ankerFilterRow}>
               <div className={styles.booksFilterBar}>
                 {["ALL", "ACTION / RPG", "SOULSLIKE", "CO-OP", "INDIE / SURVIVAL", "HORROR"].map((filter) => (
                   <button
@@ -435,60 +464,50 @@ export default function InterestsPage() {
                   </button>
                 ))}
               </div>
+              <span className={styles.gameCounterBadge}>Showing {filteredGames.length} of {gameShowcaseList.length} Games</span>
             </div>
 
-            {/* Game Covers List Grid Showcase */}
-            <div className={styles.booksGrid}>
+            {/* AnkerGames Responsive 6-Column Card Grid Showcase */}
+            <div className={styles.ankerGrid}>
               {filteredGames.map((game) => (
                 <motion.div
                   key={game.id}
                   layout
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
-                  className={styles.bookCard}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  className={styles.ankerGameCard}
                 >
-                  {/* Game Cover Image Container */}
-                  <div className={styles.coverFrame}>
+                  {/* Poster Image Box */}
+                  <div className={styles.ankerCoverBox}>
                     <img 
                       src={game.coverImage} 
                       alt={game.title} 
-                      className={styles.coverImage}
+                      className={styles.ankerCoverImg}
                     />
-                    
-                    {/* Category Badge */}
-                    <span className={styles.categoryBadge}>
-                      {game.category}
-                    </span>
 
-                    {/* Overlay info on hover */}
-                    <div className={styles.coverOverlay}>
-                      <div className={styles.overlayText}>{game.description}</div>
-                      <span className={styles.chaptersBadge}>
-                        <FiTv /> {game.genre}
-                      </span>
+                    {/* Category Ribbon */}
+                    <span className={styles.ankerCatRibbon}>{game.category.split(" / ")[0]}</span>
+
+                    {/* Hover Card Overlay */}
+                    <div className={styles.ankerCardOverlay}>
+                      <p className={styles.ankerOverlayText}>{game.description}</p>
+                      <div className={styles.ankerOverlayMeta}>
+                        <span className={styles.ankerGenrePill}>{game.genre}</span>
+                      </div>
                     </div>
                   </div>
 
-                  {/* Game Details */}
-                  <div className={styles.bookDetails}>
-                    <h3 className={styles.bookTitle}>{game.title}</h3>
-                    <div className={styles.bookAuthor}>{game.genre}</div>
-
-                    {/* Status Badge & Tags */}
-                    <div className={styles.bookFooter}>
-                      <span className={`${styles.statusBadge} ${
-                        game.status === "Masterpiece" 
-                          ? styles.statusCompleted 
-                          : styles.statusOngoing
-                      }`}>
-                        {game.status}
+                  {/* AnkerGames Card Content */}
+                  <div className={styles.ankerCardContent}>
+                    <h3 className={styles.ankerGameTitle}>{game.title}</h3>
+                    <div className={styles.ankerGameSub}>{game.genre}</div>
+                    
+                    <div className={styles.ankerCardFooter}>
+                      <span className={styles.ankerStatusPill}>
+                        <FiCheckCircle size={11} /> {game.status}
                       </span>
-                      <div className={styles.tagsGroup}>
-                        {game.tags.slice(0, 2).map((tag) => (
-                          <span key={tag} className={styles.bookTag}>#{tag}</span>
-                        ))}
-                      </div>
+                      <span className={styles.ankerTagPill}>#{game.tags[0]}</span>
                     </div>
                   </div>
                 </motion.div>
