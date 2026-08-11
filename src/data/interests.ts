@@ -19,27 +19,19 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/a_returners_magic_should_be_special.jpg?v=1786421072",
     "chapters": "270 Ch.",
-    "description": "Desir Arman travels 13 years into the past after humanity's annihilation in the Shadow Labyrinth, reforming his academy allies to prevent apocalyptic doom.",
-    "tags": [
-      "Regression",
-      "Magic",
-      "Strategy"
-    ]
+    "description": "A Returner's Magic Should Be Special \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_2",
     "title": "Above Ten Thousand People",
     "author": "Yeyu / Boyi",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/above_ten_thousand_people.jpg?v=1786421072",
     "chapters": "260+ Ch.",
-    "description": "Yi Feng believes he is an ordinary mortal with no cultivation talent, completely oblivious to the fact that his casual chores and pets awe supreme immortal lords.",
-    "tags": [
-      "Comedy",
-      "Misunderstanding",
-      "Cultivation"
-    ]
+    "description": "Above Ten Thousand People \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_3",
@@ -49,42 +41,30 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/archmage_transcending_through_regression.jpg?v=1786421072",
     "chapters": "90+ Ch.",
-    "description": "Mikhail, the realm's strongest archmage, regresses to his youth to rectify past magical mistakes and rebuild his mana core from scratch.",
-    "tags": [
-      "Regression",
-      "Magic Academy",
-      "Overpowered"
-    ]
+    "description": "Archmage Transcending Through Regression \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_4",
     "title": "Astral Pet Store",
     "author": "Ancient Gu / Yuewen",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/astral_pet_store.jpg?v=1786421072",
     "chapters": "140+ Ch.",
-    "description": "Su Ping inherits a modest pet shop paired with a divine breeding system, raising ordinary beasts into terrifying cosmic titans.",
-    "tags": [
-      "Pet Breeding",
-      "System",
-      "Action"
-    ]
+    "description": "Astral Pet Store \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_5",
     "title": "Battle Game In 5 Seconds",
     "author": "Saizou Harawata / Kashiwa Miyako",
-    "category": "Manga",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/battle_game_in_5_seconds.jpg?v=1786421072",
     "chapters": "200+ Ch.",
-    "description": "Akira Shiroyanagi uses his unique psychological ability \u2014 'the power the opponent thinks you have' \u2014 to outsmart lethal battle royale contenders.",
-    "tags": [
-      "Mind Games",
-      "Battle Royale",
-      "Superpowers"
-    ]
+    "description": "Battle Game In 5 Seconds \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_6",
@@ -94,12 +74,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/becoming_a_magic_school_mage.jpg?v=1786421072",
     "chapters": "75+ Ch.",
-    "description": "An overworked modern academic is transmigrated into a harsh magic academy, using empirical scientific logic to revolutionize arcane spells.",
-    "tags": [
-      "Magic Academy",
-      "Transmigration",
-      "Fantasy"
-    ]
+    "description": "Becoming A Magic School Mage \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_7",
@@ -109,27 +85,19 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/bizarre_restaurant.jpg?v=1786421072",
     "chapters": "60+ Ch.",
-    "description": "Hunter Kang Seung-woo opens an otherworldly diner, serving magical cuisine prepared from high-tier dungeon monster ingredients.",
-    "tags": [
-      "Cooking",
-      "Dungeon",
-      "Slice of Life"
-    ]
+    "description": "Bizarre Restaurant \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_8",
     "title": "City Evil King",
     "author": "Fei Fan",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/city_evil_king.jpg?v=1786421072",
     "chapters": "180+ Ch.",
-    "description": "A former demonic monarch reincarnates into a modern metropolis, crushing corrupt urban syndicates with ancient martial techniques.",
-    "tags": [
-      "Urban Cultivation",
-      "Reincarnation",
-      "Action"
-    ]
+    "description": "City Evil King \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_9",
@@ -139,12 +107,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/enrolling_in_the_transcendent_academy.jpg?v=1786421072",
     "chapters": "110+ Ch.",
-    "description": "Drowning in debt, hunter Seo-jun receives a mysterious scholarship to an academy attended by gods, celestial immortals, and mythical heroes.",
-    "tags": [
-      "Academy",
-      "Gods System",
-      "Hunter"
-    ]
+    "description": "Enrolling In The Transcendent Academy \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_10",
@@ -154,12 +118,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/i_became_a_renowned_familys_sword_prodigy.jpg?v=1786421072",
     "chapters": "105+ Ch.",
-    "description": "Baek Yu-seol enters a fantasy game as a discarded noble with a broken mana system, mastering pure swordsmanship to stop world destruction.",
-    "tags": [
-      "Swordsmanship",
-      "Academy",
-      "Game World"
-    ]
+    "description": "I Became A Renowned Family's Sword Prodigy \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_11",
@@ -169,12 +129,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/i_grow_stronger_by_eating.jpg?v=1786421072",
     "chapters": "91 Ch.",
-    "description": "Petros possesses the 'Predator' ability, devouring monster flesh to absorb their physical traits, magic abilities, and biological advantages.",
-    "tags": [
-      "Monster Evolution",
-      "Dark Hero",
-      "Action"
-    ]
+    "description": "I Grow Stronger By Eating \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_12",
@@ -184,72 +140,52 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/ill_be_taking_a_break_for_personal_reasons.jpg?v=1786421072",
     "chapters": "85+ Ch.",
-    "description": "An exhausted web novel author awakens a god-like administrative authority interface, gaining absolute control over real-world dungeon stats.",
-    "tags": [
-      "System",
-      "Dungeon",
-      "Comedy"
-    ]
+    "description": "I'll Be Taking A Break For Personal Reasons \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_13",
     "title": "I'm An Evil God",
     "author": "Shiyanjia",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/im_an_evil_god.jpg?v=1786421072",
     "chapters": "450+ Ch.",
-    "description": "Xie Yan transmigrates across multiple martial and demonic worlds, accumulating emotion points to upgrade martial arts techniques.",
-    "tags": [
-      "World Hopping",
-      "Cultivation",
-      "Demonic Path"
-    ]
+    "description": "I'm An Evil God \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_14",
     "title": "Juujika No Rokunin",
     "author": "Shiryu Nakatake",
-    "category": "Manga",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/juujika_no_rokunin.jpg?v=1786421072",
     "chapters": "160+ Ch.",
-    "description": "After his family is brutally murdered by five sadistic bullies, Shun Uruma undergoes secret WW2 military training to exact ruthless revenge.",
-    "tags": [
-      "Psychological",
-      "Revenge",
-      "Tragedy"
-    ]
+    "description": "Juujika No Rokunin \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_15",
     "title": "Karada Sagashi",
     "author": "Welzard / Katsutoshi Murase",
-    "category": "Manga",
+    "category": "Manhwa",
     "status": "Completed",
     "coverImage": "/books/karada_sagashi.jpg?v=1786421072",
     "chapters": "153 Ch.",
-    "description": "Six high school students are trapped in a deadly midnight time loop, forced to search for the dismembered body parts of a Red Person victim.",
-    "tags": [
-      "Horror",
-      "Time Loop",
-      "Survival"
-    ]
+    "description": "Karada Sagashi \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_16",
     "title": "Legend Of Star General",
     "author": "HangMan / FanFan",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/legend_of_star_general.jpg?v=1786421072",
     "chapters": "220+ Ch.",
-    "description": "Song Yunfeng commands high-tech mech suits and cosmic star power, defending intergalactic human bastions against alien swarms.",
-    "tags": [
-      "Mecha",
-      "Sci-Fi",
-      "Cultivation"
-    ]
+    "description": "Legend Of Star General \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_17",
@@ -259,12 +195,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/level_up_with_the_gods.jpg?v=1786421072",
     "chapters": "110+ Ch.",
-    "description": "Kim Yu-won regresses back to the bottom of the Tower after the Outer Gods defeat the High Gods, climbing at breaking speed to avert cosmic extinction.",
-    "tags": [
-      "Regression",
-      "Tower Climbing",
-      "Mythology"
-    ]
+    "description": "Level Up With The Gods \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_18",
@@ -274,27 +206,19 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/leveling_beyond_the_max.jpg?v=1786421072",
     "chapters": "95+ Ch.",
-    "description": "Trapped in the Void for millennia, Cha Shin-hyun breaks past maximum level caps, returning to Earth to effortlessly annihilate rank-S gates.",
-    "tags": [
-      "Overpowered",
-      "Dungeon",
-      "Action"
-    ]
+    "description": "Leveling Beyond The Max \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_19",
     "title": "My Wife Came From A Thousand Years Ago",
     "author": "Xiang Tang / Jiu Lu",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/my_wife_came_from_a_thousand_years_ago.jpg?v=1786421072",
     "chapters": "240+ Ch.",
-    "description": "Tang Ruowei, a skilled female sword master from ancient China, suddenly teleports into modern Shanghai, learning modern life under Xu Qing.",
-    "tags": [
-      "Romance",
-      "Slice of Life",
-      "Reverse Isekai"
-    ]
+    "description": "My Wife Came From A Thousand Years Ago \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_20",
@@ -304,12 +228,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/mythic_item_obtained.jpg?v=1786421072",
     "chapters": "100+ Ch.",
-    "description": "Jae-hyun stumbles upon Odin's lost eye artifact, unlocking mythic Norse magic spellbooks and instant stat growth.",
-    "tags": [
-      "Norse Mythology",
-      "Magic",
-      "System"
-    ]
+    "description": "Mythic_Item_Obtained \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_21",
@@ -319,27 +239,19 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/necromancer_academys_genius_summoner.jpg?v=1786421072",
     "chapters": "85+ Ch.",
-    "description": "Simon Polentia, born with immense natural dark mana, enters Kizen Necromancy Academy, commanding undead legions with brilliant strategy.",
-    "tags": [
-      "Necromancy",
-      "Academy",
-      "Dark Magic"
-    ]
+    "description": "Necromancer Academy's Genius Summoner \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_22",
     "title": "Necromancer, The Ultimate Scourge!",
     "author": "Moxian / FanFan",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/necromancer_the_ultimate_scourge.jpeg?v=1786421072",
     "chapters": "130+ Ch.",
-    "description": "Lin Mo shifts to a hidden SSS-tier Necromancer class, summoning endless skeleton armies that gain passive infinite stack buffs.",
-    "tags": [
-      "Necromancy",
-      "System",
-      "Overpowered"
-    ]
+    "description": "Necromancer, The Ultimate Scourge! \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_23",
@@ -349,13 +261,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/omniscient_readers_viewpoint.jpg?v=1786421072",
     "chapters": "220+ Ch.",
-    "description": "Kim Dokja, the sole reader of a 3,000-chapter web novel, uses his intimate plot knowledge to navigate a real-world scenario apocalypse alongside protagonist Yoo Joonghyuk.",
-    "tags": [
-      "Meta-Fantasy",
-      "Survival",
-      "Constellations",
-      "Masterpiece"
-    ]
+    "description": "Omniscient Reader's Viewpoint \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_24",
@@ -365,12 +272,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/pick_me_up_infinite_gacha.jpg?v=1786421072",
     "chapters": "100+ Ch.",
-    "description": "Loki, a top 5 global mobile gacha player, is summoned into the game as a 1-star trash hero, leading low-rarity units through brutal dungeon floors.",
-    "tags": [
-      "Gacha Game",
-      "Dark Fantasy",
-      "Tactical Survival"
-    ]
+    "description": "Pick Me Up Infinite Gacha \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_25",
@@ -380,27 +283,19 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/player_cant_level_up.jpg?v=1786421072",
     "chapters": "150+ Ch.",
-    "description": "Kim Gi-gyu remains stuck at level 1 for 5 years until awakening the unique ability to link and evolve sentient ego weapons.",
-    "tags": [
-      "Ego Weapons",
-      "Tower Climbing",
-      "Action"
-    ]
+    "description": "Player Can't Level Up \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_26",
     "title": "Redo Of Healer Rolls For Vengeance",
     "author": "Rui Tsukiyo",
-    "category": "Manga",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/redo_of_healer_rolls_for_vengeance.jpg?v=1786421072",
     "chapters": "50+ Ch.",
-    "description": "Healer Keyaru rewinds time to exact brutal vengeance upon the heroes who exploited and abused his healing abilities.",
-    "tags": [
-      "Dark Fantasy",
-      "Revenge",
-      "Mature"
-    ]
+    "description": "Redo Of Healer Rolls For Vengeance \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_27",
@@ -410,12 +305,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/regressor_instruction_manual.jpg?v=1786421072",
     "chapters": "120+ Ch.",
-    "description": "Lee Kiyoung uses his Mind's Eye skill to manipulate powerful regressor Kim Hyunsung, operating as the master strategist behind the scenes.",
-    "tags": [
-      "Mind Manipulation",
-      "Dark Hero",
-      "Strategy"
-    ]
+    "description": "Regressor Instruction Manual \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_28",
@@ -425,12 +316,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/reincarnation_of_the_suicidal_battle_god.jpg?v=1786421072",
     "chapters": "100+ Ch.",
-    "description": "Zephyr, the last surviving human in the war against the Demon God Tartaros, is granted a second chance by the gods to rewrite humanity's downfall.",
-    "tags": [
-      "Regression",
-      "High Fantasy",
-      "Masterpiece"
-    ]
+    "description": "Reincarnation Of The Suicidal Battle God \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_29",
@@ -440,12 +327,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/reloaded_into_the_other_world.jpg?v=1786421072",
     "chapters": "70+ Ch.",
-    "description": "A veteran military sniper transmigrates into a magical kingdom, pairing firearms technology with mana enhancement.",
-    "tags": [
-      "Firearms",
-      "Isekai",
-      "Action"
-    ]
+    "description": "Reloaded Into The Other World \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_30",
@@ -455,12 +338,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/return_of_the_frozen_player.jpg?v=1786421072",
     "chapters": "115+ Ch.",
-    "description": "Seo Jun-ho awakens 25 years after sacrificing himself to freeze the Frost Queen, resuming his mission to thaw his frozen party members.",
-    "tags": [
-      "Ice Magic",
-      "Dungeon",
-      "Return"
-    ]
+    "description": "Return Of The Frozen Player \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_31",
@@ -470,12 +349,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/return_of_the_shattered_constellation.jpg?v=1786421072",
     "chapters": "110+ Ch.",
-    "description": "Lee Chang-sun, a fallen divine constellation, descends into a mortal body to reclaim his divine throne and exact vengeance on betrayers.",
-    "tags": [
-      "Constellation",
-      "Regression",
-      "Action"
-    ]
+    "description": "Return Of The Shattered Constellation \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_32",
@@ -485,43 +360,30 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/second_life_ranker.jpg?v=1786421072",
     "chapters": "170+ Ch.",
-    "description": "Yeon-woo inherits his twin brother's pocket watch and journal, entering the Obelisk tower to hunt down the teammates who betrayed his brother.",
-    "tags": [
-      "Tower Climbing",
-      "Revenge",
-      "Draconic Power"
-    ]
+    "description": "Second Life Ranker \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_33",
     "title": "Shadow Slave",
     "author": "Guiltythree",
-    "category": "Novel",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/shadow_slave.jpg?v=1786421072",
     "chapters": "1600+ Ch.",
-    "description": "Sunless, a clever slum youth infected by the Nightmare Spell, navigates dark fantasy realms. Features incredible worldbuilding, smart tactical combat, and deep lore.",
-    "tags": [
-      "Dark Fantasy",
-      "Nightmare Spell",
-      "Tactical Combat",
-      "Masterpiece"
-    ]
+    "description": "Shadow Slave \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_34",
     "title": "So I'm A Cultivation Big Shot",
     "author": "Sike / Yuewen",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/so_im_a_cultivation_big_shot.jpg?v=1786421072",
     "chapters": "210+ Ch.",
-    "description": "Li Nianfan lives as an ordinary man whose casual calligraphy, tea brewing, and poetry trigger heavenly tribulations and immortal awakenings.",
-    "tags": [
-      "Comedy",
-      "Cultivation",
-      "Overpowered"
-    ]
+    "description": "So I'm A Cultivation Big Shot \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_35",
@@ -531,42 +393,30 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/solo_max_level_newbie.jpg?v=1786421072",
     "chapters": "140+ Ch.",
-    "description": "Kang Jin-hyuk, the only gaming streamer who cleared the impossible 'Tower of Trials', uses hidden floor secrets to dominate when the tower becomes real.",
-    "tags": [
-      "Tower",
-      "Gaming Knowledge",
-      "Overpowered"
-    ]
+    "description": "Solo Max Level Newbie \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_36",
     "title": "Spare Me, Great Lord!",
     "author": "The Reader That Loves Diving",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Completed",
     "coverImage": "/books/spare_me_great_lord.jpg?v=1786421072",
     "chapters": "500 Ch.",
-    "description": "Lu Shu gains a unique system powered by negative distress points, taunting rivals and enemies to convert their annoyance into supreme physical cultivation.",
-    "tags": [
-      "Comedy",
-      "System",
-      "Cultivation"
-    ]
+    "description": "Spare Me, Great Lord! \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_37",
     "title": "Spirit Tamer",
     "author": "Moxian",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/spirit_tamer.jpg?v=1786421072",
     "chapters": "130+ Ch.",
-    "description": "A young spirit contractor binds rare elemental beasts, climbing regional tournaments to uncover ancient spirit secrets.",
-    "tags": [
-      "Spirit Beast",
-      "Tournament",
-      "Action"
-    ]
+    "description": "Spirit Tamer \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_38",
@@ -576,12 +426,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/swordmasters_youngest_son.jpg?v=1786421072",
     "chapters": "120+ Ch.",
-    "description": "Jin Runcandel, exiled trash son of the world's strongest sword clan, makes a pact with the Shadow God Solderet and regresses to master dual sword and magic.",
-    "tags": [
-      "Swordsmanship",
-      "Shadow Magic",
-      "Regression"
-    ]
+    "description": "Swordmaster's Youngest Son \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_39",
@@ -591,12 +437,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_100th_regression_of_the_max_level_player.jpg?v=1786421072",
     "chapters": "60+ Ch.",
-    "description": "Ryu Min reaches his final 100th regression attempt in a death game, using total future knowledge to clear divine death scenarios.",
-    "tags": [
-      "Regression",
-      "Death Game",
-      "Action"
-    ]
+    "description": "The 100th Regression Of The Max-Level Player \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_40",
@@ -606,12 +448,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_dark_magician_transmigrates_after_66666_years.jpg?v=1786421072",
     "chapters": "110+ Ch.",
-    "description": "Diablo Volfir, the supreme dark archmage sealed by 12 corruption gods, awakens 66,666 years later as young noble Jamie Welton.",
-    "tags": [
-      "Reincarnation",
-      "Dark Magic",
-      "Nobility"
-    ]
+    "description": "The Dark Magician Transmigrates After 66666 Years \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_41",
@@ -621,27 +459,19 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_great_mage_returns_after_4000_years.jpg?v=1786421072",
     "chapters": "180+ Ch.",
-    "description": "Lucas Trowman, history's greatest 9-star archmage, returns 4,000 years after being trapped by Demigods, taking over the body of suicidal student Frey Blake.",
-    "tags": [
-      "Archmage",
-      "Demigods",
-      "Reincarnation"
-    ]
+    "description": "The Great Mage Returns After 4000 Years \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_42",
     "title": "The Naming Of The Night",
     "author": "Cuttlefish / Yuewen",
-    "category": "Novel",
+    "category": "Manhwa",
     "status": "Completed",
     "coverImage": "/books/the_naming_of_the_night.jpg?v=1786421072",
     "chapters": "1000 Ch.",
-    "description": "Qing Chen discovers a cyberpunk world where transmigrators swap bodies between high-tech futuristic metropolises and modern Earth.",
-    "tags": [
-      "Cyberpunk",
-      "World Hopping",
-      "Masterpiece"
-    ]
+    "description": "The Naming Of The Night \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_43",
@@ -651,27 +481,19 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_s_ranks_that_i_raised.jpg?v=1786421072",
     "chapters": "120+ Ch.",
-    "description": "F-rank hunter Han Yo-jin sacrifices himself for his S-rank brother, regressing with the ability to nurture and buff S-rank hunters.",
-    "tags": [
-      "Support Skill",
-      "Regression",
-      "Brotherhood"
-    ]
+    "description": "The S-Ranks That I Raised \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_44",
     "title": "The Strongest Son-in-Law In History",
     "author": "Silk Road",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/the_strongest_son_in_law_in_history.jpg?v=1786421072",
     "chapters": "160+ Ch.",
-    "description": "Shen Lang transmigrates into a matriarchal noble estate, using modern chemistry and tactical military strategy to rise to supreme power.",
-    "tags": [
-      "Kingdom Building",
-      "Transmigration",
-      "Strategy"
-    ]
+    "description": "The Strongest Son-in-Law In History \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_45",
@@ -681,27 +503,19 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_world_after_the_end.jpg?v=1786421072",
     "chapters": "120+ Ch.",
-    "description": "Jae-hwan refuses to use the Regression Stone when humanity falls, thrusting his thrust skill through the illusion towers into the Abyss.",
-    "tags": [
-      "Abyss",
-      "Existential Fantasy",
-      "Masterpiece"
-    ]
+    "description": "The World After The End \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_46",
     "title": "Tonikaku Kawaii",
     "author": "Kenjiro Hata",
-    "category": "Manga",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/tonikaku_kawaii.jpg?v=1786421072",
     "chapters": "250+ Ch.",
-    "description": "Nasa Yuzaki survives a traffic accident after being saved by Tsukasa, proposing marriage on the spot in a wholesome mystery romance.",
-    "tags": [
-      "Romance",
-      "Wholesome",
-      "Slice of Life"
-    ]
+    "description": "Tonikaku Kawaii \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_47",
@@ -711,12 +525,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/tyrant_of_the_tower_defense_game.jpg?v=1786421072",
     "chapters": "95+ Ch.",
-    "description": "Ash, a hardcore gamer, transmigrates into Prince Ash of Stage 0 in an impossible tower defense strategy RPG, managing morale and brutal monster waves.",
-    "tags": [
-      "Tower Defense",
-      "Strategy",
-      "Hardcore"
-    ]
+    "description": "Tyrant Of The Tower Defense Game \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_48",
@@ -726,12 +536,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/youngest_scion_of_the_mage.jpg?v=1786421072",
     "chapters": "70+ Ch.",
-    "description": "Luan, born into a legendary archmage house with broken mana channels, uses ancient breathing techniques to forge a brand new mana core.",
-    "tags": [
-      "Magic Clan",
-      "Cultivation",
-      "Action"
-    ]
+    "description": "Youngest Scion Of The Mages \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_49",
@@ -741,27 +547,19 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/academy_genius_swordmaster.jpg?v=1786421072",
     "chapters": "70+ Ch.",
-    "description": "Ronan, a disgraced frontline soldier, regresses to his academy days, using raw instincts and sword techniques to slay cosmic disasters.",
-    "tags": [
-      "Swordsmanship",
-      "Academy",
-      "Regression"
-    ]
+    "description": "Academy Genius Swordmaster \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_50",
     "title": "Berserk",
     "author": "Kentaro Miura / Studio Gaga",
-    "category": "Manga",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/berserk.jpg?v=1786421072",
     "chapters": "375+ Ch.",
-    "description": "Guts' dark, legendary journey as the Black Swordsman against fate, terrifying apostles, and the God Hand. The ultimate dark fantasy masterpiece.",
-    "tags": [
-      "Dark Fantasy",
-      "Tragedy",
-      "Masterpiece"
-    ]
+    "description": "Berserk \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_51",
@@ -771,102 +569,74 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/boundless_ascension.jpg?v=1786421072",
     "chapters": "80+ Ch.",
-    "description": "Sung Sung-hyun enters the Trial Tower, acquiring passive stat absorption and infinite technique fusion to surpass high rankers.",
-    "tags": [
-      "Tower",
-      "Growth",
-      "Action"
-    ]
+    "description": "Boundless Ascension \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_52",
     "title": "Btooom",
     "author": "Junya Inoue",
-    "category": "Manga",
+    "category": "Manhwa",
     "status": "Completed",
     "coverImage": "/books/btooom.jpg?v=1786421072",
     "chapters": "121 Ch.",
-    "description": "Top-ranked gamer Ryota Sakamoto wakes up trapped on a deserted island, forced to play a real-life death match using specialized BIM bombs.",
-    "tags": [
-      "Battle Royale",
-      "Survival",
-      "Action"
-    ]
+    "description": "Btooom \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_53",
     "title": "Corpse Party",
     "author": "Makoto Kedouin / Toshimi Shinomiya",
-    "category": "Manga",
+    "category": "Manhwa",
     "status": "Completed",
     "coverImage": "/books/corpse_party.jpg?v=1786421072",
     "chapters": "47 Ch.",
-    "description": "Students performing a ritual charm are transported to Heavenly Host Elementary School, an alternate dimensional haunt haunted by vengeful child ghosts.",
-    "tags": [
-      "Horror",
-      "Gore",
-      "Psychological"
-    ]
+    "description": "Corpse Party \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_54",
     "title": "Dark Gathering",
     "author": "Kenichi Kondo",
-    "category": "Manga",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/dark_gathering.jpg?v=1786421072",
     "chapters": "60+ Ch.",
-    "description": "Keitaro Gentoga, a spiritual medium magnetic to malevolent ghosts, assists child prodigy Yayoi Hozuki in capturing evil spirits to fight a god.",
-    "tags": [
-      "Horror",
-      "Occult",
-      "Exorcism"
-    ]
+    "description": "Dark Gathering \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_55",
     "title": "Dead Tube",
     "author": "Mikoto Yamaguchi / Touta Kitakawa",
-    "category": "Manga",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/dead_tube.jpg?v=1786421072",
     "chapters": "90+ Ch.",
-    "description": "Cameraman Tomohiro Machiya is dragged into Dead Tube, a dark web video sharing platform where extreme violence and crime yield millions in cash.",
-    "tags": [
-      "Psychological",
-      "Thriller",
-      "Mature"
-    ]
+    "description": "Dead Tube \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_56",
     "title": "Demonic Emperor",
     "author": "Nightingale",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/demonic_emperor.jpg?v=1786421072",
     "chapters": "520+ Ch.",
-    "description": "Zhuo Yifan, the formidable Demonic Emperor, is betrayed and reincarnated into a powerless house steward, using cunning dark arts to rise.",
-    "tags": [
-      "Demonic Path",
-      "Reincarnation",
-      "Mastermind"
-    ]
+    "description": "Demonic Emperor \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_57",
     "title": "Devide Pet Evolution",
     "author": "Fei Fan",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/devide_pet_evolution.jpg?v=1786421072",
     "chapters": "100+ Ch.",
-    "description": "Gao Peng awakens the Monster Data Eye, breeding mutated divine beasts through rare evolutionary paths.",
-    "tags": [
-      "Monster Breeding",
-      "System",
-      "Action"
-    ]
+    "description": "Devide Pet Evolution \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_58",
@@ -876,12 +646,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/dice.jpg?v=1786421072",
     "chapters": "386 Ch.",
-    "description": "Bullied student Dongtae discovers mystery Dice that alter physical beauty, intelligence, and stats in exchange for completing ominous tasks.",
-    "tags": [
-      "Psychological",
-      "Supernatural",
-      "System"
-    ]
+    "description": "Dice \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_59",
@@ -891,12 +657,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/fff_trash_hero.jpg?v=1786421072",
     "chapters": "145 Ch.",
-    "description": "Kang Han-soo slays the Demon King after 10 agonizing years, only to receive an 'F' in personality and get sent back to day 1 of summoning.",
-    "tags": [
-      "Anti-Hero",
-      "Comedy",
-      "Regression"
-    ]
+    "description": "Fff Trash Hero \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_60",
@@ -906,12 +668,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/gokurakugai.jpg?v=1786421072",
     "chapters": "20+ Ch.",
-    "description": "Tao and Alma run a troubleshooter office in a chaotic district, hunting grotesque monsters known as Magatsu born from human corpses.",
-    "tags": [
-      "Action",
-      "Supernatural",
-      "Stunning Art"
-    ]
+    "description": "Gokurakugai \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_61",
@@ -921,12 +679,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/henna_ie.jpg?v=1786421072",
     "chapters": "25 Ch.",
-    "description": "An architect analyzes a strange Tokyo house floor plan, uncovering hidden double walls, secret murder passages, and sinister rituals.",
-    "tags": [
-      "Mystery",
-      "Psychological",
-      "Architectural Horror"
-    ]
+    "description": "Henna Ie \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_62",
@@ -936,12 +690,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/hero_return.jpg?v=1786421072",
     "chapters": "90+ Ch.",
-    "description": "The world's strongest hero Kim Sung-bin dies in battle, waking up 20 years later to find corrupt guilds misusing his legacy.",
-    "tags": [
-      "Return",
-      "Hero",
-      "Action"
-    ]
+    "description": "Hero Return \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_63",
@@ -951,12 +701,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/horimiya.jpg?v=1786421072",
     "chapters": "125 Ch.",
-    "description": "Popular Kyoko Hori and quiet pierced Miyamura discover each other's secret home personalities, developing a sweet and genuine romance.",
-    "tags": [
-      "Romance",
-      "School Life",
-      "Masterpiece"
-    ]
+    "description": "Horimiya \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_64",
@@ -966,12 +712,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/hunter_x_hunter.jpg?v=1786421072",
     "chapters": "400+ Ch.",
-    "description": "Gon Freecss embarks on a journey to become a Hunter and find his father, featuring complex Nen combat logic and incredible arcs.",
-    "tags": [
-      "Adventure",
-      "Nen System",
-      "Masterpiece"
-    ]
+    "description": "Hunter X Hunter \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_65",
@@ -981,12 +723,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/infinite_mage.jpg?v=1786421072",
     "chapters": "80+ Ch.",
-    "description": "Shirone, a commoner boy abandoned in a stable, unlocks mathematical infinity comprehension to cast unprecedented spatial mana magic.",
-    "tags": [
-      "Magic",
-      "Infinity Mana",
-      "Academy"
-    ]
+    "description": "Infinite Mage \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_66",
@@ -996,12 +734,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/jigokuraku.jpg?v=1786421072",
     "chapters": "127 Ch.",
-    "description": "Ninja Gabimaru the Hollow is offered a pardon if he can retrieve the Elixir of Life from a terrifying, mutant-infested island paradise.",
-    "tags": [
-      "Ninja",
-      "Supernatural",
-      "Masterpiece"
-    ]
+    "description": "Jigokuraku \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_67",
@@ -1011,12 +745,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/jinrou_game.jpg?v=1786421072",
     "chapters": "30 Ch.",
-    "description": "High school students are kidnapped into a real-life Werewolf Mafia game, forced to vote and execute classmates each night.",
-    "tags": [
-      "Death Game",
-      "Psychological",
-      "Suspense"
-    ]
+    "description": "Jinrou Game \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_68",
@@ -1026,12 +756,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/jujutsu_kaisen_modulo.jpg?v=1786421072",
     "chapters": "Featured",
-    "description": "jujutsu kaisen modulo \u2014 Highly compelling plot in Manga series.",
-    "tags": [
-      "Manga",
-      "Action",
-      "Fantasy"
-    ]
+    "description": "Jujutsu Kaisen Modulo \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_69",
@@ -1041,12 +767,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/covers/jujutsu_kaisen.jpg",
     "chapters": "271 Ch.",
-    "description": "Yuji Itadori swallows Ryomen Sukuna's cursed finger, joining Jujutsu High sorcerers to purge dangerous cursed spirits.",
-    "tags": [
-      "Sorcery",
-      "Curses",
-      "Action"
-    ]
+    "description": "Jujutsu Kaisen \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_70",
@@ -1056,27 +778,19 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/junket_bank.jpg?v=1786421072",
     "chapters": "140+ Ch.",
-    "description": "Karasuma Bank operates high-stakes underground gambling rooms for VIPs, where debt equals organ harvesting and psychological warfare.",
-    "tags": [
-      "Gambling",
-      "Psychological",
-      "Mind Games"
-    ]
+    "description": "Junket Bank \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_71",
     "title": "Logging 10000 Years Into The Future",
     "author": "Claw Studio",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/logging_10000_years_into_the_future.jpg?v=1786421072",
     "chapters": "110+ Ch.",
-    "description": "Lu Sheng enters a dream world 10,000 years in the future, learning futuristic martial techniques and gene martial arts to dominate modern martial arts.",
-    "tags": [
-      "Future Knowledge",
-      "Martial Arts",
-      "Overpowered"
-    ]
+    "description": "Logging 10000 Years Into The Future \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_72",
@@ -1086,12 +800,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/martial_god_regressed_to_level_2.jpg?v=1786421072",
     "chapters": "60+ Ch.",
-    "description": "Seong Ji-han regresses to the tutorial stage of the Planetary League, utilizing ancient Korean martial arts to solo cosmic invaders.",
-    "tags": [
-      "Regression",
-      "Martial Arts",
-      "System"
-    ]
+    "description": "Martial God Regressed To Level 2 \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_73",
@@ -1101,12 +811,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/martial_peak.jpg?v=1786421072",
     "chapters": "3500+ Ch.",
-    "description": "Yang Kai, a lowly trial disciple at High Heaven Pavilion, discovers a mysterious Black Book, beginning a epic journey to the peak of martial dao.",
-    "tags": [
-      "Cultivation",
-      "Martial Dao",
-      "Epic Journey"
-    ]
+    "description": "Martial Peak \u2014 Highly recommended manhua series.",
+    "tags": []
   },
   {
     "id": "b_74",
@@ -1116,12 +822,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/overgeared.jpg?v=1786421072",
     "chapters": "210+ Ch.",
-    "description": "Shin Young-woo (Grid) unlocks Pagma's Successor blacksmith class in VR game Satisfy, forging god-tier equipment to outgeared every raid boss.",
-    "tags": [
-      "Blacksmithing",
-      "VRMMO",
-      "Overpowered"
-    ]
+    "description": "Overgeared \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_75",
@@ -1131,12 +833,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/player_hide_his_past.jpg?v=1786421072",
     "chapters": "55+ Ch.",
-    "description": "Lee Hoyeol is transmigrated into his old embarrassing middle school chuunibyou game persona, Grand Duke Grandfell, wielding noble magic.",
-    "tags": [
-      "Chuunibyou",
-      "Comedy",
-      "Magic"
-    ]
+    "description": "Player Hide His Past \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_76",
@@ -1146,12 +844,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/plunderer.jpg?v=1786421072",
     "chapters": "82 Ch.",
-    "description": "In a post-apocalyptic world governed by numbers and counts, Licht Bach hides his identity as a legendary 300-year-old Ace soldier.",
-    "tags": [
-      "Action",
-      "Post-Apocalyptic",
-      "Mystery"
-    ]
+    "description": "Plunderer \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_77",
@@ -1161,12 +855,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/pygmalion.jpg?v=1786421072",
     "chapters": "19 Ch.",
-    "description": "During a local mascot festival, life-sized plush mascots suddenly come to life, slaughtering attendees in a violent survival horror spree.",
-    "tags": [
-      "Horror",
-      "Mascot Gore",
-      "Survival"
-    ]
+    "description": "Pygmalion \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_78",
@@ -1176,12 +866,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/return_of_the_8th_class_magician.jpg?v=1786421072",
     "chapters": "81 Ch.",
-    "description": "Ian Page, the world's first 8th-class archmage, is poisoned by his greedy emperor friend, regressing 30 years to reshape the empire.",
-    "tags": [
-      "Archmage",
-      "Regression",
-      "Completed"
-    ]
+    "description": "Return Of The 8th Class Magician \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_79",
@@ -1191,12 +877,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/return_survival.jpg?v=1786421072",
     "chapters": "136 Ch.",
-    "description": "Yoohan survives 3 years in a zombie apocalypse before dying, regressing to 6 months before the outbreak to build an impenetrable bunker compound.",
-    "tags": [
-      "Zombie Apocalypse",
-      "Regression",
-      "Survival"
-    ]
+    "description": "Return Survival \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_80",
@@ -1206,12 +888,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/shounen_no_abyss.jpg?v=1786421072",
     "chapters": "180 Ch.",
-    "description": "Reiji Kurose lives trapped in a hopeless rural town. A chance meeting with a retired idol drags him into a deep psychological abyss.",
-    "tags": [
-      "Psychological",
-      "Drama",
-      "Tragedy"
-    ]
+    "description": "Shounen No Abyss \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_81",
@@ -1221,12 +899,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/shuumatsu_no_valkyrie.jpg?v=1786421072",
     "chapters": "90+ Ch.",
-    "description": "13 grand 1-on-1 duels between gods and human historical legends determine whether humanity deserves survival or total extinction.",
-    "tags": [
-      "Gods vs Humans",
-      "Tournament",
-      "Epic Battles"
-    ]
+    "description": "Shuumatsu No Valkyrie \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_82",
@@ -1236,12 +910,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/solo_leveling.jpg?v=1786421072",
     "chapters": "200 Ch.",
-    "description": "Sung Jin-woo, the weakest E-rank hunter, awakens a secret quest system after a double dungeon incident, rising as the Shadow Monarch.",
-    "tags": [
-      "Shadow Monarch",
-      "Hunter",
-      "Masterpiece"
-    ]
+    "description": "Solo Leveling \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_83",
@@ -1251,12 +921,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/star_embracing_swordmaster.jpg?v=1786421072",
     "chapters": "65+ Ch.",
-    "description": "Vlad, a street urchin in the slums, gains a star-blessed sword artifact, honing pure sword heart techniques to protect his comrades.",
-    "tags": [
-      "Swordsmanship",
-      "Growth",
-      "Fantasy"
-    ]
+    "description": "Star Embracing Swordmaster \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_84",
@@ -1266,12 +932,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/sweet_home.jpg?v=1786421072",
     "chapters": "140 Ch.",
-    "description": "Reclusive teenager Cha Hyun-soo and apartment residents fight to survive as humans transform into monsters based on their innermost desires.",
-    "tags": [
-      "Horror",
-      "Monster Apocalypse",
-      "Masterpiece"
-    ]
+    "description": "Sweet Home \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_85",
@@ -1281,42 +943,30 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_king_of_knight_return_with_god.jpg?v=1786421072",
     "chapters": "60+ Ch.",
-    "description": "King Leon, the last holy knight king of an otherworldly realm, transmigrates to modern Earth, hunting dimensional demons with holy aura.",
-    "tags": [
-      "Holy Knight",
-      "Reverse Isekai",
-      "Action"
-    ]
+    "description": "The King Of Knight Return With God \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_86",
     "title": "The Novel Extra",
     "author": "Jee Gab-Song",
-    "category": "Manhwa",
+    "category": "Novel",
     "status": "Ongoing",
     "coverImage": "/books/the_novel_extra.jpg?v=1786421072",
     "chapters": "100+ Ch.",
-    "description": "Kim Hajin is transmigrated as a extra mob character Kim Chundong into his own novel, surviving using precision sniper marksmanship.",
-    "tags": [
-      "Transmigration",
-      "Sniper",
-      "Academy"
-    ]
+    "description": "The Novel Extra \u2014 Highly recommended novel series.",
+    "tags": []
   },
   {
     "id": "b_87",
     "title": "The Scared Ruins",
     "author": "Chen Dong",
-    "category": "Manhua",
+    "category": "Manhwa",
     "status": "Ongoing",
     "coverImage": "/books/the_scared_ruins.jpg?v=1786421072",
     "chapters": "150+ Ch.",
-    "description": "Modern Earth undergoes a post-apocalyptic cosmic awakening, unlocking ancient ruins, mutated beasts, and divine martial fruits.",
-    "tags": [
-      "Post-Apocalyptic",
-      "Cultivation",
-      "Action"
-    ]
+    "description": "The Scared Ruins \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_88",
@@ -1326,12 +976,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/the_wererolf_game_crazy_fox.jpg?v=1786421072",
     "chapters": "28 Ch.",
-    "description": "Ayaka Morii is assigned the 'Fox' role in the lethal Werewolf death game, aiming to survive alone while tricking both Villagers and Werewolves.",
-    "tags": [
-      "Death Game",
-      "Psychological",
-      "Fox Role"
-    ]
+    "description": "The Wererolf Game: Crazy Fox \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_89",
@@ -1341,12 +987,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/time_limited_genius_dark_knight.jpg?v=1786421072",
     "chapters": "70+ Ch.",
-    "description": "Yoo Seon-woo enters game 'Inner Fantasy' as incurable weak prince Nox von Reinherz, utilizing dark magic techniques before his timer runs out.",
-    "tags": [
-      "Dark Knight",
-      "Game World",
-      "Strategy"
-    ]
+    "description": "Time Limited Genius Dark Knight \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_90",
@@ -1356,12 +998,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/tokyo_ghoul.jpg?v=1786421072",
     "chapters": "143 Ch.",
-    "description": "Ken Kaneki becomes a half-ghoul after a fatal encounter, forced to navigate the secret flesh-eating ghoul society hidden in Tokyo.",
-    "tags": [
-      "Dark Fantasy",
-      "Psychological",
-      "Masterpiece"
-    ]
+    "description": "Tokyo Ghoul \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_91",
@@ -1371,12 +1009,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/tokyo_underworld.jpg?v=1786421072",
     "chapters": "80+ Ch.",
-    "description": "Rumors speak of a subterranean Tokyo execution ground beneath the city where criminals and monsters fight in lethal underground arenas.",
-    "tags": [
-      "Underground",
-      "Action",
-      "Survival"
-    ]
+    "description": "Tokyo Underworld \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_92",
@@ -1386,12 +1020,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/tomb_raider_king.jpg?v=1786421072",
     "chapters": "411 Ch.",
-    "description": "Seo Joo-heon regresses 15 years after being betrayed by his employer, stealing divine god relics from tomb dungeons worldwide.",
-    "tags": [
-      "Relic Heist",
-      "Regression",
-      "Action"
-    ]
+    "description": "Tomb Raider King \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_93",
@@ -1401,12 +1031,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/tomodachi_game.jpg?v=1786421072",
     "chapters": "127 Ch.",
-    "description": "Yuuichi Katagiri and his friends are kidnapped into Tomodachi Game to pay off a 20-million-yen debt, revealing Yuuichi's dark mastermind intellect.",
-    "tags": [
-      "Psychological",
-      "Mastermind",
-      "Death Game"
-    ]
+    "description": "Tomodachi Game \u2014 Highly recommended manga series.",
+    "tags": []
   },
   {
     "id": "b_94",
@@ -1416,12 +1042,8 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/versatile_mage.jpg?v=1786421072",
     "chapters": "1000+ Ch.",
-    "description": "Mo Fan wakes up in a parallel modern Earth where magic is taught in school, awakening dual elements (Lightning and Fire) as a rare genius.",
-    "tags": [
-      "Dual Magic",
-      "Urban Fantasy",
-      "Action"
-    ]
+    "description": "Versatile Mage \u2014 Highly recommended manhua series.",
+    "tags": []
   },
   {
     "id": "b_95",
@@ -1431,222 +1053,169 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/worlds_strongest_troll.jpg?v=1786421072",
     "chapters": "60+ Ch.",
-    "description": "F-rank player Jaegyu plays VR game 'Arcadia' with maximum chaotic creativity, out-trolling high-rank guild masters.",
-    "tags": [
-      "VRMMO",
-      "Comedy",
-      "Troll Player"
-    ]
+    "description": "World's Strongest Troll \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "b_96",
     "title": "Yakushoku Distpiari",
     "author": "Togo Subaru / Aguri Igarashi",
-    "category": "Manga",
+    "category": "Manhwa",
     "status": "Completed",
     "coverImage": "/books/yakushoku_distpiari.jpg?v=1786421072",
     "chapters": "25 Ch.",
-    "description": "In a dark fantasy kingdom where Sub-Classes exist solely to be sacrificed as EXP fodder, Class-Master Tolza rebels against divine fate.",
-    "tags": [
-      "Dark Fantasy",
-      "Class System",
-      "Anti-Hero"
-    ]
+    "description": "Yakushoku Distpiari \u2014 Highly recommended manhwa series.",
+    "tags": []
   },
   {
     "id": "book-1786421072-0",
     "title": "Creepy Pharmacist: All My Patients Are Horrific",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/creepy_pharmacist_all_my_patients_are_horrific.jpg?v=1786421072",
-    "description": "Featured recommendation: Creepy Pharmacist: All My Patients Are Horrific.",
+    "description": "Creepy Pharmacist: All My Patients Are Horrific \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-1",
     "title": "Talent-swallowing Magician",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/talent_swallowing_magician.jpg?v=1786421072",
-    "description": "Featured recommendation: Talent-swallowing Magician.",
+    "description": "Talent-swallowing Magician \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-2",
     "title": "How To Live As A Villain",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/how_to_live_as_a_villain.jpg?v=1786421072",
-    "description": "Featured recommendation: How To Live As A Villain.",
+    "description": "How To Live As A Villain \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-3",
     "title": "Great Doctor Ling Ran",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/great_doctor_ling_ran.jpg?v=1786421072",
-    "description": "Featured recommendation: Great Doctor Ling Ran.",
+    "description": "Great Doctor Ling Ran \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-4",
     "title": "Return Of The Unrivaled Spear Knight",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/return_of_the_unrivaled_spear_knight.jpg?v=1786421072",
-    "description": "Featured recommendation: Return Of The Unrivaled Spear Knight.",
+    "description": "Return Of The Unrivaled Spear Knight \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-5",
     "title": "Is This Hero For Real",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/is_this_hero_for_real.jpg?v=1786421072",
-    "description": "Featured recommendation: Is This Hero For Real.",
+    "description": "Is This Hero For Real \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-6",
     "title": "I Used To Be A Boss",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/i_used_to_be_a_boss.jpg?v=1786421072",
-    "description": "Featured recommendation: I Used To Be A Boss.",
+    "description": "I Used To Be A Boss \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-7",
     "title": "The Lord's Coins Aren't Decreasing",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_lords_coins_arent_decreasing.jpg?v=1786421072",
-    "description": "Featured recommendation: The Lord's Coins Aren't Decreasing.",
+    "description": "The Lord's Coins Aren't Decreasing \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-8",
     "title": "The Newbie Is Too Strong",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_newbie_is_too_strong.jpg?v=1786421072",
-    "description": "Featured recommendation: The Newbie Is Too Strong.",
+    "description": "The Newbie Is Too Strong \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-9",
     "title": "Parallel Paradise",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/parallel_paradise.jpg?v=1786421072",
-    "description": "Featured recommendation: Parallel Paradise.",
+    "description": "Parallel Paradise \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-10",
     "title": "Global Freeze: I Created An Apocalypse Shelter",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/global_freeze_i_created_an_apocalypse_shelter.jpg?v=1786421072",
-    "description": "Featured recommendation: Global Freeze: I Created An Apocalypse Shelter.",
+    "description": "Global Freeze: I Created An Apocalypse Shelter \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-11",
     "title": "Chi Wo Hau Boukoku No Oujo",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/chi_wo_hau_boukoku_no_oujo.jpg?v=1786421072",
-    "description": "Featured recommendation: Chi Wo Hau Boukoku No Oujo.",
+    "description": "Chi Wo Hau Boukoku No Oujo \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-12",
     "title": "Boku No Hero Academia",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/boku_no_hero_academia.jpg?v=1786421072",
-    "description": "Featured recommendation: Boku No Hero Academia.",
+    "description": "Boku No Hero Academia \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-13",
     "title": "Starting A Livestream In The Underworld: Who Dares To Join",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/starting_a_livestream_in_the_underworld_who_dares_to_joinjpg.jpg?v=1786421072",
-    "description": "Featured recommendation: Starting A Livestream In The Underworld: Who Dares To Join.",
+    "description": "Starting A Livestream In The Underworld: Who Dares To Join \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-14",
     "title": "Nano Machine",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/nano_machine.jpg?v=1786421072",
-    "description": "Featured recommendation: Nano Machine.",
+    "description": "Nano Machine \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-15",
@@ -1654,77 +1223,59 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manga",
     "coverImage": "/books/one_punch_man.jpg?v=1786421072",
-    "description": "Featured recommendation: One Punch Man.",
+    "description": "One Punch Man \u2014 Highly recommended manga series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-16",
     "title": "Black Clover",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/black_clover.jpg?v=1786421072",
-    "description": "Featured recommendation: Black Clover.",
+    "description": "Black Clover \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-17",
     "title": "The Priest Of Corruption",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_priest_of_corruption.jpg?v=1786421072",
-    "description": "Featured recommendation: The Priest Of Corruption.",
+    "description": "The Priest Of Corruption \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-18",
     "title": "Shotgun Boy",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/shotgun_boy.jpg?v=1786421072",
-    "description": "Featured recommendation: Shotgun Boy.",
+    "description": "Shotgun Boy \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-19",
     "title": "Reinforced Wood Stick",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/reinforced_wood_stick.jpg?v=1786421072",
-    "description": "Featured recommendation: Reinforced Wood Stick.",
+    "description": "Reinforced Wood Stick \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-20",
     "title": "Global Ghost Control: I Have A Billion Ghosts Inside Me",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/global_ghost_control_i_have_a_billion_ghosts_inside_me.jpg?v=1786421072",
-    "description": "Featured recommendation: Global Ghost Control: I Have A Billion Ghosts Inside Me.",
+    "description": "Global Ghost Control: I Have A Billion Ghosts Inside Me \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-21",
@@ -1732,12 +1283,9 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manga",
     "coverImage": "/books/to_be_a_power_in_the_shadows.jpg?v=1786421072",
-    "description": "Featured recommendation: To Be A Power In The Shadows.",
+    "description": "To Be A Power In The Shadows \u2014 Highly recommended manga series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-22",
@@ -1745,51 +1293,39 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manga",
     "coverImage": "/books/kengan_ashura.jpg?v=1786421072",
-    "description": "Featured recommendation: Kengan Ashura.",
+    "description": "Kengan Ashura \u2014 Highly recommended manga series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-23",
     "title": "Infinity Mailman",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/infinity_mailman.jpg?v=1786421072",
-    "description": "Featured recommendation: Infinity Mailman.",
+    "description": "Infinity Mailman \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-24",
     "title": "Baki",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/baki.jpg?v=1786421072",
-    "description": "Featured recommendation: Baki.",
+    "description": "Baki \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-25",
     "title": "The Hero Has Returned",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_hero_has_returned.jpg?v=1786421072",
-    "description": "Featured recommendation: The Hero Has Returned.",
+    "description": "The Hero Has Returned \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-26",
@@ -1797,285 +1333,219 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_max_level_hero_has_returned.jpg?v=1786421072",
-    "description": "Featured recommendation: The Max Level Hero Has Returned!.",
+    "description": "The Max Level Hero Has Returned! \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-27",
     "title": "The_constellations_are_my_disciples",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_constellations_are_my_disciples.jpg?v=1786421072",
-    "description": "Featured recommendation: The_constellations_are_my_disciples.",
+    "description": "The_constellations_are_my_disciples \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-28",
     "title": "The Return Of The Disaster Class Hero",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_return_of_the_disaster_class_hero.jpg?v=1786421072",
-    "description": "Featured recommendation: The Return Of The Disaster Class Hero.",
+    "description": "The Return Of The Disaster Class Hero \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-29",
     "title": "Incoming Mr. High Energy",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/incoming_mr_high_energy.jpg?v=1786421072",
-    "description": "Featured recommendation: Incoming Mr. High Energy.",
+    "description": "Incoming Mr. High Energy \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-30",
     "title": "Warrior High School",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/warrior_high_school.jpg?v=1786421072",
-    "description": "Featured recommendation: Warrior High School.",
+    "description": "Warrior High School \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-31",
     "title": "Updater",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/updater.jpg?v=1786421072",
-    "description": "Featured recommendation: Updater.",
+    "description": "Updater \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-32",
     "title": "Solo Bug Player",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/solo_bug_player.jpg?v=1786421072",
-    "description": "Featured recommendation: Solo Bug Player.",
+    "description": "Solo Bug Player \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-33",
     "title": "Return Of The Blossoming Blade",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/return_of_the_blossoming_blade.jpg?v=1786421072",
-    "description": "Featured recommendation: Return Of The Blossoming Blade.",
+    "description": "Return Of The Blossoming Blade \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-34",
     "title": "No1 Grandmaster In History",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhua",
     "coverImage": "/books/no1_grandmaster_in_history.jpg?v=1786421072",
-    "description": "Featured recommendation: No1 Grandmaster In History.",
+    "description": "No1 Grandmaster In History \u2014 Highly recommended manhua series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-35",
     "title": "The Self-disciplined Me Is Practically Invincible",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_self_disciplined_me_is_practically_invincible.jpg?v=1786421072",
-    "description": "Featured recommendation: The Self-disciplined Me Is Practically Invincible.",
+    "description": "The Self-disciplined Me Is Practically Invincible \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-36",
     "title": "Trash Of The Count's Family",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/trash_of_the_counts_family.jpg?v=1786421072",
-    "description": "Featured recommendation: Trash Of The Count's Family.",
+    "description": "Trash Of The Count's Family \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-37",
     "title": "Ranker's Return",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/rankers_return.jpg?v=1786421072",
-    "description": "Featured recommendation: Ranker's Return.",
+    "description": "Ranker's Return \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-38",
     "title": "I'm A Godfather In Another World",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/im_a_godfather_in_another_world.jpg?v=1786421072",
-    "description": "Featured recommendation: I'm A Godfather In Another World.",
+    "description": "I'm A Godfather In Another World \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-39",
     "title": "The Frenzy Of Evolution",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhua",
     "coverImage": "/books/the_frenzy_of_evolution.jpg?v=1786421072",
-    "description": "Featured recommendation: The Frenzy Of Evolution.",
+    "description": "The Frenzy Of Evolution \u2014 Highly recommended manhua series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-40",
     "title": "The Jobless Guy Who Has Come To Slay",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_jobless_guy_who_has_come_to_slay.jpg?v=1786421072",
-    "description": "Featured recommendation: The Jobless Guy Who Has Come To Slay.",
+    "description": "The Jobless Guy Who Has Come To Slay \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-41",
     "title": "The First Order",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_first_order.jpg?v=1786421072",
-    "description": "Featured recommendation: The First Order.",
+    "description": "The First Order \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-42",
     "title": "Latna Saga: Survival Of A Sword King",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/latna_saga_survival_of_a_sword_king.jpg?v=1786421072",
-    "description": "Featured recommendation: Latna Saga: Survival Of A Sword King.",
+    "description": "Latna Saga: Survival Of A Sword King \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-43",
     "title": "The Greatest Estate Developer",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_greatest_estate_developer.jpg?v=1786421072",
-    "description": "Featured recommendation: The Greatest Estate Developer.",
+    "description": "The Greatest Estate Developer \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-44",
     "title": "I'm Really Not The Demon God Lackey",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhua",
     "coverImage": "/books/im_really_not_the_demon_god_lackey.jpg?v=1786421072",
-    "description": "Featured recommendation: I'm Really Not The Demon God Lackey.",
+    "description": "I'm Really Not The Demon God Lackey \u2014 Highly recommended manhua series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-45",
     "title": "Op Tier Providence: Secretly Cultivate For A Thousand Years",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/op_tier_providence_secretly_cultivate_for_a_thousand_years.jpg?v=1786421072",
-    "description": "Featured recommendation: Op Tier Providence: Secretly Cultivate For A Thousand Years.",
+    "description": "Op Tier Providence: Secretly Cultivate For A Thousand Years \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-46",
     "title": "Zomgan",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/zomgan.jpg?v=1786421072",
-    "description": "Featured recommendation: Zomgan.",
+    "description": "Zomgan \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-47",
     "title": "Revenge Of The Iron Blooded Sword Horn",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/revenge_of_the_iron_blooded_sword_horn.jpg?v=1786421072",
-    "description": "Featured recommendation: Revenge Of The Iron Blooded Sword Horn.",
+    "description": "Revenge Of The Iron Blooded Sword Horn \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-48",
@@ -2083,207 +1553,159 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manga",
     "coverImage": "/books/my_home_hero.jpg?v=1786421072",
-    "description": "Featured recommendation: My Home Hero.",
+    "description": "My Home Hero \u2014 Highly recommended manga series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-49",
     "title": "Off To An Invincible Start",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/off_to_an_invincible_start.jpg?v=1786421072",
-    "description": "Featured recommendation: Off To An Invincible Start.",
+    "description": "Off To An Invincible Start \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-50",
     "title": "Becoming A Sword Deity By Expanding My Sword Domain",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/becoming_a_sword_deity_by_expanding_my_sword_domain.jpg?v=1786421072",
-    "description": "Featured recommendation: Becoming A Sword Deity By Expanding My Sword Domain.",
+    "description": "Becoming A Sword Deity By Expanding My Sword Domain \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-51",
     "title": "The Eternal Supreme",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhua",
     "coverImage": "/books/the_eternal_supreme.jpg?v=1786421072",
-    "description": "Featured recommendation: The Eternal Supreme.",
+    "description": "The Eternal Supreme \u2014 Highly recommended manhua series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-52",
     "title": "The Gamer",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_gamer.jpg?v=1786421072",
-    "description": "Featured recommendation: The Gamer.",
+    "description": "The Gamer \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-53",
     "title": "Poison-eating Healer",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/poison_eating_healer.jpg?v=1786421072",
-    "description": "Featured recommendation: Poison-eating Healer.",
+    "description": "Poison-eating Healer \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-54",
     "title": "The Begining After The End",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_begining_after_the_end.jpg?v=1786421072",
-    "description": "Featured recommendation: The Begining After The End.",
+    "description": "The Begining After The End \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-55",
     "title": "Dungeon Reset",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/dungeon_reset.jpg?v=1786421072",
-    "description": "Featured recommendation: Dungeon Reset.",
+    "description": "Dungeon Reset \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-56",
     "title": "Sss Class Suicide Hunter",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/sss_class_suicide_hunter.jpg?v=1786421072",
-    "description": "Featured recommendation: Sss Class Suicide Hunter.",
+    "description": "Sss Class Suicide Hunter \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-57",
     "title": "I Have 90 Billion Licking Gold",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhua",
     "coverImage": "/books/i_have_90_billion_licking_gold.jpg?v=1786421072",
-    "description": "Featured recommendation: I Have 90 Billion Licking Gold.",
+    "description": "I Have 90 Billion Licking Gold \u2014 Highly recommended manhua series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-58",
     "title": "Hitori No Shita - The Outcast",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/hitori_no_shita_the_outcast.jpg?v=1786421072",
-    "description": "Featured recommendation: Hitori No Shita - The Outcast.",
+    "description": "Hitori No Shita - The Outcast \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-59",
     "title": "The Extra Academy Survival Guide",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_extra_academy_survival_guide.jpg?v=1786421072",
-    "description": "Featured recommendation: The Extra Academy Survival Guide.",
+    "description": "The Extra Academy Survival Guide \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-60",
     "title": "Hero Killer",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/hero_killer.jpg?v=1786421072",
-    "description": "Featured recommendation: Hero Killer.",
+    "description": "Hero Killer \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-61",
     "title": "Myst Might Mayhem",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/myst_might_mayhem.jpg?v=1786421072",
-    "description": "Featured recommendation: Myst Might Mayhem.",
+    "description": "Myst Might Mayhem \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-62",
     "title": "Get Dropped Into Ghost Story",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/get_dropped_into_ghost_story.jpg?v=1786421072",
-    "description": "Featured recommendation: Get Dropped Into Ghost Story.",
+    "description": "Get Dropped Into Ghost Story \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-63",
     "title": "The Problematic Child Of The Magic Tower",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_problematic_child_of_the_magic_tower.jpg?v=1786421072",
-    "description": "Featured recommendation: The Problematic Child Of The Magic Tower.",
+    "description": "The Problematic Child Of The Magic Tower \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-64",
@@ -2291,90 +1713,69 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/eternally_regressing_knight.jpg?v=1786421072",
-    "description": "Featured recommendation: Eternally Regressing Knight.",
+    "description": "Eternally Regressing Knight \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-65",
     "title": "I Killed An Academy Player",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/i_killed_an_academy_player.jpg?v=1786421072",
-    "description": "Featured recommendation: I Killed An Academy Player.",
+    "description": "I Killed An Academy Player \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-66",
     "title": "The Last Adventurer",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_last_adventurer.jpg?v=1786421072",
-    "description": "Featured recommendation: The Last Adventurer.",
+    "description": "The Last Adventurer \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-67",
     "title": "The Archmage Restaurant",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_archmage_restaurant.jpg?v=1786421072",
-    "description": "Featured recommendation: The Archmage Restaurant.",
+    "description": "The Archmage Restaurant \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-68",
     "title": "I Really Didn't Want To Be Reborn",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/i_really_didnt_want_to_be_reborn.jpg?v=1786421072",
-    "description": "Featured recommendation: I Really Didn't Want To Be Reborn.",
+    "description": "I Really Didn't Want To Be Reborn \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-69",
     "title": "Zombiepapa",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/zombiepapa.jpg?v=1786421072",
-    "description": "Featured recommendation: Zombiepapa.",
+    "description": "Zombiepapa \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-70",
     "title": "Reverend Insanity",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/reverend_insanity.jpg?v=1786421072",
-    "description": "Featured recommendation: Reverend Insanity.",
+    "description": "Reverend Insanity \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-71",
@@ -2382,38 +1783,29 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/regressed_mercenarys_machination.jpg?v=1786421072",
-    "description": "Featured recommendation: Regressed Mercenary's Machination.",
+    "description": "Regressed Mercenary's Machination \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-72",
     "title": "Reincarnator",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/reincarnator.jpg?v=1786421072",
-    "description": "Featured recommendation: Reincarnator.",
+    "description": "Reincarnator \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-73",
     "title": "Return Of The Sword God Rank Civil Servant",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/return_of_the_sword_god_rank_civil_servant.jpg?v=1786421072",
-    "description": "Featured recommendation: Return Of The Sword God Rank Civil Servant.",
+    "description": "Return Of The Sword God Rank Civil Servant \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-74",
@@ -2421,129 +1813,99 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/regressing_as_the_reincarnated_bastard_of_the_sword_clan.jpg?v=1786421072",
-    "description": "Featured recommendation: Regressing As The Reincarnated Bastard Of The Sword Clan.",
+    "description": "Regressing As The Reincarnated Bastard Of The Sword Clan \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-75",
     "title": "Dungeon Odyssey",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/dungeon_odyssey.jpg?v=1786421072",
-    "description": "Featured recommendation: Dungeon Odyssey.",
+    "description": "Dungeon Odyssey \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-76",
     "title": "My Passive Skills Are Invincible",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/my_passive_skills_are_invincible.jpg?v=1786421072",
-    "description": "Featured recommendation: My Passive Skills Are Invincible.",
+    "description": "My Passive Skills Are Invincible \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-77",
     "title": "Reincarnated As A Genius Prodigy Of A Prestigious Family",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/reincarnated_as_a_genius_prodigy_of_a_prestigious_family.jpg?v=1786421072",
-    "description": "Featured recommendation: Reincarnated As A Genius Prodigy Of A Prestigious Family.",
+    "description": "Reincarnated As A Genius Prodigy Of A Prestigious Family \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-78",
     "title": "Became A Part-time Employee For Gods",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/became_a_part_time_employee_for_gods.jpg?v=1786421072",
-    "description": "Featured recommendation: Became A Part-time Employee For Gods.",
+    "description": "Became A Part-time Employee For Gods \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-79",
     "title": "Juvenile Prison",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/juvenile_prison.jpg?v=1786421072",
-    "description": "Featured recommendation: Juvenile Prison.",
+    "description": "Juvenile Prison \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-80",
     "title": "F Class Destiny Hunter",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/f_class_destiny_hunter.jpg?v=1786421072",
-    "description": "Featured recommendation: F Class Destiny Hunter.",
+    "description": "F Class Destiny Hunter \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-81",
     "title": "The More I Die, The More Invincible I Become",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_more_i_die_the_more_invincible_i_become.jpg?v=1786421072",
-    "description": "Featured recommendation: The More I Die, The More Invincible I Become.",
+    "description": "The More I Die, The More Invincible I Become \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-82",
     "title": "Your Talent Is Mine",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/your_talent_is_mine.jpg?v=1786421072",
-    "description": "Featured recommendation: Your Talent Is Mine.",
+    "description": "Your Talent Is Mine \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-83",
     "title": "Dragon Devouring Mage",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/dragon_devouring_mage.jpg?v=1786421072",
-    "description": "Featured recommendation: Dragon Devouring Mage.",
+    "description": "Dragon Devouring Mage \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-84",
@@ -2551,90 +1913,69 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/a_dragonslayers_peerless_regression.jpg?v=1786421072",
-    "description": "Featured recommendation: A Dragonslayer's Peerless Regression.",
+    "description": "A Dragonslayer's Peerless Regression \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-85",
     "title": "Genius Archer Streamer",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/genius_archer_streamer.jpg?v=1786421072",
-    "description": "Featured recommendation: Genius Archer Streamer.",
+    "description": "Genius Archer Streamer \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-86",
     "title": "The 31st Piece Turn The Table",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_31st_piece_turn_the_table.jpg?v=1786421072",
-    "description": "Featured recommendation: The 31st Piece Turn The Table.",
+    "description": "The 31st Piece Turn The Table \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-87",
     "title": "Return From The Abyss",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/return_from_the_abyss.jpg?v=1786421072",
-    "description": "Featured recommendation: Return From The Abyss.",
+    "description": "Return From The Abyss \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-88",
     "title": "Sss Grade Saint Knight",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/sss_grade_saint_knight.jpg?v=1786421072",
-    "description": "Featured recommendation: Sss Grade Saint Knight.",
+    "description": "Sss Grade Saint Knight \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-89",
     "title": "Catastrophic Priest",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/catastrophic_priest.jpg?v=1786421072",
-    "description": "Featured recommendation: Catastrophic Priest.",
+    "description": "Catastrophic Priest \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-90",
     "title": "The Irregular Of The Royal Academy Of Magic",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_irregular_of_the_royal_academy_of_magic.jpg?v=1786421072",
-    "description": "Featured recommendation: The Irregular Of The Royal Academy Of Magic.",
+    "description": "The Irregular Of The Royal Academy Of Magic \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-91",
@@ -2642,51 +1983,39 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manga",
     "coverImage": "/books/mushoku_tensei.jpg?v=1786421072",
-    "description": "Featured recommendation: Mushoku Tensei.",
+    "description": "Mushoku Tensei \u2014 Highly recommended manga series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-92",
     "title": "The Rebirth Of An 8th Circle Wizard",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_rebirth_of_an_8th_circle_wizard.jpg?v=1786421072",
-    "description": "Featured recommendation: The Rebirth Of An 8th Circle Wizard.",
+    "description": "The Rebirth Of An 8th Circle Wizard \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-93",
     "title": "I'm Not That Kind Of Talent",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/im_not_that_kind_of_talent.jpg?v=1786421072",
-    "description": "Featured recommendation: I'm Not That Kind Of Talent.",
+    "description": "I'm Not That Kind Of Talent \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-94",
     "title": "Dao Of The Bizarre Immortal",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/dao_of_the_bizarre_immortal.jpg?v=1786421072",
-    "description": "Featured recommendation: Dao Of The Bizarre Immortal.",
+    "description": "Dao Of The Bizarre Immortal \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-95",
@@ -2694,77 +2023,59 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/im_the_shadow_god_level_assassin.jpg?v=1786421072",
-    "description": "Featured recommendation: I'm The Shadow God Level Assassin.",
+    "description": "I'm The Shadow God Level Assassin \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-96",
     "title": "The Return Of The Mythical Archmage",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_return_of_the_mythical_archmage.jpg?v=1786421072",
-    "description": "Featured recommendation: The Return Of The Mythical Archmage.",
+    "description": "The Return Of The Mythical Archmage \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-97",
     "title": "My School Life Pretending To Be A Worthless Person",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/my_school_life_pretending_to_be_a_worthless_person.jpg?v=1786421072",
-    "description": "Featured recommendation: My School Life Pretending To Be A Worthless Person.",
+    "description": "My School Life Pretending To Be A Worthless Person \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-98",
     "title": "Lag, Ultimated Passive",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/lag_ultimated_passive.jpeg?v=1786421072",
-    "description": "Featured recommendation: Lag, Ultimated Passive.",
+    "description": "Lag, Ultimated Passive \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-99",
     "title": "I Returned As Fff Class Witch Hunter",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/i_returned_as_fff_class_witch_hunter.jpg?v=1786421072",
-    "description": "Featured recommendation: I Returned As Fff Class Witch Hunter.",
+    "description": "I Returned As Fff Class Witch Hunter \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-100",
     "title": "Skeleton Soldier Couldn't Protect Dungeon",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/skeleton_soldier_couldnt_protect_dungeon.jpeg?v=1786421072",
-    "description": "Featured recommendation: Skeleton Soldier Couldn't Protect Dungeon.",
+    "description": "Skeleton Soldier Couldn't Protect Dungeon \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-101",
@@ -2772,38 +2083,29 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manga",
     "coverImage": "/books/ragna_crimson.jpg?v=1786421072",
-    "description": "Featured recommendation: Ragna Crimson.",
+    "description": "Ragna Crimson \u2014 Highly recommended manga series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-102",
     "title": "The Nebula's Civilization",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_nebulas_civilization.jpg?v=1786421072",
-    "description": "Featured recommendation: The Nebula's Civilization.",
+    "description": "The Nebula's Civilization \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-103",
     "title": "Her Summon",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/her_summon.jpg?v=1786421072",
-    "description": "Featured recommendation: Her Summon.",
+    "description": "Her Summon \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-104",
@@ -2811,51 +2113,39 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/eat_and_level_up.jpg?v=1786421072",
-    "description": "Featured recommendation: Eat And Level Up.",
+    "description": "Eat And Level Up \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-105",
     "title": "Steel Eating Player",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/steel_eating_player.jpg?v=1786421072",
-    "description": "Featured recommendation: Steel Eating Player.",
+    "description": "Steel Eating Player \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-106",
     "title": "Return Of The Sss-class Ranker",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/return_of_the_sss_class_ranker.jpg?v=1786421072",
-    "description": "Featured recommendation: Return Of The Sss-class Ranker.",
+    "description": "Return Of The Sss-class Ranker \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-107",
     "title": "I Am The Strongest Boss",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/i_am_the_strongest_boss.jpg?v=1786421072",
-    "description": "Featured recommendation: I Am The Strongest Boss.",
+    "description": "I Am The Strongest Boss \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-108",
@@ -2863,103 +2153,79 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/level_up_with_skills.jpg?v=1786421072",
-    "description": "Featured recommendation: Level Up With Skills.",
+    "description": "Level Up With Skills \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-109",
     "title": "Hell Difficulty Tutorial",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/hell_difficulty_tutorial.jpg?v=1786421072",
-    "description": "Featured recommendation: Hell Difficulty Tutorial.",
+    "description": "Hell Difficulty Tutorial \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-110",
     "title": "Reborn As The Enemy Prince",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/reborn_as_the_enemy_prince.jpg?v=1786421072",
-    "description": "Featured recommendation: Reborn As The Enemy Prince.",
+    "description": "Reborn As The Enemy Prince \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-111",
     "title": "Past Life Returner",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/past_life_returner.jpg?v=1786421072",
-    "description": "Featured recommendation: Past Life Returner.",
+    "description": "Past Life Returner \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-112",
     "title": "The Dungeon Master",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/the_dungeon_master.jpg?v=1786421072",
-    "description": "Featured recommendation: The Dungeon Master.",
+    "description": "The Dungeon Master \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-113",
     "title": "Return Of The Martial Art Genuis",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/return_of_the_martial_art_genuis.jpg?v=1786421072",
-    "description": "Featured recommendation: Return Of The Martial Art Genuis.",
+    "description": "Return Of The Martial Art Genuis \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-114",
     "title": "To Hell With Being A Saint, I'm A Doctor",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/to_hell_with_being_a_saint_im_a_doctor.jpg?v=1786421072",
-    "description": "Featured recommendation: To Hell With Being A Saint, I'm A Doctor.",
+    "description": "To Hell With Being A Saint, I'm A Doctor \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-115",
     "title": "Food Truck Owner Inside Dungeon",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/food_truck_owner_inside_dungeon.jpg?v=1786421072",
-    "description": "Featured recommendation: Food Truck Owner Inside Dungeon.",
+    "description": "Food Truck Owner Inside Dungeon \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-116",
@@ -2967,24 +2233,18 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manga",
     "coverImage": "/books/kagurabachi.jpg?v=1786421072",
-    "description": "Featured recommendation: Kagurabachi.",
+    "description": "Kagurabachi \u2014 Highly recommended manga series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   },
   {
     "id": "book-1786421072-117",
     "title": "Chainsaw Man",
     "author": "Various Authors",
-    "category": "Manga",
+    "category": "Manhwa",
     "coverImage": "/books/chainsaw_man.jpg?v=1786421072",
-    "description": "Featured recommendation: Chainsaw Man.",
+    "description": "Chainsaw Man \u2014 Highly recommended manhwa series.",
     "status": "Completed",
-    "tags": [
-      "Action",
-      "Fantasy"
-    ]
+    "tags": []
   }
 ];

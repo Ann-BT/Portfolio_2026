@@ -291,7 +291,7 @@ export default function InterestsPage() {
           </div>
 
           {/* ========================================================= */}
-          {/* BOOKS GRID SHOWCASE (CLEAN TITLE, NO NUMBER COUNT)       */}
+          {/* BOOKS GRID SHOWCASE (PURE CLEAN CARDS WITH ACCURATE DATA) */}
           {/* ========================================================= */}
           <section className={styles.booksSection}>
             
@@ -325,8 +325,6 @@ export default function InterestsPage() {
                     {/* Smooth Hover Overlay showing Title */}
                     <div className={styles.coverOverlay}>
                       <h4 className={styles.overlayTitle}>{book.title}</h4>
-                      <p className={styles.overlayText}>{book.description}</p>
-                      <span className={styles.bookCatPill}>{book.category}</span>
                     </div>
                   </div>
                 </motion.div>
@@ -336,7 +334,7 @@ export default function InterestsPage() {
           </section>
 
           {/* ========================================================= */}
-          {/* PC GAMES GRID SHOWCASE (CLEAN TITLE, NO NUMBER COUNT)     */}
+          {/* PC GAMES GRID SHOWCASE (PURE CLEAN POSTER CARDS)          */}
           {/* ========================================================= */}
           <section className={`${styles.booksSection} ${styles.gamesSection}`}>
             
