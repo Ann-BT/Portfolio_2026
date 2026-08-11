@@ -191,19 +191,25 @@ export function GlobalPlayerProvider({ children }: { children: React.ReactNode }
 
   const masterMediaRef = useRef<HTMLVideoElement | null>(null);
 
-  // Load custom playlist from localStorage
+  // Load custom playlist from localStorage & merge with initialVideoTracks
   useEffect(() => {
     const saved = localStorage.getItem("merlin_local_playlist");
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          setTracks(parsed);
+        if (Array.isArray(parsed)) {
+          // Keep initial tracks and append any custom user-uploaded tracks
+          const customOnly = parsed.filter((t: VideoTrack) => t.isCustom);
+          const combined = [...initialVideoTracks, ...customOnly];
+          setTracks(combined);
+          localStorage.setItem("merlin_local_playlist", JSON.stringify(combined));
+          return;
         }
       } catch (e) {
         // Fallback
       }
     }
+    setTracks(initialVideoTracks);
   }, []);
 
   const saveTracks = (newTracks: VideoTrack[]) => {
