@@ -291,7 +291,7 @@ export default function InterestsPage() {
           </div>
 
           {/* ========================================================= */}
-          {/* BOOKS GRID SHOWCASE (SEARCH & FILTER REMOVED)             */}
+          {/* BOOKS GRID SHOWCASE (CLEAN TITLE, NO NUMBER COUNT)       */}
           {/* ========================================================= */}
           <section className={styles.booksSection}>
             
@@ -299,7 +299,7 @@ export default function InterestsPage() {
             <div className={styles.booksHeaderRow}>
               <div>
                 <span className={styles.booksSectionTag}>// READING SHELF & RECOMMENDATIONS</span>
-                <h2 className={styles.booksSectionTitle}>Light Novels & Manga / Manhwa / Manhua ({bookRecommendations.length})</h2>
+                <h2 className={styles.booksSectionTitle}>Light Novels & Manga / Manhwa / Manhua</h2>
               </div>
             </div>
 
@@ -336,7 +336,7 @@ export default function InterestsPage() {
           </section>
 
           {/* ========================================================= */}
-          {/* PC GAMES GRID SHOWCASE (SEARCH & FILTER REMOVED)          */}
+          {/* PC GAMES GRID SHOWCASE (CLEAN TITLE, NO NUMBER COUNT)     */}
           {/* ========================================================= */}
           <section className={`${styles.booksSection} ${styles.gamesSection}`}>
             
@@ -344,7 +344,7 @@ export default function InterestsPage() {
             <div className={styles.booksHeaderRow}>
               <div>
                 <span className={styles.booksSectionTag}>// PC GAMES LIBRARY</span>
-                <h2 className={styles.booksSectionTitle}>All PC Games & Favorite Collection ({gameShowcaseList.length})</h2>
+                <h2 className={styles.booksSectionTitle}>All PC Games & Favorite Collection</h2>
               </div>
             </div>
 
