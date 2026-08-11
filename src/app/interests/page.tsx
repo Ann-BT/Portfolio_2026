@@ -14,8 +14,7 @@ import {
   FiPlus, 
   FiTrash2, 
   FiX,
-  FiMoreVertical,
-  FiSearch
+  FiMoreVertical
 } from "react-icons/fi";
 import Footer from "@/components/Footer";
 import { useGlobalPlayer, VideoTrack } from "@/context/GlobalPlayerContext";
@@ -72,25 +71,6 @@ export default function InterestsPage() {
   const [newUrl, setNewUrl] = useState<string>("");
   const [newTitle, setNewTitle] = useState<string>("");
   const [newArtist, setNewArtist] = useState<string>("");
-
-  // Game Category Filter & Search state (AnkerGames Pure Grid Style)
-  const [gameFilter, setGameFilter] = useState<string>("ALL");
-  const [gameSearchQuery, setGameSearchQuery] = useState<string>("");
-
-  const filteredGames = gameShowcaseList.filter((game) => {
-    const matchesSearch = game.title.toLowerCase().includes(gameSearchQuery.toLowerCase()) ||
-                          game.genre.toLowerCase().includes(gameSearchQuery.toLowerCase()) ||
-                          game.category.toLowerCase().includes(gameSearchQuery.toLowerCase());
-
-    if (!matchesSearch) return false;
-    if (gameFilter === "ALL") return true;
-    if (gameFilter === "ACTION / RPG") return game.category.includes("ACTION");
-    if (gameFilter === "SOULSLIKE") return game.category.includes("SOULSLIKE");
-    if (gameFilter === "CO-OP") return game.category.includes("CO-OP");
-    if (gameFilter === "INDIE / SURVIVAL") return game.category.includes("INDIE");
-    if (gameFilter === "HORROR") return game.category.includes("HORROR");
-    return true;
-  });
 
   // Add / Upload video handler
   const handleAddTrackSubmit = (e: React.FormEvent) => {
@@ -311,7 +291,7 @@ export default function InterestsPage() {
           </div>
 
           {/* ========================================================= */}
-          {/* BOOKS GRID SHOWCASE (RESTORED GRID, SEARCH/SORT REMOVED)  */}
+          {/* BOOKS GRID SHOWCASE (SEARCH & FILTER REMOVED)             */}
           {/* ========================================================= */}
           <section className={styles.booksSection}>
             
@@ -323,7 +303,7 @@ export default function InterestsPage() {
               </div>
             </div>
 
-            {/* Restored Multi-Column Grid Showcase */}
+            {/* Pure Multi-Column Grid Showcase */}
             <div className={styles.booksGrid}>
               {bookRecommendations.map((book) => (
                 <motion.div
@@ -356,57 +336,21 @@ export default function InterestsPage() {
           </section>
 
           {/* ========================================================= */}
-          {/* ANKERGAMES EXACT MATCH PURE POSTER CARDS SHOWCASE         */}
+          {/* PC GAMES GRID SHOWCASE (SEARCH & FILTER REMOVED)          */}
           {/* ========================================================= */}
           <section className={`${styles.booksSection} ${styles.gamesSection}`}>
             
-            {/* AnkerGames Header Banner */}
-            <div className={styles.ankerHeaderBanner}>
-              <div className={styles.ankerHeaderInfo}>
-                <span className={styles.ankerTag}>ANKERGAMES STYLE // PC GAMES LIBRARY</span>
-                <h2 className={styles.ankerTitle}>All PC Games & Favorite Collection ({filteredGames.length})</h2>
-                <p className={styles.ankerDesc}>
-                  Clean, borderless 2:3 vertical poster cards matching AnkerGames design.
-                </p>
-              </div>
-
-              {/* AnkerGames Live Search Bar */}
-              <div className={styles.ankerSearchWrapper}>
-                <FiSearch className={styles.ankerSearchIcon} />
-                <input
-                  type="text"
-                  placeholder="Search 100+ games by title, genre, category..."
-                  value={gameSearchQuery}
-                  onChange={(e) => setGameSearchQuery(e.target.value)}
-                  className={styles.ankerSearchInput}
-                />
-                {gameSearchQuery && (
-                  <button onClick={() => setGameSearchQuery("")} className={styles.ankerClearSearch}>
-                    <FiX />
-                  </button>
-                )}
+            {/* Clean Section Heading */}
+            <div className={styles.booksHeaderRow}>
+              <div>
+                <span className={styles.booksSectionTag}>// PC GAMES LIBRARY</span>
+                <h2 className={styles.booksSectionTitle}>All PC Games & Favorite Collection ({gameShowcaseList.length})</h2>
               </div>
             </div>
 
-            {/* AnkerGames Filter Tabs Bar */}
-            <div className={styles.ankerFilterRow}>
-              <div className={styles.booksFilterBar}>
-                {["ALL", "ACTION / RPG", "SOULSLIKE", "CO-OP", "INDIE / SURVIVAL", "HORROR"].map((filter) => (
-                  <button
-                    key={filter}
-                    onClick={() => setGameFilter(filter)}
-                    className={`${styles.booksFilterBtn} ${gameFilter === filter ? styles.activeBooksFilter : ""}`}
-                  >
-                    {filter}
-                  </button>
-                ))}
-              </div>
-              <span className={styles.gameCounterBadge}>Showing {filteredGames.length} of {gameShowcaseList.length} Games</span>
-            </div>
-
-            {/* AnkerGames Exact Card Grid (Pure Clean Vertical Poster Cards) */}
+            {/* Pure AnkerGames Style 2:3 Vertical Poster Grid */}
             <div className={styles.ankerGrid}>
-              {filteredGames.map((game) => (
+              {gameShowcaseList.map((game) => (
                 <motion.div
                   key={game.id}
                   layout
@@ -416,7 +360,7 @@ export default function InterestsPage() {
                   className={styles.ankerGameCard}
                   title={`${game.title} — ${game.genre}`}
                 >
-                  {/* AnkerGames Clean 2:3 Vertical Poster Card */}
+                  {/* Clean 2:3 Vertical Poster Card */}
                   <div className={styles.ankerCoverBox}>
                     <img 
                       src={game.coverImage} 
