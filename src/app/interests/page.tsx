@@ -15,9 +15,7 @@ import {
   FiTrash2, 
   FiX,
   FiMoreVertical,
-  FiSearch,
-  FiChevronLeft,
-  FiChevronRight
+  FiSearch
 } from "react-icons/fi";
 import Footer from "@/components/Footer";
 import { useGlobalPlayer, VideoTrack } from "@/context/GlobalPlayerContext";
@@ -47,7 +45,6 @@ export default function InterestsPage() {
   } = useGlobalPlayer();
 
   const visualVideoRef = useRef<HTMLVideoElement | null>(null);
-  const bookshelfRef = useRef<HTMLDivElement | null>(null);
 
   // Sync visual video time & state with master background media engine
   useEffect(() => {
@@ -94,14 +91,6 @@ export default function InterestsPage() {
     if (gameFilter === "HORROR") return game.category.includes("HORROR");
     return true;
   });
-
-  // Bookshelf Horizontal Scroll Control
-  const scrollBookshelf = (direction: "left" | "right") => {
-    if (bookshelfRef.current) {
-      const scrollAmount = direction === "left" ? -600 : 600;
-      bookshelfRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    }
-  };
 
   // Add / Upload video handler
   const handleAddTrackSubmit = (e: React.FormEvent) => {
@@ -322,48 +311,45 @@ export default function InterestsPage() {
           </div>
 
           {/* ========================================================= */}
-          {/* SINGLE HORIZONTAL BOOKSHELF LINE SHOWCASE (NO SEARCH/SORT) */}
+          {/* BOOKS GRID SHOWCASE (RESTORED GRID, SEARCH/SORT REMOVED)  */}
           {/* ========================================================= */}
           <section className={styles.booksSection}>
             
-            {/* Clean Bookshelf Header Row */}
+            {/* Section Heading */}
             <div className={styles.booksHeaderRow}>
               <div>
-                <span className={styles.booksSectionTag}>// READING SHELF</span>
-                <h2 className={styles.booksSectionTitle}>Light Novels & Comics Recommendation</h2>
-              </div>
-
-              {/* Horizontal Scroll Navigation Controls */}
-              <div className={styles.shelfScrollControls}>
-                <button 
-                  onClick={() => scrollBookshelf("left")} 
-                  className={styles.shelfScrollBtn}
-                  title="Scroll Left"
-                >
-                  <FiChevronLeft size={20} />
-                </button>
-                <button 
-                  onClick={() => scrollBookshelf("right")} 
-                  className={styles.shelfScrollBtn}
-                  title="Scroll Right"
-                >
-                  <FiChevronRight size={20} />
-                </button>
+                <span className={styles.booksSectionTag}>// READING SHELF & RECOMMENDATIONS</span>
+                <h2 className={styles.booksSectionTitle}>Light Novels & Manga / Manhwa / Manhua ({bookRecommendations.length})</h2>
               </div>
             </div>
 
-            {/* Single Horizontal Bookshelf Row Line */}
-            <div ref={bookshelfRef} className={styles.bookshelfRowLine}>
+            {/* Restored Multi-Column Grid Showcase */}
+            <div className={styles.booksGrid}>
               {bookRecommendations.map((book) => (
-                <div key={book.id} className={styles.bookshelfCard} title={`${book.title} — ${book.category}`}>
-                  <div className={styles.bookshelfCoverBox}>
+                <motion.div
+                  key={book.id}
+                  layout
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  className={styles.bookCard}
+                  title={`${book.title} — ${book.category}`}
+                >
+                  <div className={styles.coverFrame}>
                     <img 
                       src={book.coverImage} 
                       alt={book.title} 
-                      className={styles.bookshelfCoverImg}
+                      className={styles.coverImage}
                     />
+
+                    {/* Smooth Hover Overlay showing Title */}
+                    <div className={styles.coverOverlay}>
+                      <h4 className={styles.overlayTitle}>{book.title}</h4>
+                      <p className={styles.overlayText}>{book.description}</p>
+                      <span className={styles.bookCatPill}>{book.category}</span>
+                    </div>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
 
@@ -461,7 +447,7 @@ export default function InterestsPage() {
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              exit={{ opacity: 0, scale: 0.95, y: 0 }}
               onClick={(e) => e.stopPropagation()}
               className={styles.modalCard}
             >
