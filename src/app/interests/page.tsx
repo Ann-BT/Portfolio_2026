@@ -74,14 +74,21 @@ export default function InterestsPage() {
   const [newTitle, setNewTitle] = useState<string>("");
   const [newArtist, setNewArtist] = useState<string>("");
 
-  // Book Category Filter state
+  // Book Category Filter & Search state (AnkerGames Pure Grid Style for Comics)
   const [bookFilter, setBookFilter] = useState<string>("ALL");
+  const [bookSearchQuery, setBookSearchQuery] = useState<string>("");
 
   // Game Category Filter & Search state (AnkerGames Pure Grid Style)
   const [gameFilter, setGameFilter] = useState<string>("ALL");
   const [gameSearchQuery, setGameSearchQuery] = useState<string>("");
 
   const filteredBooks = bookRecommendations.filter((book) => {
+    const matchesSearch = book.title.toLowerCase().includes(bookSearchQuery.toLowerCase()) ||
+                          book.author.toLowerCase().includes(bookSearchQuery.toLowerCase()) ||
+                          book.category.toLowerCase().includes(bookSearchQuery.toLowerCase()) ||
+                          book.tags.some(tag => tag.toLowerCase().includes(bookSearchQuery.toLowerCase()));
+
+    if (!matchesSearch) return false;
     if (bookFilter === "ALL") return true;
     if (bookFilter === "NOVELS") return book.category === "Novel";
     if (bookFilter === "MANHWA") return book.category === "Manhwa";
@@ -326,16 +333,38 @@ export default function InterestsPage() {
           {/* ========================================================= */}
           {/* NOVEL & MANGA / MANHWA / MANHUA RECOMMENDATIONS SHOWCASE  */}
           {/* ========================================================= */}
-          <section className={styles.booksSection}>
-            
-            {/* Section Heading & Filter Bar */}
-            <div className={styles.booksHeaderRow}>
-              <div>
-                <span className={styles.booksSectionTag}>// READING SHELF & RECOMMENDATIONS</span>
-                <h2 className={styles.booksSectionTitle}>Light Novels & Manga / Manhwa / Manhua</h2>
+          <section className={`${styles.booksSection} ${styles.gamesSection}`}>
+
+            {/* Header Banner */}
+            <div className={styles.ankerHeaderBanner}>
+              <div className={styles.ankerHeaderInfo}>
+                <span className={styles.ankerTag}>READING SHELF // LIGHT NOVELS & COMICS</span>
+                <h2 className={styles.ankerTitle}>Light Novels &amp; Comics Collection ({filteredBooks.length})</h2>
+                <p className={styles.ankerDesc}>
+                  Clean, borderless 2:3 vertical poster cards — same layout as the PC Games library.
+                </p>
               </div>
 
-              {/* Filter Tabs */}
+              {/* Live Search Bar */}
+              <div className={styles.ankerSearchWrapper}>
+                <FiSearch className={styles.ankerSearchIcon} />
+                <input
+                  type="text"
+                  placeholder="Search comics, novels, authors..."
+                  value={bookSearchQuery}
+                  onChange={(e) => setBookSearchQuery(e.target.value)}
+                  className={styles.ankerSearchInput}
+                />
+                {bookSearchQuery && (
+                  <button onClick={() => setBookSearchQuery("")} className={styles.ankerClearSearch}>
+                    <FiX />
+                  </button>
+                )}
+              </div>
+            </div>
+
+            {/* Filter Tabs Bar */}
+            <div className={styles.ankerFilterRow}>
               <div className={styles.booksFilterBar}>
                 {["ALL", "NOVELS", "MANHWA", "MANGA", "MANHUA"].map((filter) => (
                   <button
@@ -347,64 +376,34 @@ export default function InterestsPage() {
                   </button>
                 ))}
               </div>
+              <span className={styles.gameCounterBadge}>Showing {filteredBooks.length} of {bookRecommendations.length} Comics</span>
             </div>
 
-            {/* Book Covers List Grid Showcase */}
-            <div className={styles.booksGrid}>
+            {/* Comic Card Grid — exact same structure as game section */}
+            <div className={styles.ankerGrid}>
               {filteredBooks.map((book) => (
                 <motion.div
                   key={book.id}
                   layout
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
-                  className={styles.bookCard}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  className={styles.ankerGameCard}
+                  title={`${book.title} — ${book.category}`}
                 >
-                  {/* Book Cover Image Container */}
-                  <div className={styles.coverFrame}>
-                    <img 
-                      src={book.coverImage} 
-                      alt={book.title} 
-                      className={styles.coverImage}
+                  {/* Vertical Poster Card */}
+                  <div className={styles.ankerCoverBox}>
+                    <img
+                      src={book.coverImage}
+                      alt={book.title}
+                      className={styles.ankerCoverImg}
                     />
-                    
-                    {/* Category Badge */}
-                    <span className={styles.categoryBadge}>
-                      {book.category.toUpperCase()}
-                    </span>
 
-                    {/* Overlay info on hover */}
-                    <div className={styles.coverOverlay}>
-                      <div className={styles.overlayText}>{book.description}</div>
-                      {book.chapters && (
-                        <span className={styles.chaptersBadge}>
-                          <FiBookmark /> {book.chapters}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Book Details */}
-                  <div className={styles.bookDetails}>
-                    <h3 className={styles.bookTitle}>{book.title}</h3>
-                    <div className={styles.bookAuthor}>{book.author}</div>
-
-                    {/* Status Badge & Tags */}
-                    <div className={styles.bookFooter}>
-                      <span className={`${styles.statusBadge} ${
-                        book.status === "Completed" 
-                          ? styles.statusCompleted 
-                          : book.status === "Ongoing" || book.status === "Reading"
-                          ? styles.statusOngoing 
-                          : styles.statusRecommended
-                      }`}>
-                        {book.status}
-                      </span>
-                      <div className={styles.tagsGroup}>
-                        {book.tags.slice(0, 2).map((tag) => (
-                          <span key={tag} className={styles.bookTag}>#{tag}</span>
-                        ))}
-                      </div>
+                    {/* Hover Overlay */}
+                    <div className={styles.ankerCardOverlay}>
+                      <h4 className={styles.ankerOverlayTitle}>{book.title}</h4>
+                      <p className={styles.ankerOverlayText}>{book.description}</p>
+                      <span className={styles.ankerGenrePill}>{book.category}</span>
                     </div>
                   </div>
                 </motion.div>
