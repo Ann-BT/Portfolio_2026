@@ -16,7 +16,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "MOBA / Competitive",
     "status": "Favorite",
-    "coverImage": "/games/league_of_legends.jpg",
+    "coverImage": "/games/league_of_legends.jpg?v=1786412602",
     "description": "Strategic 5v5 team battle where champions push lanes, claim objectives, and outplay opponents.",
     "tags": [
       "CO-OP",
@@ -29,7 +29,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Tactical FPS",
     "status": "Played",
-    "coverImage": "/games/valorant.jpg",
+    "coverImage": "/games/valorant.jpg?v=1786412602",
     "description": "Precision 5v5 character-based tactical shooter combining gunplay with unique agent abilities.",
     "tags": [
       "CO-OP",
@@ -42,7 +42,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Tactical FPS",
     "status": "Masterpiece",
-    "coverImage": "/games/cs2.jpg",
+    "coverImage": "/games/cs2.jpg?v=1786412602",
     "description": "The landmark competitive tactical first-person shooter featuring iconic bomb defousal mode.",
     "tags": [
       "CO-OP",
@@ -55,7 +55,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Battle Royale",
     "status": "Favorite",
-    "coverImage": "/games/pubg_battlegrounds.jpg",
+    "coverImage": "/games/pubg_battlegrounds.jpg?v=1786412602",
     "description": "100-player tactical battle royale where players land, loot, and battle to be the last survivor.",
     "tags": [
       "CO-OP",
@@ -68,7 +68,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Action Battle Royale",
     "status": "Played",
-    "coverImage": "/games/naraka_bladepoint.jpg",
+    "coverImage": "/games/naraka_bladepoint.jpg?v=1786412602",
     "description": "60-player martial arts battle royale featuring grappling hooks, fluid melee combat, and mythical transformations.",
     "tags": [
       "CO-OP",
@@ -81,7 +81,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Wuxia Open-World RPG",
     "status": "Masterpiece",
-    "coverImage": "/games/where_winds_meet.jpg",
+    "coverImage": "/games/where_winds_meet.jpg?v=1786412602",
     "description": "Epic open-world Wuxia action RPG set during Ten Kingdoms China featuring martial arts acrobatics.",
     "tags": [
       "ACTION",
@@ -94,7 +94,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Action RPG",
     "status": "Favorite",
-    "coverImage": "/games/elden_ring_shadow_of_the_erdtree.jpg",
+    "coverImage": "/games/elden_ring_shadow_of_the_erdtree.jpg?v=1786412602",
     "description": "Massive dark expansion to Elden Ring introducing the Land of Shadow, new weapons, and grueling bosses.",
     "tags": [
       "SOULSLIKE",
@@ -107,7 +107,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Action RPG",
     "status": "Played",
-    "coverImage": "/games/elden_ring_nightreign.jpg",
+    "coverImage": "/games/elden_ring_nightreign.jpg?v=1786412602",
     "description": "Dark fantasy action RPG set in the Lands Between, mastering dodging, parrying, and weapon skills.",
     "tags": [
       "SOULSLIKE",
@@ -120,7 +120,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "2D Sandbox Survival",
     "status": "Masterpiece",
-    "coverImage": "/games/terraria.jpg",
+    "coverImage": "/games/terraria.jpg?v=1786412602",
     "description": "2D action-adventure sandbox filled with mining, crafting, boss battles, and infinite building creativity.",
     "tags": [
       "INDIE",
@@ -133,7 +133,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Mining Sandbox RPG",
     "status": "Favorite",
-    "coverImage": "/games/core_keeper.jpg",
+    "coverImage": "/games/core_keeper.jpg?v=1786412602",
     "description": "1-8 player mining sandbox adventure exploring an ancient cavern filled with relics, crops, and bosses.",
     "tags": [
       "INDIE",
@@ -146,7 +146,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Co-Op Platformer",
     "status": "Played",
-    "coverImage": "/games/it_takes_two.jpg",
+    "coverImage": "/games/it_takes_two.jpg?v=1786412602",
     "description": "Co-op platform adventure following Cody and May, featuring inventive co-op mechanics in every chapter.",
     "tags": [
       "CO-OP",
@@ -159,7 +159,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Action RPG",
     "status": "Masterpiece",
-    "coverImage": "/games/dark_souls_iii.jpg",
+    "coverImage": "/games/dark_souls_iii.jpg?v=1786412602",
     "description": "Dark, atmospheric action RPG featuring intense melee combat, intricate level design, and legendary bosses.",
     "tags": [
       "SOULSLIKE",
@@ -172,7 +172,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Action",
     "status": "Favorite",
-    "coverImage": "/games/sekiro_shadows_die_twice.jpg",
+    "coverImage": "/games/sekiro_shadows_die_twice.jpg?v=1786412602",
     "description": "Precision-focused ninja action game mastering posture balance, deflect timing, and prosthetic tools.",
     "tags": [
       "SOULSLIKE",
@@ -185,7 +185,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Open-World Action",
     "status": "Played",
-    "coverImage": "/games/gta_vice_city.jpg",
+    "coverImage": "/games/gta_vice_city.jpg?v=1786412602",
     "description": "Classic 1980s neon open-world action adventure following Tommy Vercetti's rise to criminal kingpin.",
     "tags": [
       "ACTION",
@@ -198,7 +198,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Open-World Action",
     "status": "Masterpiece",
-    "coverImage": "/games/marvels_spider_man_remastered.jpg",
+    "coverImage": "/games/marvels_spider_man_remastered.jpg?v=1786412602",
     "description": "Thrilling open-world web-slinging across New York City featuring fluid acrobatic combat.",
     "tags": [
       "ACTION",
@@ -211,7 +211,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Story Action",
     "status": "Favorite",
-    "coverImage": "/games/the_last_of_us_part_ii.jpg",
+    "coverImage": "/games/the_last_of_us_part_ii.jpg?v=1786412602",
     "description": "Emotionally charged post-apocalyptic narrative following Ellie's vengeful journey through Seattle.",
     "tags": [
       "ACTION",
@@ -224,7 +224,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Survival Horror",
     "status": "Played",
-    "coverImage": "/games/resident_evil_requiem.jpg",
+    "coverImage": "/games/resident_evil_requiem.jpg?v=1786412602",
     "description": "Tense survival horror featuring resource management, biohazard puzzles, and horrific creatures.",
     "tags": [
       "HORROR",
@@ -237,7 +237,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Co-Op Party Cooking",
     "status": "Masterpiece",
-    "coverImage": "/games/overcooked.jpg",
+    "coverImage": "/games/overcooked.jpg?v=1786412602",
     "description": "Chaotic 1-4 player co-op cooking game serving meals under ridiculous kitchen conditions.",
     "tags": [
       "CO-OP",
@@ -250,7 +250,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Run & Gun Boss Rush",
     "status": "Favorite",
-    "coverImage": "/games/cuphead.jpg",
+    "coverImage": "/games/cuphead.jpg?v=1786412602",
     "description": "1930s cartoon-style boss rush platformer featuring hand-drawn animation and tough-as-nails battles.",
     "tags": [
       "SOULSLIKE",
@@ -263,7 +263,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Gothic Action RPG",
     "status": "Played",
-    "coverImage": "/games/bloodborne.jpg",
+    "coverImage": "/games/bloodborne.jpg?v=1786412602",
     "description": "Victorian gothic horror action RPG hunting nightmare beasts through the blood-drenched streets of Yharnam.",
     "tags": [
       "SOULSLIKE",
@@ -276,7 +276,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Sci-Fi Action RPG",
     "status": "Masterpiece",
-    "coverImage": "/games/stellar_blade.jpg",
+    "coverImage": "/games/stellar_blade.jpg?v=1786412602",
     "description": "Fast-paced sci-fi combat game following Eve fighting Naytiba monstrosities on a ruined Earth.",
     "tags": [
       "ACTION",
@@ -289,7 +289,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Open-World RPG",
     "status": "Favorite",
-    "coverImage": "/games/cyberpunk_2077.jpg",
+    "coverImage": "/games/cyberpunk_2077.jpg?v=1786412602",
     "description": "Futuristic open-world RPG set in Night City, featuring cyberware upgrades, hacking, and deep narrative choices.",
     "tags": [
       "ACTION",
@@ -302,7 +302,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Open-World Monster Crafting",
     "status": "Played",
-    "coverImage": "/games/palworld.jpg",
+    "coverImage": "/games/palworld.jpg?v=1786412602",
     "description": "Open-world survival crafting game where players collect, battle, and automate tasks with creature Pals.",
     "tags": [
       "INDIE",
@@ -315,7 +315,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Co-Op Survival",
     "status": "Masterpiece",
-    "coverImage": "/games/dont_starve_together.jpg",
+    "coverImage": "/games/dont_starve_together.jpg?v=1786412602",
     "description": "Unforgiving wilderness co-op survival game filled with strange creatures, dark magic, and seasonal threats.",
     "tags": [
       "INDIE",
@@ -328,7 +328,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "3D Sandbox Survival",
     "status": "Favorite",
-    "coverImage": "/games/minecraft.jpg",
+    "coverImage": "/games/minecraft.jpg?v=1786412602",
     "description": "Iconic voxel sandbox building and survival game exploring infinite procedural worlds.",
     "tags": [
       "INDIE",
@@ -341,7 +341,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Action Adventure",
     "status": "Played",
-    "coverImage": "/games/god_of_war_ragnar\u00f6k.jpg",
+    "coverImage": "/games/god_of_war_ragnar\u00f6k.jpg?v=1786412602",
     "description": "Epic Norse action adventure following Kratos and Atreus battling gods across Nine Realms.",
     "tags": [
       "ACTION",
@@ -354,7 +354,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Open-World Action",
     "status": "Masterpiece",
-    "coverImage": "/games/marvels_spider_man_2.jpg",
+    "coverImage": "/games/marvels_spider_man_2.jpg?v=1786412602",
     "description": "Peter Parker and Miles Morales team up against Venom and Kraven in an expanded New York City.",
     "tags": [
       "ACTION",
@@ -367,7 +367,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Open-World Action",
     "status": "Favorite",
-    "coverImage": "/games/marvels_spider_man_miles_morales.jpg",
+    "coverImage": "/games/marvels_spider_man_miles_morales.jpg?v=1786412602",
     "description": "Miles Morales masters bio-electric venom blasts and camouflage to protect Harlem.",
     "tags": [
       "ACTION",
@@ -380,7 +380,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Co-Op Horror Heist",
     "status": "Played",
-    "coverImage": "/games/repo.jpg",
+    "coverImage": "/games/repo.jpg?v=1786412602",
     "description": "Tense co-op horror heist game repossessing high-value items while evading monstrous entities.",
     "tags": [
       "CO-OP",
@@ -393,7 +393,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Climbing Co-Op",
     "status": "Masterpiece",
-    "coverImage": "/games/peak.jpg",
+    "coverImage": "/games/peak.jpg?v=1786412602",
     "description": "Precision co-op climbing game conquering dangerous mountain peaks through teamwork and rope physics.",
     "tags": [
       "CO-OP",
@@ -406,7 +406,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Social Deduction",
     "status": "Favorite",
-    "coverImage": "/games/among_us.jpg",
+    "coverImage": "/games/among_us.jpg?v=1786412602",
     "description": "Multiplayer party game of teamwork and betrayal as crewmates prepare a spaceship while hunting impostors.",
     "tags": [
       "CO-OP",
@@ -419,7 +419,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Psychological Thriller",
     "status": "Played",
-    "coverImage": "/games/dispatch.jpg",
+    "coverImage": "/games/dispatch.jpg?v=1786412602",
     "description": "Tense 911 dispatch operator simulation handling terrifying emergency calls in real time.",
     "tags": [
       "HORROR",
@@ -432,7 +432,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Metroidvania",
     "status": "Masterpiece",
-    "coverImage": "/games/hollow_knight.jpg",
+    "coverImage": "/games/hollow_knight.jpg?v=1786412602",
     "description": "Atmospheric 2D action metroidvania exploring the ruined bug kingdom of Hallownest.",
     "tags": [
       "SOULSLIKE",
@@ -445,7 +445,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Metroidvania",
     "status": "Favorite",
-    "coverImage": "/games/hollow_knight_silksong.jpg",
+    "coverImage": "/games/hollow_knight_silksong.jpg?v=1786412602",
     "description": "Highly anticipated metroidvania sequel following Hornet hunting across a vast haunted kingdom.",
     "tags": [
       "SOULSLIKE",
@@ -458,7 +458,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Co-Op Horror",
     "status": "Played",
-    "coverImage": "/games/phasmophobia.jpg",
+    "coverImage": "/games/phasmophobia.jpg?v=1786412602",
     "description": "4-player co-op psychological horror hunting evidence of paranormal entities using ghost hunting gear.",
     "tags": [
       "HORROR",
@@ -471,7 +471,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Underwater Survival",
     "status": "Masterpiece",
-    "coverImage": "/games/subnautica.jpg",
+    "coverImage": "/games/subnautica.jpg?v=1786412602",
     "description": "Open-world underwater survival adventure crafting submarines and exploring alien ocean depths.",
     "tags": [
       "INDIE",
@@ -484,7 +484,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Underwater Survival",
     "status": "Favorite",
-    "coverImage": "/games/subnautica_below_zero.jpg",
+    "coverImage": "/games/subnautica_below_zero.jpg?v=1786412602",
     "description": "Freezing underwater survival expansion exploring icy sub-zero biomes on planet 4546B.",
     "tags": [
       "INDIE",
@@ -497,7 +497,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Wuxia Action RPG",
     "status": "Played",
-    "coverImage": "/games/black_myth_wukong.jpg",
+    "coverImage": "/games/black_myth_wukong.jpg?v=1786412602",
     "description": "Stunning action RPG inspired by Journey to the West, commanding staff transformations and spells.",
     "tags": [
       "ACTION",
@@ -510,7 +510,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Open-World FPS",
     "status": "Masterpiece",
-    "coverImage": "/games/far_cry_6.jpg",
+    "coverImage": "/games/far_cry_6.jpg?v=1786412602",
     "description": "Tropical guerrilla open-world shooter fighting to overthrow dictator Anton Castillo in Yara.",
     "tags": [
       "ACTION",
@@ -523,7 +523,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Rhythm Platformer",
     "status": "Favorite",
-    "coverImage": "/games/geometry_dash.jpg",
+    "coverImage": "/games/geometry_dash.jpg?v=1786412602",
     "description": "Rhythm-based platformer jumping, flying, and flipping through geometric obstacle courses.",
     "tags": [
       "SOULSLIKE",
@@ -536,7 +536,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Farming Life Sim",
     "status": "Played",
-    "coverImage": "/games/stardew_valley.jpg",
+    "coverImage": "/games/stardew_valley.jpg?v=1786412602",
     "description": "Charming farming RPG building an overgrown farm plot into a thriving home with crops and livestock.",
     "tags": [
       "INDIE",
@@ -549,7 +549,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Rogue-lite Bullet Hell",
     "status": "Favorite",
-    "coverImage": "/games/vampire_survivors.jpg",
+    "coverImage": "/games/vampire_survivors.jpg?v=1786412602",
     "description": "Addictive casual rogue-lite bullet hell mowing down thousands of night creatures with auto-firing weapons.",
     "tags": [
       "INDIE",
@@ -562,7 +562,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Ocean Survival Crafting",
     "status": "Played",
-    "coverImage": "/games/raft.jpg",
+    "coverImage": "/games/raft.jpg?v=1786412602",
     "description": "Ocean survival adventure expanding a wooden raft while fending off hungry sharks.",
     "tags": [
       "INDIE",
@@ -575,7 +575,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Puzzle Platformer",
     "status": "Masterpiece",
-    "coverImage": "/games/inside.jpg",
+    "coverImage": "/games/inside.jpg?v=1786412602",
     "description": "Dark, narrative-driven puzzle platformer following a boy drawn into the heart of a sinister project.",
     "tags": [
       "HORROR",
@@ -588,7 +588,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Atmospheric Horror",
     "status": "Favorite",
-    "coverImage": "/games/little_nightmares.jpg",
+    "coverImage": "/games/little_nightmares.jpg?v=1786412602",
     "description": "Dark fairytale puzzle platformer helping Six escape the Maw, a vast vessel inhabited by corrupted souls.",
     "tags": [
       "HORROR",
@@ -601,7 +601,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Atmospheric Horror",
     "status": "Played",
-    "coverImage": "/games/little_nightmares_ii.jpg",
+    "coverImage": "/games/little_nightmares_ii.jpg?v=1786412602",
     "description": "Tense horror adventure following Mono and Six navigating the distorted Signal Tower.",
     "tags": [
       "HORROR",
@@ -614,7 +614,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Co-Op Horror",
     "status": "Masterpiece",
-    "coverImage": "/games/little_nightmares_iii.jpg",
+    "coverImage": "/games/little_nightmares_iii.jpg?v=1786412602",
     "description": "Co-op horror adventure helping Low and Alone escape the Nowhere through shadowy puzzle domains.",
     "tags": [
       "HORROR",
@@ -627,7 +627,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Co-Op Survival Horror",
     "status": "Favorite",
-    "coverImage": "/games/reanimal.jpg",
+    "coverImage": "/games/reanimal.jpg?v=1786412602",
     "description": "Dark co-op horror adventure following brother and sister rescuing kidnapped friends on a twisted island.",
     "tags": [
       "HORROR",
@@ -640,7 +640,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Cyberpunk Adventure",
     "status": "Played",
-    "coverImage": "/games/stray.jpg",
+    "coverImage": "/games/stray.jpg?v=1786412602",
     "description": "Third-person cat adventure exploring neon-lit alleyways of a decaying cybercity inhabited by robots.",
     "tags": [
       "ACTION",
@@ -653,7 +653,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Survival Horror",
     "status": "Masterpiece",
-    "coverImage": "/games/the_forest.jpg",
+    "coverImage": "/games/the_forest.jpg?v=1786412602",
     "description": "First-person survival horror building shelters and crafting weapons against cannibalistic mutants.",
     "tags": [
       "HORROR",
@@ -666,7 +666,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Co-Op Story Action",
     "status": "Favorite",
-    "coverImage": "/games/a_way_out.jpg",
+    "coverImage": "/games/a_way_out.jpg?v=1786412602",
     "description": "Mandatory split-screen co-op adventure escaping prison and surviving on the run as Leo and Vincent.",
     "tags": [
       "CO-OP",
@@ -679,7 +679,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Sci-Fi Action",
     "status": "Played",
-    "coverImage": "/games/pragmata.jpg",
+    "coverImage": "/games/pragmata.jpg?v=1786412602",
     "description": "Dystopian sci-fi action adventure set on a futuristic moon base with suit technology.",
     "tags": [
       "ACTION",
@@ -692,7 +692,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Amazon Survival",
     "status": "Masterpiece",
-    "coverImage": "/games/green_hell.jpg",
+    "coverImage": "/games/green_hell.jpg?v=1786412602",
     "description": "Brutal Amazonian jungle survival simulation monitoring physical health, infections, and psychological sanity.",
     "tags": [
       "INDIE",
@@ -705,7 +705,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Narrative Sci-Fi",
     "status": "Favorite",
-    "coverImage": "/games/split_fiction.jpg",
+    "coverImage": "/games/split_fiction.jpg?v=1786412602",
     "description": "Mind-bending narrative sci-fi adventure shifting realities between parallel dimensions.",
     "tags": [
       "ACTION",
@@ -718,7 +718,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Dungeon Crawler",
     "status": "Played",
-    "coverImage": "/games/minecraft_dungeons.jpg",
+    "coverImage": "/games/minecraft_dungeons.jpg?v=1786412602",
     "description": "Isometric action dungeon crawler set in the Minecraft universe battling Villager forces.",
     "tags": [
       "ACTION",
@@ -731,7 +731,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Psychological Horror",
     "status": "Masterpiece",
-    "coverImage": "/games/miside.jpg",
+    "coverImage": "/games/miside.jpg?v=1786412602",
     "description": "Disturbing psychological horror simulation entering a mobile game companion's surreal apartment.",
     "tags": [
       "HORROR",
@@ -744,7 +744,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Life Simulation",
     "status": "Favorite",
-    "coverImage": "/games/streamer_life_simulator.jpg",
+    "coverImage": "/games/streamer_life_simulator.jpg?v=1786412602",
     "description": "Comprehensive streamer career sim building PC rigs, broadcasting games, and managing subscriber income.",
     "tags": [
       "INDIE",
@@ -757,7 +757,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Rogue-lite Action",
     "status": "Played",
-    "coverImage": "/games/hades.jpg",
+    "coverImage": "/games/hades.jpg?v=1786412602",
     "description": "God-like rogue-lite hack-and-slash defying the God of the Dead to escape the Underworld.",
     "tags": [
       "SOULSLIKE",
@@ -770,7 +770,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Rogue-lite Action",
     "status": "Masterpiece",
-    "coverImage": "/games/hades_ii.jpg",
+    "coverImage": "/games/hades_ii.jpg?v=1786412602",
     "description": "Chthonic rogue-lite sequel following Melino\u00eb mastering witch magic to battle Titan Kronos.",
     "tags": [
       "SOULSLIKE",
@@ -783,7 +783,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Kung-Fu Action",
     "status": "Favorite",
-    "coverImage": "/games/sifu.jpg",
+    "coverImage": "/games/sifu.jpg?v=1786412602",
     "description": "Third-person beat-em-up featuring realistic Pak Mei kung-fu combat and a aging magic amulet mechanic.",
     "tags": [
       "SOULSLIKE",
@@ -796,7 +796,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Puzzle Platformer",
     "status": "Played",
-    "coverImage": "/games/limbo.jpg",
+    "coverImage": "/games/limbo.jpg?v=1786412602",
     "description": "Iconic monochrome puzzle platformer navigating a haunting, trap-filled forest to find a lost sister.",
     "tags": [
       "HORROR",
@@ -809,7 +809,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Taopunk Metroidvania",
     "status": "Masterpiece",
-    "coverImage": "/games/nine_sols.jpg",
+    "coverImage": "/games/nine_sols.jpg?v=1786412602",
     "description": "Lore-rich 2D action metroidvania combining Sekiro-inspired deflection with Taopunk fantasy.",
     "tags": [
       "SOULSLIKE",
@@ -822,7 +822,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Rogue-lite Metroidvania",
     "status": "Favorite",
-    "coverImage": "/games/dead_cells.jpg",
+    "coverImage": "/games/dead_cells.jpg?v=1786412602",
     "description": "Rogue-lite action platformer combining rogue-like replayability with fast-paced combat.",
     "tags": [
       "SOULSLIKE",
@@ -835,7 +835,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Casual RPG Sim",
     "status": "Played",
-    "coverImage": "/games/dave_the_diver.jpg",
+    "coverImage": "/games/dave_the_diver.jpg?v=1786412602",
     "description": "Charming hybrid casual RPG exploring the Blue Hole ocean by day and running a sushi restaurant by night.",
     "tags": [
       "INDIE",
@@ -848,7 +848,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Co-Op Backyard Survival",
     "status": "Masterpiece",
-    "coverImage": "/games/grounded.jpg",
+    "coverImage": "/games/grounded.jpg?v=1786412602",
     "description": "First-person co-op survival game shrunk down to insect size in a suburban backyard.",
     "tags": [
       "INDIE",
@@ -861,7 +861,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Co-Op Survival",
     "status": "Favorite",
-    "coverImage": "/games/grounded_2.jpg",
+    "coverImage": "/games/grounded_2.jpg?v=1786412602",
     "description": "Expanded backyard co-op survival building fortresses against mutated backyard bugs.",
     "tags": [
       "INDIE",
@@ -874,7 +874,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Third-Person Shooter",
     "status": "Played",
-    "coverImage": "/games/plants_vs_zombies_garden_warfare.jpg",
+    "coverImage": "/games/plants_vs_zombies_garden_warfare.jpg?v=1786412602",
     "description": "Whimsical third-person multiplayer shooter clashing Plants against Zombies in suburban battlegrounds.",
     "tags": [
       "CO-OP",
@@ -887,7 +887,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Rogue-lite Base Building",
     "status": "Masterpiece",
-    "coverImage": "/games/cult_of_the_lamb.jpg",
+    "coverImage": "/games/cult_of_the_lamb.jpg?v=1786412602",
     "description": "Charming dark rogue-lite building a loyal woodland cult to destroy false prophets.",
     "tags": [
       "INDIE",
@@ -900,7 +900,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Anomaly Loop Horror",
     "status": "Favorite",
-    "coverImage": "/games/the_exit_8.jpg",
+    "coverImage": "/games/the_exit_8.jpg?v=1786412602",
     "description": "Short walking simulator searching for anomalies in a infinitely looping Japanese subway station.",
     "tags": [
       "HORROR",
@@ -913,7 +913,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Business Sim",
     "status": "Played",
-    "coverImage": "/games/internet_cafe_simulator.jpg",
+    "coverImage": "/games/internet_cafe_simulator.jpg?v=1786412602",
     "description": "Comprehensive internet cafe management sim building gaming rigs, managing crypto, and satisfying customers.",
     "tags": [
       "INDIE",
@@ -926,7 +926,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Viking Survival",
     "status": "Masterpiece",
-    "coverImage": "/games/valheim.jpg",
+    "coverImage": "/games/valheim.jpg?v=1786412602",
     "description": "1-10 player Viking survival game exploring procedurally generated purgatory biomes and building longhouses.",
     "tags": [
       "INDIE",
@@ -939,7 +939,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Co-Op Action Puzzle",
     "status": "Favorite",
-    "coverImage": "/games/pico_park.jpg",
+    "coverImage": "/games/pico_park.jpg?v=1786412602",
     "description": "Cooperative 2-8 player puzzle action game where every player must work together to clear stages.",
     "tags": [
       "CO-OP",
@@ -952,7 +952,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Cinematic Horror",
     "status": "Played",
-    "coverImage": "/games/until_dawn.jpg",
+    "coverImage": "/games/until_dawn.jpg?v=1786412602",
     "description": "Interactive narrative horror game where eight friends attempt to survive Wendigos on Blackwood Mountain.",
     "tags": [
       "HORROR",
@@ -965,7 +965,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Tactical Extraction",
     "status": "Masterpiece",
-    "coverImage": "/games/escape_from_duckov.jpg",
+    "coverImage": "/games/escape_from_duckov.jpg?v=1786412602",
     "description": "Tense tactical extraction shooter looting high-value gear and escaping hostile zones.",
     "tags": [
       "CO-OP",
@@ -978,7 +978,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "SOULSLIKE / HARDCORE",
     "genre": "Dark Survival RPG",
     "status": "Favorite",
-    "coverImage": "/games/fear_hunger.jpg",
+    "coverImage": "/games/fear_hunger.jpg?v=1786412602",
     "description": "Brutal, unforgiving dark fantasy RPG exploring a nightmare dungeon filled with ancient cosmic horrors.",
     "tags": [
       "SOULSLIKE",
@@ -991,7 +991,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Space Exploration",
     "status": "Played",
-    "coverImage": "/games/astroneer.jpg",
+    "coverImage": "/games/astroneer.jpg?v=1786412602",
     "description": "Interplanetary sandbox adventure terrain-moulding distant planets and building space bases.",
     "tags": [
       "INDIE",
@@ -1004,7 +1004,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Bluffing Party Game",
     "status": "Masterpiece",
-    "coverImage": "/games/liars_bar.jpg",
+    "coverImage": "/games/liars_bar.jpg?v=1786412602",
     "description": "First-person multiplayer bluffing game playing cards, calling out lies, and playing Russian roulette.",
     "tags": [
       "CO-OP",
@@ -1017,7 +1017,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Atomic Survival",
     "status": "Favorite",
-    "coverImage": "/games/60_seconds.jpg",
+    "coverImage": "/games/60_seconds.jpg?v=1786412602",
     "description": "Dark comedy atomic survival strategy scavenging supplies in 60 seconds before hunkering in a fallout shelter.",
     "tags": [
       "INDIE",
@@ -1030,7 +1030,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Co-Op Exorcism Horror",
     "status": "Played",
-    "coverImage": "/games/devour.jpg",
+    "coverImage": "/games/devour.jpg?v=1786412602",
     "description": "1-4 player co-op survival horror stopping possessed cultists before they drag players to hell.",
     "tags": [
       "HORROR",
@@ -1043,7 +1043,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Top-Down Arena Shooter",
     "status": "Masterpiece",
-    "coverImage": "/games/brotato.jpg",
+    "coverImage": "/games/brotato.jpg?v=1786412602",
     "description": "Top-down arena shooter roguelite playing a potato wielding up to 6 weapons to fight alien swarms.",
     "tags": [
       "INDIE",
@@ -1056,7 +1056,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Psychological Horror",
     "status": "Favorite",
-    "coverImage": "/games/doki_doki_literature_club.jpg",
+    "coverImage": "/games/doki_doki_literature_club.jpg?v=1786412602",
     "description": "Acclaimed psychological horror visual novel subverting high school dating sim tropes.",
     "tags": [
       "HORROR",
@@ -1069,7 +1069,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Zen Puzzle Sim",
     "status": "Played",
-    "coverImage": "/games/unpacking.jpg",
+    "coverImage": "/games/unpacking.jpg?v=1786412602",
     "description": "Zen puzzle game pulling possessions out of boxes and fitting them into new living spaces over a lifetime.",
     "tags": [
       "INDIE",
@@ -1082,7 +1082,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Rhythm Game",
     "status": "Masterpiece",
-    "coverImage": "/games/melatonin.jpg",
+    "coverImage": "/games/melatonin.jpg?v=1786412602",
     "description": "Charming rhythm game exploring the relationship between dreams and reality through pastel beats.",
     "tags": [
       "INDIE",
@@ -1095,7 +1095,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Time-Move Shooter",
     "status": "Favorite",
-    "coverImage": "/games/superhot.jpg",
+    "coverImage": "/games/superhot.jpg?v=1786412602",
     "description": "FPS where time moves only when you move, executing bullet-time strategy against red glass enemies.",
     "tags": [
       "ACTION",
@@ -1108,7 +1108,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Co-Op Party Game",
     "status": "Played",
-    "coverImage": "/games/pummel_party.jpg",
+    "coverImage": "/games/pummel_party.jpg?v=1786412602",
     "description": "4-8 player online party game competing in board game minigames with absurd weaponry.",
     "tags": [
       "CO-OP",
@@ -1121,7 +1121,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Procedural Road Trip",
     "status": "Masterpiece",
-    "coverImage": "/games/road_96.jpg",
+    "coverImage": "/games/road_96.jpg?v=1786412602",
     "description": "Procedural narrative road-trip adventure escaping a authoritarian country on a hitchhiking journey.",
     "tags": [
       "ACTION",
@@ -1134,7 +1134,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Prison Escape Strategy",
     "status": "Favorite",
-    "coverImage": "/games/the_escapists_2.jpg",
+    "coverImage": "/games/the_escapists_2.jpg?v=1786412602",
     "description": "Tactical prison escape game crafting tools, adhering to routines, and executing escape plans.",
     "tags": [
       "INDIE",
@@ -1147,7 +1147,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "2D Crafting Adventure",
     "status": "Played",
-    "coverImage": "/games/forager.jpg",
+    "coverImage": "/games/forager.jpg?v=1786412602",
     "description": "2D open-world crafting game gathering resources, buying land tiles, and expanding gear networks.",
     "tags": [
       "INDIE",
@@ -1160,7 +1160,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Psychological Space Horror",
     "status": "Masterpiece",
-    "coverImage": "/games/mouthwashing.jpg",
+    "coverImage": "/games/mouthwashing.jpg?v=1786412602",
     "description": "First-person retro psychological horror following the stranded crew of a space freighter after a crash.",
     "tags": [
       "HORROR",
@@ -1173,7 +1173,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Cemetery Sim",
     "status": "Favorite",
-    "coverImage": "/games/graveyard_keeper.jpg",
+    "coverImage": "/games/graveyard_keeper.jpg?v=1786412602",
     "description": "Inaccurate medieval cemetery management sim building grave sites, handling organs, and expanding businesses.",
     "tags": [
       "INDIE",
@@ -1186,7 +1186,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Rogue-lite Platformer",
     "status": "Played",
-    "coverImage": "/games/neon_abyss.jpg",
+    "coverImage": "/games/neon_abyss.jpg?v=1786412602",
     "description": "Frantic rogue-lite action platformer blasting through evolving dungeons with stacking item synergies.",
     "tags": [
       "INDIE",
@@ -1199,7 +1199,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Rogue-lite Platformer",
     "status": "Masterpiece",
-    "coverImage": "/games/neon_abyss_2.jpg",
+    "coverImage": "/games/neon_abyss_2.jpg?v=1786412602",
     "description": "High-octane rogue-lite platformer sequel featuring neon bullet hell guns and expanded dungeons.",
     "tags": [
       "INDIE",
@@ -1212,7 +1212,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Open-World Sandbox",
     "status": "Favorite",
-    "coverImage": "/games/bum_simulator.jpg",
+    "coverImage": "/games/bum_simulator.jpg?v=1786412602",
     "description": "Comedy sandbox adventure mastering urban homelessness, taming pigeons, and building cardboard empires.",
     "tags": [
       "INDIE",
@@ -1225,7 +1225,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Dark Comedy Puzzle",
     "status": "Played",
-    "coverImage": "/games/kindergarten.jpg",
+    "coverImage": "/games/kindergarten.jpg?v=1786412602",
     "description": "Abstract puzzle adventure surviving a bizarre elementary school day filled with dark secrets.",
     "tags": [
       "HORROR",
@@ -1238,7 +1238,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Dark Comedy Puzzle",
     "status": "Masterpiece",
-    "coverImage": "/games/kindergarten_ii.jpg",
+    "coverImage": "/games/kindergarten_ii.jpg?v=1786412602",
     "description": "Dark comedy puzzle sequel navigating a new school district filled with absurd quests and assassinations.",
     "tags": [
       "HORROR",
@@ -1251,7 +1251,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "HORROR / MYSTERY",
     "genre": "Dark Comedy Puzzle",
     "status": "Favorite",
-    "coverImage": "/games/kindergarten_iii.jpg",
+    "coverImage": "/games/kindergarten_iii.jpg?v=1786412602",
     "description": "The third installment of the dark comedy Kindergarten puzzle saga with new bizarre school quests.",
     "tags": [
       "HORROR",
@@ -1264,7 +1264,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Sci-Fi Atomic Survival",
     "status": "Played",
-    "coverImage": "/games/60_parsecs.jpg",
+    "coverImage": "/games/60_parsecs.jpg?v=1786412602",
     "description": "Atomic space age survival strategy scavenging a space station in 60 seconds and surviving deep space.",
     "tags": [
       "INDIE",
@@ -1277,7 +1277,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "2D Survival Crafting",
     "status": "Masterpiece",
-    "coverImage": "/games/tinkerlands.jpg",
+    "coverImage": "/games/tinkerlands.jpg?v=1786412602",
     "description": "2D action survival crafting game exploring an enchanted island, building settlements, and battling bosses.",
     "tags": [
       "INDIE",
@@ -1290,7 +1290,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "CO-OP / MULTIPLAYER",
     "genre": "Classic Card Game",
     "status": "Favorite",
-    "coverImage": "/games/uno.jpg",
+    "coverImage": "/games/uno.jpg?v=1786412602",
     "description": "The iconic digital card matching game featuring custom rules, voice chat, and multiplayer lobbies.",
     "tags": [
       "CO-OP",
@@ -1303,7 +1303,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Action RPG Survival",
     "status": "Played",
-    "coverImage": "/games/enshrouded.jpg",
+    "coverImage": "/games/enshrouded.jpg?v=1786412602",
     "description": "16-player co-op action RPG survival building base castles and exploring a fog-shrouded realm.",
     "tags": [
       "INDIE",
@@ -1316,8 +1316,8 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "INDIE / SURVIVAL",
     "genre": "Survival Co-op",
     "status": "Playing",
-    "coverImage": "/games/homestead.jpg",
-    "description": "A top-down pixel-art survival sandbox inspired by Valheim — explore biomes, craft gear, defeat bosses, and build settlements with up to 8 players.",
+    "coverImage": "/games/homestead.jpg?v=1786412602",
+    "description": "A top-down pixel-art survival sandbox inspired by Valheim \u2014 explore biomes, craft gear, defeat bosses, and build settlements with up to 8 players.",
     "tags": [
       "INDIE",
       "Co-op",
