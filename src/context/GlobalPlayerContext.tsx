@@ -34,16 +34,121 @@ const initialVideoTracks: VideoTrack[] = [
   {
     id: "v1",
     title: "Meaningful Love (Instrumental)",
-    artist: "Instrumental Collection",
-    src: "/media/meaningful_love.mp4",
+    artist: "Chill Beats",
+    src: "/media/meaningful_love.mp4?v=2",
     duration: "3:42"
   },
   {
     id: "v2",
-    title: "Shut Up My Moms Calling",
+    title: "Shut Up My Mom's Calling",
     artist: "Hotel Ugly",
-    src: "/media/shutup_my_moms_calling.mp4",
+    src: "/media/shutup_my_moms_calling.mp4?v=2",
     duration: "2:45"
+  },
+  {
+    id: "v3",
+    title: "505",
+    artist: "Arctic Monkeys",
+    src: "/media/505.mp4?v=2",
+    duration: "4:13"
+  },
+  {
+    id: "v4",
+    title: "Airplane Mode",
+    artist: "Limbo",
+    src: "/media/airplane_mode.mp4?v=2",
+    duration: "2:30"
+  },
+  {
+    id: "v5",
+    title: "Duvet",
+    artist: "Bôa",
+    src: "/media/boa_duvet.mp4?v=2",
+    duration: "3:24"
+  },
+  {
+    id: "v6",
+    title: "Bunny Girl",
+    artist: "1nonly",
+    src: "/media/bunny_girl.mp4?v=2",
+    duration: "2:15"
+  },
+  {
+    id: "v7",
+    title: "Tek It (Sped Up)",
+    artist: "Cafuné",
+    src: "/media/cafune_tek_it.mp4?v=2",
+    duration: "2:50"
+  },
+  {
+    id: "v8",
+    title: "Dark Red",
+    artist: "Steve Lacy",
+    src: "/media/dark_red.mp4?v=2",
+    duration: "2:53"
+  },
+  {
+    id: "v9",
+    title: "Babydoll",
+    artist: "Dominic Fike",
+    src: "/media/babydoll.mp4?v=2",
+    duration: "1:39"
+  },
+  {
+    id: "v10",
+    title: "Exit Music (For A Film)",
+    artist: "Radiohead",
+    src: "/media/exit_music.mp4?v=2",
+    duration: "4:24"
+  },
+  {
+    id: "v11",
+    title: "Heart To Heart",
+    artist: "Mac DeMarco",
+    src: "/media/heart_to_heart.mp4?v=2",
+    duration: "3:31"
+  },
+  {
+    id: "v12",
+    title: "Notion",
+    artist: "The Rare Occasions",
+    src: "/media/notion.mp4?v=2",
+    duration: "3:15"
+  },
+  {
+    id: "v13",
+    title: "Tell Me You Like It",
+    artist: "POODEE",
+    src: "/media/poodee_tell_me.mp4?v=2",
+    duration: "2:40"
+  },
+  {
+    id: "v14",
+    title: "Stay With Me",
+    artist: "Miki Matsubara",
+    src: "/media/stay_with_me.mp4?v=2",
+    duration: "4:34"
+  },
+  {
+    id: "v15",
+    title: "Telephones",
+    artist: "Vacations",
+    src: "/media/telephones.mp4?v=2",
+    duration: "3:40"
+  },
+  {
+    id: "v16",
+    title: "Zodiac Killer",
+    artist: "Khalil?",
+    src: "/media/zodiac_killer.mp4?v=2",
+    duration: "2:05"
+  },
+  {
+    id: "v17",
+    title: "the perfect pair",
+    artist: "beabadoobee",
+    src: "/media/the_perfect_pair.mp4?v=2",
+    duration: "2:57"
   }
 ];
 
