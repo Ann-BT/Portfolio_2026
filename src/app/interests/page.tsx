@@ -136,7 +136,7 @@ export default function InterestsPage() {
             <span className={styles.topHeaderTag}>// AUDIO STREAM & EXPLORATION</span>
             <h1 className={styles.mainTitleText}>Play some music and explore my page</h1>
             <p className={styles.headerSubtitle}>
-              Curated local media deck, persistent background audio streams, reading recommendations, and personal game library.
+              I was too lazy to transfer my entire offline music collection, so enjoy the tracks I added here. If you don&apos;t like them, feel free to remove them and build your own playlist!
             </p>
           </header>
 
