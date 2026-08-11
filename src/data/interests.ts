@@ -19,7 +19,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/a_returners_magic_should_be_special.jpg?v=1786421072",
     "chapters": "270 Ch.",
-    "description": "A Returner's Magic Should Be Special \u2014 Highly recommended manhwa series.",
+    "description": "A Returner's Magic Should Be Special \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -30,7 +30,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/above_ten_thousand_people.jpg?v=1786421072",
     "chapters": "260+ Ch.",
-    "description": "Above Ten Thousand People \u2014 Highly recommended manhwa series.",
+    "description": "Above Ten Thousand People \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -41,7 +41,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/archmage_transcending_through_regression.jpg?v=1786421072",
     "chapters": "90+ Ch.",
-    "description": "Archmage Transcending Through Regression \u2014 Highly recommended manhwa series.",
+    "description": "Archmage Transcending Through Regression \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -52,7 +52,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/astral_pet_store.jpg?v=1786421072",
     "chapters": "140+ Ch.",
-    "description": "Astral Pet Store \u2014 Highly recommended manhwa series.",
+    "description": "Astral Pet Store \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -63,7 +63,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/battle_game_in_5_seconds.jpg?v=1786421072",
     "chapters": "200+ Ch.",
-    "description": "Battle Game In 5 Seconds \u2014 Highly recommended manhwa series.",
+    "description": "Battle Game In 5 Seconds \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -74,7 +74,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/becoming_a_magic_school_mage.jpg?v=1786421072",
     "chapters": "75+ Ch.",
-    "description": "Becoming A Magic School Mage \u2014 Highly recommended manhwa series.",
+    "description": "Becoming A Magic School Mage \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -85,7 +85,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/bizarre_restaurant.jpg?v=1786421072",
     "chapters": "60+ Ch.",
-    "description": "Bizarre Restaurant \u2014 Highly recommended manhwa series.",
+    "description": "Bizarre Restaurant \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -96,7 +96,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/city_evil_king.jpg?v=1786421072",
     "chapters": "180+ Ch.",
-    "description": "City Evil King \u2014 Highly recommended manhwa series.",
+    "description": "City Evil King \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -107,7 +107,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/enrolling_in_the_transcendent_academy.jpg?v=1786421072",
     "chapters": "110+ Ch.",
-    "description": "Enrolling In The Transcendent Academy \u2014 Highly recommended manhwa series.",
+    "description": "Enrolling In The Transcendent Academy \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -118,7 +118,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/i_became_a_renowned_familys_sword_prodigy.jpg?v=1786421072",
     "chapters": "105+ Ch.",
-    "description": "I Became A Renowned Family's Sword Prodigy \u2014 Highly recommended manhwa series.",
+    "description": "I Became A Renowned Family's Sword Prodigy \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -129,7 +129,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/i_grow_stronger_by_eating.jpg?v=1786421072",
     "chapters": "91 Ch.",
-    "description": "I Grow Stronger By Eating \u2014 Highly recommended manhwa series.",
+    "description": "I Grow Stronger By Eating \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -140,7 +140,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/ill_be_taking_a_break_for_personal_reasons.jpg?v=1786421072",
     "chapters": "85+ Ch.",
-    "description": "I'll Be Taking A Break For Personal Reasons \u2014 Highly recommended manhwa series.",
+    "description": "I'll Be Taking A Break For Personal Reasons \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -151,7 +151,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/im_an_evil_god.jpg?v=1786421072",
     "chapters": "450+ Ch.",
-    "description": "I'm An Evil God \u2014 Highly recommended manhwa series.",
+    "description": "I'm An Evil God \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -162,7 +162,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/juujika_no_rokunin.jpg?v=1786421072",
     "chapters": "160+ Ch.",
-    "description": "Juujika No Rokunin \u2014 Highly recommended manhwa series.",
+    "description": "Juujika No Rokunin \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -173,7 +173,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/karada_sagashi.jpg?v=1786421072",
     "chapters": "153 Ch.",
-    "description": "Karada Sagashi \u2014 Highly recommended manhwa series.",
+    "description": "Karada Sagashi \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -184,7 +184,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/legend_of_star_general.jpg?v=1786421072",
     "chapters": "220+ Ch.",
-    "description": "Legend Of Star General \u2014 Highly recommended manhwa series.",
+    "description": "Legend Of Star General \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -195,7 +195,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/level_up_with_the_gods.jpg?v=1786421072",
     "chapters": "110+ Ch.",
-    "description": "Level Up With The Gods \u2014 Highly recommended manhwa series.",
+    "description": "Level Up With The Gods \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -206,7 +206,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/leveling_beyond_the_max.jpg?v=1786421072",
     "chapters": "95+ Ch.",
-    "description": "Leveling Beyond The Max \u2014 Highly recommended manhwa series.",
+    "description": "Leveling Beyond The Max \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -217,7 +217,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/my_wife_came_from_a_thousand_years_ago.jpg?v=1786421072",
     "chapters": "240+ Ch.",
-    "description": "My Wife Came From A Thousand Years Ago \u2014 Highly recommended manhwa series.",
+    "description": "My Wife Came From A Thousand Years Ago \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -228,7 +228,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/mythic_item_obtained.jpg?v=1786421072",
     "chapters": "100+ Ch.",
-    "description": "Mythic_Item_Obtained \u2014 Highly recommended manhwa series.",
+    "description": "Mythic_Item_Obtained \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -239,7 +239,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/necromancer_academys_genius_summoner.jpg?v=1786421072",
     "chapters": "85+ Ch.",
-    "description": "Necromancer Academy's Genius Summoner \u2014 Highly recommended manhwa series.",
+    "description": "Necromancer Academy's Genius Summoner \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -250,7 +250,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/necromancer_the_ultimate_scourge.jpeg?v=1786421072",
     "chapters": "130+ Ch.",
-    "description": "Necromancer, The Ultimate Scourge! \u2014 Highly recommended manhwa series.",
+    "description": "Necromancer, The Ultimate Scourge! \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -261,7 +261,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/omniscient_readers_viewpoint.jpg?v=1786421072",
     "chapters": "220+ Ch.",
-    "description": "Omniscient Reader's Viewpoint \u2014 Highly recommended manhwa series.",
+    "description": "Omniscient Reader's Viewpoint \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -272,7 +272,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/pick_me_up_infinite_gacha.jpg?v=1786421072",
     "chapters": "100+ Ch.",
-    "description": "Pick Me Up Infinite Gacha \u2014 Highly recommended manhwa series.",
+    "description": "Pick Me Up Infinite Gacha \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -283,7 +283,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/player_cant_level_up.jpg?v=1786421072",
     "chapters": "150+ Ch.",
-    "description": "Player Can't Level Up \u2014 Highly recommended manhwa series.",
+    "description": "Player Can't Level Up \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -294,7 +294,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/redo_of_healer_rolls_for_vengeance.jpg?v=1786421072",
     "chapters": "50+ Ch.",
-    "description": "Redo Of Healer Rolls For Vengeance \u2014 Highly recommended manhwa series.",
+    "description": "Redo Of Healer Rolls For Vengeance \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -305,7 +305,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/regressor_instruction_manual.jpg?v=1786421072",
     "chapters": "120+ Ch.",
-    "description": "Regressor Instruction Manual \u2014 Highly recommended manhwa series.",
+    "description": "Regressor Instruction Manual \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -316,7 +316,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/reincarnation_of_the_suicidal_battle_god.jpg?v=1786421072",
     "chapters": "100+ Ch.",
-    "description": "Reincarnation Of The Suicidal Battle God \u2014 Highly recommended manhwa series.",
+    "description": "Reincarnation Of The Suicidal Battle God \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -327,7 +327,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/reloaded_into_the_other_world.jpg?v=1786421072",
     "chapters": "70+ Ch.",
-    "description": "Reloaded Into The Other World \u2014 Highly recommended manhwa series.",
+    "description": "Reloaded Into The Other World \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -338,7 +338,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/return_of_the_frozen_player.jpg?v=1786421072",
     "chapters": "115+ Ch.",
-    "description": "Return Of The Frozen Player \u2014 Highly recommended manhwa series.",
+    "description": "Return Of The Frozen Player \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -349,7 +349,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/return_of_the_shattered_constellation.jpg?v=1786421072",
     "chapters": "110+ Ch.",
-    "description": "Return Of The Shattered Constellation \u2014 Highly recommended manhwa series.",
+    "description": "Return Of The Shattered Constellation \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -360,7 +360,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/second_life_ranker.jpg?v=1786421072",
     "chapters": "170+ Ch.",
-    "description": "Second Life Ranker \u2014 Highly recommended manhwa series.",
+    "description": "Second Life Ranker \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -371,7 +371,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/shadow_slave.jpg?v=1786421072",
     "chapters": "1600+ Ch.",
-    "description": "Shadow Slave \u2014 Highly recommended manhwa series.",
+    "description": "Shadow Slave \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -382,7 +382,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/so_im_a_cultivation_big_shot.jpg?v=1786421072",
     "chapters": "210+ Ch.",
-    "description": "So I'm A Cultivation Big Shot \u2014 Highly recommended manhwa series.",
+    "description": "So I'm A Cultivation Big Shot \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -393,7 +393,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/solo_max_level_newbie.jpg?v=1786421072",
     "chapters": "140+ Ch.",
-    "description": "Solo Max Level Newbie \u2014 Highly recommended manhwa series.",
+    "description": "Solo Max Level Newbie \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -404,7 +404,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/spare_me_great_lord.jpg?v=1786421072",
     "chapters": "500 Ch.",
-    "description": "Spare Me, Great Lord! \u2014 Highly recommended manhwa series.",
+    "description": "Spare Me, Great Lord! \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -415,7 +415,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/spirit_tamer.jpg?v=1786421072",
     "chapters": "130+ Ch.",
-    "description": "Spirit Tamer \u2014 Highly recommended manhwa series.",
+    "description": "Spirit Tamer \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -426,7 +426,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/swordmasters_youngest_son.jpg?v=1786421072",
     "chapters": "120+ Ch.",
-    "description": "Swordmaster's Youngest Son \u2014 Highly recommended manhwa series.",
+    "description": "Swordmaster's Youngest Son \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -437,7 +437,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_100th_regression_of_the_max_level_player.jpg?v=1786421072",
     "chapters": "60+ Ch.",
-    "description": "The 100th Regression Of The Max-Level Player \u2014 Highly recommended manhwa series.",
+    "description": "The 100th Regression Of The Max-Level Player \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -448,7 +448,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_dark_magician_transmigrates_after_66666_years.jpg?v=1786421072",
     "chapters": "110+ Ch.",
-    "description": "The Dark Magician Transmigrates After 66666 Years \u2014 Highly recommended manhwa series.",
+    "description": "The Dark Magician Transmigrates After 66666 Years \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -459,7 +459,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_great_mage_returns_after_4000_years.jpg?v=1786421072",
     "chapters": "180+ Ch.",
-    "description": "The Great Mage Returns After 4000 Years \u2014 Highly recommended manhwa series.",
+    "description": "The Great Mage Returns After 4000 Years \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -470,7 +470,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/the_naming_of_the_night.jpg?v=1786421072",
     "chapters": "1000 Ch.",
-    "description": "The Naming Of The Night \u2014 Highly recommended manhwa series.",
+    "description": "The Naming Of The Night \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -481,7 +481,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_s_ranks_that_i_raised.jpg?v=1786421072",
     "chapters": "120+ Ch.",
-    "description": "The S-Ranks That I Raised \u2014 Highly recommended manhwa series.",
+    "description": "The S-Ranks That I Raised \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -492,7 +492,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_strongest_son_in_law_in_history.jpg?v=1786421072",
     "chapters": "160+ Ch.",
-    "description": "The Strongest Son-in-Law In History \u2014 Highly recommended manhwa series.",
+    "description": "The Strongest Son-in-Law In History \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -503,7 +503,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_world_after_the_end.jpg?v=1786421072",
     "chapters": "120+ Ch.",
-    "description": "The World After The End \u2014 Highly recommended manhwa series.",
+    "description": "The World After The End \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -514,7 +514,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/tonikaku_kawaii.jpg?v=1786421072",
     "chapters": "250+ Ch.",
-    "description": "Tonikaku Kawaii \u2014 Highly recommended manhwa series.",
+    "description": "Tonikaku Kawaii \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -525,7 +525,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/tyrant_of_the_tower_defense_game.jpg?v=1786421072",
     "chapters": "95+ Ch.",
-    "description": "Tyrant Of The Tower Defense Game \u2014 Highly recommended manhwa series.",
+    "description": "Tyrant Of The Tower Defense Game \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -536,7 +536,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/youngest_scion_of_the_mage.jpg?v=1786421072",
     "chapters": "70+ Ch.",
-    "description": "Youngest Scion Of The Mages \u2014 Highly recommended manhwa series.",
+    "description": "Youngest Scion Of The Mages \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -547,7 +547,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/academy_genius_swordmaster.jpg?v=1786421072",
     "chapters": "70+ Ch.",
-    "description": "Academy Genius Swordmaster \u2014 Highly recommended manhwa series.",
+    "description": "Academy Genius Swordmaster \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -558,7 +558,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/berserk.jpg?v=1786421072",
     "chapters": "375+ Ch.",
-    "description": "Berserk \u2014 Highly recommended manhwa series.",
+    "description": "Berserk \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -569,7 +569,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/boundless_ascension.jpg?v=1786421072",
     "chapters": "80+ Ch.",
-    "description": "Boundless Ascension \u2014 Highly recommended manhwa series.",
+    "description": "Boundless Ascension \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -580,7 +580,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/btooom.jpg?v=1786421072",
     "chapters": "121 Ch.",
-    "description": "Btooom \u2014 Highly recommended manhwa series.",
+    "description": "Btooom \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -591,7 +591,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/corpse_party.jpg?v=1786421072",
     "chapters": "47 Ch.",
-    "description": "Corpse Party \u2014 Highly recommended manhwa series.",
+    "description": "Corpse Party \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -602,7 +602,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/dark_gathering.jpg?v=1786421072",
     "chapters": "60+ Ch.",
-    "description": "Dark Gathering \u2014 Highly recommended manhwa series.",
+    "description": "Dark Gathering \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -613,7 +613,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/dead_tube.jpg?v=1786421072",
     "chapters": "90+ Ch.",
-    "description": "Dead Tube \u2014 Highly recommended manhwa series.",
+    "description": "Dead Tube \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -624,7 +624,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/demonic_emperor.jpg?v=1786421072",
     "chapters": "520+ Ch.",
-    "description": "Demonic Emperor \u2014 Highly recommended manhwa series.",
+    "description": "Demonic Emperor \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -635,7 +635,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/devide_pet_evolution.jpg?v=1786421072",
     "chapters": "100+ Ch.",
-    "description": "Devide Pet Evolution \u2014 Highly recommended manhwa series.",
+    "description": "Devide Pet Evolution \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -646,7 +646,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/dice.jpg?v=1786421072",
     "chapters": "386 Ch.",
-    "description": "Dice \u2014 Highly recommended manhwa series.",
+    "description": "Dice \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -657,7 +657,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/fff_trash_hero.jpg?v=1786421072",
     "chapters": "145 Ch.",
-    "description": "Fff Trash Hero \u2014 Highly recommended manhwa series.",
+    "description": "Fff Trash Hero \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -668,7 +668,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/gokurakugai.jpg?v=1786421072",
     "chapters": "20+ Ch.",
-    "description": "Gokurakugai \u2014 Highly recommended manga series.",
+    "description": "Gokurakugai \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -679,7 +679,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/henna_ie.jpg?v=1786421072",
     "chapters": "25 Ch.",
-    "description": "Henna Ie \u2014 Highly recommended manga series.",
+    "description": "Henna Ie \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -690,7 +690,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/hero_return.jpg?v=1786421072",
     "chapters": "90+ Ch.",
-    "description": "Hero Return \u2014 Highly recommended manhwa series.",
+    "description": "Hero Return \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -701,7 +701,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/horimiya.jpg?v=1786421072",
     "chapters": "125 Ch.",
-    "description": "Horimiya \u2014 Highly recommended manga series.",
+    "description": "Horimiya \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -712,7 +712,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/hunter_x_hunter.jpg?v=1786421072",
     "chapters": "400+ Ch.",
-    "description": "Hunter X Hunter \u2014 Highly recommended manga series.",
+    "description": "Hunter X Hunter \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -723,7 +723,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/infinite_mage.jpg?v=1786421072",
     "chapters": "80+ Ch.",
-    "description": "Infinite Mage \u2014 Highly recommended manhwa series.",
+    "description": "Infinite Mage \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -734,7 +734,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/jigokuraku.jpg?v=1786421072",
     "chapters": "127 Ch.",
-    "description": "Jigokuraku \u2014 Highly recommended manga series.",
+    "description": "Jigokuraku \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -745,7 +745,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/jinrou_game.jpg?v=1786421072",
     "chapters": "30 Ch.",
-    "description": "Jinrou Game \u2014 Highly recommended manga series.",
+    "description": "Jinrou Game \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -756,7 +756,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/jujutsu_kaisen_modulo.jpg?v=1786421072",
     "chapters": "Featured",
-    "description": "Jujutsu Kaisen Modulo \u2014 Highly recommended manga series.",
+    "description": "Jujutsu Kaisen Modulo \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -767,7 +767,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/covers/jujutsu_kaisen.jpg",
     "chapters": "271 Ch.",
-    "description": "Jujutsu Kaisen \u2014 Highly recommended manga series.",
+    "description": "Jujutsu Kaisen \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -778,7 +778,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/junket_bank.jpg?v=1786421072",
     "chapters": "140+ Ch.",
-    "description": "Junket Bank \u2014 Highly recommended manga series.",
+    "description": "Junket Bank \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -789,7 +789,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/logging_10000_years_into_the_future.jpg?v=1786421072",
     "chapters": "110+ Ch.",
-    "description": "Logging 10000 Years Into The Future \u2014 Highly recommended manhwa series.",
+    "description": "Logging 10000 Years Into The Future \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -800,7 +800,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/martial_god_regressed_to_level_2.jpg?v=1786421072",
     "chapters": "60+ Ch.",
-    "description": "Martial God Regressed To Level 2 \u2014 Highly recommended manhwa series.",
+    "description": "Martial God Regressed To Level 2 \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -811,7 +811,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/martial_peak.jpg?v=1786421072",
     "chapters": "3500+ Ch.",
-    "description": "Martial Peak \u2014 Highly recommended manhua series.",
+    "description": "Martial Peak \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -822,7 +822,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/overgeared.jpg?v=1786421072",
     "chapters": "210+ Ch.",
-    "description": "Overgeared \u2014 Highly recommended manhwa series.",
+    "description": "Overgeared \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -833,7 +833,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/player_hide_his_past.jpg?v=1786421072",
     "chapters": "55+ Ch.",
-    "description": "Player Hide His Past \u2014 Highly recommended manhwa series.",
+    "description": "Player Hide His Past \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -844,7 +844,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/plunderer.jpg?v=1786421072",
     "chapters": "82 Ch.",
-    "description": "Plunderer \u2014 Highly recommended manga series.",
+    "description": "Plunderer \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -855,7 +855,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/pygmalion.jpg?v=1786421072",
     "chapters": "19 Ch.",
-    "description": "Pygmalion \u2014 Highly recommended manga series.",
+    "description": "Pygmalion \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -866,7 +866,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/return_of_the_8th_class_magician.jpg?v=1786421072",
     "chapters": "81 Ch.",
-    "description": "Return Of The 8th Class Magician \u2014 Highly recommended manhwa series.",
+    "description": "Return Of The 8th Class Magician \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -877,7 +877,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/return_survival.jpg?v=1786421072",
     "chapters": "136 Ch.",
-    "description": "Return Survival \u2014 Highly recommended manhwa series.",
+    "description": "Return Survival \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -888,7 +888,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/shounen_no_abyss.jpg?v=1786421072",
     "chapters": "180 Ch.",
-    "description": "Shounen No Abyss \u2014 Highly recommended manga series.",
+    "description": "Shounen No Abyss \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -899,7 +899,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/shuumatsu_no_valkyrie.jpg?v=1786421072",
     "chapters": "90+ Ch.",
-    "description": "Shuumatsu No Valkyrie \u2014 Highly recommended manga series.",
+    "description": "Shuumatsu No Valkyrie \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -910,7 +910,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/solo_leveling.jpg?v=1786421072",
     "chapters": "200 Ch.",
-    "description": "Solo Leveling \u2014 Highly recommended manhwa series.",
+    "description": "Solo Leveling \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -921,7 +921,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/star_embracing_swordmaster.jpg?v=1786421072",
     "chapters": "65+ Ch.",
-    "description": "Star Embracing Swordmaster \u2014 Highly recommended manhwa series.",
+    "description": "Star Embracing Swordmaster \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -932,7 +932,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/sweet_home.jpg?v=1786421072",
     "chapters": "140 Ch.",
-    "description": "Sweet Home \u2014 Highly recommended manhwa series.",
+    "description": "Sweet Home \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -943,7 +943,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_king_of_knight_return_with_god.jpg?v=1786421072",
     "chapters": "60+ Ch.",
-    "description": "The King Of Knight Return With God \u2014 Highly recommended manhwa series.",
+    "description": "The King Of Knight Return With God \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -954,7 +954,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_novel_extra.jpg?v=1786421072",
     "chapters": "100+ Ch.",
-    "description": "The Novel Extra \u2014 Highly recommended novel series.",
+    "description": "The Novel Extra \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -965,7 +965,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/the_scared_ruins.jpg?v=1786421072",
     "chapters": "150+ Ch.",
-    "description": "The Scared Ruins \u2014 Highly recommended manhwa series.",
+    "description": "The Scared Ruins \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -976,7 +976,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/the_wererolf_game_crazy_fox.jpg?v=1786421072",
     "chapters": "28 Ch.",
-    "description": "The Wererolf Game: Crazy Fox \u2014 Highly recommended manga series.",
+    "description": "The Wererolf Game: Crazy Fox \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -987,7 +987,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/time_limited_genius_dark_knight.jpg?v=1786421072",
     "chapters": "70+ Ch.",
-    "description": "Time Limited Genius Dark Knight \u2014 Highly recommended manhwa series.",
+    "description": "Time Limited Genius Dark Knight \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -998,7 +998,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/tokyo_ghoul.jpg?v=1786421072",
     "chapters": "143 Ch.",
-    "description": "Tokyo Ghoul \u2014 Highly recommended manga series.",
+    "description": "Tokyo Ghoul \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -1009,7 +1009,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/tokyo_underworld.jpg?v=1786421072",
     "chapters": "80+ Ch.",
-    "description": "Tokyo Underworld \u2014 Highly recommended manga series.",
+    "description": "Tokyo Underworld \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -1020,7 +1020,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/tomb_raider_king.jpg?v=1786421072",
     "chapters": "411 Ch.",
-    "description": "Tomb Raider King \u2014 Highly recommended manhwa series.",
+    "description": "Tomb Raider King \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -1031,7 +1031,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/tomodachi_game.jpg?v=1786421072",
     "chapters": "127 Ch.",
-    "description": "Tomodachi Game \u2014 Highly recommended manga series.",
+    "description": "Tomodachi Game \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -1042,7 +1042,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/versatile_mage.jpg?v=1786421072",
     "chapters": "1000+ Ch.",
-    "description": "Versatile Mage \u2014 Highly recommended manhua series.",
+    "description": "Versatile Mage \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -1053,7 +1053,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Ongoing",
     "coverImage": "/books/worlds_strongest_troll.jpg?v=1786421072",
     "chapters": "60+ Ch.",
-    "description": "World's Strongest Troll \u2014 Highly recommended manhwa series.",
+    "description": "World's Strongest Troll \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -1064,7 +1064,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "status": "Completed",
     "coverImage": "/books/yakushoku_distpiari.jpg?v=1786421072",
     "chapters": "25 Ch.",
-    "description": "Yakushoku Distpiari \u2014 Highly recommended manhwa series.",
+    "description": "Yakushoku Distpiari \u2014 Featured Recommendation.",
     "tags": []
   },
   {
@@ -1073,7 +1073,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/creepy_pharmacist_all_my_patients_are_horrific.jpg?v=1786421072",
-    "description": "Creepy Pharmacist: All My Patients Are Horrific \u2014 Highly recommended manhwa series.",
+    "description": "Creepy Pharmacist: All My Patients Are Horrific \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1083,7 +1083,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/talent_swallowing_magician.jpg?v=1786421072",
-    "description": "Talent-swallowing Magician \u2014 Highly recommended manhwa series.",
+    "description": "Talent-swallowing Magician \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1093,7 +1093,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/how_to_live_as_a_villain.jpg?v=1786421072",
-    "description": "How To Live As A Villain \u2014 Highly recommended manhwa series.",
+    "description": "How To Live As A Villain \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1103,7 +1103,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/great_doctor_ling_ran.jpg?v=1786421072",
-    "description": "Great Doctor Ling Ran \u2014 Highly recommended manhwa series.",
+    "description": "Great Doctor Ling Ran \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1113,7 +1113,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/return_of_the_unrivaled_spear_knight.jpg?v=1786421072",
-    "description": "Return Of The Unrivaled Spear Knight \u2014 Highly recommended manhwa series.",
+    "description": "Return Of The Unrivaled Spear Knight \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1123,7 +1123,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/is_this_hero_for_real.jpg?v=1786421072",
-    "description": "Is This Hero For Real \u2014 Highly recommended manhwa series.",
+    "description": "Is This Hero For Real \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1133,7 +1133,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/i_used_to_be_a_boss.jpg?v=1786421072",
-    "description": "I Used To Be A Boss \u2014 Highly recommended manhwa series.",
+    "description": "I Used To Be A Boss \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1143,7 +1143,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_lords_coins_arent_decreasing.jpg?v=1786421072",
-    "description": "The Lord's Coins Aren't Decreasing \u2014 Highly recommended manhwa series.",
+    "description": "The Lord's Coins Aren't Decreasing \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1153,7 +1153,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_newbie_is_too_strong.jpg?v=1786421072",
-    "description": "The Newbie Is Too Strong \u2014 Highly recommended manhwa series.",
+    "description": "The Newbie Is Too Strong \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1163,7 +1163,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/parallel_paradise.jpg?v=1786421072",
-    "description": "Parallel Paradise \u2014 Highly recommended manhwa series.",
+    "description": "Parallel Paradise \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1173,7 +1173,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/global_freeze_i_created_an_apocalypse_shelter.jpg?v=1786421072",
-    "description": "Global Freeze: I Created An Apocalypse Shelter \u2014 Highly recommended manhwa series.",
+    "description": "Global Freeze: I Created An Apocalypse Shelter \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1183,7 +1183,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/chi_wo_hau_boukoku_no_oujo.jpg?v=1786421072",
-    "description": "Chi Wo Hau Boukoku No Oujo \u2014 Highly recommended manhwa series.",
+    "description": "Chi Wo Hau Boukoku No Oujo \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1193,7 +1193,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/boku_no_hero_academia.jpg?v=1786421072",
-    "description": "Boku No Hero Academia \u2014 Highly recommended manhwa series.",
+    "description": "Boku No Hero Academia \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1203,7 +1203,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/starting_a_livestream_in_the_underworld_who_dares_to_joinjpg.jpg?v=1786421072",
-    "description": "Starting A Livestream In The Underworld: Who Dares To Join \u2014 Highly recommended manhwa series.",
+    "description": "Starting A Livestream In The Underworld: Who Dares To Join \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1213,7 +1213,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/nano_machine.jpg?v=1786421072",
-    "description": "Nano Machine \u2014 Highly recommended manhwa series.",
+    "description": "Nano Machine \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1223,7 +1223,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manga",
     "coverImage": "/books/one_punch_man.jpg?v=1786421072",
-    "description": "One Punch Man \u2014 Highly recommended manga series.",
+    "description": "One Punch Man \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1233,7 +1233,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/black_clover.jpg?v=1786421072",
-    "description": "Black Clover \u2014 Highly recommended manhwa series.",
+    "description": "Black Clover \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1243,7 +1243,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_priest_of_corruption.jpg?v=1786421072",
-    "description": "The Priest Of Corruption \u2014 Highly recommended manhwa series.",
+    "description": "The Priest Of Corruption \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1253,7 +1253,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/shotgun_boy.jpg?v=1786421072",
-    "description": "Shotgun Boy \u2014 Highly recommended manhwa series.",
+    "description": "Shotgun Boy \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1263,7 +1263,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/reinforced_wood_stick.jpg?v=1786421072",
-    "description": "Reinforced Wood Stick \u2014 Highly recommended manhwa series.",
+    "description": "Reinforced Wood Stick \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1273,7 +1273,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/global_ghost_control_i_have_a_billion_ghosts_inside_me.jpg?v=1786421072",
-    "description": "Global Ghost Control: I Have A Billion Ghosts Inside Me \u2014 Highly recommended manhwa series.",
+    "description": "Global Ghost Control: I Have A Billion Ghosts Inside Me \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1283,7 +1283,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manga",
     "coverImage": "/books/to_be_a_power_in_the_shadows.jpg?v=1786421072",
-    "description": "To Be A Power In The Shadows \u2014 Highly recommended manga series.",
+    "description": "To Be A Power In The Shadows \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1293,7 +1293,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manga",
     "coverImage": "/books/kengan_ashura.jpg?v=1786421072",
-    "description": "Kengan Ashura \u2014 Highly recommended manga series.",
+    "description": "Kengan Ashura \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1303,7 +1303,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/infinity_mailman.jpg?v=1786421072",
-    "description": "Infinity Mailman \u2014 Highly recommended manhwa series.",
+    "description": "Infinity Mailman \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1313,7 +1313,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/baki.jpg?v=1786421072",
-    "description": "Baki \u2014 Highly recommended manhwa series.",
+    "description": "Baki \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1323,7 +1323,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_hero_has_returned.jpg?v=1786421072",
-    "description": "The Hero Has Returned \u2014 Highly recommended manhwa series.",
+    "description": "The Hero Has Returned \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1333,7 +1333,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_max_level_hero_has_returned.jpg?v=1786421072",
-    "description": "The Max Level Hero Has Returned! \u2014 Highly recommended manhwa series.",
+    "description": "The Max Level Hero Has Returned! \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1343,7 +1343,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_constellations_are_my_disciples.jpg?v=1786421072",
-    "description": "The_constellations_are_my_disciples \u2014 Highly recommended manhwa series.",
+    "description": "The_constellations_are_my_disciples \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1353,7 +1353,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_return_of_the_disaster_class_hero.jpg?v=1786421072",
-    "description": "The Return Of The Disaster Class Hero \u2014 Highly recommended manhwa series.",
+    "description": "The Return Of The Disaster Class Hero \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1363,7 +1363,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/incoming_mr_high_energy.jpg?v=1786421072",
-    "description": "Incoming Mr. High Energy \u2014 Highly recommended manhwa series.",
+    "description": "Incoming Mr. High Energy \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1373,7 +1373,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/warrior_high_school.jpg?v=1786421072",
-    "description": "Warrior High School \u2014 Highly recommended manhwa series.",
+    "description": "Warrior High School \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1383,7 +1383,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/updater.jpg?v=1786421072",
-    "description": "Updater \u2014 Highly recommended manhwa series.",
+    "description": "Updater \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1393,7 +1393,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/solo_bug_player.jpg?v=1786421072",
-    "description": "Solo Bug Player \u2014 Highly recommended manhwa series.",
+    "description": "Solo Bug Player \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1403,7 +1403,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/return_of_the_blossoming_blade.jpg?v=1786421072",
-    "description": "Return Of The Blossoming Blade \u2014 Highly recommended manhwa series.",
+    "description": "Return Of The Blossoming Blade \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1413,7 +1413,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhua",
     "coverImage": "/books/no1_grandmaster_in_history.jpg?v=1786421072",
-    "description": "No1 Grandmaster In History \u2014 Highly recommended manhua series.",
+    "description": "No1 Grandmaster In History \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1423,7 +1423,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_self_disciplined_me_is_practically_invincible.jpg?v=1786421072",
-    "description": "The Self-disciplined Me Is Practically Invincible \u2014 Highly recommended manhwa series.",
+    "description": "The Self-disciplined Me Is Practically Invincible \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1433,7 +1433,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/trash_of_the_counts_family.jpg?v=1786421072",
-    "description": "Trash Of The Count's Family \u2014 Highly recommended manhwa series.",
+    "description": "Trash Of The Count's Family \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1443,7 +1443,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/rankers_return.jpg?v=1786421072",
-    "description": "Ranker's Return \u2014 Highly recommended manhwa series.",
+    "description": "Ranker's Return \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1453,7 +1453,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/im_a_godfather_in_another_world.jpg?v=1786421072",
-    "description": "I'm A Godfather In Another World \u2014 Highly recommended manhwa series.",
+    "description": "I'm A Godfather In Another World \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1463,7 +1463,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhua",
     "coverImage": "/books/the_frenzy_of_evolution.jpg?v=1786421072",
-    "description": "The Frenzy Of Evolution \u2014 Highly recommended manhua series.",
+    "description": "The Frenzy Of Evolution \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1473,7 +1473,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_jobless_guy_who_has_come_to_slay.jpg?v=1786421072",
-    "description": "The Jobless Guy Who Has Come To Slay \u2014 Highly recommended manhwa series.",
+    "description": "The Jobless Guy Who Has Come To Slay \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1483,7 +1483,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_first_order.jpg?v=1786421072",
-    "description": "The First Order \u2014 Highly recommended manhwa series.",
+    "description": "The First Order \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1493,7 +1493,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/latna_saga_survival_of_a_sword_king.jpg?v=1786421072",
-    "description": "Latna Saga: Survival Of A Sword King \u2014 Highly recommended manhwa series.",
+    "description": "Latna Saga: Survival Of A Sword King \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1503,7 +1503,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_greatest_estate_developer.jpg?v=1786421072",
-    "description": "The Greatest Estate Developer \u2014 Highly recommended manhwa series.",
+    "description": "The Greatest Estate Developer \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1513,7 +1513,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhua",
     "coverImage": "/books/im_really_not_the_demon_god_lackey.jpg?v=1786421072",
-    "description": "I'm Really Not The Demon God Lackey \u2014 Highly recommended manhua series.",
+    "description": "I'm Really Not The Demon God Lackey \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1523,7 +1523,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/op_tier_providence_secretly_cultivate_for_a_thousand_years.jpg?v=1786421072",
-    "description": "Op Tier Providence: Secretly Cultivate For A Thousand Years \u2014 Highly recommended manhwa series.",
+    "description": "Op Tier Providence: Secretly Cultivate For A Thousand Years \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1533,7 +1533,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/zomgan.jpg?v=1786421072",
-    "description": "Zomgan \u2014 Highly recommended manhwa series.",
+    "description": "Zomgan \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1543,7 +1543,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/revenge_of_the_iron_blooded_sword_horn.jpg?v=1786421072",
-    "description": "Revenge Of The Iron Blooded Sword Horn \u2014 Highly recommended manhwa series.",
+    "description": "Revenge Of The Iron Blooded Sword Horn \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1553,7 +1553,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manga",
     "coverImage": "/books/my_home_hero.jpg?v=1786421072",
-    "description": "My Home Hero \u2014 Highly recommended manga series.",
+    "description": "My Home Hero \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1563,7 +1563,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/off_to_an_invincible_start.jpg?v=1786421072",
-    "description": "Off To An Invincible Start \u2014 Highly recommended manhwa series.",
+    "description": "Off To An Invincible Start \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1573,7 +1573,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/becoming_a_sword_deity_by_expanding_my_sword_domain.jpg?v=1786421072",
-    "description": "Becoming A Sword Deity By Expanding My Sword Domain \u2014 Highly recommended manhwa series.",
+    "description": "Becoming A Sword Deity By Expanding My Sword Domain \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1583,7 +1583,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhua",
     "coverImage": "/books/the_eternal_supreme.jpg?v=1786421072",
-    "description": "The Eternal Supreme \u2014 Highly recommended manhua series.",
+    "description": "The Eternal Supreme \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1593,7 +1593,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_gamer.jpg?v=1786421072",
-    "description": "The Gamer \u2014 Highly recommended manhwa series.",
+    "description": "The Gamer \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1603,7 +1603,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/poison_eating_healer.jpg?v=1786421072",
-    "description": "Poison-eating Healer \u2014 Highly recommended manhwa series.",
+    "description": "Poison-eating Healer \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1613,7 +1613,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_begining_after_the_end.jpg?v=1786421072",
-    "description": "The Begining After The End \u2014 Highly recommended manhwa series.",
+    "description": "The Begining After The End \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1623,7 +1623,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/dungeon_reset.jpg?v=1786421072",
-    "description": "Dungeon Reset \u2014 Highly recommended manhwa series.",
+    "description": "Dungeon Reset \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1633,7 +1633,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/sss_class_suicide_hunter.jpg?v=1786421072",
-    "description": "Sss Class Suicide Hunter \u2014 Highly recommended manhwa series.",
+    "description": "Sss Class Suicide Hunter \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1643,7 +1643,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhua",
     "coverImage": "/books/i_have_90_billion_licking_gold.jpg?v=1786421072",
-    "description": "I Have 90 Billion Licking Gold \u2014 Highly recommended manhua series.",
+    "description": "I Have 90 Billion Licking Gold \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1653,7 +1653,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/hitori_no_shita_the_outcast.jpg?v=1786421072",
-    "description": "Hitori No Shita - The Outcast \u2014 Highly recommended manhwa series.",
+    "description": "Hitori No Shita - The Outcast \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1663,7 +1663,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_extra_academy_survival_guide.jpg?v=1786421072",
-    "description": "The Extra Academy Survival Guide \u2014 Highly recommended manhwa series.",
+    "description": "The Extra Academy Survival Guide \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1673,7 +1673,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/hero_killer.jpg?v=1786421072",
-    "description": "Hero Killer \u2014 Highly recommended manhwa series.",
+    "description": "Hero Killer \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1683,7 +1683,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/myst_might_mayhem.jpg?v=1786421072",
-    "description": "Myst Might Mayhem \u2014 Highly recommended manhwa series.",
+    "description": "Myst Might Mayhem \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1693,7 +1693,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/get_dropped_into_ghost_story.jpg?v=1786421072",
-    "description": "Get Dropped Into Ghost Story \u2014 Highly recommended manhwa series.",
+    "description": "Get Dropped Into Ghost Story \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1703,7 +1703,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_problematic_child_of_the_magic_tower.jpg?v=1786421072",
-    "description": "The Problematic Child Of The Magic Tower \u2014 Highly recommended manhwa series.",
+    "description": "The Problematic Child Of The Magic Tower \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1713,7 +1713,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/eternally_regressing_knight.jpg?v=1786421072",
-    "description": "Eternally Regressing Knight \u2014 Highly recommended manhwa series.",
+    "description": "Eternally Regressing Knight \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1723,7 +1723,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/i_killed_an_academy_player.jpg?v=1786421072",
-    "description": "I Killed An Academy Player \u2014 Highly recommended manhwa series.",
+    "description": "I Killed An Academy Player \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1733,7 +1733,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_last_adventurer.jpg?v=1786421072",
-    "description": "The Last Adventurer \u2014 Highly recommended manhwa series.",
+    "description": "The Last Adventurer \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1743,7 +1743,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_archmage_restaurant.jpg?v=1786421072",
-    "description": "The Archmage Restaurant \u2014 Highly recommended manhwa series.",
+    "description": "The Archmage Restaurant \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1753,7 +1753,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/i_really_didnt_want_to_be_reborn.jpg?v=1786421072",
-    "description": "I Really Didn't Want To Be Reborn \u2014 Highly recommended manhwa series.",
+    "description": "I Really Didn't Want To Be Reborn \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1763,7 +1763,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/zombiepapa.jpg?v=1786421072",
-    "description": "Zombiepapa \u2014 Highly recommended manhwa series.",
+    "description": "Zombiepapa \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1773,7 +1773,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/reverend_insanity.jpg?v=1786421072",
-    "description": "Reverend Insanity \u2014 Highly recommended manhwa series.",
+    "description": "Reverend Insanity \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1783,7 +1783,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/regressed_mercenarys_machination.jpg?v=1786421072",
-    "description": "Regressed Mercenary's Machination \u2014 Highly recommended manhwa series.",
+    "description": "Regressed Mercenary's Machination \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1793,7 +1793,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/reincarnator.jpg?v=1786421072",
-    "description": "Reincarnator \u2014 Highly recommended manhwa series.",
+    "description": "Reincarnator \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1803,7 +1803,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/return_of_the_sword_god_rank_civil_servant.jpg?v=1786421072",
-    "description": "Return Of The Sword God Rank Civil Servant \u2014 Highly recommended manhwa series.",
+    "description": "Return Of The Sword God Rank Civil Servant \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1813,7 +1813,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/regressing_as_the_reincarnated_bastard_of_the_sword_clan.jpg?v=1786421072",
-    "description": "Regressing As The Reincarnated Bastard Of The Sword Clan \u2014 Highly recommended manhwa series.",
+    "description": "Regressing As The Reincarnated Bastard Of The Sword Clan \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1823,7 +1823,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/dungeon_odyssey.jpg?v=1786421072",
-    "description": "Dungeon Odyssey \u2014 Highly recommended manhwa series.",
+    "description": "Dungeon Odyssey \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1833,7 +1833,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/my_passive_skills_are_invincible.jpg?v=1786421072",
-    "description": "My Passive Skills Are Invincible \u2014 Highly recommended manhwa series.",
+    "description": "My Passive Skills Are Invincible \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1843,7 +1843,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/reincarnated_as_a_genius_prodigy_of_a_prestigious_family.jpg?v=1786421072",
-    "description": "Reincarnated As A Genius Prodigy Of A Prestigious Family \u2014 Highly recommended manhwa series.",
+    "description": "Reincarnated As A Genius Prodigy Of A Prestigious Family \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1853,7 +1853,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/became_a_part_time_employee_for_gods.jpg?v=1786421072",
-    "description": "Became A Part-time Employee For Gods \u2014 Highly recommended manhwa series.",
+    "description": "Became A Part-time Employee For Gods \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1863,7 +1863,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/juvenile_prison.jpg?v=1786421072",
-    "description": "Juvenile Prison \u2014 Highly recommended manhwa series.",
+    "description": "Juvenile Prison \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1873,7 +1873,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/f_class_destiny_hunter.jpg?v=1786421072",
-    "description": "F Class Destiny Hunter \u2014 Highly recommended manhwa series.",
+    "description": "F Class Destiny Hunter \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1883,7 +1883,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_more_i_die_the_more_invincible_i_become.jpg?v=1786421072",
-    "description": "The More I Die, The More Invincible I Become \u2014 Highly recommended manhwa series.",
+    "description": "The More I Die, The More Invincible I Become \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1893,7 +1893,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/your_talent_is_mine.jpg?v=1786421072",
-    "description": "Your Talent Is Mine \u2014 Highly recommended manhwa series.",
+    "description": "Your Talent Is Mine \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1903,7 +1903,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/dragon_devouring_mage.jpg?v=1786421072",
-    "description": "Dragon Devouring Mage \u2014 Highly recommended manhwa series.",
+    "description": "Dragon Devouring Mage \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1913,7 +1913,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/a_dragonslayers_peerless_regression.jpg?v=1786421072",
-    "description": "A Dragonslayer's Peerless Regression \u2014 Highly recommended manhwa series.",
+    "description": "A Dragonslayer's Peerless Regression \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1923,7 +1923,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/genius_archer_streamer.jpg?v=1786421072",
-    "description": "Genius Archer Streamer \u2014 Highly recommended manhwa series.",
+    "description": "Genius Archer Streamer \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1933,7 +1933,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_31st_piece_turn_the_table.jpg?v=1786421072",
-    "description": "The 31st Piece Turn The Table \u2014 Highly recommended manhwa series.",
+    "description": "The 31st Piece Turn The Table \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1943,7 +1943,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/return_from_the_abyss.jpg?v=1786421072",
-    "description": "Return From The Abyss \u2014 Highly recommended manhwa series.",
+    "description": "Return From The Abyss \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1953,7 +1953,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/sss_grade_saint_knight.jpg?v=1786421072",
-    "description": "Sss Grade Saint Knight \u2014 Highly recommended manhwa series.",
+    "description": "Sss Grade Saint Knight \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1963,7 +1963,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/catastrophic_priest.jpg?v=1786421072",
-    "description": "Catastrophic Priest \u2014 Highly recommended manhwa series.",
+    "description": "Catastrophic Priest \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1973,7 +1973,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_irregular_of_the_royal_academy_of_magic.jpg?v=1786421072",
-    "description": "The Irregular Of The Royal Academy Of Magic \u2014 Highly recommended manhwa series.",
+    "description": "The Irregular Of The Royal Academy Of Magic \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1983,7 +1983,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manga",
     "coverImage": "/books/mushoku_tensei.jpg?v=1786421072",
-    "description": "Mushoku Tensei \u2014 Highly recommended manga series.",
+    "description": "Mushoku Tensei \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -1993,7 +1993,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_rebirth_of_an_8th_circle_wizard.jpg?v=1786421072",
-    "description": "The Rebirth Of An 8th Circle Wizard \u2014 Highly recommended manhwa series.",
+    "description": "The Rebirth Of An 8th Circle Wizard \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2003,7 +2003,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/im_not_that_kind_of_talent.jpg?v=1786421072",
-    "description": "I'm Not That Kind Of Talent \u2014 Highly recommended manhwa series.",
+    "description": "I'm Not That Kind Of Talent \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2013,7 +2013,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/dao_of_the_bizarre_immortal.jpg?v=1786421072",
-    "description": "Dao Of The Bizarre Immortal \u2014 Highly recommended manhwa series.",
+    "description": "Dao Of The Bizarre Immortal \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2023,7 +2023,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/im_the_shadow_god_level_assassin.jpg?v=1786421072",
-    "description": "I'm The Shadow God Level Assassin \u2014 Highly recommended manhwa series.",
+    "description": "I'm The Shadow God Level Assassin \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2033,7 +2033,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_return_of_the_mythical_archmage.jpg?v=1786421072",
-    "description": "The Return Of The Mythical Archmage \u2014 Highly recommended manhwa series.",
+    "description": "The Return Of The Mythical Archmage \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2043,7 +2043,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/my_school_life_pretending_to_be_a_worthless_person.jpg?v=1786421072",
-    "description": "My School Life Pretending To Be A Worthless Person \u2014 Highly recommended manhwa series.",
+    "description": "My School Life Pretending To Be A Worthless Person \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2053,7 +2053,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/lag_ultimated_passive.jpeg?v=1786421072",
-    "description": "Lag, Ultimated Passive \u2014 Highly recommended manhwa series.",
+    "description": "Lag, Ultimated Passive \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2063,7 +2063,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/i_returned_as_fff_class_witch_hunter.jpg?v=1786421072",
-    "description": "I Returned As Fff Class Witch Hunter \u2014 Highly recommended manhwa series.",
+    "description": "I Returned As Fff Class Witch Hunter \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2073,7 +2073,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/skeleton_soldier_couldnt_protect_dungeon.jpeg?v=1786421072",
-    "description": "Skeleton Soldier Couldn't Protect Dungeon \u2014 Highly recommended manhwa series.",
+    "description": "Skeleton Soldier Couldn't Protect Dungeon \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2083,7 +2083,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manga",
     "coverImage": "/books/ragna_crimson.jpg?v=1786421072",
-    "description": "Ragna Crimson \u2014 Highly recommended manga series.",
+    "description": "Ragna Crimson \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2093,7 +2093,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_nebulas_civilization.jpg?v=1786421072",
-    "description": "The Nebula's Civilization \u2014 Highly recommended manhwa series.",
+    "description": "The Nebula's Civilization \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2103,7 +2103,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/her_summon.jpg?v=1786421072",
-    "description": "Her Summon \u2014 Highly recommended manhwa series.",
+    "description": "Her Summon \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2113,7 +2113,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/eat_and_level_up.jpg?v=1786421072",
-    "description": "Eat And Level Up \u2014 Highly recommended manhwa series.",
+    "description": "Eat And Level Up \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2123,7 +2123,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/steel_eating_player.jpg?v=1786421072",
-    "description": "Steel Eating Player \u2014 Highly recommended manhwa series.",
+    "description": "Steel Eating Player \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2133,7 +2133,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/return_of_the_sss_class_ranker.jpg?v=1786421072",
-    "description": "Return Of The Sss-class Ranker \u2014 Highly recommended manhwa series.",
+    "description": "Return Of The Sss-class Ranker \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2143,7 +2143,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/i_am_the_strongest_boss.jpg?v=1786421072",
-    "description": "I Am The Strongest Boss \u2014 Highly recommended manhwa series.",
+    "description": "I Am The Strongest Boss \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2153,7 +2153,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/level_up_with_skills.jpg?v=1786421072",
-    "description": "Level Up With Skills \u2014 Highly recommended manhwa series.",
+    "description": "Level Up With Skills \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2163,7 +2163,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/hell_difficulty_tutorial.jpg?v=1786421072",
-    "description": "Hell Difficulty Tutorial \u2014 Highly recommended manhwa series.",
+    "description": "Hell Difficulty Tutorial \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2173,7 +2173,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/reborn_as_the_enemy_prince.jpg?v=1786421072",
-    "description": "Reborn As The Enemy Prince \u2014 Highly recommended manhwa series.",
+    "description": "Reborn As The Enemy Prince \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2183,7 +2183,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/past_life_returner.jpg?v=1786421072",
-    "description": "Past Life Returner \u2014 Highly recommended manhwa series.",
+    "description": "Past Life Returner \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2193,7 +2193,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/the_dungeon_master.jpg?v=1786421072",
-    "description": "The Dungeon Master \u2014 Highly recommended manhwa series.",
+    "description": "The Dungeon Master \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2203,7 +2203,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/return_of_the_martial_art_genuis.jpg?v=1786421072",
-    "description": "Return Of The Martial Art Genuis \u2014 Highly recommended manhwa series.",
+    "description": "Return Of The Martial Art Genuis \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2213,7 +2213,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/to_hell_with_being_a_saint_im_a_doctor.jpg?v=1786421072",
-    "description": "To Hell With Being A Saint, I'm A Doctor \u2014 Highly recommended manhwa series.",
+    "description": "To Hell With Being A Saint, I'm A Doctor \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2223,7 +2223,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/food_truck_owner_inside_dungeon.jpg?v=1786421072",
-    "description": "Food Truck Owner Inside Dungeon \u2014 Highly recommended manhwa series.",
+    "description": "Food Truck Owner Inside Dungeon \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2233,7 +2233,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manga",
     "coverImage": "/books/kagurabachi.jpg?v=1786421072",
-    "description": "Kagurabachi \u2014 Highly recommended manga series.",
+    "description": "Kagurabachi \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   },
@@ -2243,7 +2243,7 @@ export const bookRecommendations: BookRecommendation[] = [
     "author": "Various Authors",
     "category": "Manhwa",
     "coverImage": "/books/chainsaw_man.jpg?v=1786421072",
-    "description": "Chainsaw Man \u2014 Highly recommended manhwa series.",
+    "description": "Chainsaw Man \u2014 Featured Recommendation.",
     "status": "Completed",
     "tags": []
   }
