@@ -1312,15 +1312,16 @@ export const gameShowcaseList: GameShowcase[] = [
   },
   {
     "id": "g_102",
-    "title": "Homestead",
+    "title": "Romestead",
     "category": "INDIE / SURVIVAL",
-    "genre": "Farming & Building Sim",
-    "status": "Masterpiece",
+    "genre": "Survival Co-op",
+    "status": "Playing",
     "coverImage": "/games/homestead.jpg",
-    "description": "Relaxing homestead farming and crafting sim cultivating land, building cabins, and raising livestock.",
+    "description": "A top-down pixel-art survival sandbox inspired by Valheim — explore biomes, craft gear, defeat bosses, and build settlements with up to 8 players.",
     "tags": [
       "INDIE",
-      "Farming & Building Sim"
+      "Co-op",
+      "Survival"
     ]
   }
 ];
