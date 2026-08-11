@@ -15,8 +15,9 @@ import {
   FiTrash2, 
   FiX,
   FiMoreVertical,
-  FiBookmark,
-  FiSearch
+  FiSearch,
+  FiChevronLeft,
+  FiChevronRight
 } from "react-icons/fi";
 import Footer from "@/components/Footer";
 import { useGlobalPlayer, VideoTrack } from "@/context/GlobalPlayerContext";
@@ -46,6 +47,7 @@ export default function InterestsPage() {
   } = useGlobalPlayer();
 
   const visualVideoRef = useRef<HTMLVideoElement | null>(null);
+  const bookshelfRef = useRef<HTMLDivElement | null>(null);
 
   // Sync visual video time & state with master background media engine
   useEffect(() => {
@@ -74,28 +76,9 @@ export default function InterestsPage() {
   const [newTitle, setNewTitle] = useState<string>("");
   const [newArtist, setNewArtist] = useState<string>("");
 
-  // Book Category Filter & Search state (AnkerGames Pure Grid Style for Comics)
-  const [bookFilter, setBookFilter] = useState<string>("ALL");
-  const [bookSearchQuery, setBookSearchQuery] = useState<string>("");
-
   // Game Category Filter & Search state (AnkerGames Pure Grid Style)
   const [gameFilter, setGameFilter] = useState<string>("ALL");
   const [gameSearchQuery, setGameSearchQuery] = useState<string>("");
-
-  const filteredBooks = bookRecommendations.filter((book) => {
-    const matchesSearch = book.title.toLowerCase().includes(bookSearchQuery.toLowerCase()) ||
-                          book.author.toLowerCase().includes(bookSearchQuery.toLowerCase()) ||
-                          book.category.toLowerCase().includes(bookSearchQuery.toLowerCase()) ||
-                          book.tags.some(tag => tag.toLowerCase().includes(bookSearchQuery.toLowerCase()));
-
-    if (!matchesSearch) return false;
-    if (bookFilter === "ALL") return true;
-    if (bookFilter === "NOVELS") return book.category === "Novel";
-    if (bookFilter === "MANHWA") return book.category === "Manhwa";
-    if (bookFilter === "MANGA") return book.category === "Manga";
-    if (bookFilter === "MANHUA") return book.category === "Manhua";
-    return true;
-  });
 
   const filteredGames = gameShowcaseList.filter((game) => {
     const matchesSearch = game.title.toLowerCase().includes(gameSearchQuery.toLowerCase()) ||
@@ -111,6 +94,14 @@ export default function InterestsPage() {
     if (gameFilter === "HORROR") return game.category.includes("HORROR");
     return true;
   });
+
+  // Bookshelf Horizontal Scroll Control
+  const scrollBookshelf = (direction: "left" | "right") => {
+    if (bookshelfRef.current) {
+      const scrollAmount = direction === "left" ? -600 : 600;
+      bookshelfRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
+  };
 
   // Add / Upload video handler
   const handleAddTrackSubmit = (e: React.FormEvent) => {
@@ -331,82 +322,48 @@ export default function InterestsPage() {
           </div>
 
           {/* ========================================================= */}
-          {/* NOVEL & MANGA / MANHWA / MANHUA RECOMMENDATIONS SHOWCASE  */}
+          {/* SINGLE HORIZONTAL BOOKSHELF LINE SHOWCASE (NO SEARCH/SORT) */}
           {/* ========================================================= */}
-          <section className={`${styles.booksSection} ${styles.gamesSection}`}>
-
-            {/* Header Banner */}
-            <div className={styles.ankerHeaderBanner}>
-              <div className={styles.ankerHeaderInfo}>
-                <span className={styles.ankerTag}>READING SHELF // LIGHT NOVELS & COMICS</span>
-                <h2 className={styles.ankerTitle}>Light Novels &amp; Comics Collection ({filteredBooks.length})</h2>
-                <p className={styles.ankerDesc}>
-                  Clean, borderless 2:3 vertical poster cards — same layout as the PC Games library.
-                </p>
+          <section className={styles.booksSection}>
+            
+            {/* Clean Bookshelf Header Row */}
+            <div className={styles.booksHeaderRow}>
+              <div>
+                <span className={styles.booksSectionTag}>// READING SHELF</span>
+                <h2 className={styles.booksSectionTitle}>Light Novels & Comics Recommendation</h2>
               </div>
 
-              {/* Live Search Bar */}
-              <div className={styles.ankerSearchWrapper}>
-                <FiSearch className={styles.ankerSearchIcon} />
-                <input
-                  type="text"
-                  placeholder="Search comics, novels, authors..."
-                  value={bookSearchQuery}
-                  onChange={(e) => setBookSearchQuery(e.target.value)}
-                  className={styles.ankerSearchInput}
-                />
-                {bookSearchQuery && (
-                  <button onClick={() => setBookSearchQuery("")} className={styles.ankerClearSearch}>
-                    <FiX />
-                  </button>
-                )}
-              </div>
-            </div>
-
-            {/* Filter Tabs Bar */}
-            <div className={styles.ankerFilterRow}>
-              <div className={styles.booksFilterBar}>
-                {["ALL", "NOVELS", "MANHWA", "MANGA", "MANHUA"].map((filter) => (
-                  <button
-                    key={filter}
-                    onClick={() => setBookFilter(filter)}
-                    className={`${styles.booksFilterBtn} ${bookFilter === filter ? styles.activeBooksFilter : ""}`}
-                  >
-                    {filter}
-                  </button>
-                ))}
-              </div>
-              <span className={styles.gameCounterBadge}>Showing {filteredBooks.length} of {bookRecommendations.length} Comics</span>
-            </div>
-
-            {/* Comic Card Grid — exact same structure as game section */}
-            <div className={styles.ankerGrid}>
-              {filteredBooks.map((book) => (
-                <motion.div
-                  key={book.id}
-                  layout
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
-                  className={styles.ankerGameCard}
-                  title={`${book.title} — ${book.category}`}
+              {/* Horizontal Scroll Navigation Controls */}
+              <div className={styles.shelfScrollControls}>
+                <button 
+                  onClick={() => scrollBookshelf("left")} 
+                  className={styles.shelfScrollBtn}
+                  title="Scroll Left"
                 >
-                  {/* Vertical Poster Card */}
-                  <div className={styles.ankerCoverBox}>
-                    <img
-                      src={book.coverImage}
-                      alt={book.title}
-                      className={styles.ankerCoverImg}
-                    />
+                  <FiChevronLeft size={20} />
+                </button>
+                <button 
+                  onClick={() => scrollBookshelf("right")} 
+                  className={styles.shelfScrollBtn}
+                  title="Scroll Right"
+                >
+                  <FiChevronRight size={20} />
+                </button>
+              </div>
+            </div>
 
-                    {/* Hover Overlay */}
-                    <div className={styles.ankerCardOverlay}>
-                      <h4 className={styles.ankerOverlayTitle}>{book.title}</h4>
-                      <p className={styles.ankerOverlayText}>{book.description}</p>
-                      <span className={styles.ankerGenrePill}>{book.category}</span>
-                    </div>
+            {/* Single Horizontal Bookshelf Row Line */}
+            <div ref={bookshelfRef} className={styles.bookshelfRowLine}>
+              {bookRecommendations.map((book) => (
+                <div key={book.id} className={styles.bookshelfCard} title={`${book.title} — ${book.category}`}>
+                  <div className={styles.bookshelfCoverBox}>
+                    <img 
+                      src={book.coverImage} 
+                      alt={book.title} 
+                      className={styles.bookshelfCoverImg}
+                    />
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
 
