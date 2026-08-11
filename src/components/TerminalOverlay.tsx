@@ -73,7 +73,7 @@ export default function TerminalOverlay({ isOpen, onClose }: Props) {
 
     // 2. Password input mode
     if (terminalMode === "login_password") {
-      // Obfuscated password hash validation for "Vannhucu12"
+      // Obfuscated password hash validation
       const correctHash = "a9ab342e78ab2c27e243ba9a72c2ba87";
       const inputHash = secureObfuscate(trimmed);
 
