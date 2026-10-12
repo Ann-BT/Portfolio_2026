@@ -48,16 +48,16 @@ export default function AboutSection() {
         <div className={styles.grid}>
           <div className={styles.story}>
             <p>
-              I hold a Bachelor&apos;s degree in Cyber Security from the <strong>University of Science and Technology of Hanoi (USTH)</strong>, graduating with a <strong>Classification of Very Good</strong>, ranking <strong>Top 3 in my first academic year</strong>, and earning a <strong>3-year scholarship</strong>.
+              I hold a Bachelor&apos;s degree in Cyber Security from <strong>USTH</strong> (Classification: Very Good, Top 3 first year, 3-year scholarship).
             </p>
             <p>
-              Originally rooted in an <strong>IT Engineering</strong> background (where I developed full-stack architectures, microservices, and reactive interfaces), I transitioned wholeheartedly into <strong>Penetration Testing &amp; Product Security</strong>. Knowing intimately how developers construct modern software allows me to dissect systems from an attacker&apos;s lens and deliver actionable, developer-friendly remediation guidance.
+              With an <strong>IT Engineering</strong> background in full-stack web and microservices, I transitioned into <strong>Penetration Testing &amp; Product Security</strong>. Knowing how developers build applications allows me to dissect complex business logic from an attacker&apos;s perspective and provide actionable, developer-friendly remediation.
             </p>
             <p>
-              My hands-on offensive work includes conducting an end-to-end security review on a production document-processing and LLM translation application (uncovering IDOR, XXE, SSRF, Deserialization RCE, and prompt injection), authoring <strong>SIDERIS</strong> (a behavioral WAF &amp; real-time threat detection sidecar), and leading development of <strong>PhishShield</strong> (an ML-driven phishing detection browser extension).
+              My hands-on experience includes security reviews on production applications (finding IDOR, XXE, SSRF, Deserialization, Prompt Injection), engineering <strong>SIDERIS</strong> (a behavioral WAF sidecar), and leading <strong>PhishShield</strong> (an ML-powered anti-phishing extension).
             </p>
             <p>
-              I am driven by a deep, relentless curiosity for cybersecurity: replicating CVEs, dissecting emerging exploit primitives, and staying ahead of modern threat landscapes. Beyond industrial security engineering, my long-term aspiration is to pursue a <strong>Master&apos;s degree in Cybersecurity</strong>, conduct academic security research, and teach as a <strong>university lecturer</strong> to train the next generation of security researchers.
+              Passionate about deep vulnerability research and offensive security labs. In the future, I plan to pursue a <strong>Master&apos;s in Cybersecurity</strong> and aspire to teach as a <strong>university lecturer</strong>.
             </p>
           </div>
 

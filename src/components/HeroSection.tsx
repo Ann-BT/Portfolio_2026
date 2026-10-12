@@ -284,26 +284,14 @@ export default function HeroSection() {
                 <span>Manage Photos</span>
               </button>
             ) : (
-              <>
-                <a 
-                  href="/CV_Bui_Truong_An_Security_Pentest.pdf"
-                  download="Bui_Truong_An_Pentest_CV.pdf"
-                  className={styles.btnSecondary}
-                  title="Download Latest Penetration Tester / Security CV"
-                >
-                  <FaDownload />
-                  <span>Download CV (Security)</span>
-                </a>
-                <a 
-                  href="/CV_Bui_Truong_An_IT_Engineer.pdf"
-                  download="CV_Bui_Truong_An_IT_Engineer.pdf"
-                  className={styles.btnSecondary}
-                  style={{ opacity: 0.85, fontSize: "0.85rem" }}
-                  title="Download Earlier IT Engineer Fullstack CV"
-                >
-                  <span>IT Engineer CV</span>
-                </a>
-              </>
+              <a 
+                href="/CV_Bui_Truong_An_Security_Pentest.pdf"
+                download="Bui_Truong_An_Pentest_CV.pdf"
+                className={styles.btnSecondary}
+              >
+                <FaDownload />
+                <span>Download CV</span>
+              </a>
             )}
           </div>
 

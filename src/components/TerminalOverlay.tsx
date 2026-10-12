@@ -171,8 +171,7 @@ Former IT Engineer who evolved into full-time Offensive Security & Penetration T
 
       case "cv":
         response = `DOWNLOADABLE CURRICULUM VITAE:
-• Pentest / Security CV : /CV_Bui_Truong_An_Security_Pentest.pdf
-• IT Engineer (Legacy) : /CV_Bui_Truong_An_IT_Engineer.pdf`;
+• Pentest / Security CV : /CV_Bui_Truong_An_Security_Pentest.pdf`;
         break;
 
       case "contact":
