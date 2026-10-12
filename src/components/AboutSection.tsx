@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Shield, Terminal, Radio, Code } from "lucide-react";
+import { Shield, Terminal, Radio, Code, GraduationCap, Compass, BookOpen } from "lucide-react";
 import { config } from "@/data/config";
 import { skills, SkillCategory } from "@/data/skills";
 import styles from "./AboutSection.module.css";
@@ -44,31 +44,59 @@ export default function AboutSection() {
           <span>About Me</span>
         </h2>
 
-        {/* Narrative and Languages Grid */}
+        {/* Narrative and Highlights Grid */}
         <div className={styles.grid}>
           <div className={styles.story}>
             <p>
-              I hold a Bachelor&apos;s degree in Cyber Security from the <strong>University of Science and Technology of Hanoi (USTH)</strong> with a graduation <strong>Classification of Very Good</strong>. 
-              My expertise spans defensive security operations, threat modeling, log analysis, and full-stack web engineering.
+              I hold a Bachelor&apos;s degree in Cyber Security from the <strong>University of Science and Technology of Hanoi (USTH)</strong>, graduating with a <strong>Classification of Very Good</strong>, ranking <strong>Top 3 in my first academic year</strong>, and earning a <strong>3-year scholarship</strong>.
             </p>
             <p>
-              I am actively seeking professional opportunities in <strong>Blue Team Cybersecurity</strong> (SOC Analyst, Incident Response, Defensive Security), <strong>Web Development</strong> (Frontend / Full-stack), or roles across the broader Cyber &amp; IT domain. 
-              My hands-on experience includes engineering <strong>SIDERIS</strong> (a self-hosted behavioral WAF proxy), developing <strong>PhishShield</strong> (an ML-powered anti-phishing extension), and performing malware triage and web security audits.
+              Originally rooted in an <strong>IT Engineering</strong> background (where I developed full-stack architectures, microservices, and reactive interfaces), I transitioned wholeheartedly into <strong>Penetration Testing &amp; Product Security</strong>. Knowing intimately how developers construct modern software allows me to dissect systems from an attacker&apos;s lens and deliver actionable, developer-friendly remediation guidance.
             </p>
             <p>
-              Outside of cybersecurity and development, I study French and Chinese, author security write-ups, and enjoy gaming. 
-              In the future, I aim to pursue a Master&apos;s degree in Cybersecurity and transition into academic research and teaching.
+              My hands-on offensive work includes conducting an end-to-end security review on a production document-processing and LLM translation application (uncovering IDOR, XXE, SSRF, Deserialization RCE, and prompt injection), authoring <strong>SIDERIS</strong> (a behavioral WAF &amp; real-time threat detection sidecar), and leading development of <strong>PhishShield</strong> (an ML-driven phishing detection browser extension).
+            </p>
+            <p>
+              I am driven by a deep, relentless curiosity for cybersecurity: replicating CVEs, dissecting emerging exploit primitives, and staying ahead of modern threat landscapes. Beyond industrial security engineering, my long-term aspiration is to pursue a <strong>Master&apos;s degree in Cybersecurity</strong>, conduct academic security research, and teach as a <strong>university lecturer</strong> to train the next generation of security researchers.
             </p>
           </div>
 
           <div className={styles.rightColumn}>
+            {/* Academic & Vision Card */}
+            <motion.div 
+              className={styles.visionBox}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className={styles.visionHeader}>
+                <GraduationCap size={18} />
+                <span>Academic &amp; Research Vision</span>
+              </div>
+              <ul className={styles.visionList}>
+                <li>
+                  <strong>Target Role:</strong> Penetration Tester / Product Security Engineer
+                </li>
+                <li>
+                  <strong>Specialization:</strong> Web &amp; API Security, Source Code Audit, Threat Detection
+                </li>
+                <li>
+                  <strong>Academic Track:</strong> USTH Cyber Security (Top 3 First Year, 3-Year Scholarship)
+                </li>
+                <li>
+                  <strong>Future Goal:</strong> Master&apos;s Degree in Cybersecurity &amp; University Lecturer
+                </li>
+              </ul>
+            </motion.div>
+
             {/* Decrypted Languages Box */}
             <motion.div 
               className={styles.languagesBox}
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
             >
               <div className={styles.languagesTitle}>Decrypted Languages //</div>
               <div className={styles.langsList}>
@@ -86,9 +114,9 @@ export default function AboutSection() {
         <hr className={styles.divider} />
 
         {/* Skills Subtitle */}
-        <h3 className={styles.skillsSubtitle}>My Inventory</h3>
+        <h3 className={styles.skillsSubtitle}>Security &amp; Engineering Inventory</h3>
 
-        {/* Bulletproof Dynamic Inline Grid - Forces 2 Columns on Desktop */}
+        {/* Dynamic Inline Grid - 2 Columns on Desktop */}
         <div 
           style={{ 
             display: "grid", 

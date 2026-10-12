@@ -1,12 +1,15 @@
 export const config = {
   name: "Bùi Trường An",
   nickname: "Merlin",
-  title: "Cybersecurity Graduate & Developer",
-  bio: "Bachelor Graduate in Cyber Security from USTH (Classification: Very Good). Actively seeking opportunities in Blue Team Cybersecurity, Web Development, or roles across the Cyber & IT domain. Experienced in engineering threat detection proxies (SIDERIS WAF), blue team log analysis, malware triage, and full-stack web applications.",
-  location: "Ha Noi, Viet Nam",
-  status: "Open for Opportunities",
-  cvUrl: "/cv.pdf", // Placeholder for later
+  title: "Penetration Tester & Security Engineer",
+  bio: "Cybersecurity Graduate from USTH (Classification: Very Good, Top 3 first year, 3-year academic scholarship). Dedicated security practitioner and passionate lifelong learner focused on offensive web application security, penetration testing, and product vulnerability assessment. With a robust engineering background spanning full-stack architectures and defensive systems (creator of SIDERIS behavioral WAF), I break systems to understand how to build them resiliently. Aspiring security researcher and future university lecturer.",
+  location: "Hanoi, Vietnam",
+  status: "Available for Penetration Tester & Product Security Roles",
+  cvUrl: "/CV_Bui_Truong_An_Security_Pentest.pdf",
+  cvPentestUrl: "/CV_Bui_Truong_An_Security_Pentest.pdf",
+  cvItUrl: "/CV_Bui_Truong_An_IT_Engineer.pdf",
   email: "anbt.personal@gmail.com",
+  phone: "0397677835",
   socials: {
     github: "https://github.com/Ann-BT",
     linkedin: "https://www.linkedin.com/in/ann-bt/",
@@ -16,14 +19,20 @@ export const config = {
   },
   education: {
     school: "University of Science and Technology of Hanoi (USTH)",
+    degree: "Bachelor of Science in Cyber Security",
     major: "Cyber Security",
-    year: "Graduated (Classification: Very Good)"
+    classification: "Very Good",
+    honors: "Top 3 academic ranking in first year, Awarded 3-year scholarship"
+  },
+  careerVision: {
+    immediate: "Penetration Tester / Product Security Engineer — uncovering critical vulnerabilities across web, API, and cloud services before attackers do, and collaborating closely with engineering teams on actionable remediation.",
+    academic: "Lifelong commitment to continuous security research, pursuing a Master's degree in Cybersecurity, and becoming a university lecturer / academic mentor to inspire the next generation of security researchers."
   },
   languages: [
     { name: "Vietnamese", level: "Native" },
-    { name: "English", level: "B2 / Fluent" },
-    { name: "French", level: "TCF A2" },
-    { name: "Chinese", level: "Learning" }
+    { name: "English", level: "B2 (USTH certified)" },
+    { name: "French", level: "A2 (TCF certified)" },
+    { name: "Chinese", level: "Self-studying" }
   ],
   supabase: {
     url: process.env.NEXT_PUBLIC_SUPABASE_URL || "",

@@ -42,6 +42,52 @@
 .rightColumn {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
+}
+
+.visionBox {
+  border: 1px solid var(--border-dim);
+  border-radius: 4px;
+  padding: 1.5rem;
+  background-color: var(--surface);
+  border-left: 3px solid var(--text-bright);
+}
+
+.visionHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.visionList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+}
+
+.visionList li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.visionList strong {
+  color: var(--text-bright);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  margin-right: 0.35rem;
 }
 
 .languagesBox {

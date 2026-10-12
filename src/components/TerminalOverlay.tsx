@@ -117,11 +117,77 @@ export default function TerminalOverlay({ isOpen, onClose }: Props) {
         setInput("");
         return;
 
+      case "help":
+        response = `AVAILABLE COMMANDS:
+  help        - List all terminal capabilities
+  whoami      - Identity and primary role
+  bio         - Background, education and academic honors
+  pentest     - Offensive security skills & tool inventory
+  projects    - Highlighted security projects & reviews
+  vision      - Future career & academic teaching roadmap
+  cv          - Download latest CV links
+  contact     - Contact channels & GPG / Email
+  login       - Authenticate administrative session
+  logout      - Revoke administrative session
+  clear       - Clear screen
+  exit        - Close terminal overlay`;
+        break;
+
+      case "whoami":
+        response = `Bùi Trường An (Merlin) // Penetration Tester & Security Engineer
+Specializing in Web/API Security, Vulnerability Assessment, and Secure Code Remediation.`;
+        break;
+
+      case "bio":
+        response = `B.Sc. Cyber Security from USTH (Classification: Very Good).
+Honors: Top 3 academic ranking in 1st year, 3-year academic scholarship.
+Former IT Engineer who evolved into full-time Offensive Security & Penetration Testing.`;
+        break;
+
+      case "pentest":
+      case "skills":
+        response = `OFFENSIVE SECURITY & TESTING TOOLBOX:
+• Web/API Pentest : Burp Suite Pro, OWASP ZAP, OWASP Top 10, API Security Top 10
+• Vulnerabilities : IDOR, XXE, SSRF, Deserialization, Prompt Injection, SQLi, Mass Assignment
+• Reverse/Analysis: Wireshark, Wazuh SIEM, IDA Pro, PEStudio, Process Monitor
+• Forensics/Malware: REMnux VM, EC-Council CHFI curriculum
+• Engineering Base: TypeScript/Node.js, Python scripting, Docker network isolation, Redis Lua`;
+        break;
+
+      case "projects":
+        response = `FEATURED SECURITY PROJECTS:
+[1] Production Web App Security Review (IDOR, XXE, SSRF, Deserialization RCE, Prompt Injection)
+[2] SIDERIS - Sidecar Threat Detection & Behavioral WAF (Node.js, Redis, Docker, OWASP Juice Shop)
+[3] PhishShield - ML Anti-Phishing Chrome Extension (FastAPI, Random Forest, Team Lead)
+[4] Offensive Labs & CVE-1999-0497 Reproduction (Chronos VulnHub, Privilege Escalation)`;
+        break;
+
+      case "vision":
+        response = `CAREER & ACADEMIC ROADMAP:
+1. Immediate Goal : Penetration Tester / Product Security Engineer in product companies.
+2. Lifelong Drive: Deep dive into vulnerability research, CVE reproduction, and offensive tooling.
+3. Long-term Goal: Master's in Cybersecurity, academic security research, and University Lecturer.`;
+        break;
+
+      case "cv":
+        response = `DOWNLOADABLE CURRICULUM VITAE:
+• Pentest / Security CV : /CV_Bui_Truong_An_Security_Pentest.pdf
+• IT Engineer (Legacy) : /CV_Bui_Truong_An_IT_Engineer.pdf`;
+        break;
+
+      case "contact":
+        response = `COMMUNICATION CHANNELS:
+• Email  : anbt.personal@gmail.com
+• Phone  : 0397677835
+• GitHub : github.com/Ann-BT
+• Web    : merlinthemage.me`;
+        break;
+
       default:
         if (trimmed === "") {
           response = "";
         } else {
-          response = `command not found: ${cmd}`;
+          response = `command not found: ${cmd}. Type 'help' for available commands.`;
         }
     }
 
