@@ -2,7 +2,7 @@ export const config = {
   name: "Bùi Trường An",
   nickname: "Merlin",
   title: "Penetration Tester / Security Engineer",
-  bio: "Cybersecurity graduate from USTH (Classification: Very Good, 3-year scholarship) with a solid full-stack development foundation. Focused on offensive web/API security testing, discovering real-world vulnerabilities, and helping engineering teams remediate them effectively. Aspiring to pursue research and become a university lecturer.",
+  bio: "Cybersecurity graduate from USTH (Very Good, 3-year scholarship). Started as a full-stack engineer — now use that background to break things on purpose. Hands-on security testing on a real production app, built SIDERIS (a behavioral WAF sidecar), and led PhishShield. Always studying: malware, forensics, offensive labs. Aiming for a Master's in Cybersecurity and a teaching role someday.",
   location: "Hanoi, Vietnam",
   status: "Available for Penetration Tester & Security Roles",
   cvUrl: "/CV_Bui_Truong_An_Security_Pentest.pdf",

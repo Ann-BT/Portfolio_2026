@@ -8,64 +8,67 @@ export interface SkillCategory {
 
 export const skills: SkillCategory[] = [
   {
-    id: "security-offensive",
-    name: "Offensive Security & Pentest",
+    id: "security-assessment",
+    name: "Security Assessment & Pentest",
     iconName: "Shield",
     tools: [
-      "Burp Suite (Professional & Community)",
+      "Burp Suite",
       "OWASP ZAP",
-      "OWASP Top 10 & API Security Top 10",
-      "Web Vulnerability Assessment (IDOR, XXE, SSRF, Deserialization, SQLi)",
-      "Secure Code Review & Remediation Guidance",
-      "Wazuh SIEM",
-      "Wireshark (Packet Analysis)",
-      "IDA Pro, PEStudio & Process Monitor",
-      "Malware Analysis (REMnux VM)",
-      "Digital Forensics (EC-Council CHFI curriculum)"
+      "Wireshark",
+      "Wazuh",
+      "OWASP Top 10",
+      "Web / API Vulnerability Assessment",
+      "Source Code Audit",
+      "Threat Modeling",
+      "Secure Code Remediation"
     ],
-    note: "Specialized in web application security testing, vulnerability discovery across production architectures, business logic bypasses, and translating findings into actionable developer patches."
+    note: "Hands-on web/API security testing — IDOR, XXE, SSRF, SQLi, Deserialization, Prompt Injection. Reported findings with developer-ready remediation on a real production app."
   },
   {
-    id: "programming-engineering",
-    name: "Programming & Secure Engineering",
-    iconName: "Code",
-    tools: [
-      "JavaScript & TypeScript",
-      "Node.js & Express.js",
-      "Python (Exploit scripting & Automation)",
-      "Next.js & React",
-      "REST APIs, WebSockets & GraphQL",
-      "Pydantic strict validation",
-      "HMAC-signed JWTs & CSP Policies"
-    ],
-    note: "Former IT Engineering foundation enables deep understanding of how applications are built, allowing precise source code auditing, automated script development, and writing robust frontend/backend security patches."
-  },
-  {
-    id: "systems-networking",
-    name: "Systems & Networking",
-    iconName: "Radio",
-    tools: [
-      "Linux (Fedora / CachyOS / Arch - daily driver)",
-      "Windows Environments & Active Directory concepts",
-      "TCP/IP, HTTP/HTTPS, DNS & WebSockets",
-      "Virtualization & Lab Environments (VMware, VirtualBox, KVM)",
-      "Chronos VulnHub & Offensive Lab Environments",
-      "Anonymous FTP, SSH & Firewall Configuration",
-      "Distributed Systems (RPC / MPI)"
-    ],
-    note: "Extensive hands-on networking and operating system proficiency as a daily Linux power-user, analyzing live traffic streams and setting up reproducible security testing labs."
-  },
-  {
-    id: "infrastructure-cloud",
-    name: "Infrastructure & Data",
+    id: "security-research",
+    name: "Security Research & Malware",
     iconName: "Terminal",
     tools: [
-      "Docker & Container Network Isolation",
-      "Redis (Atomic Lua scripts, Rate Limiting & Streams)",
-      "PostgreSQL & Supabase (RLS Policies)",
-      "Git & GitHub Workflows",
-      "Celery / vLLM / ONLYOFFICE Architecture Review"
+      "IDA Pro",
+      "PEStudio",
+      "Process Monitor",
+      "REMnux",
+      "Digital Forensics (EC-Council CHFI curriculum)",
+      "Malware Analysis (static + dynamic)",
+      "CVE Reproduction",
+      "Offensive Labs (VulnHub, OWASP Juice Shop)"
     ],
-    note: "Experience in auditing containerized microservices, identifying exposed infrastructure ports, mitigating multi-service communication risks, and deploying scalable defensive sidecars."
+    note: "Analyzed malware samples on REMnux, studied forensics acquisition and anti-forensics, and reproduced real CVEs in lab environments. Always learning, always breaking things safely."
+  },
+  {
+    id: "programming-scripting",
+    name: "Programming & Development",
+    iconName: "Code",
+    tools: [
+      "JavaScript / TypeScript",
+      "Node.js (Express)",
+      "Python",
+      "Next.js / React",
+      "REST APIs",
+      "WebSockets",
+      "HTML5 / CSS Modules"
+    ],
+    note: "Full-stack engineering background that now serves offensive work — reading app source code, tracing data flows, and spotting logic flaws the way a developer would never expect."
+  },
+  {
+    id: "systems-infrastructure",
+    name: "Systems, Networking & Infrastructure",
+    iconName: "Radio",
+    tools: [
+      "Linux (Fedora / CachyOS / Arch — daily driver)",
+      "Windows & Lab VMs",
+      "TCP/IP, HTTP/HTTPS, DNS",
+      "Docker (network isolation, container hardening)",
+      "Redis",
+      "PostgreSQL / Supabase",
+      "Git / GitHub",
+      "Firewall Configuration"
+    ],
+    note: "Daily Linux user. Built SIDERIS as a reverse-proxy sidecar on Docker with Redis-backed atomic enforcement — understanding infrastructure is understanding the attack surface."
   }
 ];

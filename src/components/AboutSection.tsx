@@ -48,16 +48,16 @@ export default function AboutSection() {
         <div className={styles.grid}>
           <div className={styles.story}>
             <p>
-              I hold a Bachelor&apos;s degree in Cyber Security from <strong>USTH</strong> (Classification: Very Good, Top 3 first year, 3-year scholarship).
+              B.Sc. Cyber Security from <strong>USTH</strong> — graduated Very Good, Top 3 in first year, 3-year scholarship. Security is not a detour; it&apos;s where I always wanted to end up.
             </p>
             <p>
-              With an <strong>IT Engineering</strong> background in full-stack web and microservices, I transitioned into <strong>Penetration Testing &amp; Product Security</strong>. Knowing how developers build applications allows me to dissect complex business logic from an attacker&apos;s perspective and provide actionable, developer-friendly remediation.
+              I came up through <strong>full-stack engineering</strong> (Node.js, React, TypeScript, Docker). That background is now an offensive asset — I read code the way developers write it, which means I find the logic flaws they miss.
             </p>
             <p>
-              My hands-on experience includes security reviews on production applications (finding IDOR, XXE, SSRF, Deserialization, Prompt Injection), engineering <strong>SIDERIS</strong> (a behavioral WAF sidecar), and leading <strong>PhishShield</strong> (an ML-powered anti-phishing extension).
+              Real-world work: performed a security review on a <strong>production document-processing app</strong> (IDOR, XXE, SSRF, Zip Slip, Pickle RCE, Prompt Injection) and reported fixes the devs could actually act on. Built <strong>SIDERIS</strong> — a reverse-proxy behavioral WAF sidecar with Redis-backed atomic enforcement, validated against OWASP Juice Shop attack scenarios. Led <strong>PhishShield</strong>, an ML-powered anti-phishing browser extension.
             </p>
             <p>
-              Passionate about deep vulnerability research and offensive security labs. In the future, I plan to pursue a <strong>Master&apos;s in Cybersecurity</strong> and aspire to teach as a <strong>university lecturer</strong>.
+              Always studying something: malware analysis on REMnux, digital forensics (CHFI curriculum), CVE reproduction in lab VMs, offensive labs on VulnHub. The goal isn&apos;t certifications — it&apos;s depth. Long term: <strong>Master&apos;s in Cybersecurity</strong> and a <strong>university teaching role</strong> to give back what I was given.
             </p>
           </div>
 
@@ -72,20 +72,20 @@ export default function AboutSection() {
             >
               <div className={styles.visionHeader}>
                 <GraduationCap size={18} />
-                <span>Academic &amp; Research Vision</span>
+                <span>Career &amp; Research Vision</span>
               </div>
               <ul className={styles.visionList}>
                 <li>
-                  <strong>Target Role:</strong> Penetration Tester / Product Security Engineer
+                  <strong>Immediate Target:</strong> Penetration Tester / Product Security Engineer
                 </li>
                 <li>
-                  <strong>Specialization:</strong> Web &amp; API Security, Source Code Audit, Threat Detection
+                  <strong>Focus Areas:</strong> Web &amp; API Security, Source Code Audit, Threat Modeling
                 </li>
                 <li>
-                  <strong>Academic Track:</strong> USTH Cyber Security (Top 3 First Year, 3-Year Scholarship)
+                  <strong>Currently Studying:</strong> Malware Analysis, Digital Forensics, Offensive Labs
                 </li>
                 <li>
-                  <strong>Future Goal:</strong> Master&apos;s Degree in Cybersecurity &amp; University Lecturer
+                  <strong>Long-term:</strong> Master&apos;s in Cybersecurity &amp; University Lecturer
                 </li>
               </ul>
             </motion.div>
