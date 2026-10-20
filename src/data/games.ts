@@ -679,7 +679,7 @@ export const gameShowcaseList: GameShowcase[] = [
     "category": "ACTION / RPG",
     "genre": "Sci-Fi Action",
     "status": "Played",
-    "coverImage": "/games/pragmata.jpg?v=1786412602",
+    "coverImage": "/games/pragmata.jpg?v=1792464540",
     "description": "Dystopian sci-fi action adventure set on a futuristic moon base with suit technology.",
     "tags": [
       "ACTION",
